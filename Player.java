@@ -1,40 +1,75 @@
-import javafx.geometry.Pos;
+//File : Player.java
 
 public class Player {
-    private int numID;
-    private int posisi;
-    private int uang;
-    private boolean freeze;
 
-    public Player(int id, int posisi, int uang) {
-        this.numID = id;
-        this.posisi = posisi;
-        this.uang = uang;
-        this.freeze = true;   
-        ArrayList<String> Properti = new ArrayList<String>();
-    }
+     // parameter
+     private int playerID;
+     private int playerPos;
+     private int playerMoney;
+     private int playerProp;
 
-    public void setUang(int Uang) {
-        this.uang += Uang;
-    }
+     //Methods
 
-    public int getUang() {
-        return this.uang;
-    }
+     //Constructor
+     public Player(int id) {
+     this.playerID = id;
+     this.playerPos = 0;
+     this.playerMoney = 0;
+     this.playerProp = 0;
+     }
 
-    public void setPos(int Pos) {
-        this.posisi += Pos;
-    }
 
-    public int getPos() {
-        return this.posisi;
-    }
+     //Get Setter
+     public void setPos(int x) {
+          this.playerPos = x;
+          System.out.println("Player setPos " + x);
+     }
 
-    public boolean getCond() {
-        return this.freeze;
-    }
+     public int getPos() {
+          return playerPos;
+     }
 
-    public void setCond(boolean cond) {
-        this.freeze = cond;
-    }
+     public void setMoney(int x) {
+          this.playerMoney = x;
+          System.out.println("Player setMon " + x);
+     }
+
+     public int getMoney() {
+          return this.playerMoney;
+     }
+
+     public void setProp(int x) {
+          this.playerProp = x;
+          System.out.println("Player setProp " + x);
+     }
+
+     public int getProp() {
+          return this.playerProp;
+     }
+
+     //Other methods
+     public void move(int x) {
+          this.playerPos += x;
+          System.out.println("Player " + playerID + "berhasil berjalan sejauh " + x +" petak.");
+     }
+
+     public void pay(int x) {
+          this.playerMoney -= x;
+          System.out.println("Player " + playerID + "berhasil mengeluarkan uang sebesar " + x + " .");
+     }
+
+     public void addProp() {
+          this.playerProp += 1;
+          System.out.println("Player " + playerID + "berhasil membeli sebuah properti.");
+     }
+
+     public void removeProp() {
+          this.playerProp -= 1;
+          System.out.println("Player " + playerID + "berhasil menjual sebuah properti.");
+     }
+
+     public void lvlUp(int x) {
+          // masukkin method properti yg lvl up
+          // emg perlu ya? wkwk
+     }
 }
