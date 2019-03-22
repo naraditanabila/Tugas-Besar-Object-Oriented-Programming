@@ -1,3 +1,3 @@
-public class Property {
+public interface Property {
 	
 }
