@@ -4,13 +4,25 @@ public class Map<Place> {	//Generic Class
 	
 	public class Element {
 		private Place place;
+		private String key;
+		private String value;
 		private Element next;
 		private Element prev;
 		
-		public Element(Place p){
+		public Element(String key,String value,Place p){
+			this.key =key;
+			this.value=value;
 			this.place=p;
 			this.next = null;
 			this.prev = null;
+		}
+		
+		public String getKey(){
+			return this.key;
+		}
+		
+		public String getValue(){
+			return this.value;
 		}
 		
 		public Place getPlace(){
@@ -35,12 +47,16 @@ public class Map<Place> {	//Generic Class
 	}
 	
 	public Map(){
-		this.first = new Element((Place) new Space("Start",0,200));
+		this.first = new Element("Space","Start",(Place)new Space("Start",0,200));
 		this.current = first;
 	}
 	
-	public void add(Place p){
-		Element baru = new Element(p);
+	public Element getFirst(){
+		return this.first;
+	}
+	
+	public void add(String key, String value,Place p){
+		Element baru = new Element(key,value,p);
 		baru.setPrev(this.current);
 		baru.setNext(this.first);
 		this.current.setNext(baru);
