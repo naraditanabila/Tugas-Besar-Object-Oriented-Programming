@@ -47,7 +47,7 @@ public class Map<Place> {	//Generic Class
 	}
 	
 	public Map(){
-		this.first = new Element("Space","Start",(Place)new Space("Start",0,200));
+		this.first = new Element("Space","Start",(Place) new Space("Start",0,200)); //ragu disini, aman gak sih dibikin kayak gini?
 		this.current = first;
 	}
 	

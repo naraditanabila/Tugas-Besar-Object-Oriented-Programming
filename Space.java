@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Space {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Card, Community Chest
 	private String name;
 	private int step;
@@ -9,7 +11,7 @@ public class Space {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Car
 		this.cost = cost;
 	}
 	
-	public String getName(){
+	public String getNameSpace(){
 		return this.name;
 	}
 	
@@ -21,7 +23,7 @@ public class Space {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Car
 		this.step=step;
 	}
 	
-	public long getCost(){
+	public int getCost(){
 		return this.cost;
 	}
 	
@@ -29,21 +31,28 @@ public class Space {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Car
 		this.cost=cost;
 	}
 	
-	public void affect(Player p){
-		if (getName().equals("Start")) {
+	public void spaceAffect(Player p){
+		if (getNameSpace().equals("Start")) {
 			p.cekStart();
-		} else if (getName().equals("Free Parking")) {
-			//cara posisi player bisa berubah sesuai input user, dan dapat uang ketika posisi yg dipilih melalui start
-		} else if (getName().equals("Penjara")) {
+		} else if (getNameSpace().equals("Free Parking")) {
+			Scanner s = new Scanner(System.in);
+			String plot = s.next();
+			p.setPos(plot);
+			if (p.getPos().getKey().equals("Space")) {
+				((Space)p.getPos().getPlace()).spaceAffect(p);
+			} else if (p.getPos().getKey().equals("Property")) {
+				((Property)p.getPos().getPlace()).propAffect(p);
+			}
+		} else if (getNameSpace().equals("Penjara")) {
 			System.out.println ("Player "+ p.getID() + "hanya lewat penjara.");
-		} else if (getName().equals("Go to Jail")) {
-			//
-		} else if (getName().equals("Tax")) {
-			
-		} else if (getName().equals("Chance Card")) {
-			
-		} else if (getName().equals("Community Chest")) {
-			
+		} else if (getNameSpace().equals("Go to Jail")) {
+			//method masuk penjara
+		} else if (getNameSpace().equals("Tax")) {
+			p.pay(this.cost);
+		} else if (getNameSpace().equals("Chance Card")) {
+			//method dari chance card
+		} else if (getNameSpace().equals("Community Chest")) {
+			//method dari community chest
 		} 
 	}
 }

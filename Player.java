@@ -85,6 +85,12 @@ public class Player extends Map {
           System.out.println("Player " + playerID + "berhasil mengeluarkan uang sebesar " + x + " .");
      }
 	 
+	 public void pay(Player p, int x) {
+		 this.playerMoney -= x;
+		 p.playerMoney += x;
+		 System.out.println("Player " + this.playerID + "berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID);
+	 }
+	 
 	 public void receive(int x) {
           this.playerMoney += x;
           System.out.println("Player " + playerID + "berhasil mendapatkan uang sebesar " + x + " .");
