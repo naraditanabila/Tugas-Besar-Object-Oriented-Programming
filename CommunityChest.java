@@ -4,9 +4,9 @@ import java.util.Random;
 public class CommunityChest {
     Random rand = new Random();
     
-    ArrayList<String> CommunityChest = new ArrayList<String>();
+    ArrayList<String> ccList = new ArrayList<String>();
     
-    public ChanceCard() {
+    public CommunityChest() {
         chanceLIst.add("Mendapat Sumbangan 1000"); //1, in
         chanceLIst.add("Pajak Negara 2000"); //2, out
         chanceLIst.add("Hadiah Ulang tahun 1750"); //3, in
@@ -25,7 +25,7 @@ public class CommunityChest {
     }
 
     public void print(int n) {
-        System.out.println(CommunityChest.get(n));
+        System.out.println(ccList.get(n));
     }
 
     public void chanceAction(int n, Player p) {

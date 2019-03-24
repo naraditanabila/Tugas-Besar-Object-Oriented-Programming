@@ -25,12 +25,12 @@ public class ChanceCard {
     }
 
     public void print(int n) {
-        System.out.println(chanceCard.get(n));
+        System.out.println(chanceLIsts.get(n));
     }
 
     public void chanceAction(int n, Player p) {
         if (n == 1) {
-
+            p.inJail();
         } else if (n == 2) {
             p.move(3);
         } else if (n == 3) {
@@ -39,7 +39,7 @@ public class ChanceCard {
             int x = p.getMoney()*0.1;
             p.pay(x);
         } else if (n == 5) {
-
+            p.setPos(Start);
         } else if (n == 6) {
             int x = p.getMoney()*0.2;
             p.receive(x);
