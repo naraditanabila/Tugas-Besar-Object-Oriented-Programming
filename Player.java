@@ -7,6 +7,7 @@ public class Player extends Map {
      private Element playerPos;
      private int playerMoney;
      private int playerProp;
+     private boolean playerJail = false;
 
      //Methods
 
@@ -109,5 +110,17 @@ public class Player extends Map {
      public void lvlUp(int x) {
           // masukkin method properti yg lvl up
           // emg perlu ya? wkwk
+     }
+
+     public boolean getJail() {
+          return this.playerJail;
+     }
+
+     public void inJail() {
+          this.playerJail = true;
+     }
+
+     public void outJail() {
+          this.playerJail = false;
      }
 }
