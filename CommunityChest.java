@@ -1,22 +1,23 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.List;
 
 public class CommunityChest {
     Random rand = new Random();
     
-    ArrayList<String> ccList = new ArrayList<String>();
+    List<String> ccList = new ArrayList<String>();
     
     public CommunityChest() {
-        chanceLIst.add("Mendapat Sumbangan 1000"); //1, in
-        chanceLIst.add("Pajak Negara 2000"); //2, out
-        chanceLIst.add("Hadiah Ulang tahun 1750"); //3, in
-        chanceLIst.add("Tagihan BPJS Bulanan 3500"); //4, out
-        chanceLIst.add("Beasiswa BukaPigur 10000"); //5, in
-        chanceLIst.add("Bayar UKT 8000"); //6, out
-        chanceLIst.add("Nemu Duit 2000"); //7, in
-        chanceLIst.add("Dipalak Preman 6500"); //8, out
-        chanceLIst.add("Transferan Orang Tua 5000"); //9, in
-        chanceLIst.add("Bayar Laundry 4000"); //10, out
+        ccList.add("Mendapat Sumbangan 1000"); //1, in
+        ccList.add("Pajak Negara 2000"); //2, out
+        ccList.add("Hadiah Ulang tahun 1750"); //3, in
+        ccList.add("Tagihan BPJS Bulanan 3500"); //4, out
+        ccList.add("Beasiswa BukaPigur 10000"); //5, in
+        ccList.add("Bayar UKT 8000"); //6, out
+        ccList.add("Nemu Duit 2000"); //7, in
+        ccList.add("Dipalak Preman 6500"); //8, out
+        ccList.add("Transferan Orang Tua 5000"); //9, in
+        ccList.add("Bayar Laundry 4000"); //10, out
     };
 
     public int getNum() {
@@ -28,7 +29,7 @@ public class CommunityChest {
         System.out.println(ccList.get(n));
     }
 
-    public void chanceAction(int n, Player p) {
+    public void chestAction(int n, Player p) {
         if (n == 1) {
             p.receive(1000);
         } else if (n == 2) {
