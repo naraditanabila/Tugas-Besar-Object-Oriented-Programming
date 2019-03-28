@@ -5,7 +5,7 @@ public abstract class Property extends Place{ //abstract class
 	private int lvl;
 	
 	public Property (String name, int type, int price){
-		super(name,1);
+		super(name, 1);
 		this.type = type;
 		this.price = price;
 		this.lvl = 0;
@@ -20,7 +20,7 @@ public abstract class Property extends Place{ //abstract class
 		this.owner = p;
 	}
 	
-	public void propAffect(Player p){
+	public void placeAffect(Player p){
 		if (!(getOwner()==null) && !(getOwner().equals(p))) {
 			p.pay(getOwner(),getRent());
 		}
