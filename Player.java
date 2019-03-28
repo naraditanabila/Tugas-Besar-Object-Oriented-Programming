@@ -118,9 +118,11 @@ public class Player extends Map {
 
      public void inJail() {
           this.playerJail = true;
+		  System.out.println("Player " + playerID + "masuk penjara.");
      }
 
      public void outJail() {
           this.playerJail = false;
+		  System.out.println("Player " + playerID + "keluar penjara.");
      }
 }

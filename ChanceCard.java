@@ -7,7 +7,7 @@ public class ChanceCard {
     ArrayList<String> chanceLIst = new ArrayList<String>();
     
     public ChanceCard() {
-        chanceLIst.add("Masuk Penajara"); //1, 
+        chanceLIst.add("Masuk Penjara"); //1, 
         chanceLIst.add("Maju 3 Langkah"); //2, position
         chanceLIst.add("Mundur 3 Langkah"); //3, position
         chanceLIst.add("Bayar Zakat 10%"); //4, outcome
@@ -36,12 +36,12 @@ public class ChanceCard {
         } else if (n == 3) {
             p.move(-3);
         } else if (n == 4) {
-            int x = p.getMoney()*0.1;
+            double x = p.getMoney()*0.1;
             p.pay(x);
         } else if (n == 5) {
-            p.setPos(Start);
+            p.setPos("Start");
         } else if (n == 6) {
-            int x = p.getMoney()*0.2;
+            int x = (Integer) p.getMoney()*0.2;
             p.receive(x);
         } else if (n == 7) {
             p.move(5);

@@ -1,18 +1,13 @@
 import java.util.Scanner;
 
-public class Space {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Card, Community Chest
-	private String name;
+public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Card, Community Chest
 	private int step;
 	private int cost;
 	
 	public Space(String name, int step, int cost){
-		this.name = name;
+		super(name,0);
 		this.step = step;
 		this.cost = cost;
-	}
-	
-	public String getNameSpace(){
-		return this.name;
 	}
 	
 	public int getStep(){
@@ -31,7 +26,7 @@ public class Space {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Car
 		this.cost=cost;
 	}
 	
-	public void spaceAffect(Player p){
+	public void spaceAffect(Player p, ChanceCard a){
 		if (getNameSpace().equals("Start")) {
 			p.cekStart();
 		} else if (getNameSpace().equals("Free Parking")) {
@@ -40,13 +35,13 @@ public class Space {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Car
 			p.setPos(plot);
 			if (p.getPos().getKey().equals("Space")) {
 				((Space)p.getPos().getPlace()).spaceAffect(p);
-			} else if (p.getPos().getKey().equals("Property")) {
+			} else {
 				((Property)p.getPos().getPlace()).propAffect(p);
 			}
 		} else if (getNameSpace().equals("Penjara")) {
 			System.out.println ("Player "+ p.getID() + "hanya lewat penjara.");
 		} else if (getNameSpace().equals("Go to Jail")) {
-			//method masuk penjara
+			p.inJail();
 		} else if (getNameSpace().equals("Tax")) {
 			p.pay(this.cost);
 		} else if (getNameSpace().equals("Chance Card")) {

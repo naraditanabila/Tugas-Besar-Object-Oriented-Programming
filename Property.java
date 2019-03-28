@@ -1,20 +1,15 @@
-public abstract class Property { //abstract class
-	private String name;
+public abstract class Property extends Place{ //abstract class
 	private Player owner;
 	private int price;
 	private int type; /* 0: Utility, 1: Railroad, 2: Lot */ 
 	private int lvl;
 	
 	public Property (String name, int type, int price){
-		this.name = name;
+		super(name,1);
 		this.type = type;
 		this.price = price;
 		this.lvl = 0;
 		this.owner = null;
-	}
-	
-	public String getNameProp(){
-		return this.name;
 	}
 	
 	public Player getOwner(){
