@@ -1,10 +1,10 @@
 //File : Player.java
 
-public class Player extends Map {
+public class Player {
 
      // parameter
      private int playerID;
-     private Element playerPos;
+     private int playerPos;
      private int playerMoney;
      private int playerProp;
      private boolean playerJail = false;
@@ -12,9 +12,9 @@ public class Player extends Map {
      //Methods
 
      //Constructor
-     public Player(int id, Map map) {
+     public Player(int id) {
      this.playerID = id;
-     this.playerPos = map.getFirst();
+     this.playerPos = 0;
      this.playerMoney = 1500;
      this.playerProp = 0;
      }
@@ -25,15 +25,15 @@ public class Player extends Map {
 		 return this.playerID;
 	 }
 	 
-     public void setPos(String x) {
-          while (!this.playerPos.getValue().equals(x)) {
-			this.playerPos = this.playerPos.getNext();
+     public void setPos(int x) {
+          while (this.playerPos != x) {
+			this.playerPos++;
 			this.cekStart();
 		  }
-          System.out.println("Player "+playerID+" berhasil pindah ke "+x);
+          System.out.println("Player "+playerID+" berhasil tempat");
      }
 
-     public Element getPos() {
+     public int getPos() {
           return playerPos;
      }
 
@@ -57,27 +57,16 @@ public class Player extends Map {
 
      //Other methods
      public void move(int x) {
-          if (x<0) {
-			  for (int i=0; i>x; i--) {
-				  this.playerPos = this.playerPos.getPrev();
-				  this.cekStart();
-			  }
-			  System.out.println("Player " + playerID + "berhasil berjalan mundur sejauh " + x +" petak.");
-		  } else {
-			  for (int i=0; i<x; i++) {
-				  this.playerPos = this.playerPos.getNext();
-				  this.cekStart();
-			  }
-			  System.out.println("Player " + playerID + "berhasil berjalan maju sejauh " + x +" petak.");
-          }
+          this.playerPos += x;
+		  if (this.playerPos>39) {
+			  this.playerPos = this.playerPos-40;
+			  this.playerMoney += 200;
+		  }
      }
 	 
 	 public void cekStart() {
-		 if (this.playerPos.getKey().equals("Space")){
-			 if (this.playerPos.getValue().equals("Start")) {
-				this.receive(200);
-				System.out.println("Player " + playerID + "telah melewati start.");
-			 }
+		 if (this.playerPos ==0) {
+				this.playerMoney += 200;
 		 }
 	 }
 
