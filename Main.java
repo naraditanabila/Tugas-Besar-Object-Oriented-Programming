@@ -15,9 +15,13 @@ public class Main {
         
         //Pembacaan jumlah player
         nPlayer = s.nextInt();
+
+        //Pembacaan nama tiap player
         for (int i = 1 ; i <= nPlayer ; i++) {
-            System.out.println("Nama Player Ke-"+i+":");
+            System.out.println("Nama Player Ke-" + i + ":");
             pName = s.next();
+
+            //Instant Player
             //player.add(new Player(pName));
             //Player harusnya parameter nama
 		}
