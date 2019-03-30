@@ -8,6 +8,7 @@ public abstract class Property extends Place{ //abstract class
 	private int type; /* 0: Utility, 1: Railroad, 2: Lot */ 
 	private int lvl;
 	private int set;
+	private int housePrice;
 	
 	public Property (String name, int type, int price, int set){
 		super(name, 1);
@@ -15,6 +16,7 @@ public abstract class Property extends Place{ //abstract class
 		this.price = price;
 		this.lvl = 0;
 		this.set = set;
+		this.housePrice = price/2;
 		this.owner = null;
 	}
 	
@@ -39,6 +41,9 @@ public abstract class Property extends Place{ //abstract class
 		return this.set;
 	}
 	
+	public int getHP() {
+		return this.housePrice;
+	}
 	//Efek saat player berhenti di suatu tempat
 	public void placeAffect(Player p){
 		if (!(getOwner()==null) && !(getOwner().equals(p))) {
@@ -64,7 +69,7 @@ public abstract class Property extends Place{ //abstract class
 
 	public void lvlup(Player p) {
 		if (this.lvl == 0) {
-			if (this.owner == p) {
+			if ((this.owner == p) && (p.getMoney() >= getHP())) {
 				this.lvl = 1;
 			} else {
 				System.out.println("pemilik berbeda");

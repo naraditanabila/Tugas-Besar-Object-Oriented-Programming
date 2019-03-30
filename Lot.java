@@ -1,13 +1,6 @@
 public class Lot extends Property { //inheritance
-	private int housePrice;
-	
-	public Lot (String name, int set, int type, int price, int housePrice){
+	public Lot (String name, int set, int type, int price){
 		super(name,2,price,set);
-		this.housePrice = housePrice;
-	}
-	
-	public int getHousePrice(){
-		return this.housePrice;
 	}
 	
 	public int getRent(){
