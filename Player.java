@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Player {
 
      // parameter
-     private int playerID;
+     private String playerID;
      private int playerPos;
      private int playerMoney;
      private int playerProp;
@@ -14,7 +14,7 @@ public class Player {
      //Methods
 
      //Constructor
-     public Player(int id) {
+     public Player(String id) {
      this.playerID = id;
      this.playerPos = 0;
      this.playerMoney = 1500;
@@ -23,15 +23,15 @@ public class Player {
 
 
      //Get Setter
-	 public int getID(){
+	 public String getID(){
 		 return this.playerID;
 	 }
 	 
      public void setPos(int x) {
-          while (this.playerPos != x) {
-			this.playerPos++;
-			this.cekStart();
+          if (x<this.playerPos) {
+			  this.playerMoney+=200;
 		  }
+		  this.playerPos = x;
           System.out.println("Player "+playerID+" berhasil tempat");
      }
 
