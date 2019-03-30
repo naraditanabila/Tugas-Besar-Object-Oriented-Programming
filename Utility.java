@@ -1,6 +1,6 @@
 public class Utility extends Property { //inheritance
 	public Utility (String name){
-		super(name,0,150);
+		super(name,0,150,5);
 	}
 	
 	public int getRent(){

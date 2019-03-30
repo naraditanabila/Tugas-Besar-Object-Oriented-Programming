@@ -1,6 +1,6 @@
 public class Railroad extends Property { //inheritance
 	public Railroad (String name){
-		super(name,1,200);
+		super(name,1,200,2);
 	}
 	
 	public int getRent(){

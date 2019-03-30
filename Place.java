@@ -1,3 +1,4 @@
+
 public abstract class Place {
 	private String name;
 	private int type; //0: space, 1: properti

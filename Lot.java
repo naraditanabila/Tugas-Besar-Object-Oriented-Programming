@@ -1,15 +1,9 @@
 public class Lot extends Property { //inheritance
 	private int housePrice;
-	private String set;
 	
-	public Lot (String name, String set, int type, int price, int housePrice){
-		super(name,2,price);
-		this.set = set;
+	public Lot (String name, int set, int type, int price, int housePrice){
+		super(name,2,price,set);
 		this.housePrice = housePrice;
-	}
-	
-	public String getSet(){
-		return this.set;
 	}
 	
 	public int getHousePrice(){
@@ -30,10 +24,5 @@ public class Lot extends Property { //inheritance
 		} else {
 			return 4*getPrice();
 		}
-	}
-	
-	@Override
-	public void lvlup(Player P) { //Polymorphism
-		////msh bingung caranya,ada yg bisa?
 	}
 }
