@@ -1,4 +1,5 @@
-//File : Player.java
+import java.util.List;
+import java.util.ArrayList;
 
 public class Player {
 
@@ -7,6 +8,7 @@ public class Player {
      private int playerPos;
      private int playerMoney;
      private int playerProp;
+     List<Property> prop = new ArrayList<Property>();
      private boolean playerJail = false;
 
      //Methods
@@ -96,11 +98,6 @@ public class Player {
           System.out.println("Player " + playerID + "berhasil menjual sebuah properti.");
      }
 
-     public void lvlUp(int x) {
-          // masukkin method properti yg lvl up
-          // emg perlu ya? wkwk
-     }
-
      public boolean getJail() {
           return this.playerJail;
      }
@@ -114,4 +111,14 @@ public class Player {
           this.playerJail = false;
 		  System.out.println("Player " + playerID + "keluar penjara.");
      }
+     
+     public int upAvail(int x) {
+		 int n = 0;
+		 for (int i = 1 ; i <= prop.size() ; i++) {
+			 if (prop.get(i).getSet() == x) {
+				 n++;
+			 }
+		 }
+		 return n;
+	 }
 }
