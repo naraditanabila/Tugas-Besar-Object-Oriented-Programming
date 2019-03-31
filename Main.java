@@ -12,7 +12,7 @@ public class Main {
 		boolean endGame = false;
 		boolean nextP = false;
 
-	   // SWING
+		// SWING
 		/*
 		// Loading LookAndFeel
 		try {
@@ -54,8 +54,8 @@ public class Main {
 		newGameFrame.setLocationRelativeTo(null);
 		newGameFrame.setTitle("Monopoly");
 		newGameFrame.setVisible(true);
-		*/
 		//SWING
+		*/
 
 		//PenambahanMap
 		place.add(new Lot("UDINUS", 1, 400));
