@@ -32,7 +32,7 @@ public class Player {
 			  this.playerMoney+=200;
 		  }
 		  this.playerPos = x;
-          System.out.println("Player "+playerID+" berhasil tempat");
+          System.out.println("Player "+playerID+" berhasil pindah tempat");
      }
 
      public int getPos() {
@@ -55,6 +55,7 @@ public class Player {
 			  this.playerPos = this.playerPos-40;
 			  this.playerMoney += 200;
 		  }
+		  System.out.println("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.");
      }
 	 
 	 public void cekStart() {

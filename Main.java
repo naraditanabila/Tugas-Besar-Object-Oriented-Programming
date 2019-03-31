@@ -227,7 +227,7 @@ public class Main {
 						d1 = dadu.getN1();
 						d2 = dadu.getN2();
 						System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
-						System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
+						//System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
 						player.get(index).move(d1+d2);
 						int type = place.get(player.get(index).getPos()).getType();
 						if (type == 0) {
