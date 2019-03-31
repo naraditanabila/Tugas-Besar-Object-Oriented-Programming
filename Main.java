@@ -229,6 +229,7 @@ public class Main {
 						System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
 						//System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
 						player.get(index).move(d1+d2);
+						System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
 						int type = place.get(player.get(index).getPos()).getType();
 						if (type == 0) {
 							place.get(player.get(index).getPos()).placeAffect(player.get(index));

@@ -59,7 +59,7 @@ public class Property extends Place{ //inheritance
 		} else {
 			setOwner(p);
 			p.pay(getPrice());
-			System.out.println("Uang dikurangi sebesar " + getPrice() + ".");
+			//System.out.println("Uang dikurangi sebesar " + getPrice() + ".");
 			//System.out.println("Player sukses membeli properti");
 			p.addProp(this);
 			if (getSet() == 2) {
@@ -71,6 +71,7 @@ public class Property extends Place{ //inheritance
 				this.lvl = n;
 				p.upProp(this);
 			} else {
+				setOwner(p);
 				lvlup(p);
 			}
 		}

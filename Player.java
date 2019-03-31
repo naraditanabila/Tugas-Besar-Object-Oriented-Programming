@@ -66,7 +66,7 @@ public class Player {
 
      public void pay(int x) {
           this.playerMoney -= x;
-          System.out.println("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + " .");
+          System.out.println("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + ".");
      }
 	 
 	 public void pay(Player p, int x) {
@@ -77,7 +77,7 @@ public class Player {
 	 
 	 public void receive(int x) {
           this.playerMoney += x;
-          System.out.println("Player " + playerID + " berhasil mendapatkan uang sebesar " + x + " .");
+          System.out.println("Player " + playerID + " berhasil mendapatkan uang sebesar " + x + ".");
      }
 
      public void addProp(Property p) {
