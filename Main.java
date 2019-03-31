@@ -33,6 +33,8 @@ public class Main {
 		}
 		 //</editor-fold>
 
+
+
 		//
 		java.awt.EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -47,7 +49,6 @@ public class Main {
 		mainFrame.setIconImage(img.getImage());
 		newGameFrame.setIconImage(img.getImage());
 		mainFrame.setVisible(true);
-
 		// New Game
 		//newGame Frame harusnya didalem MonopolyFrame
 		//biar bisa passing langsung
@@ -57,6 +58,8 @@ public class Main {
 		//SWING
 		*/
 
+
+		
 		//PenambahanMap
 		place.add(new Lot("UDINUS", 1, 400));
 		place.add(new CommunityChest());
