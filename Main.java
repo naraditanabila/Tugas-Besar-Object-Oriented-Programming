@@ -1,9 +1,35 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.io.*;
 
 public class Main { 
-    public static synchronized void main(String[] args) {
+	private String str = "";
+	
+	TimerTask task = new TimerTask(){
+		public void run() {
+			if (str.equals("")) {
+				System.out.println("Tidak memasukkan input!");
+				System.exit(0);
+			}
+		}
+	};
+	
+	public String getInput() throws Exception {
+		Timer t = new Timer();
+		t.schedule(task, 30*1000);
+		
+		System.out.println("Masukkan command: Beli/Upgrade");
+		BufferedReader in = new BufferedReader (
+		new InputStreamReader(System.in));
+		str = in.readLine();
+		t.cancel();
+		return str;
+	}
+	
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         List<Place> place = new ArrayList<Place>();
 		List<Player> player = new ArrayList<Player>();
@@ -91,8 +117,7 @@ public class Main {
         ccList.add("Bayar Laundry 4000",new CommunityChest()); //10, out
         //Iterasi permainan
 		
-		Timer t = new Timer();
-		Turn turn  = new Turn(nPlayer, t);
+		Turn turn  = new Turn(nPlayer);
 
 		// TODO  SWING-game variables
 		/*
@@ -161,14 +186,20 @@ public class Main {
 							place.get(player.get(index).getPos()).placeAffect(player.get(index));
 						} else {
 							if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
-								//Thread masuk disini, kalau sudah lebih dari 30 detik keluar dari while
-								cmd = s.next();
-								//Tambahin case jika Player ingin beli rumah
-								//Ini belum selesai
+								System.out.println("Properti ini milikmu, mau upgrade? Ya/Tidak");
+								try {
+									cmd = (new Main()).getInput();
+								} catch (Exception e) {
+									System.out.println(e);
+								}
+								//If dia ya atau tidak
 							} else if (place.get(player.get(index).getPos()).getOwner() == null) {
-								//perlu pake Thread juga gak?
 								System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini?");
-								cmd = s.next();
+								try {
+									cmd = (new Main()).getInput();
+								} catch (Exception e) {
+									System.out.println(e);
+								}
 								if (cmd.equals("Iya")) {
 									place.get(player.get(index).getPos()).beliProp(player.get(index));
 								}	
