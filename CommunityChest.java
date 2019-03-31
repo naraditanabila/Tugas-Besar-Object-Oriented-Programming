@@ -1,15 +1,16 @@
 import java.util.Random;
 
-public class CommunityChest {
+public class CommunityChest extends Space {
     Random rand = new Random();
 	private int num;
     
-    public CommunityChest(int n) {
-        this.num=n;
-    };
+    public CommunityChest() {
+		super("Community Chest",2,0);
+    }
 
-    public void chestAction(int n, Player p) {
-        if (n == 1) {
+    public void placeAffect(Player p) {
+        int n = rand.nextInt(10)+1;
+		if (n == 1) {
             p.receive(1000);
         } else if (n == 2) {
             p.pay(2000);

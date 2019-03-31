@@ -54,7 +54,7 @@ public class Property extends Place{ //abstract class
 	public void beliProp(Player p) {
 		if (p.getMoney() < getPrice()) {
 			System.out.println("Uang anda tidak cukup untuk dibelikan properti ini");
-		} else if (getOwner() = p) {
+		} else if (getOwner() == p) {
 			System.out.println("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
 		} else {
 			setOwner(p);
@@ -86,7 +86,7 @@ public class Property extends Place{ //abstract class
 			}
 		} else {
 			int x = getSet();
-			if (p.getMoney >= getHP()) {
+			if (p.getMoney() >= getHP()) {
 				if ((x == 1) || (x == 10)) {
 					if ((p.upAvail(x) == 2) && (getLvl() < 4)) {
 						p.pay(getHP());

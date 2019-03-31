@@ -1,8 +1,8 @@
-import java.util.Random;
+//import java.util.Random;
 
 public class ListCard <String, C>{ //generic class, yeayy!
 	private Card first;
-	Random rand = new Random();
+	//Random rand = new Random();
 	
 	public class Card {
 		private String key;
@@ -79,8 +79,8 @@ public class ListCard <String, C>{ //generic class, yeayy!
 		}
   }
   
-  public int getNum() {
+  /*public int getNum() {
     int n = rand.nextInt(10)+1;
     return n;
-  }
-}
+  }*/
+ }

@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Card, Community Chest
 	private int cost;
+	private int tipe; /*chance card:1 community chest:2, lainnya:0*/
 	
-	public Space(String name, int cost){
+	public Space(String name, int tipe, int cost){
 		super(name,0);
+		this.tipe = tipe;
 		this.cost = cost;
 	}
 	
@@ -36,16 +38,15 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 				p.inJail();
 			} else if (getName().equals("Tax")) {
 				p.pay(getCost());
-			} else if (getName().equals("Chance Card")) {
-				ChanceCard cc = new ChanceCard();
+			} /*else if (getName().equals("Chance Card")) {
 				int n = cc.getNum();
 				cc.chanceAction(n, p);
-				cc.print(n);		
+				//cc.print(n);		
 			} else if (getName().equals("Community Chest")) {
 				CommunityChest cr = new CommunityChest();
 				int c = cr.getNum();
 				cr.chestAction(c, p);
-				cr.print(c);
-			} 
+				//cr.print(c);
+			} */
 		}
 }

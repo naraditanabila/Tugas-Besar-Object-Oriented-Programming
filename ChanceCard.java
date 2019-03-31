@@ -1,15 +1,16 @@
 import java.util.Random;
 
-public class ChanceCard {
+public class ChanceCard extends Space{
     Random rand = new Random();
 	private int num;
     
-    public ChanceCard(int n) {
-        this.num = n;
-    };
+    public ChanceCard() {
+		super("Chance Card",1,0);
+    }
 
-    public void chanceAction(int n, Player p) {
-        if (n == 1) {
+    public void placeAffect(Player p) {
+        int n = rand.nextInt(10)+1;
+		if (n == 1) {
             p.inJail();
         } else if (n == 2) {
             p.move(3);
