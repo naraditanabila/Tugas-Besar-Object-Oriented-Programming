@@ -35,12 +35,12 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 				Scanner s = new Scanner(System.in);
 				System.out.println("Masukkan angka 1-40 : ");
 				int plot = s.nextInt();
-				p.setPos(plot);
+				p.setPos(plot-1);
 				s.close();
-				placeAffect(p);
+				//this.placeAffect(p);
 			} else if (getName().equals("Penjara")) {
 				System.out.println ("Player "+ p.getID() + " hanya lewat penjara.");
-			} else if (getName().equals("Go to Jail")) {
+			} else if (getName().equals("Go To Jail")) {
 				p.inJail();
 			} else if (getName().equals("Tax")) {
 				p.pay(getCost());
