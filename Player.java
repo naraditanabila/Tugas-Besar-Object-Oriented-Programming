@@ -48,15 +48,6 @@ public class Player {
           return this.playerMoney;
      }
 
-     public void setProp(int x) {
-          this.playerProp = x;
-          System.out.println("Player setProp " + x);
-     }
-
-     public int getProp() {
-          return this.playerProp;
-     }
-
      //Other methods
      public void move(int x) {
           this.playerPos += x;
@@ -88,14 +79,9 @@ public class Player {
           System.out.println("Player " + playerID + "berhasil mendapatkan uang sebesar " + x + " .");
      }
 
-     public void addProp() {
-          this.playerProp += 1;
+     public void addProp(Property p) {
+          prop.add(p);
           System.out.println("Player " + playerID + "berhasil membeli sebuah properti.");
-     }
-
-     public void removeProp() {
-          this.playerProp -= 1;
-          System.out.println("Player " + playerID + "berhasil menjual sebuah properti.");
      }
 
      public boolean getJail() {
@@ -120,5 +106,13 @@ public class Player {
 			 }
 		 }
 		 return n;
+	 }
+	 
+	 public void upProp(Property p) { //k=set, 
+		 for (int i = 1 ; i <= prop.size() ; i++) {
+			 if (prop.get(i).getSet() == p.getSet()) {
+				 p.setLvl();
+			 }
+		 }
 	 }
 }
