@@ -52,6 +52,11 @@ public class Main {
 		place.add(new Space("Tax", 100));
 		place.add(new Lot("ITB", 1, 2500));
 		
+		//Copy attribut place di main ke Space
+		for (int v = 0 ; v <= place.size() ; v++) {
+			Space.addP(place.get(v));
+		}
+		
         //Pembacaan jumlah player
         nPlayer = s.nextInt();
 
@@ -59,10 +64,7 @@ public class Main {
         for (int i = 1 ; i <= nPlayer ; i++) {
             System.out.println("Nama Player Ke-" + i + ":");
             pName = s.next();
-
-            //Instant Player
-            //player.add(new Player(pName));
-            //Player harusnya parameter nama
+            player.add(new Player(pName));
 		}
         
         //Instant Dadu
