@@ -94,6 +94,23 @@ public class Main {
 		Timer t = new Timer();
 		Turn turn  = new Turn(nPlayer, t);
 
+		// TODO  SWING-game variables
+		/*
+			Status Java Swing
+		boolean rollButtonPressed;
+		boolean buyButtonPressed;
+		boolean notbuyButtonPressed;
+		boolean suicideButtonPressed;
+		boolean sellButtonPressed;
+		boolean upgradeButtonPressed
+		boolean endTurnPressed;
+		boolean startGamePressed;
+		
+		*/
+		// SWING-Game variables
+		//
+
+
 		while (!endGame) {
 			//Gatau disini ada thread apa nggak
 			cmd = s.next();
@@ -179,3 +196,12 @@ public class Main {
         s.close();
     }
 }
+
+/*
+	***************	JAVA SWING	*****************
+*/
+
+/*
+
+
+*/
