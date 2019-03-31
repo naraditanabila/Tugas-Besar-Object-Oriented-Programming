@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public abstract class Property extends Place{ //abstract class
+public class Property extends Place{ //abstract class
 	private Player owner;
 	private int price;
 	private int type; /* 0: Utility, 1: Railroad, 2: Lot */ 
 	private int lvl;
-	private int set;
+	private int set; /* 2: Railroad, 5: Utility */
 	private int housePrice;
 	
 	public Property (String name, int type, int price, int set){
@@ -51,8 +51,6 @@ public abstract class Property extends Place{ //abstract class
 		}
 	}
 	
-	public abstract int getRent();
-	
 	//Beli Properti, dilakukan override pada kelas util dan railroad
 	public void beliProp(Player p) {
 		if (p.getMoney() < getPrice()) {
@@ -94,5 +92,21 @@ public abstract class Property extends Place{ //abstract class
 	
 	public int getLvl(){
 		return this.lvl;
+	}
+	
+	public int getRent(){
+		if (getLvl()==1) {
+			return 1/8*getPrice();
+		} else if (getLvl()==2) {
+			return 1/4*getPrice();
+		} else if (getLvl()==3) {
+			return 1/2*getPrice();
+		} else if (getLvl()==4) {
+			return 1*getPrice();
+		} else if (getLvl()==5) {
+			return 2*getPrice();
+		} else {
+			return 4*getPrice();
+		}
 	}
 }

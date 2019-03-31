@@ -3,7 +3,8 @@ public class Utility extends Property { //inheritance
 		super(name,0,800,5);
 	}
 	
-	public int getRent(){
+	@Override
+	public int getRent(){ //polymorphism, yeayy!
 		if (getLvl()==1) {
 			return 1/8*getPrice();
 		} else {
