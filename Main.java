@@ -96,6 +96,7 @@ public class Main {
 
 		// TODO  SWING-game variables
 		/*
+			Status Java Swing
 		boolean rollButtonPressed;
 		boolean buyButtonPressed;
 		boolean notbuyButtonPressed;
@@ -195,3 +196,12 @@ public class Main {
         s.close();
     }
 }
+
+/*
+	***************	JAVA SWING	*****************
+*/
+
+/*
+
+
+*/
