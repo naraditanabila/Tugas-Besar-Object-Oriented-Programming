@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class ListCard <String, C>{
+public class ListCard <String, C>{ //generic class, yeayy!
 	private Card first;
 	Random rand = new Random();
 	
