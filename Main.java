@@ -21,7 +21,7 @@ public class Main {
 		Timer t = new Timer();
 		t.schedule(task, 30*1000);
 		
-		System.out.println("Masukkan command: Beli/Upgrade");
+		System.out.print("Masukkan command: ");
 		BufferedReader in = new BufferedReader (
 		new InputStreamReader(System.in));
 		str = in.readLine();
@@ -242,13 +242,13 @@ public class Main {
 								}
 								//If dia ya atau tidak
 							} else if (place.get(player.get(index).getPos()).getOwner() == null) {
-								System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini?");
+								System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
 								try {
 									cmd = (new Main()).getInput();
 								} catch (Exception e) {
 									System.out.println(e);
 								}
-								if (cmd.equals("Iya")) {
+								if (cmd.equals("Ya")) {
 									place.get(player.get(index).getPos()).beliProp(player.get(index));
 								}	
 							} else {	

@@ -60,7 +60,7 @@ public class Property extends Place{ //inheritance
 			setOwner(p);
 			p.pay(getPrice());
 			System.out.println("Uang dikurangi sebesar " + getPrice() + ".");
-			System.out.println("Player sukses membeli properti");
+			//System.out.println("Player sukses membeli properti");
 			p.addProp(this);
 			if (getSet() == 2) {
 				int n = (p.upAvail(2) - 1); //membaca jumlah set dikurangi 1

@@ -17,7 +17,7 @@ public class Player {
      public Player(String id) {
      this.playerID = id;
      this.playerPos = 0;
-     this.playerMoney = 1500;
+     this.playerMoney = 15000;
      this.playerProp = 0;
      }
 
@@ -65,23 +65,23 @@ public class Player {
 
      public void pay(int x) {
           this.playerMoney -= x;
-          System.out.println("Player " + playerID + "berhasil mengeluarkan uang sebesar " + x + " .");
+          System.out.println("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + " .");
      }
 	 
 	 public void pay(Player p, int x) {
 		 this.playerMoney -= x;
 		 p.playerMoney += x;
-		 System.out.println("Player " + this.playerID + "berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID);
+		 System.out.println("Player " + this.playerID + " berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID);
 	 }
 	 
 	 public void receive(int x) {
           this.playerMoney += x;
-          System.out.println("Player " + playerID + "berhasil mendapatkan uang sebesar " + x + " .");
+          System.out.println("Player " + playerID + " berhasil mendapatkan uang sebesar " + x + " .");
      }
 
      public void addProp(Property p) {
           prop.add(p);
-          System.out.println("Player " + playerID + "berhasil membeli sebuah properti.");
+          System.out.println("Player " + playerID + " berhasil membeli sebuah properti.");
      }
 
      public boolean getJail() {
@@ -90,17 +90,17 @@ public class Player {
 
      public void inJail() {
           this.playerJail = true;
-		  System.out.println("Player " + playerID + "masuk penjara.");
+		  System.out.println("Player " + playerID + " masuk penjara.");
      }
 
      public void outJail() {
           this.playerJail = false;
-		  System.out.println("Player " + playerID + "keluar penjara.");
+		  System.out.println("Player " + playerID + " keluar penjara.");
      }
      
      public int upAvail(int x) {
 		 int n = 0;
-		 for (int i = 1 ; i <= prop.size() ; i++) {
+		 for (int i = 0 ; i < prop.size() ; i++) {
 			 if (prop.get(i).getSet() == x) {
 				 n++;
 			 }
@@ -109,7 +109,7 @@ public class Player {
 	 }
 	 
 	 public void upProp(Property p) { //k=set, 
-		 for (int i = 1 ; i <= prop.size() ; i++) {
+		 for (int i = 0 ; i < prop.size() ; i++) {
 			 if (prop.get(i).getSet() == p.getSet()) {
 				 p.setLvl();
 			 }
