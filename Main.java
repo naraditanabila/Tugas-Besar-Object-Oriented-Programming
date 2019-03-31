@@ -52,11 +52,6 @@ public class Main {
 		place.add(new Space("Tax", 100));
 		place.add(new Lot("ITB", 1, 2500));
 		
-		//Copy attribut place di main ke Space
-		for (int v = 0 ; v <= place.size() ; v++) {
-			Space.addP(place.get(v));
-		}
-		
         //Pembacaan jumlah player
         nPlayer = s.nextInt();
 
