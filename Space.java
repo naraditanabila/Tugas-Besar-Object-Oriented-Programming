@@ -39,7 +39,7 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 				s.close();
 				placeAffect(p);
 			} else if (getName().equals("Penjara")) {
-				System.out.println ("Player "+ p.getID() + "hanya lewat penjara.");
+				System.out.println ("Player "+ p.getID() + " hanya lewat penjara.");
 			} else if (getName().equals("Go to Jail")) {
 				p.inJail();
 			} else if (getName().equals("Tax")) {

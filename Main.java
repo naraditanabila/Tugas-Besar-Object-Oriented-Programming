@@ -93,6 +93,7 @@ public class Main {
 
 		
 		//PenambahanMap
+		place.add(new Space("Start",0,200));
 		place.add(new Lot("UDINUS", 1, 400));
 		place.add(new CommunityChest());
 		place.add(new Lot("UPN Surabaya", 1, 400));
