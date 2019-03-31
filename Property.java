@@ -89,13 +89,15 @@ public class Property extends Place{ //abstract class
 			if (p.getMoney >= getHP()) {
 				if ((x == 1) || (x == 10)) {
 					if ((p.upAvail(x) == 2) && (getLvl() < 4)) {
-						this.lvl = getLvl() + 1;
+						p.pay(getHP());
+						setLvl();
 					} else {
 						System.out.println("Belum punya satu komplek");
 					}
 				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
 					if ((p.upAvail(x) == 3) && (getLvl() < 4)) {
-						this.lvl = getLvl() + 1;
+						p.pay(getHP());
+						setLvl();
 					} else {
 						System.out.println("Belum punya satu komplek");
 					}
