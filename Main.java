@@ -12,6 +12,37 @@ public class Main {
         boolean endGame = false;
         boolean nextP = false;
 
+	   // SWING
+		/*
+		// Loading LookAndFeel
+		try {
+			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+			    if ("Nimbus".equals(info.getName())) {
+				   javax.swing.UIManager.setLookAndFeel(info.getClassName());
+				   break;
+			    }
+			}
+		} catch (ClassNotFoundException ex) {
+			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		} catch (InstantiationException ex) {
+			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		} catch (IllegalAccessException ex) {
+			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		} catch (javax.swing.UnsupportedLookAndFeelException ex) {
+			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+		}
+		 //</editor-fold>
+
+		//
+		java.awt.EventQueue.invokeLater(new Runnable() {
+			public void run() {
+			    new MonopolyFrame().setVisible(true);
+			}
+		});
+
+		*/
+		//SWING
+		
         //PenambahanMap
         place.add(new Lot("UDINUS", 1, 400));
 		place.add(new CommunityChest());
@@ -110,7 +141,7 @@ public class Main {
 		// SWING-Game variables
 		//
 
-
+		
 		while (!endGame) {
 			//Gatau disini ada thread apa nggak
 			cmd = s.next();
