@@ -7,7 +7,6 @@ public class Main {
         Scanner s = new Scanner(System.in);
         List<Place> place = new ArrayList<Place>();
 		List<Player> player = new ArrayList<Player>();
-		Player player;
         int d1, d2, nPlayer;
         String pName, cmd;
         boolean endGame = false;
@@ -128,14 +127,14 @@ public class Main {
 						player.get(index).move(d1+d2);
 						int type = place.get(player.get(index).getPos()).getType();
 						if (type == 0) {
-							Space.placeAffect(player.get(index));
+							place.get(player.get(index).getPos()).placeAffect(player.get(index));
 						} else {
 							if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
 								//Thread masuk disini, kalau sudah lebih dari 30 detik keluar dari while
 								cmd = s.next();
 								//Ini belum selesai
 							} else {	
-								Property.placeAffect(player.get(index));
+								place.get(player.get(index).getPos()).placeAffect(player.get(index));
 							}
 						}
 						if (d1 == d2){

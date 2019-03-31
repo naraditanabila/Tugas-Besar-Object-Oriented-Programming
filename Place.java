@@ -24,5 +24,6 @@ public abstract class Place {
 		this.type = type;
 	}
 	
+	public abstract Player getOwner();
 	public abstract void placeAffect(Player p);
 }
