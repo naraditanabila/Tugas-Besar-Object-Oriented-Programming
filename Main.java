@@ -5,8 +5,31 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
 
-public class Main { 
-	public static synchronized void main(String[] args) {
+public class Main {
+	private String str = "";
+	
+	TimerTask task = new TimerTask(){
+		public void run() {
+			if (str.equals("")) {
+				System.out.println("Tidak memasukkan input!");
+				System.exit(0);
+			}
+		}
+	};
+	
+	public String getInput() throws Exception {
+		Timer t = new Timer();
+		t.schedule(task, 30*1000);
+		
+		System.out.println("Masukkan command: Beli/Upgrade");
+		BufferedReader in = new BufferedReader (
+		new InputStreamReader(System.in));
+		str = in.readLine();
+		t.cancel();
+		return str;
+	}
+	 
+	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		List<Place> place = new ArrayList<Place>();
 		List<Player> player = new ArrayList<Player>();
