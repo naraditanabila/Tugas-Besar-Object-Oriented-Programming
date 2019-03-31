@@ -51,20 +51,32 @@ public class Property extends Place{ //abstract class
 		}
 	}
 	
-	//Beli Properti, dilakukan override pada kelas util dan railroad
 	public void beliProp(Player p) {
 		if (p.getMoney() < getPrice()) {
-			System.out.println("Uang anda saat ini " + p.getMoney() + ", tidak cukup untuk dibelikan properti ini");
+			System.out.println("Uang anda tidak cukup untuk dibelikan properti ini");
+		} else if (getOwner() = p) {
+			System.out.println("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
 		} else {
 			setOwner(p);
-			lvlup(p);
 			p.pay(getPrice());
 			System.out.println("Uang dikurangi sebesar " + getPrice() + ".");
 			System.out.println("Player sukses membeli properti");
+			p.addProp(this);
+			if (getSet() == 2) {
+				int n = (p.upAvail(2) - 1); //membaca jumlah set dikurangi 1
+				this.lvl = n;
+				p.upProp(this);
+			} else if (getSet() == 5) {
+				int n = (p.upAvail(5) - 1); //membaca jumlah set dikurangi 1
+				this.lvl = n;
+				p.upProp(this);
+			} else {
+				lvlup(p);
+			}
 		}
 	}
 	
-
+	//method cuma bisa diakses oleh Player yang memiliki
 	public void lvlup(Player p) {
 		if (this.lvl == 0) {
 			if ((this.owner == p) && (p.getMoney() >= getHP())) {
@@ -74,24 +86,32 @@ public class Property extends Place{ //abstract class
 			}
 		} else {
 			int x = getSet();
-			if ((x == 1) || (x == 10)) {
-				if ((p.upAvail(x) == 2) && (getLvl() < 4)) {
-					this.lvl = getLvl() + 1;
-				} else {
-					System.out.println("Belum punya satu komplek");
+			if (p.getMoney >= getHP()) {
+				if ((x == 1) || (x == 10)) {
+					if ((p.upAvail(x) == 2) && (getLvl() < 4)) {
+						this.lvl = getLvl() + 1;
+					} else {
+						System.out.println("Belum punya satu komplek");
+					}
+				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
+					if ((p.upAvail(x) == 3) && (getLvl() < 4)) {
+						this.lvl = getLvl() + 1;
+					} else {
+						System.out.println("Belum punya satu komplek");
+					}
 				}
-			} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
-				if ((p.upAvail(x) == 3) && (getLvl() < 4)) {
-					this.lvl = getLvl() + 1;
-				} else {
-					System.out.println("Belum punya satu komplek");
-				}
+			} else {
+				System.out.println("Uang anda tidak mencukupi");
 			}
 		}
 	}
 	
 	public int getLvl(){
 		return this.lvl;
+	}
+	
+	public void setLvl() {
+		this.lvl++;
 	}
 	
 	public int getRent(){
