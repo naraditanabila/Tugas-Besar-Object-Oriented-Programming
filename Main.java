@@ -39,10 +39,24 @@ public class Main {
 			    new MonopolyFrame().setVisible(true);
 			}
 		});
+		//
+		NewGame newGameFrame = new NewGame();
+		MonopolyFrame mainFrame = new MonopolyFrame();
+		//mainFrame
+		ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
+		mainFrame.setIconImage(img.getImage());
+		newGameFrame.setIconImage(img.getImage());
+		mainFrame.setVisible(true);
 
+		// New Game
+		//newGame Frame harusnya didalem MonopolyFrame
+		//biar bisa passing langsung
+		newGameFrame.setLocationRelativeTo(null);
+		newGameFrame.setTitle("Monopoly");
+		newGameFrame.setVisible(true);
 		*/
 		//SWING
-		
+
         //PenambahanMap
         place.add(new Lot("UDINUS", 1, 400));
 		place.add(new CommunityChest());
