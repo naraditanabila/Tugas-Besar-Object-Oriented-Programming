@@ -102,6 +102,8 @@ public class Property extends Place{ //inheritance
 					} else {
 						System.out.println("Belum punya satu komplek");
 					}
+				} else {
+					System.out.println("Method upgrade hanya untuk Lot!");
 				}
 			} else {
 				System.out.println("Uang anda tidak mencukupi");
@@ -115,6 +117,7 @@ public class Property extends Place{ //inheritance
 	
 	public void setLvl() {
 		this.lvl++;
+		System.out.println("Level bangunan anda sekarang adalah " + getLvl());
 	}
 	
 	public int getRent(){
