@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Card, Community Chest
 	private int cost;
-	List<Place> p = new ArrayList<Place>();
+	//List<Place> p = new ArrayList<Place>();
 	
 	public Space(String name, int cost){
 		super(name,0);

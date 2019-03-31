@@ -1,33 +1,12 @@
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.List;
 
 public class CommunityChest {
     Random rand = new Random();
+	private int num;
     
-    List<String> ccList = new ArrayList<String>();
-    
-    public CommunityChest() {
-        ccList.add("Mendapat Sumbangan 1000"); //1, in
-        ccList.add("Pajak Negara 2000"); //2, out
-        ccList.add("Hadiah Ulang tahun 1750"); //3, in
-        ccList.add("Tagihan BPJS Bulanan 3500"); //4, out
-        ccList.add("Beasiswa BukaPigur 10000"); //5, in
-        ccList.add("Bayar UKT 8000"); //6, out
-        ccList.add("Nemu Duit 2000"); //7, in
-        ccList.add("Dipalak Preman 6500"); //8, out
-        ccList.add("Transferan Orang Tua 5000"); //9, in
-        ccList.add("Bayar Laundry 4000"); //10, out
+    public CommunityChest(int n) {
+        this.num=n;
     };
-
-    public int getNum() {
-        int n = rand.nextInt(10);
-        return n;
-    }
-
-    public void print(int n) {
-        System.out.println(ccList.get(n));
-    }
 
     public void chestAction(int n, Player p) {
         if (n == 1) {

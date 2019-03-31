@@ -1,33 +1,12 @@
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.List;
 
 public class ChanceCard {
     Random rand = new Random();
+	private int num;
     
-    List<String> chanceList = new ArrayList<String>();
-    
-    public ChanceCard() {
-        chanceList.add("Masuk Penajara"); //1, 
-        chanceList.add("Maju 3 Langkah"); //2, position
-        chanceList.add("Mundur 3 Langkah"); //3, position
-        chanceList.add("Bayar Zakat 10%"); //4, outcome
-        chanceList.add("Pergi ke Start"); //5, position
-        chanceList.add("Mendapat Sumbangan 20%"); //6, income
-        chanceList.add("Maju 5 Langkah"); //7, position
-        chanceList.add("Mundur 5 Langkah"); //8, position
-        chanceList.add("Mundur 3 Langkah"); //9, position
-        chanceList.add("Maju 5 Langkah"); //10, position
+    public ChanceCard(int n) {
+        this.num = n;
     };
-
-    public int getNum() {
-        int n = rand.nextInt(10);
-        return n;
-    }
-
-    public void print(int n) {
-        System.out.println(chanceList.get(n));
-    }
 
     public void chanceAction(int n, Player p) {
         if (n == 1) {
