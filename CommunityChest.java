@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class CommunityChest extends Space {
+public class CommunityChest extends Space { //inheritanse
     Random rand = new Random();
 	private int num;
     

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Property extends Place{ //abstract class
+public class Property extends Place{ //inheritance
 	private Player owner;
 	private int price;
 	private int type; /* 0: Utility, 1: Railroad, 2: Lot */ 
@@ -88,14 +88,14 @@ public class Property extends Place{ //abstract class
 			int x = getSet();
 			if (p.getMoney() >= getHP()) {
 				if ((x == 1) || (x == 10)) {
-					if ((p.upAvail(x) == 2) && (getLvl() < 4)) {
+					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
 						p.pay(getHP());
 						setLvl();
 					} else {
 						System.out.println("Belum punya satu komplek");
 					}
 				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
-					if ((p.upAvail(x) == 3) && (getLvl() < 4)) {
+					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
 						p.pay(getHP());
 						setLvl();
 					} else {

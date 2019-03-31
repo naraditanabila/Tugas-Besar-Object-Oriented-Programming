@@ -1,5 +1,5 @@
 
-public abstract class Place {
+public abstract class Place {  //abstract class
 	private String name;
 	private int type; //0: space, 1: properti
 	

@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class ChanceCard extends Space{
+public class ChanceCard extends Space{ //inheritance
     Random rand = new Random();
 	private int num;
     

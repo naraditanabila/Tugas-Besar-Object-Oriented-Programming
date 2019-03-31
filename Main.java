@@ -14,12 +14,12 @@ public class Main {
 
         //PenambahanMap
         place.add(new Lot("UDINUS", 1, 400));
-		place.add(new Space("Community Chest",2,0));
+		place.add(new CommunityChest());
         place.add(new Lot("UPN Surabaya", 1, 400));
 		place.add(new Space("Tax", 0,500));
 		place.add(new Railroad("Laboratorium 1"));
 		place.add(new Lot("UNISBA", 3, 600));
-		place.add(new Space("Chance Card",1, 0));
+		place.add(new ChanceCard());
 		place.add(new Lot("POLBAN", 3, 700));
 		place.add(new Lot("ITHB", 3, 800));
 		place.add(new Space("Penjara",0, 0));
@@ -29,12 +29,12 @@ public class Main {
 		place.add(new Lot("UNPAR", 4, 900));
 		place.add(new Railroad("Laboratorium 2"));
 		place.add(new Lot("UII", 6, 1000));
-		place.add(new Space("Community Chest",2,0));
+		place.add(new CommunityChest());
 		place.add(new Lot("UPN Jogja", 6, 1000));
 		place.add(new Lot("Atma Jaya", 6, 1100));
 		place.add(new Space("Free Parking",0, 0));
 		place.add(new Lot("BINUS", 7, 1200));
-		place.add(new Space("Chance Card",1, 0));
+		place.add(new ChanceCard());
 		place.add(new Lot("Trisakti", 7, 1200));
 		place.add(new Lot("UNTAR", 7, 1200));
 		place.add(new Railroad("Laboratorium 3"));
@@ -45,10 +45,10 @@ public class Main {
 		place.add(new Space("Go To Jail",0, 0));
 		place.add(new Lot("UB", 9, 1500));
 		place.add(new Lot("UGM", 9, 1600));
-		place.add(new Space("Community Chest",2, 0));
+		place.add(new CommunityChest());
 		place.add(new Lot("ITS", 9, 1600));
 		place.add(new Railroad("Laboratorium 4"));
-		place.add(new Space("Chance Card",1, 0));
+		place.add(new ChanceCard());
 		place.add(new Lot("UI", 10, 2000));
 		place.add(new Space("Tax",0, 100));
 		place.add(new Lot("ITB", 10, 2500));
@@ -113,8 +113,22 @@ public class Main {
 							System.out.println("Dadu tidak sama");
 						}
 					} else if (x.equals("Bayar")) {
-						player.get(index).outJail();
-						System.out.println("Selamat! anda keluar dari sini");
+						if (player.get(index).getMoney()<1000) {
+							System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
+							d1 = dadu.getN1();
+							d2 = dadu.getN2();
+							System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+							if (d1 == d2) {
+								player.get(index).outJail();
+								System.out.println("Selamat! anda keluar dari sini");
+							} else {
+								System.out.println("Dadu tidak sama");
+							}
+						} else {
+							player.get(index).pay(1000);
+							player.get(index).outJail();
+							System.out.println("Selamat! anda keluar dari sini");
+						}
 					}
 				} else {
 					boolean db = true;
@@ -132,7 +146,15 @@ public class Main {
 							if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
 								//Thread masuk disini, kalau sudah lebih dari 30 detik keluar dari while
 								cmd = s.next();
+								//Tambahin case jika Player ingin beli rumah
 								//Ini belum selesai
+							} else if (place.get(player.get(index).getPos()).getOwner() == null) {
+								//perlu pake Thread juga gak?
+								System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini?");
+								cmd = s.next();
+								if (cmd.equals("Iya")) {
+									place.get(player.get(index).getPos()).beliProp(player.get(index));
+								}	
 							} else {	
 								place.get(player.get(index).getPos()).placeAffect(player.get(index));
 							}
