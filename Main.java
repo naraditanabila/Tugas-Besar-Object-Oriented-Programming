@@ -252,7 +252,7 @@ public class Main {
 									System.out.println("Masukkan nama yang ingin dituju : ");
 									int plot = s.nextInt();
 									player.get(index).setPos(plot-1);
-								} else if (place.get(player.get(index).getPos()).getName() == "Chancen Card") {
+								} else if (place.get(player.get(index).getPos()).getName() == "Chance Card") {
 									place.get(player.get(index).getPos()).placeAffect(player.get(index));
 								} else {
 									place.get(player.get(index).getPos()).placeAffect(player.get(index));
