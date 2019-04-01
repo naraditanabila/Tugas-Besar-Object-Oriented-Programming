@@ -247,12 +247,12 @@ public class Main {
 							if (type == 0) {
 								//Free Parking
 								if (place.get(player.get(index).getPos()).getName() == "Free Parking") {
-									System.out.println("Masukkan angka 1-40 : ");
+									System.out.println("Masukkan nama yang ingin dituju : ");
 									int plot = s.nextInt();
 									player.get(index).setPos(plot-1);
-								} else if ((place.get(player.get(index).getPos()).getName() == "Penjara")
-											|| (place.get(player.get(index).getPos()).getName() == "Tax") || 
-											(place.get(player.get(index).getPos()).getName() == "Community Chest")) { //Selain Free Parking
+								} else if (place.get(player.get(index).getPos()).getName() == "Chancen Card") {
+									place.get(player.get(index).getPos()).placeAffect(player.get(index));
+								} else {
 									place.get(player.get(index).getPos()).placeAffect(player.get(index));
 									again = false;
 								}
