@@ -11,6 +11,7 @@ public class ChanceCard extends Space{
     public void placeAffect(Player p) {
         int n = rand.nextInt(10)+1;
 		if (n == 1) {
+			p.setPos(30);
             p.inJail();
         } else if (n == 2) {
             p.move(3);
@@ -22,6 +23,7 @@ public class ChanceCard extends Space{
             p.setPos(0);
         } else if (n == 6) {
             p.setPos(30);
+			p.inJail();
         } else if (n == 7) {
             p.move(5);
         } else if (n == 8) {

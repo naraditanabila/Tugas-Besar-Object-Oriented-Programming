@@ -122,13 +122,13 @@ public class Property extends Place{ //inheritance
 	
 	public int getRent(){
 		if (getLvl()==1) {
-			return 1/8*getPrice();
+			return getPrice()/8;
 		} else if (getLvl()==2) {
-			return 1/4*getPrice();
+			return getPrice()/4;
 		} else if (getLvl()==3) {
-			return 1/2*getPrice();
+			return getPrice()/2;
 		} else if (getLvl()==4) {
-			return 1*getPrice();
+			return getPrice();
 		} else if (getLvl()==5) {
 			return 2*getPrice();
 		} else {

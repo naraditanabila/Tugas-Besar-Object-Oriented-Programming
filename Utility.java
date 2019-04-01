@@ -6,9 +6,9 @@ public class Utility extends Property { //inheritance
 	@Override
 	public int getRent(){ //polymorphism, yeayy!
 		if (getLvl()==1) {
-			return 1/8*getPrice();
+			return getPrice()/8;
 		} else {
-			return 1/2*getPrice();
+			return getPrice()/2;
 		}
 	}
 	

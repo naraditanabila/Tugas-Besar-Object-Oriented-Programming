@@ -191,7 +191,7 @@ public class Main {
 
 		
 		while (!endGame) {
-			//Gatau disini ada thread apa nggak
+			System.out.println(player.get(turn.getPlayer()).getID() + " bermain");
 			System.out.println("Pilih roll atau quit");
 			cmd = s.next();
 			if (cmd.equals("roll")) {
@@ -243,9 +243,9 @@ public class Main {
 						//System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
 						player.get(index).move(d1+d2);
 						System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
-						int type = place.get(player.get(index).getPos()).getType();
 						boolean again = true;
 						while (again) { //pengulangan
+							int type = place.get(player.get(index).getPos()).getType();
 							if (type == 0) {
 								//Free Parking
 								if (place.get(player.get(index).getPos()).getName() == "Free Parking") {
@@ -305,7 +305,6 @@ public class Main {
 				endGame = true;
 			}
 		}
-		//Tutup scanner (penting ga sih)
 		s.close();
 	}
 }
