@@ -13,6 +13,7 @@ public class Main {
 		public void run() {
 			if (str.equals("")) {
 				System.out.println("Tidak memasukkan input!");
+				System.out.println("Press [Enter] to continue");
 				nin = true;
 			}
 		}
@@ -191,6 +192,7 @@ public class Main {
 		
 		while (!endGame) {
 			//Gatau disini ada thread apa nggak
+			System.out.println("Pilih roll atau quit");
 			cmd = s.next();
 			if (cmd.equals("roll")) {
 				int index = turn.getPlayer();
