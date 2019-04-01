@@ -27,4 +27,5 @@ public abstract class Place {  //abstract class
 	public abstract Player getOwner();
 	public abstract void placeAffect(Player p);
 	public abstract void beliProp(Player p);
+	public abstract void lvlup(Player p);
 }

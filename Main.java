@@ -7,12 +7,13 @@ import java.io.*;
 
 public class Main {
 	private String str = "";
+	boolean nin = false;
 	
 	TimerTask task = new TimerTask(){
 		public void run() {
 			if (str.equals("")) {
 				System.out.println("Tidak memasukkan input!");
-				System.exit(0);
+				nin = true;
 			}
 		}
 	};
@@ -26,7 +27,11 @@ public class Main {
 		new InputStreamReader(System.in));
 		str = in.readLine();
 		t.cancel();
-		return str;
+		if (this.nin == false) {
+			return str;
+		} else {
+			return null;
+		}
 	}
 	 
 	public static void main(String[] args) {
@@ -241,7 +246,9 @@ public class Main {
 								} catch (Exception e) {
 									System.out.println(e);
 								}
-								//If dia ya atau tidak
+								if (cmd.equals("Ya")) {
+									place.get(player.get(index).getPos()).lvlup(player.get(index));
+								}	
 							} else if (place.get(player.get(index).getPos()).getOwner() == null) {
 								System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
 								try {
