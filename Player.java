@@ -84,6 +84,14 @@ public class Player {
           prop.add(p);
           System.out.println("Player " + playerID + " berhasil membeli sebuah properti.");
      }
+     
+     public Property getProp(int i) {
+		 return prop.get(i);
+	 }
+	 
+	 public int sizeProp() {
+		 return prop.size();
+	 }
 
      public boolean getJail() {
           return this.playerJail;
@@ -109,11 +117,9 @@ public class Player {
 		 return n;
 	 }
 	 
-	 public void upProp(Property p) { //k=set, 
-		 for (int i = 0 ; i < prop.size() ; i++) {
-			 if (prop.get(i).getSet() == p.getSet()) {
-				 p.setLvl();
-			 }
-		 }
+	 public void upProp(Property p, int i, int k) { //k=set,
+		if (prop.get(i).getSet() == k) {
+			p.setLvl();
+		}
 	 }
 }

@@ -65,11 +65,17 @@ public class Property extends Place{ //inheritance
 			if (getSet() == 2) {
 				int n = (p.upAvail(2) - 1); //membaca jumlah set dikurangi 1
 				this.lvl = n;
-				p.upProp(this);
+				for (int i = 0 ; i < p.sizeProp() ; i++) {
+					p.upProp(p.getProp(i), i, 2);
+				}
+				System.out.println("Level Bangunan Sekarang : " + getLvl());
 			} else if (getSet() == 5) {
 				int n = (p.upAvail(5) - 1); //membaca jumlah set dikurangi 1
 				this.lvl = n;
-				p.upProp(this);
+				for (int i = 0 ; i < p.sizeProp() ; i++) {
+					p.upProp(p.getProp(i), i, 5);
+				}
+				System.out.println("Level Bangunan Sekarang : " + getLvl());
 			} else {
 				setOwner(p);
 				lvlup(p);
@@ -117,7 +123,7 @@ public class Property extends Place{ //inheritance
 	
 	public void setLvl() {
 		this.lvl++;
-		System.out.println("Level bangunan anda sekarang adalah " + getLvl());
+		//System.out.println("Level bangunan anda sekarang adalah " + getLvl());
 	}
 	
 	public int getRent(){
