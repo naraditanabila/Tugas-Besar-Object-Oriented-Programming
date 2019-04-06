@@ -194,28 +194,20 @@ public class Main {
 			System.out.println(player.get(turn.getPlayer()).getID() + " bermain");
 			System.out.println("Pilih roll atau quit");
 			cmd = s.next();
-			if (cmd.equals("roll")) {
-				int index = turn.getPlayer();
-				if (player.get(index).getJail()) {
-					System.out.println("Silahkan pilih Bayar atau Dadu");
-					try {
-						cmd = (new Main()).getInput();
-					} catch (Exception e) {
-						System.out.println(e);
-					}
-					if (cmd.equals("Dadu")) {
-						d1 = dadu.getN1();
-						d2 = dadu.getN2();
-						System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
-						if (d1 == d2) {
-							player.get(index).outJail();
-							System.out.println("Selamat! anda keluar dari sini");
-						} else {
-							System.out.println("Dadu tidak sama");
+			int index = turn.getPlayer();
+			if (!(player.get(index).getKalah())) {
+				if (cmd.equals("roll")) {
+					System.out.println("--------------------");
+					System.out.println(player.get(index));
+					System.out.println("--------------------");
+					if (player.get(index).getJail()) {
+						System.out.println("Silahkan pilih Bayar atau Dadu");
+						try {
+							cmd = (new Main()).getInput();
+						} catch (Exception e) {
+							System.out.println(e);
 						}
-					} else if (cmd.equals("Bayar")) {
-						if (player.get(index).getMoney()<1000) {
-							System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
+						if (cmd.equals("Dadu")) {
 							d1 = dadu.getN1();
 							d2 = dadu.getN2();
 							System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
@@ -225,89 +217,104 @@ public class Main {
 							} else {
 								System.out.println("Dadu tidak sama");
 							}
-						} else {
-							player.get(index).pay(1000);
-							player.get(index).outJail();
-							System.out.println("Selamat! anda keluar dari sini");
-						}
-					} else {
-						turn.nextPlayer();
-					}
-				} else {
-					boolean db = true;
-					int dbi = 1;
-					while (db && (dbi <= 3)) {
-						d1 = dadu.getN1();
-						d2 = dadu.getN2();
-						System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
-						//System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
-						player.get(index).move(d1+d2);
-						System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
-						boolean again = true;
-						while (again) { //pengulangan
-							int type = place.get(player.get(index).getPos()).getType();
-							if (type == 0) {
-								//Free Parking
-								if (place.get(player.get(index).getPos()).getName() == "Free Parking") {
-									System.out.println("Masukkan nama yang ingin dituju : ");
-									int plot = s.nextInt();
-									player.get(index).setPos(plot-1);
-								} else if (place.get(player.get(index).getPos()).getName() == "Chance Card") {
-									place.get(player.get(index).getPos()).placeAffect(player.get(index));
+						} else if (cmd.equals("Bayar")) {
+							if (player.get(index).getMoney()<1000) {
+								System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
+								d1 = dadu.getN1();
+								d2 = dadu.getN2();
+								System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+								if (d1 == d2) {
+									player.get(index).outJail();
+									System.out.println("Selamat! anda keluar dari sini");
 								} else {
-									place.get(player.get(index).getPos()).placeAffect(player.get(index));
-									again = false;
+									System.out.println("Dadu tidak sama");
 								}
 							} else {
-								if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
-									System.out.println("Properti ini milikmu, mau upgrade? Ya/Tidak");
-									try {
-										cmd = (new Main()).getInput();
-									} catch (Exception e) {
-										System.out.println(e);
-									}
-									if (cmd.equals("Ya")) {
-										place.get(player.get(index).getPos()).lvlup(player.get(index));
+								player.get(index).pay(1000);
+								player.get(index).outJail();
+								System.out.println("Selamat! anda keluar dari sini");
+							}
+						} else {
+							turn.nextPlayer();
+						}
+					} else {
+						boolean db = true;
+						int dbi = 1;
+						while (db && (dbi <= 3)) {
+							d1 = dadu.getN1();
+							d2 = dadu.getN2();
+							System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
+							//System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
+							player.get(index).move(d1+d2);
+							System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
+							boolean again = true;
+							while (again) { //pengulangan
+								int type = place.get(player.get(index).getPos()).getType();
+								if (type == 0) {
+									//Free Parking
+									if (place.get(player.get(index).getPos()).getName() == "Free Parking") {
+										System.out.println("Masukkan nama yang ingin dituju : ");
+										int plot = s.nextInt();
+										player.get(index).setPos(plot-1);
+									} else if (place.get(player.get(index).getPos()).getName() == "Chance Card") {
+										place.get(player.get(index).getPos()).placeAffect(player.get(index));
 									} else {
-										db = false;
-									}
-								} else if (place.get(player.get(index).getPos()).getOwner() == null) {
-									System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
-									try {
-										cmd = (new Main()).getInput();
-									} catch (Exception e) {
-										System.out.println(e);
-									}
-									if (cmd.equals("Ya")) {
-										place.get(player.get(index).getPos()).beliProp(player.get(index));
-									} else {
-										db = false;
+										place.get(player.get(index).getPos()).placeAffect(player.get(index));
+										again = false;
 									}
 								} else {
-									place.get(player.get(index).getPos()).placeAffect(player.get(index));	
+									if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
+										System.out.println("Properti ini milikmu, mau upgrade? Ya/Tidak");
+										try {
+											cmd = (new Main()).getInput();
+										} catch (Exception e) {
+											System.out.println(e);
+										}
+										if (cmd.equals("Ya")) {
+											place.get(player.get(index).getPos()).lvlup(player.get(index));
+										} else {
+											db = false;
+										}
+									} else if (place.get(player.get(index).getPos()).getOwner() == null) {
+										System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
+										try {
+											cmd = (new Main()).getInput();
+										} catch (Exception e) {
+											System.out.println(e);
+										}
+										if (cmd.equals("Ya")) {
+											place.get(player.get(index).getPos()).beliProp(player.get(index));
+										} else {
+											db = false;
+										}
+									} else {
+										place.get(player.get(index).getPos()).placeAffect(player.get(index));	
+									}
+									again = false;
 								}
-								again = false;
+							}
+							if (d1 == d2){
+								dbi++;
+							} else if (d1 != d2) {
+								db = false;
 							}
 						}
-						if (d1 == d2){
-							dbi++;
-						} else if (d1 != d2) {
-							db = false;
+						if (dbi > 3) {
+							player.get(index).inJail();
+						} else {
+							turn.nextPlayer();
 						}
 					}
-					if (dbi > 3) {
-						player.get(index).inJail();
-					} else {
-						turn.nextPlayer();
-					}
-				}
-			} else if (cmd.equals("quit")) {
-				endGame = true;
+				} else if (cmd.equals("quit")) {
+					endGame = true;
+				}	
+			} else {
+				System.out.println(player.get(index).getID() + " sudah kalah");
 			}
+			}
+			s.close();
 		}
-		s.close();
 	}
-}
 
 /*
 	***************	JAVA SWING	*****************
