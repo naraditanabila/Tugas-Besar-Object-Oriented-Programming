@@ -136,6 +136,10 @@ public class Main {
 		
 		//Pembacaan jumlah player
 		nPlayer = s.nextInt();
+		while (nPlayer <= 1) {
+			System.out.println("Jumlah pemain harus lebih dari 1");
+			nPlayer = s.nextInt();
+		}
 
 		//Pembacaan nama tiap player
 		for (int i = 1 ; i <= nPlayer ; i++) {
@@ -190,7 +194,7 @@ public class Main {
 		//
 
 		
-		while (!endGame) {
+		while ((!endGame) && (nPlayer != 1)) {
 			System.out.println(player.get(turn.getPlayer()).getID() + " bermain");
 			System.out.println("Pilih roll atau quit");
 			cmd = s.next();
@@ -262,6 +266,13 @@ public class Main {
 										place.get(player.get(index).getPos()).placeAffect(player.get(index));
 										again = false;
 									}
+									//duit habis
+									if (player.get(index).getMoney() < 0) {
+										again = false;
+										db = false;
+										player.get(index).setKalah();
+										nPlayer = nPlayer - 1;
+									}
 								} else {
 									if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
 										System.out.println("Properti ini milikmu, mau upgrade? Ya/Tidak");
@@ -288,7 +299,13 @@ public class Main {
 											db = false;
 										}
 									} else {
-										place.get(player.get(index).getPos()).placeAffect(player.get(index));	
+										place.get(player.get(index).getPos()).placeAffect(player.get(index));
+										if (player.get(index).getMoney() < 0) {
+											again = false;
+											db = false;
+											player.get(index).setKalah();
+											nPlayer = nPlayer - 1;
+										}
 									}
 									again = false;
 								}
@@ -311,10 +328,10 @@ public class Main {
 			} else {
 				System.out.println(player.get(index).getID() + " sudah kalah");
 			}
-			}
-			s.close();
 		}
+		s.close();
 	}
+}
 
 /*
 	***************	JAVA SWING	*****************

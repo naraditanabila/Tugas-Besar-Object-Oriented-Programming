@@ -10,7 +10,7 @@ public class Player {
      private int playerProp;
      List<Property> prop = new ArrayList<Property>();
      private boolean playerJail = false;
-
+     private boolean kalah = false;
      //Methods
 
      //Constructor
@@ -47,7 +47,14 @@ public class Player {
      public int getMoney() {
           return this.playerMoney;
      }
-
+     
+     public void setKalah() {
+		 this.kalah = true;
+	 }
+	 
+	 public boolean getKalah () {
+		 return this.kalah;
+	 }
      //Other methods
      public void move(int x) {
           this.playerPos += x;
