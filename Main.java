@@ -202,7 +202,13 @@ public class Main {
 			if (!(player.get(index).getKalah())) {
 				if (cmd.equals("roll")) {
 					System.out.println("--------------------");
-					System.out.println(player.get(index));
+					System.out.println("Nama Player: "+player.get(index).getID());
+					System.out.println("Jumlah uang: "+player.get(index).getMoney());
+					System.out.println("Lokasi saat ini: "+place.get((player.get(index).getPos())).getName());
+					System.out.println("Properti yang dimiliki saat ini:");
+					for (int i=0; i<player.get(index).sizeProp(); i++) {
+						System.out.println(player.get(index).getProp(i));
+					}
 					System.out.println("--------------------");
 					if (player.get(index).getJail()) {
 						System.out.println("Silahkan pilih Bayar atau Dadu");
