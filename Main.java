@@ -207,7 +207,7 @@ public class Main {
 					System.out.println("Lokasi saat ini: "+place.get((player.get(index).getPos())).getName());
 					System.out.println("Properti yang dimiliki saat ini:");
 					for (int i=0; i<player.get(index).sizeProp(); i++) {
-						System.out.println(player.get(index).getProp(i));
+						System.out.println(player.get(index).getProp(i).getName());
 					}
 					System.out.println("--------------------");
 					if (player.get(index).getJail()) {
@@ -251,8 +251,15 @@ public class Main {
 						boolean db = true;
 						int dbi = 1;
 						while (db && (dbi <= 3)) {
-							d1 = dadu.getN1();
-							d2 = dadu.getN2();
+							System.out.println("Silahkan pilih Random atau Set");
+							cmd = s.next();
+							if (cmd.equals("Random")) {
+								d1 = dadu.getN1();
+								d2 = dadu.getN2();
+							} else {
+								d1 = s.nextInt();
+								d2 = s.nextInt();
+							}
 							System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
 							//System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
 							player.get(index).move(d1+d2);
