@@ -88,8 +88,19 @@ public class Property extends Place{ //inheritance
 		if (this.lvl == 0) {
 			if ((this.owner == p) && (p.getMoney() >= getHP())) {
 				this.lvl = 1;
+				int x = getSet();
+				if (x == 1 || x == 10) {
+					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
+						setLvl();
+					}
+				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
+					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
+						setLvl();
+					}
+				}
+				System.out.println("Level Bangunan Sekarang : " + getLvl());
 			} else {
-				System.out.println("pemilik berbeda");
+				System.out.println("Pemilik berbeda");
 			}
 		} else {
 			int x = getSet();
