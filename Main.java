@@ -5,6 +5,21 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
 
+/*
+	Dalam konsep MVC,
+	File ini adalah Controller dan Model.
+	Sehingga harus ada atribut View.
+	Selain itu, main program ada disini dan harus menginisiasi Viewnya dari sini.
+	Sehingga, perlu ada
+	MonopolyFrame theView = new MonopolyFrame()
+
+
+	Method yg hrus ada di view:
+
+
+
+*/
+
 public class Main {
 	private String str = "";
 	boolean nin = false;
@@ -34,7 +49,7 @@ public class Main {
 			return "nothing";
 		}
 	}
-	 
+
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		List<Place> place = new ArrayList<Place>();
@@ -43,53 +58,6 @@ public class Main {
 		String pName, cmd;
 		boolean endGame = false;
 		boolean nextP = false;
-
-		// SWING
-		/*
-		// Loading LookAndFeel
-		try {
-			for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-				if ("Nimbus".equals(info.getName())) {
-					javax.swing.UIManager.setLookAndFeel(info.getClassName());
-					break;
-				}
-			}
-		} catch (ClassNotFoundException ex) {
-			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-		} catch (InstantiationException ex) {
-			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-		} catch (IllegalAccessException ex) {
-			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-		} catch (javax.swing.UnsupportedLookAndFeelException ex) {
-			java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-		}
-		 //</editor-fold>
-
-
-
-		//
-		java.awt.EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				new MonopolyFrame().setVisible(true);
-			}
-		});
-		//
-		NewGame newGameFrame = new NewGame();
-		MonopolyFrame mainFrame = new MonopolyFrame();
-		//mainFrame
-		ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
-		mainFrame.setIconImage(img.getImage());
-		newGameFrame.setIconImage(img.getImage());
-		mainFrame.setVisible(true);
-		// New Game
-		//newGame Frame harusnya didalem MonopolyFrame
-		//biar bisa passing langsung
-		newGameFrame.setLocationRelativeTo(null);
-		newGameFrame.setTitle("Monopoly");
-		newGameFrame.setVisible(true);
-		//SWING
-		*/
-
 
 		
 		//PenambahanMap
@@ -135,7 +103,7 @@ public class Main {
 		place.add(new Lot("ITB", 10, 2500));
 		
 		//Pembacaan jumlah player
-		nPlayer = s.nextInt();
+		nPlayer = s.nextInt(); //SWING  / getPlayerNum ke NewGame.java 
 		while (nPlayer <= 1) {
 			System.out.println("Jumlah pemain harus lebih dari 1");
 			nPlayer = s.nextInt();
@@ -144,7 +112,7 @@ public class Main {
 		//Pembacaan nama tiap player
 		for (int i = 1 ; i <= nPlayer ; i++) {
 			System.out.println("Nama Player Ke-" + i + ":");
-			pName = s.next();
+			pName = s.next(); //SWING  / getPlayerName(angkaPlayer) ke NewGame.java
 			player.add(new Player(pName));
 		}
 		//Instant Dadu
@@ -177,27 +145,15 @@ public class Main {
 		
 		Turn turn  = new Turn(nPlayer);
 
-		// TODO  SWING-game variables
-		/*
-			Status Java Swing
-		boolean rollButtonPressed;
-		boolean buyButtonPressed;
-		boolean notbuyButtonPressed;
-		boolean suicideButtonPressed;
-		boolean sellButtonPressed;
-		boolean upgradeButtonPressed
-		boolean endTurnPressed;
-		boolean startGamePressed;
-		
-		*/
-		// SWING-Game variables
-		//
 
 		
 		while ((!endGame) && (nPlayer != 1)) {
 			System.out.println(player.get(turn.getPlayer()).getID() + " bermain");
 			System.out.println("Pilih roll atau quit");
-			cmd = s.next();
+
+
+			//Yang dienable
+			cmd = s.next(); //SWING  / ganti jadi 
 			int index = turn.getPlayer();
 			if (!(player.get(index).getKalah())) {
 				if (cmd.equals("roll")) {
@@ -217,6 +173,7 @@ public class Main {
 						} catch (Exception e) {
 							System.out.println(e);
 						}
+
 						if (cmd.equals("Dadu")) {
 							d1 = dadu.getN1();
 							d2 = dadu.getN2();
@@ -227,6 +184,7 @@ public class Main {
 							} else {
 								System.out.println("Dadu tidak sama");
 							}
+						
 						} else if (cmd.equals("Bayar")) {
 							if (player.get(index).getMoney()<1000) {
 								System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
@@ -245,6 +203,7 @@ public class Main {
 								System.out.println("Selamat! anda keluar dari sini");
 							}
 						} else {
+							//Kalau command tidak sesuai, skip
 							turn.nextPlayer();
 						}
 					} else {
