@@ -153,10 +153,11 @@ public class Main {
 
 
 			//Yang dienable
-			cmd = s.next(); //SWING  / ganti jadi 
+			cmd = s.next(); //SWING  / ganti jadi case utk line 159
 			int index = turn.getPlayer();
 			if (!(player.get(index).getKalah())) {
-				if (cmd.equals("roll")) {
+				if (cmd.equals("roll")) { //SWING / ganti jadi case
+					//SWING /
 					System.out.println("--------------------");
 					System.out.println("Nama Player: "+player.get(index).getID());
 					System.out.println("Jumlah uang: "+player.get(index).getMoney());
@@ -169,7 +170,7 @@ public class Main {
 					if (player.get(index).getJail()) {
 						System.out.println("Silahkan pilih Bayar atau Dadu");
 						try {
-							cmd = (new Main()).getInput();
+							cmd = (new Main()).getInput(); //SWING / ganti jadi if rollButtonPressed else payButtonPressed
 						} catch (Exception e) {
 							System.out.println(e);
 						}
@@ -178,6 +179,7 @@ public class Main {
 							d1 = dadu.getN1();
 							d2 = dadu.getN2();
 							System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+							
 							if (d1 == d2) {
 								player.get(index).outJail();
 								System.out.println("Selamat! anda keluar dari sini");
