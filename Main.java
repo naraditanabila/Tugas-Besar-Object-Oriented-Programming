@@ -123,13 +123,13 @@ public class Main {
 		chanceList.add("Masuk Penjara",new ChanceCard()); //1, 
 		chanceList.add("Maju 3 Langkah",new ChanceCard()); //2, position
 		chanceList.add("Mundur 3 Langkah",new ChanceCard()); //3, position
-		chanceList.add("Bayar Zakat 10%",new ChanceCard()); //4, outcome
-		chanceList.add("Pergi ke Start",new ChanceCard()); //5, position
-		chanceList.add("Mendapat Sumbangan 20%",new ChanceCard()); //6, income
+		chanceList.add("Mendapat Free Parking",new ChanceCard()); //4, outcome
+		chanceList.add("Pergi ke kotak Start",new ChanceCard()); //5, position
+		chanceList.add("Pergi ke kotak Penjara",new ChanceCard()); //6, income
 		chanceList.add("Maju 5 Langkah",new ChanceCard()); //7, position
 		chanceList.add("Mundur 5 Langkah",new ChanceCard()); //8, position
-		chanceList.add("Mundur 3 Langkah",new ChanceCard()); //9, position
-		chanceList.add("Maju 5 Langkah",new ChanceCard()); //10, position
+		chanceList.add("Pergi ke kotak Dana Usaha",new ChanceCard()); //9, position
+		chanceList.add("Pergi ke kotak Laboratorium 3",new ChanceCard()); //10, position
 		ListCard<String, CommunityChest> ccList = new ListCard <String, CommunityChest> ();
 		ccList.add("Mendapat Sumbangan 1000",new CommunityChest()); //1, in
 		ccList.add("Pajak Negara 2000",new CommunityChest()); //2, out

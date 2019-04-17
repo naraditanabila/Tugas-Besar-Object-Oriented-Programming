@@ -106,6 +106,7 @@ public class Player {
 
      public void inJail() {
           this.playerJail = true;
+		  this.playerPos = 10;
 		  System.out.println("Player " + playerID + " masuk penjara.");
      }
 
