@@ -164,7 +164,17 @@ public class Main {
 					System.out.println("Lokasi saat ini: "+place.get((player.get(index).getPos())).getName());
 					System.out.println("Properti yang dimiliki saat ini:");
 					for (int i=0; i<player.get(index).sizeProp(); i++) {
-						System.out.println(player.get(index).getProp(i).getName());
+						if (((Property)player.get(index).getProp(i)).getLvl() == 3) {
+							System.out.println(player.get(index).getProp(i).getName()+" dengan 1 rumah");
+						} else if (((Property)player.get(index).getProp(i)).getLvl() == 4) {
+							System.out.println(player.get(index).getProp(i).getName()+" dengan 2 rumah");
+						} else if (((Property)player.get(index).getProp(i)).getLvl() == 5) {
+							System.out.println(player.get(index).getProp(i).getName()+" dengan 3 rumah");
+						} else if (((Property)player.get(index).getProp(i)).getLvl() == 6) {
+							System.out.println(player.get(index).getProp(i).getName()+" dengan 4 rumah");
+						} else {
+							System.out.println(player.get(index).getProp(i).getName());
+						}
 					}
 					System.out.println("--------------------");
 					if (player.get(index).getJail()) {
@@ -217,7 +227,7 @@ public class Main {
 							if (cmd.equals("Random")) {
 								d1 = dadu.getN1();
 								d2 = dadu.getN2();
-							} else {
+							} else { //Ini hanya untuk debug
 								d1 = s.nextInt();
 								d2 = s.nextInt();
 							}

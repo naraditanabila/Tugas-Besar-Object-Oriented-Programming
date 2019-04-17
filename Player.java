@@ -29,6 +29,7 @@ public class Player {
 	 
      public void setPos(int x) {
           if (x<this.playerPos) {
+			  System.out.println("Player "+playerID+" berhasil melewati kotak Start.");
 			  this.playerMoney+=200;
 		  }
 		  this.playerPos = x;
@@ -59,6 +60,7 @@ public class Player {
      public void move(int x) {
           this.playerPos += x;
 		  if (this.playerPos>39) {
+			  System.out.println("Player "+playerID+" berhasil melewati kotak Start.");
 			  this.playerPos = this.playerPos-40;
 			  this.playerMoney += 200;
 		  }
