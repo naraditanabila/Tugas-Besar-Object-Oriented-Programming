@@ -3,6 +3,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import monopoly.NewGame;
+
 import java.io.*;
 
 /*
@@ -23,7 +26,8 @@ import java.io.*;
 public class Main {
 	private String str = "";
 	boolean nin = false;
-	
+
+
 	TimerTask task = new TimerTask(){
 		public void run() {
 			if (str.equals("")) {
@@ -58,8 +62,17 @@ public class Main {
 		String pName, cmd;
 		boolean endGame = false;
 		boolean nextP = false;
+		//SWING
+		MonopolyFrame mainFrame = new MonopolyFrame();
+		NewGame mainMenu = new NewGame();
+		PopUpFrame popFrame = new PopUpFrame();
+		WinnerGame winnerFrame = new winnerFrame();
 
-		
+		popFrame.setVisible(false);
+		winnerFrame.setVisible(false);
+		//SWING
+
+
 		//PenambahanMap
 		place.add(new Space("Start",0,200));
 		place.add(new Lot("UDINUS", 1, 400));
@@ -112,7 +125,8 @@ public class Main {
 		//Pembacaan nama tiap player
 		for (int i = 1 ; i <= nPlayer ; i++) {
 			System.out.println("Nama Player Ke-" + i + ":");
-			pName = s.next(); //SWING  / getPlayerName(angkaPlayer) ke NewGame.java
+			pName = s.next(); 
+			//pname = mainMenu.getPlayerName(i);
 			player.add(new Player(pName));
 		}
 		//Instant Dadu
@@ -150,14 +164,17 @@ public class Main {
 		while ((!endGame) && (nPlayer != 1)) {
 			System.out.println(player.get(turn.getPlayer()).getID() + " bermain");
 			System.out.println("Pilih roll atau quit");
-
+			// mainFrame.setLog( + " bermain");
+			// mainFrame.setLog("Pilih roll atau quit");
 
 			//Yang dienable
 			cmd = s.next(); //SWING  / ganti jadi case utk line 159
 			int index = turn.getPlayer();
 			if (!(player.get(index).getKalah())) {
 				if (cmd.equals("roll")) { //SWING / ganti jadi case
+					//
 					//SWING /
+					//mainFrame.setPlayer1Data("--------------------");
 					System.out.println("--------------------");
 					System.out.println("Nama Player: "+player.get(index).getID());
 					System.out.println("Jumlah uang: "+player.get(index).getMoney());
@@ -167,8 +184,11 @@ public class Main {
 						System.out.println(player.get(index).getProp(i).getName());
 					}
 					System.out.println("--------------------");
+					//mainFrame.setPlayer1Data("--------------------");
+
 					if (player.get(index).getJail()) {
 						System.out.println("Silahkan pilih Bayar atau Dadu");
+						//mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
 						try {
 							cmd = (new Main()).getInput(); //SWING / ganti jadi if rollButtonPressed else payButtonPressed
 						} catch (Exception e) {
@@ -176,20 +196,26 @@ public class Main {
 						}
 
 						if (cmd.equals("Dadu")) {
+							//dadu blm dibikin antara mending gamelog atau bikin baru
 							d1 = dadu.getN1();
 							d2 = dadu.getN2();
 							System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+							//mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 							
 							if (d1 == d2) {
 								player.get(index).outJail();
 								System.out.println("Selamat! anda keluar dari sini");
+								//mainFrame.setLog("Selamat! anda keluar dari sini");
 							} else {
 								System.out.println("Dadu tidak sama");
+								//mainFrame.setLog("Dadu tidak sama");
 							}
 						
 						} else if (cmd.equals("Bayar")) {
+
 							if (player.get(index).getMoney()<1000) {
 								System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
+								//mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
 								d1 = dadu.getN1();
 								d2 = dadu.getN2();
 								System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
@@ -222,7 +248,7 @@ public class Main {
 								d2 = s.nextInt();
 							}
 							System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
-							//System.out.println("Player bergerak sebanyak " + (d1+d2) + " kotak");
+							//mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
 							player.get(index).move(d1+d2);
 							System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
 							boolean again = true;
@@ -300,6 +326,8 @@ public class Main {
 					endGame = true;
 				}	
 			} else {
+				//sudah kalah
+				// mail: mending di skip aja gk sih?
 				System.out.println(player.get(index).getID() + " sudah kalah");
 			}
 		}
