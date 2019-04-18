@@ -19,6 +19,17 @@ import java.io.*;
 
 	Method yg hrus ada di view:
 
+	// cara bikin Action Listener
+
+		gameLogButton.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				logFrame.setVisible(true);
+			}
+		});
+		
+
+
+
 
 
 */
