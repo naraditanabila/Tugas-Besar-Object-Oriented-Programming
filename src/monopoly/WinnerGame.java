@@ -20,6 +20,31 @@ package monopoly;
 
 public class WinnerGame extends javax.swing.JFrame {
 
+    //
+    public void setWinner(String text) {
+        this.winnerName.setText(text);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Creates new form WinnerGame
      */
@@ -49,6 +74,7 @@ public class WinnerGame extends javax.swing.JFrame {
         winnerName = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Monopoly");
 
         jLabel1.setText("CONGRATS");
 
@@ -65,29 +91,32 @@ public class WinnerGame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(322, 322, 322)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(257, 257, 257)
+                        .addGap(147, 147, 147)
                         .addComponent(gifCatto))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(338, 338, 338)
-                        .addComponent(winnerName)))
-                .addContainerGap(298, Short.MAX_VALUE))
+                        .addGap(118, 118, 118)
+                        .addComponent(jLabel2)))
+                .addContainerGap(118, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(217, 217, 217))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(winnerName)
+                        .addGap(205, 205, 205))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(73, 73, 73)
+                .addGap(18, 18, 18)
                 .addComponent(winnerName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addGap(23, 23, 23)
                 .addComponent(gifCatto)
-                .addGap(160, 160, 160)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
         );

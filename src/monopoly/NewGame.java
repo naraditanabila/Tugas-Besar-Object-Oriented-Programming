@@ -35,6 +35,7 @@ public class NewGame extends javax.swing.JFrame {
         player4Field = new javax.swing.JTextField();
         okButton = new javax.swing.JButton();
         gunung = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -58,18 +59,12 @@ public class NewGame extends javax.swing.JFrame {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 player1FieldFocusGained(evt);
             }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                player1FieldFocusLost(evt);
-            }
         });
 
         player2Field.setText("Player 2 Name");
         player2Field.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 player2FieldFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                player2FieldFocusLost(evt);
             }
         });
 
@@ -78,18 +73,12 @@ public class NewGame extends javax.swing.JFrame {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 player3FieldFocusGained(evt);
             }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                player3FieldFocusLost(evt);
-            }
         });
 
         player4Field.setText("Player 4 Name");
         player4Field.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 player4FieldFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                player4FieldFocusLost(evt);
             }
         });
 
@@ -102,52 +91,64 @@ public class NewGame extends javax.swing.JFrame {
 
         gunung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/newGameFrame.jpg"))); // NOI18N
 
+        jLabel2.setText("Player Name:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGap(39, 39, 39)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(player2Field)
-                                    .addComponent(player1Field)
-                                    .addComponent(player3Field)
-                                    .addComponent(player4Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(106, 106, 106))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(18, 18, 18)
-                                .addComponent(jPlayerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(okButton))
-                    .addComponent(gunung))
+                        .addComponent(jPlayerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(90, 90, 90)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(player1Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(player2Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(player3Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(player4Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(okButton)
+                .addGap(38, 38, 38))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(gunung)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(gunung)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jPlayerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(player1Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jPlayerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(player1Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(player2Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(player3Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(player4Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(okButton))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(player3Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(player4Field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(22, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(okButton)
+                        .addGap(34, 34, 34))))
         );
 
         pack();
@@ -157,59 +158,59 @@ public class NewGame extends javax.swing.JFrame {
         player1Field.setText("");
     }//GEN-LAST:event_player1FieldFocusGained
 
-    private void player1FieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player1FieldFocusLost
-        player1Field.setText("Player 1 Name");
-    }//GEN-LAST:event_player1FieldFocusLost
-
     private void player2FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player2FieldFocusGained
         player2Field.setText("");
     }//GEN-LAST:event_player2FieldFocusGained
-
-    private void player2FieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player2FieldFocusLost
-        player2Field.setText("Player 2 Name");
-    }//GEN-LAST:event_player2FieldFocusLost
 
     private void player3FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player3FieldFocusGained
         player3Field.setText("");
     }//GEN-LAST:event_player3FieldFocusGained
 
-    private void player3FieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player3FieldFocusLost
-        player3Field.setText("Player 3 Name");
-    }//GEN-LAST:event_player3FieldFocusLost
-
     private void player4FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player4FieldFocusGained
         player4Field.setText("");
     }//GEN-LAST:event_player4FieldFocusGained
 
-    private void player4FieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player4FieldFocusLost
-        player4Field.setText("Player 4 Name");
-    }//GEN-LAST:event_player4FieldFocusLost
-
     private void jPlayerComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPlayerComboActionPerformed
-        if (jPlayerCombo.getSelectedItem().equals("1 Player")) {
+        
+        if (jPlayerCombo.getSelectedItem().equals("None")) {
+            jLabel2.setVisible(false);
+            player1Field.setVisible(false);
+            player2Field.setVisible(false);
+            player3Field.setVisible(false);
+            player4Field.setVisible(false);     
+        } if (jPlayerCombo.getSelectedItem().equals("1 Player")) {
+            
             player1Field.setVisible(true);
             player2Field.setVisible(false);
             player3Field.setVisible(false);
             player4Field.setVisible(false);
+            jLabel2.setVisible(true);
         } if (jPlayerCombo.getSelectedItem().equals("2 Players")) {
+            
             player1Field.setVisible(true);
             player2Field.setVisible(true);
             player3Field.setVisible(false);
             player4Field.setVisible(false);
+            jLabel2.setVisible(true);
         } if (jPlayerCombo.getSelectedItem().equals("3 Players")) {
+            
             player1Field.setVisible(true);
             player2Field.setVisible(true);
             player3Field.setVisible(true);
             player4Field.setVisible(false);
+            jLabel2.setVisible(true);
         } if (jPlayerCombo.getSelectedItem().equals("4 Players")) {
             player1Field.setVisible(true);
             player2Field.setVisible(true);
             player3Field.setVisible(true);
             player4Field.setVisible(true);
+            jLabel2.setVisible(true);
         }
+        
     }//GEN-LAST:event_jPlayerComboActionPerformed
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
+        jLabel2.setVisible(false);
         player1Field.setVisible(false);
         player2Field.setVisible(false);
         player3Field.setVisible(false);
@@ -222,6 +223,11 @@ public class NewGame extends javax.swing.JFrame {
             cantPlay.setLocationRelativeTo(null);
             cantPlay.setVisible(true);
         } else {
+            playerNumber = this.getPlayerNumber();
+            player1Name = this.getPlayerName(1);
+            player2Name = this.getPlayerName(2);
+            player3Name = this.getPlayerName(3);
+            player4Name = this.getPlayerName(4);
             this.setVisible(false);
         }
     }//GEN-LAST:event_okButtonActionPerformed
@@ -288,10 +294,20 @@ public class NewGame extends javax.swing.JFrame {
             }
         });
     }
-
+    
+    //needed variable
+    private int playerNumber;
+    private String player1Name;
+    private String player2Name;
+    private String player3Name;
+    private String player4Name;
+    
+    //needed
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel gunung;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JComboBox<String> jPlayerCombo;
     private javax.swing.JButton okButton;
     private javax.swing.JTextField player1Field;

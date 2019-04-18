@@ -25,6 +25,9 @@ public class Monopoly{
     private JFrame mainFrame;
     private JFrame newGameFrame;
     private JFrame winnerFrame;
+    private JFrame logFrame;
+    
+    
     
     // EO Variables Declaration
        
@@ -33,7 +36,6 @@ public class Monopoly{
         NewGame newGameFrame = new NewGame();
         MonopolyFrame mainFrame = new MonopolyFrame();
         WinnerGame winnerFrame = new WinnerGame();
-        
         
         //mainFrame
         ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
