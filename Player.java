@@ -65,7 +65,9 @@ public class Player {
 		  if (this.playerPos>39) {
 			  System.out.println("Player "+playerID+" berhasil melewati kotak Start.");
 			  this.playerPos = this.playerPos-40;
-			  this.playerMoney += 200;
+			  if (this.playerPos>0) {
+				this.playerMoney += 200;
+			  }
 		  }
 		  if (x>=0){
 			System.out.println("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.");
