@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Player {
 
@@ -80,14 +81,74 @@ public class Player {
 	 }
 
      public void pay(int x) {
-          this.playerMoney -= x;
-          System.out.println("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + ".");
+			while (getMoney() < x && sizeProp() > 0) {
+				System.out.println("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.");
+				System.out.println("Berikut ini properti yang Anda miliki:");
+				for (int i=0; i<sizeProp(); i++) {
+					if (getProp(i).getTipe() == 2) {
+						if (getProp(i).getLvl() == 3) {
+							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 1 rumah");
+						} else if (getProp(i).getLvl() == 4) {
+							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 2 rumah");
+						} else if (getProp(i).getLvl() == 5) {
+							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 3 rumah");
+						} else if (getProp(i).getLvl() == 6) {
+							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 4 rumah");
+						} else {
+							System.out.println((i+1)+". "+getProp(i).getName());
+						}
+					} else {
+						System.out.println((i+1)+". "+getProp(i).getName());
+					}
+				}
+				//metode jual properti
+				Scanner s = new Scanner(System.in);
+				System.out.println("Silahkan masukkan nomor urutan properti yang ingin Anda jual:");
+				int nom = s.nextInt() - 1;
+				getProp(nom).jualProp(this);
+			}
+			if (getMoney() < x) {
+				setKalah();
+			} else {
+				this.playerMoney -= x;
+				System.out.println("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + ".");
+			}
      }
 	 
 	 public void pay(Player p, int x) {
-		 this.playerMoney -= x;
-		 p.playerMoney += x;
-		 System.out.println("Player " + this.playerID + " berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID);
+		while (getMoney() < x && sizeProp() > 0) {
+			System.out.println("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.");
+			System.out.println("Berikut ini properti yang Anda miliki:");
+			for (int i=0; i<sizeProp(); i++) {
+				if (getProp(i).getTipe() == 2) {
+					if (getProp(i).getLvl() == 3) {
+						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 1 rumah");
+					} else if (getProp(i).getLvl() == 4) {
+						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 2 rumah");
+					} else if (getProp(i).getLvl() == 5) {
+						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 3 rumah");
+					} else if (getProp(i).getLvl() == 6) {
+						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 4 rumah");
+					} else {
+						System.out.println((i+1)+". "+getProp(i).getName());
+					}
+				} else {
+					System.out.println((i+1)+". "+getProp(i).getName());
+				}
+			}
+			//metode jual properti
+			Scanner s = new Scanner(System.in);
+			System.out.println("Silahkan masukkan nomor urutan properti yang ingin Anda jual:");
+			int nom = s.nextInt() - 1;
+			getProp(nom).jualProp(this);
+		}
+		if (getMoney() < x) {
+			setKalah();
+		} else { 
+			this.playerMoney -= x;
+			p.playerMoney += x;
+			System.out.println("Player " + this.playerID + " berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID);
+		}
 	 }
 	 
 	 public void receive(int x) {

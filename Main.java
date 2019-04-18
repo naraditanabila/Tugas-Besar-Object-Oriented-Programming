@@ -18,15 +18,15 @@ import java.io.*;
 
 
 	Method yg hrus ada di view:
-
+	
 	// cara bikin Action Listener
-
+	
 		gameLogButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				logFrame.setVisible(true);
 			}
 		});
-		
+
 
 
 
@@ -262,7 +262,7 @@ public class Main {
 					} else {
 						boolean db = true;
 						int dbi = 1;
-						while (db && (dbi <= 3)) {
+						while (db && (dbi <= 3) && (!player.get(index).getJail())) {
 							System.out.println("Silahkan pilih Random atau Set");
 							cmd = s.next();
 							if (cmd.equals("Random")) {
@@ -277,6 +277,7 @@ public class Main {
 							player.get(index).move(d1+d2);
 							System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
 							boolean again = true;
+							//untuk mengatasi dadu sama, namun masuk penjara
 							while (again) { //pengulangan
 								int type = place.get(player.get(index).getPos()).getType();
 								if (type == 0) {
@@ -292,35 +293,9 @@ public class Main {
 										again = false;
 									}
 									//duit habis
-									while (player.get(index).getMoney() < 0 && player.get(index).sizeProp() > 0) {
-										System.out.println("Uang Anda habis. Silahkan lakukan jual properti untuk mendapatkan uang.");
-										System.out.println("Berikut ini properti yang Anda miliki:");
-										for (int i=0; i<player.get(index).sizeProp(); i++) {
-											if (((Property)player.get(index).getProp(i)).getTipe() == 2) {
-												if (((Property)player.get(index).getProp(i)).getLvl() == 3) {
-													System.out.println((i+1)+". "+player.get(index).getProp(i).getName()+" dengan 1 rumah");
-												} else if (((Property)player.get(index).getProp(i)).getLvl() == 4) {
-													System.out.println((i+1)+". "+player.get(index).getProp(i).getName()+" dengan 2 rumah");
-												} else if (((Property)player.get(index).getProp(i)).getLvl() == 5) {
-													System.out.println((i+1)+". "+player.get(index).getProp(i).getName()+" dengan 3 rumah");
-												} else if (((Property)player.get(index).getProp(i)).getLvl() == 6) {
-													System.out.println((i+1)+". "+player.get(index).getProp(i).getName()+" dengan 4 rumah");
-												} else {
-													System.out.println((i+1)+". "+player.get(index).getProp(i).getName());
-												}
-											} else {
-												System.out.println((i+1)+". "+player.get(index).getProp(i).getName());
-											}
-										}
-										//metode jual properti
-										System.out.println("Silahkan masukkan nomor urutan properti yang ingin Anda jual:");
-										int nom = s.nextInt() - 1;
-										(player.get(index).getProp(nom)).jualProp(player.get(index));
-									}
-									if (player.get(index).getMoney() < 0) {
+									if (player.get(index).getKalah()) {
 										again = false;
 										db = false;
-										player.get(index).setKalah();
 										nPlayer = nPlayer - 1;
 									}
 								} else {
