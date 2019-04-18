@@ -5,14 +5,14 @@ import java.util.List;
 public class Property extends Place{ //inheritance
 	private Player owner;
 	private int price;
-	private int type; /* 0: Utility, 1: Railroad, 2: Lot */ 
+	private int tipe; /* 0: Utility, 1: Railroad, 2: Lot */ 
 	private int lvl;
 	private int set; /* 2: Railroad, 5: Utility */
 	private int housePrice;
 	
-	public Property (String name, int type, int price, int set){
+	public Property (String name, int tipe, int price, int set){
 		super(name, 1);
-		this.type = type;
+		this.tipe = tipe;
 		this.price = price;
 		this.lvl = 0;
 		this.set = set;
@@ -23,6 +23,10 @@ public class Property extends Place{ //inheritance
 	//getter dan setter
 	public Player getOwner(){
 		return this.owner;
+	}
+	
+	public int getTipe(){
+		return this.tipe;
 	}
 	
 	public void setOwner(Player p){
@@ -91,11 +95,15 @@ public class Property extends Place{ //inheritance
 				int x = getSet();
 				if (x == 1 || x == 10) {
 					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
-						setLvl();
+						for (int i = 0 ; i < p.sizeProp() ; i++) {
+						p.upProp(p.getProp(i), i, x);
+						}
 					}
 				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
 					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
-						setLvl();
+						for (int i = 0 ; i < p.sizeProp() ; i++) {
+						p.upProp(p.getProp(i), i, x);
+						}
 					}
 				}
 				System.out.println("Level Bangunan Sekarang : " + getLvl());

@@ -62,9 +62,9 @@ public class ListCard <String, C>{ //generic class, yeayy!
 		else{
 			return(card.value);
 		}
-  }
+	}
  
-  public String getKey(int n) {
+	public String getKey(int n) {
 		int num=1;
 		Card card = first;
 		while (card != null && num<n){
@@ -77,7 +77,7 @@ public class ListCard <String, C>{ //generic class, yeayy!
 		else{
 			return(card.key);
 		}
-  }
+	}
   
   /*public int getNum() {
     int n = rand.nextInt(10)+1;
