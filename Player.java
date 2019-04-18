@@ -29,7 +29,7 @@ public class Player {
 	 }
 	 
      public void setPos(int x) {
-          if (x<this.playerPos) {
+          if (x<this.playerPos && x>0) {
 			  System.out.println("Player "+playerID+" berhasil melewati kotak Start.");
 			  this.playerMoney+=200;
 		  }
