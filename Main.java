@@ -234,6 +234,7 @@ public class Main {
 							} else {
 								System.out.println("Dadu tidak sama");
 								//mainFrame.setLog("Dadu tidak sama");
+								turn.nextPlayer();
 							}
 						
 						} else if (cmd.equals("Bayar")) {
@@ -249,6 +250,7 @@ public class Main {
 									System.out.println("Selamat! anda keluar dari sini");
 								} else {
 									System.out.println("Dadu tidak sama");
+									turn.nextPlayer();
 								}
 							} else {
 								player.get(index).pay(1000);
