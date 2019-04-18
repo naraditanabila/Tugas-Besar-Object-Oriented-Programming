@@ -87,6 +87,24 @@ public class Property extends Place{ //inheritance
 		}
 	}
 	
+	public void jualProp(Player p) {
+		if (getTipe()==2) {
+			if (this.lvl <3) {
+				p.receive(getPrice()/2);
+			} else {
+				p.receive((getPrice()+getHP()*(this.lvl-2))/2);
+			}
+		} else {
+			p.receive(getPrice()/2);
+			for (int i = 0 ; i < p.sizeProp() ; i++) {
+				p.downProp(p.getProp(i), i, this.set);
+			}
+		}
+		p.removeProp(this);
+		this.owner=null;
+		this.lvl=0;
+	}
+	
 	//method cuma bisa diakses oleh Player yang memiliki
 	public void lvlup(Player p) {
 		if (this.lvl == 0) {
@@ -116,14 +134,14 @@ public class Property extends Place{ //inheritance
 				if ((x == 1) || (x == 10)) {
 					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
 						p.pay(getHP());
-						setLvl();
+						upLvl();
 					} else {
 						System.out.println("Belum punya satu komplek");
 					}
 				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
 					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
 						p.pay(getHP());
-						setLvl();
+						upLvl();
 					} else {
 						System.out.println("Belum punya satu komplek");
 					}
@@ -140,8 +158,13 @@ public class Property extends Place{ //inheritance
 		return this.lvl;
 	}
 	
-	public void setLvl() {
+	public void upLvl() {
 		this.lvl++;
+		//System.out.println("Level bangunan anda sekarang adalah " + getLvl());
+	}
+	
+	public void downLvl() {
+		this.lvl--;
 		//System.out.println("Level bangunan anda sekarang adalah " + getLvl());
 	}
 	

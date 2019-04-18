@@ -51,6 +51,8 @@ public class Player {
      
      public void setKalah() {
 		 this.kalah = true;
+		 System.out.println("Maaf, Anda kehabisan uang dan properti.");
+		 System.out.println("Player "+playerID+" kalah.");
 	 }
 	 
 	 public boolean getKalah () {
@@ -64,7 +66,11 @@ public class Player {
 			  this.playerPos = this.playerPos-40;
 			  this.playerMoney += 200;
 		  }
-		  System.out.println("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.");
+		  if (x>=0){
+			System.out.println("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.");
+		  } else {
+			  System.out.println("Player "+playerID+" berhasil mundur sebanyak "+(x*-1)+" kotak.");
+		  }
      }
 	 
 	 public void cekStart() {
@@ -92,6 +98,15 @@ public class Player {
      public void addProp(Property p) {
           prop.add(p);
           System.out.println("Player " + playerID + " berhasil membeli sebuah properti.");
+     }
+	 
+	 public void removeProp(Property p) {
+		 for (int i=0; i<sizeProp(); i++) {
+			if (getProp(i) == p) {
+				prop.remove(i);
+			}
+		 }
+         System.out.println("Player " + playerID + " berhasil menjual sebuah properti.");
      }
      
      public Property getProp(int i) {
@@ -129,7 +144,13 @@ public class Player {
 	 
 	 public void upProp(Property p, int i, int k) { //k=set,
 		if (prop.get(i).getSet() == k) {
-			p.setLvl();
+			p.upLvl();
+		}
+	 }
+	 
+	 public void downProp(Property p, int i, int k) { //k=set,
+		if (prop.get(i).getSet() == k) {
+			p.downLvl();
 		}
 	 }
 }
