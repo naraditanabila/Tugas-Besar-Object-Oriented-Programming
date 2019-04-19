@@ -1,9 +1,0 @@
-monopoly.NewGame$2
-monopoly.NewGame$1
-monopoly.NewGame$4
-monopoly.NewGame$3
-monopoly.NewGame$6
-monopoly.NewGame$5
-monopoly.NewGame$8
-monopoly.NewGame
-monopoly.NewGame$7
