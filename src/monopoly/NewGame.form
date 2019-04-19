@@ -30,7 +30,7 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="numPlayerText" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Component id="jPlayerCombo" min="-2" max="-2" attributes="0"/>
@@ -38,18 +38,12 @@
               </Group>
               <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="player1Field" min="-2" pref="84" max="-2" attributes="0"/>
-                          <Component id="player2Field" min="-2" pref="84" max="-2" attributes="0"/>
-                          <Component id="player3Field" min="-2" pref="84" max="-2" attributes="0"/>
-                          <Component id="player4Field" alignment="1" min="-2" pref="84" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="28" max="32767" attributes="0"/>
+                  <Component id="playerNameText" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="player1Field" min="-2" pref="84" max="-2" attributes="0"/>
+                      <Component id="player2Field" min="-2" pref="84" max="-2" attributes="0"/>
+                      <Component id="player3Field" min="-2" pref="84" max="-2" attributes="0"/>
+                      <Component id="player4Field" alignment="1" min="-2" pref="84" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -69,8 +63,8 @@
               <Component id="gunung" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numPlayerText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="playerNameText" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -117,7 +111,7 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="numPlayerText">
       <Properties>
         <Property name="text" type="java.lang.String" value="Number of player(s) :"/>
       </Properties>
@@ -169,7 +163,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="playerNameText">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player Name:"/>
       </Properties>

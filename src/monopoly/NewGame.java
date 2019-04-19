@@ -28,14 +28,14 @@ public class NewGame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPlayerCombo = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
+        numPlayerText = new javax.swing.JLabel();
         player1Field = new javax.swing.JTextField();
         player2Field = new javax.swing.JTextField();
         player3Field = new javax.swing.JTextField();
         player4Field = new javax.swing.JTextField();
         okButton = new javax.swing.JButton();
         gunung = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        playerNameText = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -52,7 +52,7 @@ public class NewGame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Number of player(s) :");
+        numPlayerText.setText("Number of player(s) :");
 
         player1Field.setText("Player 1 Name");
         player1Field.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -91,7 +91,7 @@ public class NewGame extends javax.swing.JFrame {
 
         gunung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/newGameFrame.jpg"))); // NOI18N
 
-        jLabel2.setText("Player Name:");
+        playerNameText.setText("Player Name:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,22 +100,18 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
+                    .addComponent(numPlayerText)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(jPlayerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(90, 90, 90)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(player1Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(player2Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(player3Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(player4Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(playerNameText)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(player1Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(player2Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(player3Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(player4Field, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(okButton)
                 .addGap(38, 38, 38))
@@ -130,8 +126,8 @@ public class NewGame extends javax.swing.JFrame {
                 .addComponent(gunung)
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(numPlayerText)
+                    .addComponent(playerNameText))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jPlayerCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -173,44 +169,46 @@ public class NewGame extends javax.swing.JFrame {
     private void jPlayerComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPlayerComboActionPerformed
         
         if (jPlayerCombo.getSelectedItem().equals("None")) {
-            jLabel2.setVisible(false);
+            jPlayerCombo.setVisible(false);
+            playerNameText.setVisible(false);
             player1Field.setVisible(false);
             player2Field.setVisible(false);
             player3Field.setVisible(false);
             player4Field.setVisible(false);     
         } if (jPlayerCombo.getSelectedItem().equals("1 Player")) {
-            
+            jPlayerCombo.setVisible(false);
             player1Field.setVisible(true);
             player2Field.setVisible(false);
             player3Field.setVisible(false);
             player4Field.setVisible(false);
-            jLabel2.setVisible(true);
+            playerNameText.setVisible(true);
         } if (jPlayerCombo.getSelectedItem().equals("2 Players")) {
-            
+            jPlayerCombo.setVisible(false);
             player1Field.setVisible(true);
             player2Field.setVisible(true);
             player3Field.setVisible(false);
             player4Field.setVisible(false);
-            jLabel2.setVisible(true);
+            playerNameText.setVisible(true);
         } if (jPlayerCombo.getSelectedItem().equals("3 Players")) {
-            
+            jPlayerCombo.setVisible(false);
             player1Field.setVisible(true);
             player2Field.setVisible(true);
             player3Field.setVisible(true);
             player4Field.setVisible(false);
-            jLabel2.setVisible(true);
+            playerNameText.setVisible(true);
         } if (jPlayerCombo.getSelectedItem().equals("4 Players")) {
+            jPlayerCombo.setVisible(false);
             player1Field.setVisible(true);
             player2Field.setVisible(true);
             player3Field.setVisible(true);
             player4Field.setVisible(true);
-            jLabel2.setVisible(true);
+            playerNameText.setVisible(true);
         }
         
     }//GEN-LAST:event_jPlayerComboActionPerformed
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        jLabel2.setVisible(false);
+        playerNameText.setVisible(false);
         player1Field.setVisible(false);
         player2Field.setVisible(false);
         player3Field.setVisible(false);
@@ -306,13 +304,13 @@ public class NewGame extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel gunung;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JComboBox<String> jPlayerCombo;
+    private javax.swing.JLabel numPlayerText;
     private javax.swing.JButton okButton;
     private javax.swing.JTextField player1Field;
     private javax.swing.JTextField player2Field;
     private javax.swing.JTextField player3Field;
     private javax.swing.JTextField player4Field;
+    private javax.swing.JLabel playerNameText;
     // End of variables declaration//GEN-END:variables
 }
