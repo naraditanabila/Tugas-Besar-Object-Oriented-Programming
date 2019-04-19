@@ -10,6 +10,14 @@ package monopoly;
  * @author Ismail F Aziz
  */
 public class NewGame extends javax.swing.JFrame {
+    
+    /*
+    
+    */
+    
+    
+    
+    
 
     /**
      * Creates new form NewGame
@@ -224,19 +232,19 @@ public class NewGame extends javax.swing.JFrame {
             playerNumber = this.getPlayerNumber();
             switch(playerNumber) {
                 case 2:
-                    player1Name = this.getPlayerName(1);
-                    player2Name = this.getPlayerName(2);
+                    player1Name = player1Field.getText();
+                    player2Name = player2Field.getText();
                     break;
                 case 3:
-                    player1Name = this.getPlayerName(1);
-                    player2Name = this.getPlayerName(2);
-                    player3Name = this.getPlayerName(3);
+                    player1Name = player1Field.getText();
+                    player2Name = player2Field.getText();
+                    player3Name = player3Field.getText();
                     break;
                 case 4:
-                    player1Name = this.getPlayerName(1);
-                    player2Name = this.getPlayerName(2);
-                    player3Name = this.getPlayerName(3);
-                    player4Name = this.getPlayerName(4);
+                    player1Name = player1Field.getText();
+                    player2Name = player2Field.getText();
+                    player3Name = player3Field.getText();
+                    player4Name = player4Field.getText();
                     break;
             }
             
@@ -247,13 +255,13 @@ public class NewGame extends javax.swing.JFrame {
     //method utk keluar
     public String getPlayerName(int noPlayer) {
         if (noPlayer == 1) {
-            return player1Field.getText();
+            return player1Name;
         } if (noPlayer == 2) {
-            return player2Field.getText();
+            return player2Name;
         } if (noPlayer == 3) {
-            return player3Field.getText();
+            return player3Name;
         } if (noPlayer == 4) {
-            return player4Field.getText();
+            return player4Name;
         } else {
             return "IOERROR! PlayerName Not Found!";
         }
