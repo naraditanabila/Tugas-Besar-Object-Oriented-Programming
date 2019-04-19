@@ -222,10 +222,24 @@ public class NewGame extends javax.swing.JFrame {
             cantPlay.setVisible(true);
         } else {
             playerNumber = this.getPlayerNumber();
-            player1Name = this.getPlayerName(1);
-            player2Name = this.getPlayerName(2);
-            player3Name = this.getPlayerName(3);
-            player4Name = this.getPlayerName(4);
+            switch(playerNumber) {
+                case 2:
+                    player1Name = this.getPlayerName(1);
+                    player2Name = this.getPlayerName(2);
+                    break;
+                case 3:
+                    player1Name = this.getPlayerName(1);
+                    player2Name = this.getPlayerName(2);
+                    player3Name = this.getPlayerName(3);
+                    break;
+                case 4:
+                    player1Name = this.getPlayerName(1);
+                    player2Name = this.getPlayerName(2);
+                    player3Name = this.getPlayerName(3);
+                    player4Name = this.getPlayerName(4);
+                    break;
+            }
+            
             this.setVisible(false);
         }
     }//GEN-LAST:event_okButtonActionPerformed
