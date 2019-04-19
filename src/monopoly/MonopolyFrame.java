@@ -1461,4 +1461,368 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JLabel topRight_img;
     private javax.swing.JButton upgradeButton;
     // End of variables declaration//GEN-END:variables
+	
+	//GETTER
+	public javax.swing.JLayeredPane getBot1(){
+		return bot1;
+	}
+	public javax.swing.JLayeredPane getBot2(){
+		return bot2;
+	}
+	public javax.swing.JLayeredPane getBot3(){
+		return bot3;
+	}
+	public javax.swing.JLayeredPane getBot4(){
+		return bot4;
+	}
+	public javax.swing.JLayeredPane getBot5(){
+		return bot5;
+	}
+	public javax.swing.JLayeredPane getBot6(){
+		return bot6;
+	}
+	public javax.swing.JLayeredPane getBot7(){
+		return bot7;
+	}
+	public javax.swing.JLayeredPane getBot8(){
+		return bot8;
+	}
+	public javax.swing.JLayeredPane getBot9(){
+		return bot9;
+	}
+	public javax.swing.JLayeredPane getBotLeft(){
+		return botLeft;
+	}
+	public javax.swing.JLayeredPane getBotRight(){
+		return botRight;
+	}
+	public javax.swing.JButton getBuyButton(){
+		return buyButton;
+	}
+	public javax.swing.JButton getGiveUpButton(){
+		return giveUpButton;
+	}
+	public javax.swing.JLayeredPane getLeft1(){
+		return left1;
+	}
+	public javax.swing.JLayeredPane getLeft2(){
+		return left2;
+	}
+	public javax.swing.JLayeredPane getLeft3(){
+		return left3;
+	}
+	public javax.swing.JLayeredPane getLeft4(){
+		return left4;
+	}
+	public javax.swing.JLayeredPane getLeft5(){
+		return left5;
+	}
+	public javax.swing.JLayeredPane getLeft6(){
+		return left6;
+	}
+	public javax.swing.JLayeredPane getLeft7(){
+		return left7;
+	}
+	public javax.swing.JLayeredPane getLeft8(){
+		return left8;
+	}
+	public javax.swing.JLayeredPane getLeft9(){
+		return left9;
+	}
+	public javax.swing.JLayeredPane getRight1(){
+		return right1;
+	}
+	public javax.swing.JLayeredPane getRight2(){
+		return right2;
+	}
+	public javax.swing.JLayeredPane getRight3(){
+		return right3;
+	}
+	public javax.swing.JLayeredPane getRight4(){
+		return right4;
+	}
+	public javax.swing.JLayeredPane getRight5(){
+		return right5;
+	}
+	public javax.swing.JLayeredPane getRight6(){
+		return right6;
+	}
+	public javax.swing.JLayeredPane getRight7(){
+		return right7;
+	}
+	public javax.swing.JLayeredPane getRight8(){
+		return right8;
+	}
+	public javax.swing.JLayeredPane getRight9(){
+		return right9;
+	}
+	public javax.swing.JLabel getMoney_player1(){
+		return money_player1;
+	}
+	public javax.swing.JLabel getMoney_player2(){
+		return money_player2;
+	}	
+	public javax.swing.JLabel getMoney_player3(){
+		return money_player3;
+	}
+	public javax.swing.JLabel getMoney_player4(){
+		return money_player4;
+	}
+    public javax.swing.JButton getPayButton(){
+		return payButton;
+	}
+	public javax.swing.JLabel getPos_player1(){
+		return pos_player1;
+	}
+    public javax.swing.JLabel getPos_player2(){
+		return pos_player2;
+	}
+	public javax.swing.JLabel getPos_player3(){
+		return pos_player3;
+	}
+	public javax.swing.JLabel getPos_player4(){
+		return pos_player4;
+	}
+    public javax.swing.JLabel getProp1(){
+		return prop1;
+	}
+    public javax.swing.JLabel getProp2(){
+		return prop2;
+	}
+	public javax.swing.JLabel getProp3(){
+		return prop3;
+	}
+	public javax.swing.JLabel getProp4(){
+		return prop4;
+	}
+	public javax.swing.JButton getRollButton(){
+		return rollButton;
+	}
+    public javax.swing.JButton getSellButton(){
+		return sellButton;
+	}
+    public javax.swing.JButton getStartButton(){
+		return startButton;
+	}
+    public javax.swing.JProgressBar getTickProgressBar(){
+		return tickProgressBar;
+	}
+    public javax.swing.JLayeredPane getTop1(){
+		return top1;
+	}
+	public javax.swing.JLayeredPane getTop2(){
+		return top2;
+	}
+	public javax.swing.JLayeredPane getTop3(){
+		return top3;
+	}
+	public javax.swing.JLayeredPane getTop4(){
+		return top4;
+	}
+	public javax.swing.JLayeredPane getTop5(){
+		return top5;
+	}
+	public javax.swing.JLayeredPane getTop6(){
+		return top6;
+	}
+	public javax.swing.JLayeredPane getTop7(){
+		return top7;
+	}
+	public javax.swing.JLayeredPane getTop8(){
+		return top8;
+	}
+	public javax.swing.JLayeredPane getTop9(){
+		return top9;
+	}
+	public javax.swing.JLayeredPane getTopLeft(){
+		return topLeft;
+	}
+	public javax.swing.JLayeredPane topRight(){
+		return topRight;
+	}
+	public javax.swing.JButton upgradeButton(){
+		return upgradeButton;
+	}
+	
+	//SETTER
+	public void setBot1(javax.swing.JLayeredPane botl) {
+		this.bot1 = botl;
+	}
+	public void setBot2(javax.swing.JLayeredPane bot2) {
+		this.bot2 = bot2;
+	}
+	public void setBot1(javax.swing.JLayeredPane bot3) {
+		this.bot3 = bot3;
+	}
+	public void setBot4(javax.swing.JLayeredPane bot4) {
+		this.bot4 = bot4;
+	}
+	public void setBot5(javax.swing.JLayeredPane bot5) {
+		this.bot5 = bot5;
+	}
+	public void setBot6(javax.swing.JLayeredPane bot6) {
+		this.bot6 = bot6;
+	}
+	public void setBot7(javax.swing.JLayeredPane bot7) {
+		this.bot7 = bot7;
+	}
+	public void setBot8(javax.swing.JLayeredPane bot8) {
+		this.bot8 = bot8;
+	}
+	public void setBot9(javax.swing.JLayeredPane bot9) {
+		this.bot9 = bot9;
+	}
+	public void setBotLeft(javax.swing.JLayeredPane botLeft) {
+		this.botLeft = botLeft;
+	}
+	public void setBotRight(javax.swing.JLayeredPane botRight) {
+		this.botRight = botRight;
+	}
+	public void setBuyButton(javax.swing.JButton buyButton){
+		this.buyButton = buyButton;
+	}
+	public void setGiveUpButton(javax.swing.JButton giveUpButton){
+		this.giveUpButton = giveUpButton;
+	}
+	public void setLeft1(javax.swing.JLayeredPane left1){
+		this.left1 = left1;
+	}
+	public void setLeft2(javax.swing.JLayeredPane left2){
+		this.left2 = left2;
+	}
+	public void setLeft3(javax.swing.JLayeredPane left3){
+		this.left3 = left3;
+	}
+	public void setLeft4(javax.swing.JLayeredPane left4){
+		this.left4 = left4;
+	}
+	public void setLeft5(javax.swing.JLayeredPane left5){
+		this.left5 = left5;
+	}
+	public void setLeft6(javax.swing.JLayeredPane left6){
+		this.left6 = left6;
+	}
+	public void setLeft7(javax.swing.JLayeredPane left7){
+		this.left7 = left7;
+	}
+	public void setLeft8(javax.swing.JLayeredPane left8){
+		this.left = left8;
+	}
+	public void setLeft9(javax.swing.JLayeredPane left9){
+		this.left9 = left9;
+	}
+	public void setRight1(javax.swing.JLayeredPane right1){
+		this.right1 = right1;
+	}
+	public void setRight2(javax.swing.JLayeredPane right2){
+		this.right2 = right2;
+	}
+	public void setRight3(javax.swing.JLayeredPane right3){
+		this.right3 = right3;
+	}
+	public void setRight4(javax.swing.JLayeredPane right4){
+		this.right4 = right4;
+	}
+	public void setRight5(javax.swing.JLayeredPane right5){
+		this.right5 = right5;
+	}
+	public void setRight6(javax.swing.JLayeredPane right6){
+		this.right6 = right6;
+	}
+	public void setRight7(javax.swing.JLayeredPane right7){
+		this.right7 = right7;
+	}
+	public void setRight8(javax.swing.JLayeredPane right8){
+		this.right8 = right8;
+	}
+	public void setRight9(javax.swing.JLayeredPane right9){
+		this.right9 = right9;
+	}
+	public void setMoney_player1(javax.swing.JLabel money_player1){
+		this.money_player1 = money_player1;
+	}
+	public void setMoney_player2(javax.swing.JLabel money_player2){
+		this.money_player2 = money_player2;
+	}	
+	public void setMoney_player3(javax.swing.JLabel money_player3){
+		this.money_player3 = money_player3;
+	}
+	public void setMoney_player4(javax.swing.JLabel money_player4){
+		this.money_player4 = money_player4;
+	}
+    public void setPayButton(javax.swing.JButton payButton){
+		this.payButton = payButton;
+	}
+	public void setPos_player1(javax.swing.JLabel pos_player1){
+		this.pos_player1 = pos_player1;
+	}
+    public void setPos_player2(javax.swing.JLabel pos_player2){
+		this.pos_player2 = pos_player2;
+	}
+	public void setPos_player3(javax.swing.JLabel pos_player3){
+		this.pos_player3 = pos_player3;
+	}
+	public void setPos_player4(javax.swing.JLabel pos_player4){
+		this.pos_player4 = pos_player4;
+	}
+    public void setProp1(javax.swing.JLabel prop1){
+		this.prop1 = prop1;
+	}
+    public void setProp2(javax.swing.JLabel prop2){
+		this.prop2 = prop2;
+	}
+	public void setProp3(javax.swing.JLabel prop3){
+		this.prop3 = prop;
+	}
+	public void setProp4(javax.swing.JLabel prop4){
+		this.prop4 = prop4;
+	}
+	public void setRollButton(javax.swing.JButton rollButton){
+		this.rollButton = rollButton;
+	}
+    public void setSellButton(javax.swing.JButton sellButton){
+		this.sellButton = sellButton;
+	}
+    public void setStartButton(javax.swing.JButton startButton){
+		this.startButton = startButton;
+	}
+    public void setTickProgressBar(javax.swing.JProgressBar tickProgressBar){
+		this.tickProgressBar = tickProgressBar;
+	}
+    public void setTop1(javax.swing.JLayeredPane top1){
+		this.top1 = top1;
+	}
+	public void setTop2(javax.swing.JLayeredPane top2){
+		this.top2 = top2;
+	}
+	public void setTop3(javax.swing.JLayeredPane top3){
+		this.top3 = top3;
+	}
+	public void setTop4(javax.swing.JLayeredPane top4){
+		this.top4 = top4;
+	}
+	public void setTop5(javax.swing.JLayeredPane top5){
+		this.top5 = top5;
+	}
+	public void setTop6(javax.swing.JLayeredPane top6){
+		this.top6 = top6;
+	}
+	public void setTop7(javax.swing.JLayeredPane top7){
+		this.top7 = top7;
+	}
+	public void setTop8(javax.swing.JLayeredPane top8){
+		this.top8 = top8;
+	}
+	public void setTop9(javax.swing.JLayeredPane top9){
+		this.top9 = top9;
+	}
+	public void setTopLeft(javax.swing.JLayeredPane topLeft){
+		this.topLeft = topLeft;
+	}
+	public void setTopRight(javax.swing.JLayeredPane topRight){
+		this.topRight = topRight;
+	}
+	public void setUpgradeButton(javax.swing.JButton upgradeButton){
+		this.upgradeButton = upgradeButton;
+	}
 }
