@@ -169,7 +169,24 @@ public class Main {
 		ccList.add("Dipalak Preman 6500",new CommunityChest()); //8, out
 		ccList.add("Transferan Orang Tua 5000",new CommunityChest()); //9, in
 		ccList.add("Bayar Laundry 4000",new CommunityChest()); //10, out
-		//Iterasi permainan
+		
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //Iterasi permainan
 		
 		Turn turn  = new Turn(nPlayer);
 

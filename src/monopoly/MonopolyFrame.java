@@ -1662,31 +1662,31 @@ public class MonopolyFrame extends javax.swing.JFrame {
 		return right9;
 	}
 	public javax.swing.JLabel getMoney_player1(){
-		return label_money_player1;
+		return money_player1;
 	}
 	public javax.swing.JLabel getMoney_player2(){
-		return label_money_player2;
+		return money_player2;
 	}	
 	public javax.swing.JLabel getMoney_player3(){
-		return label_money_player3;
+		return money_player3;
 	}
 	public javax.swing.JLabel getMoney_player4(){
-		return label_money_player4;
+		return money_player4;
 	}
     public javax.swing.JButton getPayButton(){
 		return payButton;
 	}
 	public javax.swing.JLabel getPos_player1(){
-		return label_pos_player1;
+		return pos_player1;
 	}
     public javax.swing.JLabel getPos_player2(){
-		return label_pos_player2;
+		return pos_player2;
 	}
 	public javax.swing.JLabel getPos_player3(){
-		return label_pos_player3;
+		return pos_player3;
 	}
 	public javax.swing.JLabel getPos_player4(){
-		return label_pos_player4;
+		return pos_player4;
 	}
     public javax.swing.JLabel getProp1(){
 		return label_prop1;

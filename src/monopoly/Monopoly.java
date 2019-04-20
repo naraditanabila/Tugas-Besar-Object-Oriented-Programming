@@ -6,6 +6,8 @@
 package monopoly;
 
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -66,8 +68,25 @@ public class Monopoly{
         MediaPlayer mediaPlayer = new MediaPlayer(hit);
         mediaPlayer.play();
         
+        //testing new game
+        mainFrame.setLog(newGameFrame.getPlayerName(1) + "\n");
+        mainFrame.setLog(newGameFrame.getPlayerName(2) + "\n");
+        mainFrame.setLog(newGameFrame.getPlayerName(3) + "\n");
+        mainFrame.setLog(newGameFrame.getPlayerName(4) + "\n");
         
-        //
+        
+        //Nyoba2
+        mainFrame.getRollButton().addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent evt0) {
+                mainFrame.setVisible(false);
+                mainFrame.setLog("Roll kepencet!!!\n ");
+            }
+        });
+        mainFrame.getPayButton().addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent evt0) {
+                mainFrame.setLog("Roll kepencet!!!\n ");
+            }
+        });
         
         
         
