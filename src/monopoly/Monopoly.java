@@ -81,7 +81,6 @@ public class Monopoly{
                 mainFrame.setLog(newGameFrame.getPlayerName(2) + "\n");
                 mainFrame.setLog(newGameFrame.getPlayerName(3) + "\n");
                 mainFrame.setLog(newGameFrame.getPlayerName(4) + "\n");
-                mainFrame.getMoney_player1().setText("2000");
             }    
         
         });
