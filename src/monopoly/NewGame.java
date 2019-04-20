@@ -63,32 +63,12 @@ public class NewGame extends javax.swing.JFrame {
         numPlayerText.setText("Number of player(s) :");
 
         player1Field.setText("Player 1 Name");
-        player1Field.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                player1FieldFocusGained(evt);
-            }
-        });
 
         player2Field.setText("Player 2 Name");
-        player2Field.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                player2FieldFocusGained(evt);
-            }
-        });
 
         player3Field.setText("Player 3 Name");
-        player3Field.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                player3FieldFocusGained(evt);
-            }
-        });
 
         player4Field.setText("Player 4 Name");
-        player4Field.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                player4FieldFocusGained(evt);
-            }
-        });
 
         okButton.setText("OK");
         okButton.addActionListener(new java.awt.event.ActionListener() {
@@ -157,22 +137,6 @@ public class NewGame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void player1FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player1FieldFocusGained
-        player1Field.setText("");
-    }//GEN-LAST:event_player1FieldFocusGained
-
-    private void player2FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player2FieldFocusGained
-        player2Field.setText("");
-    }//GEN-LAST:event_player2FieldFocusGained
-
-    private void player3FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player3FieldFocusGained
-        player3Field.setText("");
-    }//GEN-LAST:event_player3FieldFocusGained
-
-    private void player4FieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_player4FieldFocusGained
-        player4Field.setText("");
-    }//GEN-LAST:event_player4FieldFocusGained
 
     private void jPlayerComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPlayerComboActionPerformed
         

@@ -120,33 +120,21 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 1 Name"/>
       </Properties>
-      <Events>
-        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="player1FieldFocusGained"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="player2Field">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 2 Name"/>
       </Properties>
-      <Events>
-        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="player2FieldFocusGained"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="player3Field">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 3 Name"/>
       </Properties>
-      <Events>
-        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="player3FieldFocusGained"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="player4Field">
       <Properties>
         <Property name="text" type="java.lang.String" value="Player 4 Name"/>
       </Properties>
-      <Events>
-        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="player4FieldFocusGained"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="okButton">
       <Properties>
