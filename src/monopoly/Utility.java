@@ -1,3 +1,5 @@
+package monopoly;
+
 public class Utility extends Property { //inheritance
 	public Utility (String name){
 		super(name,0,800,5);

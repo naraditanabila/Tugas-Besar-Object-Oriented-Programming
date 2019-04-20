@@ -1,3 +1,5 @@
+package monopoly;
+
 public class Turn{
 	private int totalPlayer;
 	private int player = 0;		//Initiate player index

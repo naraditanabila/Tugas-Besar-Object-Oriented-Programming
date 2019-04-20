@@ -1,3 +1,5 @@
+package monopoly;
+
 //import java.util.Random;
 
 public class ListCard <String, C>{ //generic class, yeayy!

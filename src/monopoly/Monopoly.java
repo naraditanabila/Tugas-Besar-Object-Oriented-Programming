@@ -49,7 +49,7 @@ public class Monopoly{
         mainFrame.setIconImage(img.getImage());
         newGameFrame.setIconImage(img.getImage());
         mainFrame.getBot1().add(token1);
-        mainFrame.setLog(Integer.toString(mainFrame.getBot1().getLayer(token1)));
+        mainFrame.setLog(Integer.toString(mainFrame.getBot1().getLayer(token1)) + "\n");
         mainFrame.setVisible(true);
         
         // New Game
@@ -63,22 +63,27 @@ public class Monopoly{
         winnerFrame.setVisible(false);
         
         // Nyoba music
-        String cuteGirl = " /monopoly/resources/cuteGirl.mp3";
-        Media hit = new Media(new File(cuteGirl).toURI().toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(hit);
-        mediaPlayer.play();
+        //String cuteGirl = " /monopoly/resources/cuteGirl.mp3";
+        //Media hit = new Media(new File(cuteGirl).toURI().toString());
+        //MediaPlayer mediaPlayer = new MediaPlayer(hit);
+        //mediaPlayer.play();
         
-        //testing new game
-        mainFrame.setLog(newGameFrame.getPlayerName(1) + "\n");
-        mainFrame.setLog(newGameFrame.getPlayerName(2) + "\n");
-        mainFrame.setLog(newGameFrame.getPlayerName(3) + "\n");
-        mainFrame.setLog(newGameFrame.getPlayerName(4) + "\n");
+        
         
         
         //Nyoba2
+        newGameFrame.getOkButton().addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent evt0) {
+                mainFrame.setLog(newGameFrame.getPlayerName(1) + "\n");
+                mainFrame.setLog(newGameFrame.getPlayerName(2) + "\n");
+                mainFrame.setLog(newGameFrame.getPlayerName(3) + "\n");
+                mainFrame.setLog(newGameFrame.getPlayerName(4) + "\n");
+            }    
+        
+        });
+        
         mainFrame.getRollButton().addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent evt0) {
-                mainFrame.setVisible(false);
                 mainFrame.setLog("Roll kepencet!!!\n ");
             }
         });
@@ -87,6 +92,9 @@ public class Monopoly{
                 mainFrame.setLog("Roll kepencet!!!\n ");
             }
         });
+        
+        //testing new game
+        
         
         
         

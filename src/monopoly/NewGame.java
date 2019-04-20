@@ -280,6 +280,10 @@ public class NewGame extends javax.swing.JFrame {
             return 0;
         }
     }
+    
+    public javax.swing.JButton getOkButton() {
+        return okButton;
+    }
     /**
      * @param args the command line arguments
      */

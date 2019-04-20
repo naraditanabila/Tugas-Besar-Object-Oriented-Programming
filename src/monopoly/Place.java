@@ -1,3 +1,4 @@
+package monopoly;
 
 public abstract class Place {  //abstract class
 	private String name;
