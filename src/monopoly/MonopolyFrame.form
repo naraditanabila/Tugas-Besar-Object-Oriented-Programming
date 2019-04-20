@@ -82,7 +82,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="boardPanel" pref="998" max="32767" attributes="0"/>
+                  <Component id="boardPanel" pref="1027" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="playerPane" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -320,7 +320,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="7" max="32767" attributes="0"/>
+                  <EmptySpace pref="36" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1410,9 +1410,18 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="money_player1" min="-2" max="-2" attributes="0"/>
-                          <Component id="pos_player1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="prop1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="label_money_player1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="money_player1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_pos_player1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pos_player1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="label_prop1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="prop1PrintButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -1422,30 +1431,53 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="money_player1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_money_player1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="money_player1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="pos_player1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_pos_player1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pos_player1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="prop1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="label_prop1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="prop1PrintButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="money_player1">
+            <Component class="javax.swing.JLabel" name="label_money_player1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Money :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="pos_player1">
+            <Component class="javax.swing.JLabel" name="label_pos_player1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Position :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="prop1">
+            <Component class="javax.swing.JLabel" name="label_prop1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Property :"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="prop1PrintButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Show Property"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="money_player1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pos_player1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1465,11 +1497,20 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="money_player2" min="-2" max="-2" attributes="0"/>
-                          <Component id="pos_player2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="prop2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="label_money_player2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="money_player2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_pos_player2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pos_player2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="label_prop2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="prop2PrintButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="185" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1477,30 +1518,53 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="money_player2" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_money_player2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="money_player2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="pos_player2" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_pos_player2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pos_player2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="prop2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="93" max="32767" attributes="0"/>
+                      <Component id="label_prop2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="prop2PrintButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="money_player2">
+            <Component class="javax.swing.JLabel" name="label_money_player2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Money :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="pos_player2">
+            <Component class="javax.swing.JLabel" name="label_pos_player2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Position :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="prop2">
+            <Component class="javax.swing.JLabel" name="label_prop2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Property :"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="prop2PrintButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Show Property"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="money_player2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pos_player2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1520,11 +1584,20 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="money_player3" min="-2" max="-2" attributes="0"/>
-                          <Component id="pos_player3" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="prop3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="label_money_player3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="money_player3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_pos_player3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pos_player3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="label_prop3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="prop3PrintButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="187" max="32767" attributes="0"/>
+                      <EmptySpace pref="133" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1532,30 +1605,53 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="money_player3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_money_player3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="money_player3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="pos_player3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_pos_player3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pos_player3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="prop3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="93" max="32767" attributes="0"/>
+                      <Component id="label_prop3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="prop3PrintButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="money_player3">
+            <Component class="javax.swing.JLabel" name="label_money_player3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Money :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="pos_player3">
+            <Component class="javax.swing.JLabel" name="label_pos_player3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Position :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="prop3">
+            <Component class="javax.swing.JLabel" name="label_prop3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Property :"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="prop3PrintButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Show Property"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="money_player3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pos_player3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1575,11 +1671,23 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="money_player4" min="-2" max="-2" attributes="0"/>
-                          <Component id="pos_player4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="prop4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="label_money_player4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="money_player4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="label_pos_player4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pos_player4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="label_prop4" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="150" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="prop4PrintButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1587,30 +1695,53 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="money_player4" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_money_player4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="money_player4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="pos_player4" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="label_pos_player4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pos_player4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="prop4" min="-2" max="-2" attributes="0"/>
+                      <Component id="label_prop4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="prop4PrintButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="money_player4">
+            <Component class="javax.swing.JLabel" name="label_money_player4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Money :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="pos_player4">
+            <Component class="javax.swing.JLabel" name="label_pos_player4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Position :"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="prop4">
+            <Component class="javax.swing.JLabel" name="label_prop4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Property :"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="prop4PrintButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Show Property"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="money_player4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pos_player4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
             </Component>
           </SubComponents>

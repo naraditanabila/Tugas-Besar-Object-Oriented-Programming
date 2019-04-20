@@ -1,3 +1,6 @@
+
+package monopoly;
+
 class Timer extends Thread{
     private int time = 1;
     private boolean setting = false;

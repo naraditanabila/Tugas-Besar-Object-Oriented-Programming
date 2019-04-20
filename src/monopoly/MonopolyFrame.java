@@ -49,44 +49,12 @@ public class MonopolyFrame extends javax.swing.JFrame {
     
     public MonopolyFrame() {
         initComponents();
+        
         gameLog.setVisible(false);
     }
 
-    /*
-        METHOD MANUAL
-    */
-
-    public void setLog(String text) {
-        gameLog.append(text);
-    }
     
-    public void clearLog() {
-        gameLog.setText("");
-    }
-    
-    //data Player
-    public void setPlayer1Data(String text) {
-        
-    }
-    
-    public void adjustPlayerPos(int idPlayer, int move ) {
-        
-        //
-        //fungsi : update token per player
-        //  Jlabel tokenPlayer1 = new JLabel(ambil file token1.jpg); ==> taro di Consturctor
-        
-        
-        /*
-            if (idPlayer == 1) {
-                
-            }
-        */
-    }
 
-
-    /*
-        METHOD MANUAL
-    */
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -175,21 +143,33 @@ public class MonopolyFrame extends javax.swing.JFrame {
         bot2_img = new javax.swing.JLabel();
         playerPane = new javax.swing.JPanel();
         player1Panel = new javax.swing.JPanel();
+        label_money_player1 = new javax.swing.JLabel();
+        label_pos_player1 = new javax.swing.JLabel();
+        label_prop1 = new javax.swing.JLabel();
+        prop1PrintButton = new javax.swing.JButton();
         money_player1 = new javax.swing.JLabel();
         pos_player1 = new javax.swing.JLabel();
-        prop1 = new javax.swing.JLabel();
         player2Panel = new javax.swing.JPanel();
+        label_money_player2 = new javax.swing.JLabel();
+        label_pos_player2 = new javax.swing.JLabel();
+        label_prop2 = new javax.swing.JLabel();
+        prop2PrintButton = new javax.swing.JButton();
         money_player2 = new javax.swing.JLabel();
         pos_player2 = new javax.swing.JLabel();
-        prop2 = new javax.swing.JLabel();
         player3Panel = new javax.swing.JPanel();
+        label_money_player3 = new javax.swing.JLabel();
+        label_pos_player3 = new javax.swing.JLabel();
+        label_prop3 = new javax.swing.JLabel();
+        prop3PrintButton = new javax.swing.JButton();
         money_player3 = new javax.swing.JLabel();
         pos_player3 = new javax.swing.JLabel();
-        prop3 = new javax.swing.JLabel();
         player4Panel = new javax.swing.JPanel();
+        label_money_player4 = new javax.swing.JLabel();
+        label_pos_player4 = new javax.swing.JLabel();
+        label_prop4 = new javax.swing.JLabel();
+        prop4PrintButton = new javax.swing.JButton();
         money_player4 = new javax.swing.JLabel();
         pos_player4 = new javax.swing.JLabel();
-        prop4 = new javax.swing.JLabel();
         rollButton = new javax.swing.JButton();
         buyButton = new javax.swing.JButton();
         upgradeButton = new javax.swing.JButton();
@@ -1017,18 +997,24 @@ public class MonopolyFrame extends javax.swing.JFrame {
                             .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(bot8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(bot9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         playerPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         player1Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 1"));
 
-        money_player1.setText("Money :");
+        label_money_player1.setText("Money :");
 
-        pos_player1.setText("Position :");
+        label_pos_player1.setText("Position :");
 
-        prop1.setText("Property :");
+        label_prop1.setText("Property :");
+
+        prop1PrintButton.setText("Show Property");
+
+        money_player1.setText("jLabel1");
+
+        pos_player1.setText("jLabel1");
 
         javax.swing.GroupLayout player1PanelLayout = new javax.swing.GroupLayout(player1Panel);
         player1Panel.setLayout(player1PanelLayout);
@@ -1037,30 +1023,49 @@ public class MonopolyFrame extends javax.swing.JFrame {
             .addGroup(player1PanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(player1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(money_player1)
-                    .addComponent(pos_player1)
-                    .addComponent(prop1))
+                    .addGroup(player1PanelLayout.createSequentialGroup()
+                        .addComponent(label_money_player1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(money_player1))
+                    .addGroup(player1PanelLayout.createSequentialGroup()
+                        .addComponent(label_pos_player1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pos_player1))
+                    .addComponent(label_prop1)
+                    .addComponent(prop1PrintButton))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         player1PanelLayout.setVerticalGroup(
             player1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, player1PanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(money_player1)
+                .addGroup(player1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_money_player1)
+                    .addComponent(money_player1))
                 .addGap(18, 18, 18)
-                .addComponent(pos_player1)
+                .addGroup(player1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_pos_player1)
+                    .addComponent(pos_player1))
                 .addGap(18, 18, 18)
-                .addComponent(prop1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(label_prop1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(prop1PrintButton)
+                .addGap(10, 10, 10))
         );
 
         player2Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 2"));
 
-        money_player2.setText("Money :");
+        label_money_player2.setText("Money :");
 
-        pos_player2.setText("Position :");
+        label_pos_player2.setText("Position :");
 
-        prop2.setText("Property :");
+        label_prop2.setText("Property :");
+
+        prop2PrintButton.setText("Show Property");
+
+        money_player2.setText("jLabel1");
+
+        pos_player2.setText("jLabel1");
 
         javax.swing.GroupLayout player2PanelLayout = new javax.swing.GroupLayout(player2Panel);
         player2Panel.setLayout(player2PanelLayout);
@@ -1069,30 +1074,49 @@ public class MonopolyFrame extends javax.swing.JFrame {
             .addGroup(player2PanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(player2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(money_player2)
-                    .addComponent(pos_player2)
-                    .addComponent(prop2))
-                .addContainerGap(185, Short.MAX_VALUE))
+                    .addGroup(player2PanelLayout.createSequentialGroup()
+                        .addComponent(label_money_player2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(money_player2))
+                    .addGroup(player2PanelLayout.createSequentialGroup()
+                        .addComponent(label_pos_player2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pos_player2))
+                    .addComponent(label_prop2)
+                    .addComponent(prop2PrintButton))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         player2PanelLayout.setVerticalGroup(
             player2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, player2PanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(money_player2)
+                .addGroup(player2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_money_player2)
+                    .addComponent(money_player2))
                 .addGap(18, 18, 18)
-                .addComponent(pos_player2)
+                .addGroup(player2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_pos_player2)
+                    .addComponent(pos_player2))
                 .addGap(18, 18, 18)
-                .addComponent(prop2)
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addComponent(label_prop2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(prop2PrintButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         player3Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 3"));
 
-        money_player3.setText("Money :");
+        label_money_player3.setText("Money :");
 
-        pos_player3.setText("Position :");
+        label_pos_player3.setText("Position :");
 
-        prop3.setText("Property :");
+        label_prop3.setText("Property :");
+
+        prop3PrintButton.setText("Show Property");
+
+        money_player3.setText("jLabel1");
+
+        pos_player3.setText("jLabel1");
 
         javax.swing.GroupLayout player3PanelLayout = new javax.swing.GroupLayout(player3Panel);
         player3Panel.setLayout(player3PanelLayout);
@@ -1101,30 +1125,49 @@ public class MonopolyFrame extends javax.swing.JFrame {
             .addGroup(player3PanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(player3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(money_player3)
-                    .addComponent(pos_player3)
-                    .addComponent(prop3))
-                .addContainerGap(187, Short.MAX_VALUE))
+                    .addGroup(player3PanelLayout.createSequentialGroup()
+                        .addComponent(label_money_player3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(money_player3))
+                    .addGroup(player3PanelLayout.createSequentialGroup()
+                        .addComponent(label_pos_player3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pos_player3))
+                    .addComponent(label_prop3)
+                    .addComponent(prop3PrintButton))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
         player3PanelLayout.setVerticalGroup(
             player3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, player3PanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(money_player3)
+                .addGroup(player3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_money_player3)
+                    .addComponent(money_player3))
                 .addGap(18, 18, 18)
-                .addComponent(pos_player3)
+                .addGroup(player3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_pos_player3)
+                    .addComponent(pos_player3))
                 .addGap(18, 18, 18)
-                .addComponent(prop3)
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addComponent(label_prop3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(prop3PrintButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         player4Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 4"));
 
-        money_player4.setText("Money :");
+        label_money_player4.setText("Money :");
 
-        pos_player4.setText("Position :");
+        label_pos_player4.setText("Position :");
 
-        prop4.setText("Property :");
+        label_prop4.setText("Property :");
+
+        prop4PrintButton.setText("Show Property");
+
+        money_player4.setText("jLabel1");
+
+        pos_player4.setText("jLabel1");
 
         javax.swing.GroupLayout player4PanelLayout = new javax.swing.GroupLayout(player4Panel);
         player4Panel.setLayout(player4PanelLayout);
@@ -1133,20 +1176,35 @@ public class MonopolyFrame extends javax.swing.JFrame {
             .addGroup(player4PanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(player4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(money_player4)
-                    .addComponent(pos_player4)
-                    .addComponent(prop4))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(player4PanelLayout.createSequentialGroup()
+                        .addComponent(label_money_player4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(money_player4))
+                    .addGroup(player4PanelLayout.createSequentialGroup()
+                        .addComponent(label_pos_player4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pos_player4))
+                    .addComponent(label_prop4))
+                .addContainerGap(150, Short.MAX_VALUE))
+            .addGroup(player4PanelLayout.createSequentialGroup()
+                .addComponent(prop4PrintButton)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         player4PanelLayout.setVerticalGroup(
             player4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, player4PanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(money_player4)
+                .addGroup(player4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_money_player4)
+                    .addComponent(money_player4))
                 .addGap(18, 18, 18)
-                .addComponent(pos_player4)
+                .addGroup(player4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(label_pos_player4)
+                    .addComponent(pos_player4))
                 .addGap(18, 18, 18)
-                .addComponent(prop4)
+                .addComponent(label_prop4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(prop4PrintButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1269,7 +1327,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(boardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 998, Short.MAX_VALUE)
+                    .addComponent(boardPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1027, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(playerPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1378,6 +1436,18 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JToggleButton gameLogButton;
     private javax.swing.JButton giveUpButton;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel label_money_player1;
+    private javax.swing.JLabel label_money_player2;
+    private javax.swing.JLabel label_money_player3;
+    private javax.swing.JLabel label_money_player4;
+    private javax.swing.JLabel label_pos_player1;
+    private javax.swing.JLabel label_pos_player2;
+    private javax.swing.JLabel label_pos_player3;
+    private javax.swing.JLabel label_pos_player4;
+    private javax.swing.JLabel label_prop1;
+    private javax.swing.JLabel label_prop2;
+    private javax.swing.JLabel label_prop3;
+    private javax.swing.JLabel label_prop4;
     private javax.swing.JLayeredPane left1;
     private javax.swing.JLabel left1_img;
     private javax.swing.JLayeredPane left2;
@@ -1410,10 +1480,10 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JLabel pos_player2;
     private javax.swing.JLabel pos_player3;
     private javax.swing.JLabel pos_player4;
-    private javax.swing.JLabel prop1;
-    private javax.swing.JLabel prop2;
-    private javax.swing.JLabel prop3;
-    private javax.swing.JLabel prop4;
+    private javax.swing.JButton prop1PrintButton;
+    private javax.swing.JButton prop2PrintButton;
+    private javax.swing.JButton prop3PrintButton;
+    private javax.swing.JButton prop4PrintButton;
     private javax.swing.JLayeredPane right1;
     private javax.swing.JLabel right1_img;
     private javax.swing.JLayeredPane right2;
@@ -1461,6 +1531,40 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JButton upgradeButton;
     // End of variables declaration//GEN-END:variables
 	
+    
+    
+       /*
+        METHOD MANUAL
+    */
+
+    public void setLog(String text) {
+        gameLog.append(text);
+    }
+    
+    public void clearLog() {
+        gameLog.setText("");
+    }
+    
+    //data Player
+    public void setPlayer1Data(String text) {
+        
+    }
+    
+    public void adjustPlayerPos(int idPlayer, int move ) {
+        
+        //
+        //fungsi : update token per player
+        //  Jlabel tokenPlayer1 = new JLabel(ambil file token1.jpg); ==> taro di Consturctor
+        
+        
+        /*
+            if (idPlayer == 1) {
+                
+            }
+        */
+    }
+
+
 	//GETTER
 	public javax.swing.JLayeredPane getBot1(){
             bot1.setLayer(bot1_img, -1);
@@ -1558,43 +1662,43 @@ public class MonopolyFrame extends javax.swing.JFrame {
 		return right9;
 	}
 	public javax.swing.JLabel getMoney_player1(){
-		return money_player1;
+		return label_money_player1;
 	}
 	public javax.swing.JLabel getMoney_player2(){
-		return money_player2;
+		return label_money_player2;
 	}	
 	public javax.swing.JLabel getMoney_player3(){
-		return money_player3;
+		return label_money_player3;
 	}
 	public javax.swing.JLabel getMoney_player4(){
-		return money_player4;
+		return label_money_player4;
 	}
     public javax.swing.JButton getPayButton(){
 		return payButton;
 	}
 	public javax.swing.JLabel getPos_player1(){
-		return pos_player1;
+		return label_pos_player1;
 	}
     public javax.swing.JLabel getPos_player2(){
-		return pos_player2;
+		return label_pos_player2;
 	}
 	public javax.swing.JLabel getPos_player3(){
-		return pos_player3;
+		return label_pos_player3;
 	}
 	public javax.swing.JLabel getPos_player4(){
-		return pos_player4;
+		return label_pos_player4;
 	}
     public javax.swing.JLabel getProp1(){
-		return prop1;
+		return label_prop1;
 	}
     public javax.swing.JLabel getProp2(){
-		return prop2;
+		return label_prop2;
 	}
 	public javax.swing.JLabel getProp3(){
-		return prop3;
+		return label_prop3;
 	}
 	public javax.swing.JLabel getProp4(){
-		return prop4;
+		return label_prop4;
 	}
 	public javax.swing.JButton getRollButton(){
 		return rollButton;
@@ -1638,12 +1742,16 @@ public class MonopolyFrame extends javax.swing.JFrame {
 	public javax.swing.JLayeredPane getTopLeft(){
 		return topLeft;
 	}
-	public javax.swing.JLayeredPane topRight(){
+	public javax.swing.JLayeredPane getTopRight(){
 		return topRight;
 	}
-	public javax.swing.JButton upgradeButton(){
+	public javax.swing.JButton getUpgradeButton(){
 		return upgradeButton;
 	}
+        
+        public javax.swing.JButton getProp1Button() {
+            return prop1PrintButton;
+        }
 	
 	//SETTER
 	public void setBot1(javax.swing.JLayeredPane botl) {
@@ -1740,43 +1848,43 @@ public class MonopolyFrame extends javax.swing.JFrame {
 		this.right9 = right9;
 	}
 	public void setMoney_player1(javax.swing.JLabel money_player1){
-		this.money_player1 = money_player1;
+		this.label_money_player1 = money_player1;
 	}
 	public void setMoney_player2(javax.swing.JLabel money_player2){
-		this.money_player2 = money_player2;
+		this.label_money_player2 = money_player2;
 	}	
 	public void setMoney_player3(javax.swing.JLabel money_player3){
-		this.money_player3 = money_player3;
+		this.label_money_player3 = money_player3;
 	}
 	public void setMoney_player4(javax.swing.JLabel money_player4){
-		this.money_player4 = money_player4;
+		this.label_money_player4 = money_player4;
 	}
     public void setPayButton(javax.swing.JButton payButton){
 		this.payButton = payButton;
 	}
 	public void setPos_player1(javax.swing.JLabel pos_player1){
-		this.pos_player1 = pos_player1;
+		this.label_pos_player1 = pos_player1;
 	}
     public void setPos_player2(javax.swing.JLabel pos_player2){
-		this.pos_player2 = pos_player2;
+		this.label_pos_player2 = pos_player2;
 	}
 	public void setPos_player3(javax.swing.JLabel pos_player3){
-		this.pos_player3 = pos_player3;
+		this.label_pos_player3 = pos_player3;
 	}
 	public void setPos_player4(javax.swing.JLabel pos_player4){
-		this.pos_player4 = pos_player4;
+		this.label_pos_player4 = pos_player4;
 	}
     public void setProp1(javax.swing.JLabel prop1){
-		this.prop1 = prop1;
+		this.label_prop1 = prop1;
 	}
     public void setProp2(javax.swing.JLabel prop2){
-		this.prop2 = prop2;
+		this.label_prop2 = prop2;
 	}
 	public void setProp3(javax.swing.JLabel prop3){
-		this.prop3 = prop3;
+		this.label_prop3 = prop3;
 	}
 	public void setProp4(javax.swing.JLabel prop4){
-		this.prop4 = prop4;
+		this.label_prop4 = prop4;
 	}
     public void setRollButton(javax.swing.JButton rollButton){
 	this.rollButton = rollButton;
@@ -1826,4 +1934,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 	public void setUpgradeButton(javax.swing.JButton upgradeButton){
 		this.upgradeButton = upgradeButton;
 	}
+    /*
+    METHOD MANUAL
+    */
 }
