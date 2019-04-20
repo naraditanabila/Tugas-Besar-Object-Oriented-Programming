@@ -1551,7 +1551,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 
 
 	//GETTER
-	public javax.swing.JLayeredPane getBot1(){
+	public javax.swing.JLayeredPane getBot1(){  
             return bot1;
 	}
 	public javax.swing.JLayeredPane getBot2(){
