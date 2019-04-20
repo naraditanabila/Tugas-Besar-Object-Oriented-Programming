@@ -11,6 +11,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 
 
@@ -39,9 +40,14 @@ public class Monopoly{
         
         //mainFrame
         ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
+        ImageIcon token1_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token1.png"));
+        JLabel token1 = new JLabel();
+        token1.setIcon(token1_img);
         
         mainFrame.setIconImage(img.getImage());
         newGameFrame.setIconImage(img.getImage());
+        mainFrame.getBot1().add(token1);
+        mainFrame.setLog(Integer.toString(mainFrame.getBot1().getLayer(token1)));
         mainFrame.setVisible(true);
         
         // New Game

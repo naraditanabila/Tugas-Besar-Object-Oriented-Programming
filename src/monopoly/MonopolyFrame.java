@@ -922,7 +922,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
                                     .addComponent(right5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addComponent(topRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, boardPanelLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
                 .addComponent(botLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(6, 6, 6)
                 .addComponent(bot9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1464,7 +1463,9 @@ public class MonopolyFrame extends javax.swing.JFrame {
 	
 	//GETTER
 	public javax.swing.JLayeredPane getBot1(){
-		return bot1;
+            bot1.setLayer(bot1_img, -1);
+            gameLog.append(Integer.toString(bot1.getLayer(bot1_img))+"\n");
+            return bot1;
 	}
 	public javax.swing.JLayeredPane getBot2(){
 		return bot2;
@@ -1651,7 +1652,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 	public void setBot2(javax.swing.JLayeredPane bot2) {
 		this.bot2 = bot2;
 	}
-	public void setBot1(javax.swing.JLayeredPane bot3) {
+	public void setBot3(javax.swing.JLayeredPane bot3) {
 		this.bot3 = bot3;
 	}
 	public void setBot4(javax.swing.JLayeredPane bot4) {
@@ -1706,7 +1707,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 		this.left7 = left7;
 	}
 	public void setLeft8(javax.swing.JLayeredPane left8){
-		this.left = left8;
+		this.left8 = left8;
 	}
 	public void setLeft9(javax.swing.JLayeredPane left9){
 		this.left9 = left9;
@@ -1772,17 +1773,17 @@ public class MonopolyFrame extends javax.swing.JFrame {
 		this.prop2 = prop2;
 	}
 	public void setProp3(javax.swing.JLabel prop3){
-		this.prop3 = prop;
+		this.prop3 = prop3;
 	}
 	public void setProp4(javax.swing.JLabel prop4){
 		this.prop4 = prop4;
 	}
-	public void setRollButton(javax.swing.JButton rollButton){
-		this.rollButton = rollButton;
-	}
+    public void setRollButton(javax.swing.JButton rollButton){
+	this.rollButton = rollButton;
+    }
     public void setSellButton(javax.swing.JButton sellButton){
 		this.sellButton = sellButton;
-	}
+    }
     public void setStartButton(javax.swing.JButton startButton){
 		this.startButton = startButton;
 	}
