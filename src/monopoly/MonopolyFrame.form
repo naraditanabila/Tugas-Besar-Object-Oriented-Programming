@@ -1471,14 +1471,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="money_player1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="pos_player1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -1558,14 +1552,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="money_player2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="pos_player2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -1645,14 +1633,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="money_player3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="pos_player3">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -1735,14 +1717,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="money_player4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="pos_player4">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>

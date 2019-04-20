@@ -1012,10 +1012,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
 
         prop1PrintButton.setText("Show Property");
 
-        money_player1.setText("jLabel1");
-
-        pos_player1.setText("jLabel1");
-
         javax.swing.GroupLayout player1PanelLayout = new javax.swing.GroupLayout(player1Panel);
         player1Panel.setLayout(player1PanelLayout);
         player1PanelLayout.setHorizontalGroup(
@@ -1062,10 +1058,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
         label_prop2.setText("Property :");
 
         prop2PrintButton.setText("Show Property");
-
-        money_player2.setText("jLabel1");
-
-        pos_player2.setText("jLabel1");
 
         javax.swing.GroupLayout player2PanelLayout = new javax.swing.GroupLayout(player2Panel);
         player2Panel.setLayout(player2PanelLayout);
@@ -1114,10 +1106,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
 
         prop3PrintButton.setText("Show Property");
 
-        money_player3.setText("jLabel1");
-
-        pos_player3.setText("jLabel1");
-
         javax.swing.GroupLayout player3PanelLayout = new javax.swing.GroupLayout(player3Panel);
         player3Panel.setLayout(player3PanelLayout);
         player3PanelLayout.setHorizontalGroup(
@@ -1164,10 +1152,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
         label_prop4.setText("Property :");
 
         prop4PrintButton.setText("Show Property");
-
-        money_player4.setText("jLabel1");
-
-        pos_player4.setText("jLabel1");
 
         javax.swing.GroupLayout player4PanelLayout = new javax.swing.GroupLayout(player4Panel);
         player4Panel.setLayout(player4PanelLayout);
@@ -1568,8 +1552,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
 
 	//GETTER
 	public javax.swing.JLayeredPane getBot1(){
-            bot1.setLayer(bot1_img, -1);
-            gameLog.append(Integer.toString(bot1.getLayer(bot1_img))+"\n");
             return bot1;
 	}
 	public javax.swing.JLayeredPane getBot2(){
