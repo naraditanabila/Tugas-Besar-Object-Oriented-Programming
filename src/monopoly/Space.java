@@ -3,7 +3,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, Tax, Chance Card, Community Chest
-	private Player player;
 	private int cost;
 	private int tipe; /*chance card:1 community chest:2, lainnya:0*/
 	
@@ -11,7 +10,6 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 		super(name,0);
 		this.tipe = tipe;
 		this.cost = cost;
-		this.player = player;
 	}
 	
 	//getter setter
@@ -24,7 +22,7 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 	}
 	
 	public Player getOwner(){
-		return this.player;
+		return null;
 	}
 	
 	//Space Effects

@@ -165,4 +165,5 @@ public class WinnerGame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel winnerName;
     // End of variables declaration//GEN-END:variables
+	
 }
