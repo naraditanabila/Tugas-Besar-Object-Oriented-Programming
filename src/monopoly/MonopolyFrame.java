@@ -1651,7 +1651,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 	public void setBot2(javax.swing.JLayeredPane bot2) {
 		this.bot2 = bot2;
 	}
-	public void setBot1(javax.swing.JLayeredPane bot3) {
+	public void setBot3(javax.swing.JLayeredPane bot3) {
 		this.bot3 = bot3;
 	}
 	public void setBot4(javax.swing.JLayeredPane bot4) {
@@ -1706,7 +1706,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 		this.left7 = left7;
 	}
 	public void setLeft8(javax.swing.JLayeredPane left8){
-		this.left = left8;
+		this.left8 = left8;
 	}
 	public void setLeft9(javax.swing.JLayeredPane left9){
 		this.left9 = left9;
@@ -1772,7 +1772,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 		this.prop2 = prop2;
 	}
 	public void setProp3(javax.swing.JLabel prop3){
-		this.prop3 = prop;
+		this.prop3 = prop3;
 	}
 	public void setProp4(javax.swing.JLabel prop4){
 		this.prop4 = prop4;
