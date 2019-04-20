@@ -1275,6 +1275,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
         gameLog.setForeground(new java.awt.Color(255, 255, 255));
         gameLog.setRows(5);
         gameLog.setText("===============================Game Log===============================\n");
+        gameLog.setAutoscrolls(false);
         gameLog.setBorder(null);
         jScrollPane1.setViewportView(gameLog);
 

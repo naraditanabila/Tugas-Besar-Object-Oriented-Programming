@@ -45,11 +45,14 @@ public class Monopoly{
         ImageIcon token1_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token1.png"));
         JLabel token1 = new JLabel();
         token1.setIcon(token1_img);
-        
         mainFrame.setIconImage(img.getImage());
         newGameFrame.setIconImage(img.getImage());
         mainFrame.getBot1().add(token1);
         mainFrame.setLog(Integer.toString(mainFrame.getBot1().getLayer(token1)) + "\n");
+        
+        
+        
+        
         mainFrame.setVisible(true);
         
         // New Game
@@ -84,12 +87,18 @@ public class Monopoly{
         
         mainFrame.getRollButton().addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent evt0) {
-                mainFrame.setLog("Roll kepencet!!!\n ");
+                mainFrame.setLog("Roll kepencet!!!\n");
             }
         });
         mainFrame.getPayButton().addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent evt0) {
-                mainFrame.setLog("Roll kepencet!!!\n ");
+                mainFrame.setLog("Pay Button kepencet!!!\n");
+            }
+        });
+        
+        mainFrame.getStartButton().addActionListener( new ActionListener() {
+            public void actionPerformed(ActionEvent evt0) {
+                mainFrame.setLog(">> Game has been started.\n");
             }
         });
         

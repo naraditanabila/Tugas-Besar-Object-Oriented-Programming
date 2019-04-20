@@ -193,25 +193,6 @@ public class NewGame extends javax.swing.JFrame {
             cantPlay.setLocationRelativeTo(null);
             cantPlay.setVisible(true);
         } else {
-            playerNumber = this.getPlayerNumber();
-            switch(playerNumber) {
-                case 2:
-                    player1Name = player1Field.getText();
-                    player2Name = player2Field.getText();
-                    break;
-                case 3:
-                    player1Name = player1Field.getText();
-                    player2Name = player2Field.getText();
-                    player3Name = player3Field.getText();
-                    break;
-                case 4:
-                    player1Name = player1Field.getText();
-                    player2Name = player2Field.getText();
-                    player3Name = player3Field.getText();
-                    player4Name = player4Field.getText();
-                    break;
-            }
-            
             this.setVisible(false);
         }
     }//GEN-LAST:event_okButtonActionPerformed
@@ -219,13 +200,13 @@ public class NewGame extends javax.swing.JFrame {
     //method utk keluar
     public String getPlayerName(int noPlayer) {
         if (noPlayer == 1) {
-            return player1Name;
+            return player1Field.getText();
         } if (noPlayer == 2) {
-            return player2Name;
+            return player2Field.getText();
         } if (noPlayer == 3) {
-            return player3Name;
+            return player3Field.getText();
         } if (noPlayer == 4) {
-            return player4Name;
+            return player4Field.getText();
         } else {
             return "IOERROR! PlayerName Not Found!";
         }
@@ -285,10 +266,6 @@ public class NewGame extends javax.swing.JFrame {
     
     //needed variable
     private int playerNumber;
-    private String player1Name;
-    private String player2Name;
-    private String player3Name;
-    private String player4Name;
     
     //needed
     
