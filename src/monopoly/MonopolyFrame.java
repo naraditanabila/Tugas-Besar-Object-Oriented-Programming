@@ -1432,23 +1432,17 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 add ke Componentnya
         */
         //setting JLabel
-        JLabel label_bot1 = new JLabel();
+        /* JLabel label_bot1 = new JLabel();
         JLabel label_botRight = new JLabel();
         //import Gambar
         ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
         ImageIcon image_bot1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot1.jpg"));
         //JLabel SetIcon, setBounds
         label_botRight.setIcon(image_botRight);
-        
-        
         label_botRight.setBounds(0,0,128,128);
-        
-        
-        
         //Pojokan (add, setLayer
         botRight.add(label_botRight);
-        
-        botRight.setLayer(label_botRight, -1);
+        botRight.setLayer(label_botRight, -1); */
         
         //Bawah
         
@@ -1461,8 +1455,67 @@ public class MonopolyFrame extends javax.swing.JFrame {
         //Atas
         
         //Kanan
+        //1
+        //setting JLabel
+        JLabel label_bot1 = new JLabel();
+        JLabel label_botRight = new JLabel();
+        //import Gambar
+        ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
+        ImageIcon image_bot1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot1.jpg"));
+        //JLabel SetIcon, setBounds
+        label_botRight.setIcon(image_botRight);
+        label_botRight.setBounds(0,0,128,128);
+        //Pojokan (add, setLayer
+        botRight.add(label_botRight);
+        botRight.setLayer(label_botRight, -1);
         
+        //2
+        //setting JLabel
+        JLabel label_bot2 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot2 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot2.jpg"));
         
+        //3
+        //setting JLabel
+        JLabel label_bot3 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot3 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot3.jpg"));
+
+        //4
+        //setting JLabel
+        JLabel label_bot4 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot4 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot4.jpg"));
+
+        //5
+        //setting JLabel
+        JLabel label_bot5 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot5 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot5.jpg"));
+
+        //6
+        //setting JLabel
+        JLabel label_bot6 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot6 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot6.jpg"));
+
+        //7
+        //setting JLabel
+        JLabel label_bot7 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot7 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot7.jpg"));
+
+        //8
+        //setting JLabel
+        JLabel label_bot8 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot8 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot8.jpg"));
+
+        //9
+        //setting JLabel
+        JLabel label_bot9 = new JLabel();
+        //import Gambar
+        ImageIcon image_bot9 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot9.jpg"));
     }
     
     
