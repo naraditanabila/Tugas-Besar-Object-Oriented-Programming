@@ -1423,6 +1423,11 @@ public class MonopolyFrame extends javax.swing.JFrame {
         token3.setIcon(token3_img);
         token4.setIcon(token4_img);
         
+        token1.setBounds(0,0,128,128);
+        token2.setBounds(40,0,128,128);
+        token3.setBounds(0,40,128,128);
+        token4.setBounds(40,40,128,128);
+        
         //===================setting Tile
         /*
         Intinya:
@@ -1722,15 +1727,21 @@ public class MonopolyFrame extends javax.swing.JFrame {
         gameLog.setText("");
     }
     
-    public void showPlayerPos(int pos, int move) {
-        
-        
+    public void showPlayerPos(int playerNum, int move) {
+
         //
         //fungsi : update token per player
         //  Jlabel tokenPlayer1 = new JLabel(ambil file token1.jpg); ==> taro di Consturctor
-        
+        bot1.add(token1);
         
         /*
+            jadi nanti ada dua method di MonoFrame
+            showPlayerPos()
+            fungsi: add gambar token player
+            param: int PlayerBerapa, int sejauh berapa)
+            removePlayerPos()
+            fungsi: hapus token player yang akan bergerak (ditaro sebelum Player.move())
+            param: int PlayerBerapa, int sejauhberapa)
             if (idPlayer == 1) {
                 
             }
