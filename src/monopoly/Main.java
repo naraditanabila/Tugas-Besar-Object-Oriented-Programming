@@ -71,55 +71,7 @@ public class Main {
 		}
 	}
         
-        public void showDice(int d1, javax.swing.JLabel label) {
-            //ganti gambar dice di layar
-            switch (d1) {
-                case 1:
-                    try {
-			Image img = ImageIO.read(getClass().getResource("resources/dice1.jpg"));
-			label.setIcon(new ImageIcon(img));
-                    } catch (IOException ex) {
-                    }
-                    break;
-                case 2:
-                    try {
-			Image img = ImageIO.read(getClass().getResource("resources/dice2.jpg"));
-			label.setIcon(new ImageIcon(img));
-                    } catch (IOException ex) {
-                    }
-                    break;
-                case 3:
-                    try {
-			Image img = ImageIO.read(getClass().getResource("resources/dice3.jpg"));
-			label.setIcon(new ImageIcon(img));
-                    } catch (IOException ex) {
-                    }
-                    break;
-                case 4:
-                    try {
-			Image img = ImageIO.read(getClass().getResource("resources/dice4.jpg"));
-			label.setIcon(new ImageIcon(img));
-                    } catch (IOException ex) {
-                    }
-                    break;
-                case 5:
-                    try {
-			Image img = ImageIO.read(getClass().getResource("resources/dice5.jpg"));
-			label.setIcon(new ImageIcon(img));
-                    } catch (IOException ex) {
-                    }
-                    break;
-                case 6:
-                    try {
-			Image img = ImageIO.read(getClass().getResource("resources/dice6.jpg"));
-			label.setIcon(new ImageIcon(img));
-                    } catch (IOException ex) {
-                    }
-                    break;
-                default:
-                    break;
-            }
-        }
+        
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -245,8 +197,6 @@ public class Main {
 		while ((!endGame) && (nPlayer != 1)) {
 			mainFrame.setLog(player.get(turn.getPlayer()).getID() + " bermain");
 			mainFrame.setLog("Pilih roll atau quit");
-			// mainFrame.setLog( + " bermain");
-			// mainFrame.setLog("Pilih roll atau quit");
                         
                         //tiap command di cek
                         
@@ -305,10 +255,9 @@ public class Main {
 					}
 
 					if (player.get(index).getJail()) {
-						System.out.println("Silahkan pilih Bayar atau Dadu");
 						//mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
 						try {
-							cmd = (new Main()).getInput(); //SWING / ganti jadi if rollButtonPressed else payButtonPressed
+							cmd = (new Main()).getInput();
 						} catch (Exception e) {
 							System.out.println(e);
 						}
@@ -317,8 +266,8 @@ public class Main {
 							//dadu blm dibikin antara mending gamelog atau bikin baru
 							d1 = dadu.getN1();
 							d2 = dadu.getN2();
-							System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
-							//mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+                                                        mainFrame.showDice(d1, d2);
+							mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 							
 							if (d1 == d2) {
 								player.get(index).outJail();

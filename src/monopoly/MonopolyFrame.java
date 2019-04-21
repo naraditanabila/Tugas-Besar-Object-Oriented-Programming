@@ -1976,4 +1976,100 @@ public class MonopolyFrame extends javax.swing.JFrame {
     /*
     METHOD MANUAL
     */
+        
+        public void showDice(int d1, int d2) {
+            //ganti gambar dice di layar
+            switch (d1) {
+                case 1:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice1.jpg"));
+			dice1.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 2:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice2.jpg"));
+			dice1.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 3:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice3.jpg"));
+			dice1.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 4:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice4.jpg"));
+			dice1.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 5:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice5.jpg"));
+			dice1.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 6:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice6.jpg"));
+			dice1.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                default:
+                    break;
+            }
+        switch (d2) {
+                case 1:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice1.jpg"));
+			dice2.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 2:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice2.jpg"));
+			dice2.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 3:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice3.jpg"));
+			dice2.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 4:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice4.jpg"));
+			dice2.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 5:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice5.jpg"));
+			dice2.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                case 6:
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice6.jpg"));
+			dice2.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
 }
