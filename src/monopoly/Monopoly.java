@@ -80,6 +80,8 @@ public class Monopoly{
             boolean endGame = false;
             boolean nextP = false;
             //SWING
+            ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
+            
             MonopolyFrame mainFrame = new MonopolyFrame();
             mainFrame.setLocationRelativeTo(null);
             mainFrame.setVisible(false);
@@ -91,7 +93,7 @@ public class Monopoly{
             newGameFrame.setTitle("Monopoly");
             newGameFrame.setVisible(true);
 
-            ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
+
 
             newGameFrame.setIconImage(img.getImage());
 
