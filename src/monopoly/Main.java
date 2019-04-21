@@ -52,7 +52,7 @@ public class Main {
 			if (str.equals("")) {
 				System.out.println("Tidak memasukkan input!");
 				System.out.println("Press [Enter] to continue");
-				nin = true;
+                                nin = true;
 			}
 		}
 	};
@@ -173,36 +173,105 @@ public class Main {
                     ccList.add("Transferan Orang Tua 5000",new CommunityChest()); //9, in
                     ccList.add("Bayar Laundry 4000",new CommunityChest()); //10, out
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     //Iterasi permainan
 
                     Turn turn  = new Turn(nPlayer);
 
-
-
                     while ((!endGame) && (nPlayer != 1)) {
+
+                        prop1PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                        for (int i=0; i<player.get(1).sizeProp(); i++) {
+                                                if (((Property)player.get(1).getProp(i)).getTipe() == 2) {
+                                                        if (((Property)player.get(1).getProp(i)).getLvl() == 3) {
+                                                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 1 rumah");
+                                                        } else if (((Property)player.get(1).getProp(i)).getLvl() == 4) {
+                                                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 2 rumah");
+                                                        } else if (((Property)player.get(1).getProp(i)).getLvl() == 5) {
+                                                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 3 rumah");
+                                                        } else if (((Property)player.get(1).getProp(i)).getLvl() == 6) {
+                                                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 4 rumah");
+                                                        } else {
+                                                                mainFrame.setLog(player.get(1).getProp(i).getName());
+                                                        }
+                                                } else {
+                                                        mainFrame.setLog(player.get(1).getProp(i).getName());
+                                                }
+                                        }
+                                }
+                        });
+
+                        prop2PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                        for (int i=0; i<player.get(2).sizeProp(); i++) {
+                                                if (((Property)player.get(2).getProp(i)).getTipe() == 2) {
+                                                        if (((Property)player.get(2).getProp(i)).getLvl() == 3) {
+                                                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 1 rumah");
+                                                        } else if (((Property)player.get(2).getProp(i)).getLvl() == 4) {
+                                                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 2 rumah");
+                                                        } else if (((Property)player.get(2).getProp(i)).getLvl() == 5) {
+                                                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 3 rumah");
+                                                        } else if (((Property)player.get(2).getProp(i)).getLvl() == 6) {
+                                                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 4 rumah");
+                                                        } else {
+                                                                mainFrame.setLog(player.get(2).getProp(i).getName());
+                                                        }
+                                                } else {
+                                                        mainFrame.setLog(player.get(2).getProp(i).getName());
+                                                }
+                                        }
+                                }
+                        });
+
+                        prop3PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                        for (int i=0; i<player.get(3).sizeProp(); i++) {
+                                                if (((Property)player.get(3).getProp(i)).getTipe() == 2) {
+                                                        if (((Property)player.get(3).getProp(i)).getLvl() == 3) {
+                                                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 1 rumah");
+                                                        } else if (((Property)player.get(3).getProp(i)).getLvl() == 4) {
+                                                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 2 rumah");
+                                                        } else if (((Property)player.get(3).getProp(i)).getLvl() == 5) {
+                                                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 3 rumah");
+                                                        } else if (((Property)player.get(3).getProp(i)).getLvl() == 6) {
+                                                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 4 rumah");
+                                                        } else {
+                                                                mainFrame.setLog(player.get(3).getProp(i).getName());
+                                                        }
+                                                } else {
+                                                        mainFrame.setLog(player.get(3).getProp(i).getName());
+                                                }
+                                        }
+                                }
+                        });
+
+                        prop4PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                        for (int i=0; i<player.get(4).sizeProp(); i++) {
+                                                if (((Property)player.get(4).getProp(i)).getTipe() == 2) {
+                                                        if (((Property)player.get(4).getProp(i)).getLvl() == 3) {
+                                                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 1 rumah");
+                                                        } else if (((Property)player.get(4).getProp(i)).getLvl() == 4) {
+                                                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 2 rumah");
+                                                        } else if (((Property)player.get(4).getProp(i)).getLvl() == 5) {
+                                                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 3 rumah");
+                                                        } else if (((Property)player.get(4).getProp(i)).getLvl() == 6) {
+                                                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 4 rumah");
+                                                        } else {
+                                                                mainFrame.setLog(player.get(4).getProp(i).getName());
+                                                        }
+                                                } else {
+                                                        mainFrame.setLog(player.get(4).getProp(i).getName());
+                                                }
+                                        }
+                                }
+                        });
+
+
                             mainFrame.setLog(player.get(turn.getPlayer()).getID() + " bermain");
                             mainFrame.setLog("Pilih roll atau quit");
 
                             //tiap command di cek
-
-
-
                             //Yang dienable
                             cmd = mainFrame.getCommand();
                             int index = turn.getPlayer();
@@ -250,7 +319,7 @@ public class Main {
                                                                     mainFrame.setLog(player.get(index).getProp(i).getName());
                                                             }
                                                     } else {
-                                                            System.out.println(player.get(index).getProp(i).getName());
+                                                        mainFrame.setLog(player.get(index).getProp(i).getName());
                                                     }
                                             }
                                             //data player
@@ -260,7 +329,7 @@ public class Main {
                                                     try {
                                                             cmd = (new Main()).getInput();
                                                     } catch (Exception e) {
-                                                            System.out.println(e);
+                                                        mainFrame.setLog(e);
                                                     }
 
                                                     if (cmd == 1) {
