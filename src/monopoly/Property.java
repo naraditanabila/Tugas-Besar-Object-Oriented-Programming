@@ -50,9 +50,6 @@ public abstract class Property extends Place{ //inheritance
 		this.lvl = n;
 	}
 	
-	public int getHP() {
-		return this.housePrice;
-	}
 	//Efek saat player berhenti di suatu tempat
 	public void placeAffect(Player p){
 		if (!(getOwner()==null) && !(getOwner().equals(p))) {
