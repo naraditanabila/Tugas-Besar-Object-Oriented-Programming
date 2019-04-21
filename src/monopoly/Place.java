@@ -1,5 +1,7 @@
 package monopoly;
 
+import javax.swing.JTextArea;
+
 public abstract class Place {  //abstract class
 	private String name;
 	private int type; //0: space, 1: properti
@@ -27,5 +29,6 @@ public abstract class Place {  //abstract class
 	
 	public abstract Player getOwner();
 	public abstract void placeAffect(Player p, javax.swing.JTextArea gameLog);
+
 }
 

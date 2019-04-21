@@ -14,6 +14,7 @@ public class Utility extends Property { //inheritance
 		}
 	}
 	
+        @Override
 	public void lvlup (Player p, javax.swing.JTextArea gameLog) {
 		gameLog.append("Method upgrade hanya untuk Lot!");
 	}

@@ -324,17 +324,24 @@ public class Main {
 							while (again) { //pengulangan
 								int type = place.get(player.get(index).getPos()).getType();
 								if (type == 0) {
-									//Free Parking
-									if (place.get(player.get(index).getPos()).getName() == "Free Parking") {
-										System.out.println("Masukkan nama yang ingin dituju : ");
-										int plot = s.nextInt();
-										player.get(index).setPos(plot-1);
-									} else if (place.get(player.get(index).getPos()).getName() == "Chance Card") {
-										place.get(player.get(index).getPos()).placeAffect(player.get(index));
-									} else {
-										place.get(player.get(index).getPos()).placeAffect(player.get(index));
-										again = false;
-									}
+									if (null == place.get(player.get(index).getPos()).getName()) {
+                                                                            place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
+                                                                            again = false;
+                                                                        } else //Free Parking
+                                                                    switch (place.get(player.get(index).getPos()).getName()) {
+                                                                        case "Free Parking":
+                                                                            System.out.println("Masukkan nama yang ingin dituju : ");
+                                                                            int plot = s.nextInt();
+                                                                            player.get(index).setPos(plot-1);
+                                                                            break;
+                                                                        case "Chance Card":
+                                                                            place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
+                                                                            break;
+                                                                        default:
+                                                                            place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
+                                                                            again = false;
+                                                                            break;
+                                                                    }
 									//duit habis
 									if (player.get(index).getKalah()) {
 										again = false;
@@ -362,12 +369,12 @@ public class Main {
 											System.out.println(e);
 										}
 										if (cmd.equals("Ya")) {
-											((Property)place.get(player.get(index).getPos())).beliProp(player.get(index));
+											((Property)place.get(player.get(index).getPos())).beliProp(player.get(index), mainFrame.getGameLog());
 										} else {
 											db = false;
 										}
 									} else {
-										place.get(player.get(index).getPos()).placeAffect(player.get(index));
+										place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
 										if (player.get(index).getMoney() < 0) {
 											again = false;
 											db = false;
@@ -396,7 +403,7 @@ public class Main {
 			} else {
 				//sudah kalah
 				// mail: mending di skip aja gk sih?
-				System.out.println(player.get(index).getID() + " sudah kalah");
+				mainFrame.setLog(player.get(index).getID() + " sudah kalah");
 			}
 		}
 		s.close();
