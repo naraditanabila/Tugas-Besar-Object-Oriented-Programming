@@ -75,6 +75,10 @@ public class Property extends Place{ //inheritance
 		}
 	}
 	
+	public void lvlup(Player p) {
+		System.out.println("Method upgrade hanya untuk Lot!");
+	}
+	
 	public void jualProp(Player p, javax.swing.JTextArea gameLog) {
 		p.receive(getPrice()/2);
 		for (int i = 0 ; i < p.sizeProp() ; i++) {
