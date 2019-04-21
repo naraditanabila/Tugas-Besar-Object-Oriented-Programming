@@ -104,89 +104,49 @@ public class MonopolyFrame extends javax.swing.JFrame {
 
         boardPanel = new javax.swing.JPanel();
         topLeft = new javax.swing.JLayeredPane();
-        topLeft_img = new javax.swing.JLabel();
         topRight = new javax.swing.JLayeredPane();
-        topRight_img = new javax.swing.JLabel();
         botRight = new javax.swing.JLayeredPane();
         botLeft = new javax.swing.JLayeredPane();
-        botLeft_img = new javax.swing.JLabel();
         bot9 = new javax.swing.JLayeredPane();
-        bot9_img = new javax.swing.JLabel();
         bot8 = new javax.swing.JLayeredPane();
-        bot8_img = new javax.swing.JLabel();
         bot1 = new javax.swing.JLayeredPane();
-        bot1_img = new javax.swing.JLabel();
         bot3 = new javax.swing.JLayeredPane();
-        bot3_img = new javax.swing.JLabel();
         bot4 = new javax.swing.JLayeredPane();
-        bot4_img = new javax.swing.JLabel();
         bot6 = new javax.swing.JLayeredPane();
-        bot6_img = new javax.swing.JLabel();
         bot7 = new javax.swing.JLayeredPane();
-        bot7_img = new javax.swing.JLabel();
         bot5 = new javax.swing.JLayeredPane();
-        bot5_img = new javax.swing.JLabel();
         right1 = new javax.swing.JLayeredPane();
-        right1_img = new javax.swing.JLabel();
         right2 = new javax.swing.JLayeredPane();
-        right2_img = new javax.swing.JLabel();
         right3 = new javax.swing.JLayeredPane();
-        right3_img = new javax.swing.JLabel();
         right4 = new javax.swing.JLayeredPane();
-        right4_img = new javax.swing.JLabel();
         right5 = new javax.swing.JLayeredPane();
-        right5_img = new javax.swing.JLabel();
         right6 = new javax.swing.JLayeredPane();
-        right6_img = new javax.swing.JLabel();
         right7 = new javax.swing.JLayeredPane();
-        right7_img = new javax.swing.JLabel();
         right8 = new javax.swing.JLayeredPane();
-        right8_img = new javax.swing.JLabel();
         right9 = new javax.swing.JLayeredPane();
-        right9_img = new javax.swing.JLabel();
         top1 = new javax.swing.JLayeredPane();
-        top1_img = new javax.swing.JLabel();
         top2 = new javax.swing.JLayeredPane();
-        top2_img = new javax.swing.JLabel();
         top3 = new javax.swing.JLayeredPane();
-        top3_img = new javax.swing.JLabel();
         top4 = new javax.swing.JLayeredPane();
-        top4_img = new javax.swing.JLabel();
         top5 = new javax.swing.JLayeredPane();
-        top5_img = new javax.swing.JLabel();
         top6 = new javax.swing.JLayeredPane();
-        top6_img = new javax.swing.JLabel();
         top7 = new javax.swing.JLayeredPane();
-        top7_img = new javax.swing.JLabel();
         top8 = new javax.swing.JLayeredPane();
-        top8_img = new javax.swing.JLabel();
         top9 = new javax.swing.JLayeredPane();
-        top9_img = new javax.swing.JLabel();
         left9 = new javax.swing.JLayeredPane();
-        left9_img = new javax.swing.JLabel();
         left8 = new javax.swing.JLayeredPane();
-        left8_img = new javax.swing.JLabel();
         left7 = new javax.swing.JLayeredPane();
-        left7_img = new javax.swing.JLabel();
         left6 = new javax.swing.JLayeredPane();
-        left6_img = new javax.swing.JLabel();
         left5 = new javax.swing.JLayeredPane();
-        left5_img = new javax.swing.JLabel();
         left4 = new javax.swing.JLayeredPane();
-        left4_img = new javax.swing.JLabel();
         left3 = new javax.swing.JLayeredPane();
-        left3_img = new javax.swing.JLabel();
         left2 = new javax.swing.JLayeredPane();
-        left2_img = new javax.swing.JLabel();
         left1 = new javax.swing.JLayeredPane();
-        left1_img = new javax.swing.JLabel();
         bot2 = new javax.swing.JLayeredPane();
-        bot2_img = new javax.swing.JLabel();
         panel_dice1 = new javax.swing.JPanel();
         dice1 = new javax.swing.JLabel();
         panel_dice2 = new javax.swing.JPanel();
         dice2 = new javax.swing.JLabel();
-        botRight_img = new javax.swing.JLabel();
         playerPane = new javax.swing.JPanel();
         player1Panel = new javax.swing.JPanel();
         label_money_player1 = new javax.swing.JLabel();
@@ -239,628 +199,433 @@ public class MonopolyFrame extends javax.swing.JFrame {
         boardPanel.setMinimumSize(new java.awt.Dimension(978, 978));
         boardPanel.setPreferredSize(new java.awt.Dimension(978, 978));
 
-        topLeft_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/topLeft.jpg"))); // NOI18N
-
-        topLeft.setLayer(topLeft_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout topLeftLayout = new javax.swing.GroupLayout(topLeft);
         topLeft.setLayout(topLeftLayout);
         topLeftLayout.setHorizontalGroup(
             topLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, topLeftLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(topLeft_img))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         topLeftLayout.setVerticalGroup(
             topLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, topLeftLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(topLeft_img, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        topRight_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/topRight.jpg"))); // NOI18N
-
-        topRight.setLayer(topRight_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout topRightLayout = new javax.swing.GroupLayout(topRight);
         topRight.setLayout(topRightLayout);
         topRightLayout.setHorizontalGroup(
             topRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, topRightLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(topRight_img)
-                .addContainerGap())
+            .addGap(0, 148, Short.MAX_VALUE)
         );
         topRightLayout.setVerticalGroup(
             topRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(topRightLayout.createSequentialGroup()
-                .addComponent(topRight_img, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+            .addGap(0, 117, Short.MAX_VALUE)
         );
-
-        botLeft_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/botLeft.jpg"))); // NOI18N
-
-        botLeft.setLayer(botLeft_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout botLeftLayout = new javax.swing.GroupLayout(botLeft);
         botLeft.setLayout(botLeftLayout);
         botLeftLayout.setHorizontalGroup(
             botLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(botLeftLayout.createSequentialGroup()
-                .addComponent(botLeft_img)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         botLeftLayout.setVerticalGroup(
             botLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(botLeftLayout.createSequentialGroup()
-                .addComponent(botLeft_img)
-                .addGap(0, 0, 0))
+            .addGap(0, 127, Short.MAX_VALUE)
         );
-
-        bot9_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot9.jpg"))); // NOI18N
-
-        bot9.setLayer(bot9_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot9Layout = new javax.swing.GroupLayout(bot9);
         bot9.setLayout(bot9Layout);
         bot9Layout.setHorizontalGroup(
             bot9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bot9Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(bot9_img, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 77, Short.MAX_VALUE)
         );
         bot9Layout.setVerticalGroup(
             bot9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bot9Layout.createSequentialGroup()
-                .addComponent(bot9_img, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        bot8_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot8.jpg"))); // NOI18N
-
-        bot8.setLayer(bot8_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot8Layout = new javax.swing.GroupLayout(bot8);
         bot8.setLayout(bot8Layout);
         bot8Layout.setHorizontalGroup(
             bot8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bot8Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(bot8_img, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 77, Short.MAX_VALUE)
         );
         bot8Layout.setVerticalGroup(
             bot8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bot8Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(bot8_img, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        bot1_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot1.jpg"))); // NOI18N
-
-        bot1.setLayer(bot1_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot1Layout = new javax.swing.GroupLayout(bot1);
         bot1.setLayout(bot1Layout);
         bot1Layout.setHorizontalGroup(
             bot1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bot1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(bot1_img))
+            .addGap(0, 77, Short.MAX_VALUE)
         );
         bot1Layout.setVerticalGroup(
             bot1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bot1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(bot1_img))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        bot3_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot3.jpg"))); // NOI18N
-
-        bot3.setLayer(bot3_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot3Layout = new javax.swing.GroupLayout(bot3);
         bot3.setLayout(bot3Layout);
         bot3Layout.setHorizontalGroup(
             bot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot3_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 74, Short.MAX_VALUE)
         );
         bot3Layout.setVerticalGroup(
             bot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot3_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        bot4_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot4.jpg"))); // NOI18N
-
-        bot4.setLayer(bot4_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot4Layout = new javax.swing.GroupLayout(bot4);
         bot4.setLayout(bot4Layout);
         bot4Layout.setHorizontalGroup(
             bot4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot4_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
         bot4Layout.setVerticalGroup(
             bot4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot4_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        bot6_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot6.jpg"))); // NOI18N
-
-        bot6.setLayer(bot6_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot6Layout = new javax.swing.GroupLayout(bot6);
         bot6.setLayout(bot6Layout);
         bot6Layout.setHorizontalGroup(
             bot6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot6_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
         bot6Layout.setVerticalGroup(
             bot6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot6_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        bot7_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot7.jpg"))); // NOI18N
-
-        bot7.setLayer(bot7_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot7Layout = new javax.swing.GroupLayout(bot7);
         bot7.setLayout(bot7Layout);
         bot7Layout.setHorizontalGroup(
             bot7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot7_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
         bot7Layout.setVerticalGroup(
             bot7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot7_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        bot5_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot5.jpg"))); // NOI18N
-
-        bot5.setLayer(bot5_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot5Layout = new javax.swing.GroupLayout(bot5);
         bot5.setLayout(bot5Layout);
         bot5Layout.setHorizontalGroup(
             bot5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot5_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
         bot5Layout.setVerticalGroup(
             bot5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bot5_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        right1_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right1.jpg"))); // NOI18N
-
-        right1.setLayer(right1_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right1Layout = new javax.swing.GroupLayout(right1);
         right1.setLayout(right1Layout);
         right1Layout.setHorizontalGroup(
             right1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(right1Layout.createSequentialGroup()
-                .addComponent(right1_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right1Layout.setVerticalGroup(
             right1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right1_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
-
-        right2_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right2.jpg"))); // NOI18N
-
-        right2.setLayer(right2_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right2Layout = new javax.swing.GroupLayout(right2);
         right2.setLayout(right2Layout);
         right2Layout.setHorizontalGroup(
             right2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(right2Layout.createSequentialGroup()
-                .addComponent(right2_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right2Layout.setVerticalGroup(
             right2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right2_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        right3_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right3.jpg"))); // NOI18N
-
-        right3.setLayer(right3_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right3Layout = new javax.swing.GroupLayout(right3);
         right3.setLayout(right3Layout);
         right3Layout.setHorizontalGroup(
             right3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(right3Layout.createSequentialGroup()
-                .addComponent(right3_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right3Layout.setVerticalGroup(
             right3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right3_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 74, Short.MAX_VALUE)
         );
-
-        right4_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right4.jpg"))); // NOI18N
-
-        right4.setLayer(right4_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right4Layout = new javax.swing.GroupLayout(right4);
         right4.setLayout(right4Layout);
         right4Layout.setHorizontalGroup(
             right4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right4_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right4Layout.setVerticalGroup(
             right4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right4_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
-
-        right5_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right5.jpg"))); // NOI18N
-
-        right5.setLayer(right5_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right5Layout = new javax.swing.GroupLayout(right5);
         right5.setLayout(right5Layout);
         right5Layout.setHorizontalGroup(
             right5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right5_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right5Layout.setVerticalGroup(
             right5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right5_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        right6_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right6.jpg"))); // NOI18N
-
-        right6.setLayer(right6_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right6Layout = new javax.swing.GroupLayout(right6);
         right6.setLayout(right6Layout);
         right6Layout.setHorizontalGroup(
             right6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right6_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right6Layout.setVerticalGroup(
             right6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right6_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        right7_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right7.jpg"))); // NOI18N
-
-        right7.setLayer(right7_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right7Layout = new javax.swing.GroupLayout(right7);
         right7.setLayout(right7Layout);
         right7Layout.setHorizontalGroup(
             right7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(right7Layout.createSequentialGroup()
-                .addComponent(right7_img)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         right7Layout.setVerticalGroup(
             right7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right7_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
-
-        right8_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right8.jpg"))); // NOI18N
-
-        right8.setLayer(right8_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right8Layout = new javax.swing.GroupLayout(right8);
         right8.setLayout(right8Layout);
         right8Layout.setHorizontalGroup(
             right8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(right8Layout.createSequentialGroup()
-                .addComponent(right8_img)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right8Layout.setVerticalGroup(
             right8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right8_img, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+            .addGap(0, 73, Short.MAX_VALUE)
         );
-
-        right9_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/right9.jpg"))); // NOI18N
-
-        right9.setLayer(right9_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout right9Layout = new javax.swing.GroupLayout(right9);
         right9.setLayout(right9Layout);
         right9Layout.setHorizontalGroup(
             right9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right9_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         right9Layout.setVerticalGroup(
             right9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(right9_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        top1_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top1.jpg"))); // NOI18N
-
-        top1.setLayer(top1_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top1Layout = new javax.swing.GroupLayout(top1);
         top1.setLayout(top1Layout);
         top1Layout.setHorizontalGroup(
             top1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top1_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 77, Short.MAX_VALUE)
         );
         top1Layout.setVerticalGroup(
             top1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top1_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top2_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top2.jpg"))); // NOI18N
-
-        top2.setLayer(top2_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top2Layout = new javax.swing.GroupLayout(top2);
         top2.setLayout(top2Layout);
         top2Layout.setHorizontalGroup(
             top2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top2_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 73, Short.MAX_VALUE)
         );
         top2Layout.setVerticalGroup(
             top2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top2_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top3_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top3.jpg"))); // NOI18N
-
-        top3.setLayer(top3_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top3Layout = new javax.swing.GroupLayout(top3);
         top3.setLayout(top3Layout);
         top3Layout.setHorizontalGroup(
             top3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top3_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
         top3Layout.setVerticalGroup(
             top3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top3_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top4_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top4.jpg"))); // NOI18N
-
-        top4.setLayer(top4_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top4Layout = new javax.swing.GroupLayout(top4);
         top4.setLayout(top4Layout);
         top4Layout.setHorizontalGroup(
             top4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top4_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
         top4Layout.setVerticalGroup(
             top4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top4_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top5_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top5.jpg"))); // NOI18N
-
-        top5.setLayer(top5_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top5Layout = new javax.swing.GroupLayout(top5);
         top5.setLayout(top5Layout);
         top5Layout.setHorizontalGroup(
             top5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top5_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
         top5Layout.setVerticalGroup(
             top5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top5_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top6_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top6.jpg"))); // NOI18N
-
-        top6.setLayer(top6_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top6Layout = new javax.swing.GroupLayout(top6);
         top6.setLayout(top6Layout);
         top6Layout.setHorizontalGroup(
             top6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top6_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
         top6Layout.setVerticalGroup(
             top6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top6_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top7_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top7.jpg"))); // NOI18N
-
-        top7.setLayer(top7_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top7Layout = new javax.swing.GroupLayout(top7);
         top7.setLayout(top7Layout);
         top7Layout.setHorizontalGroup(
             top7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top7_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
         top7Layout.setVerticalGroup(
             top7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top7_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top8_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top8.jpg"))); // NOI18N
-
-        top8.setLayer(top8_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top8Layout = new javax.swing.GroupLayout(top8);
         top8.setLayout(top8Layout);
         top8Layout.setHorizontalGroup(
             top8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top8_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 73, Short.MAX_VALUE)
         );
         top8Layout.setVerticalGroup(
             top8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top8_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        top9_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/top9.jpg"))); // NOI18N
-
-        top9.setLayer(top9_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout top9Layout = new javax.swing.GroupLayout(top9);
         top9.setLayout(top9Layout);
         top9Layout.setHorizontalGroup(
             top9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top9_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
         top9Layout.setVerticalGroup(
             top9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(top9_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
-
-        left9_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left9.jpg"))); // NOI18N
-
-        left9.setLayer(left9_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left9Layout = new javax.swing.GroupLayout(left9);
         left9.setLayout(left9Layout);
         left9Layout.setHorizontalGroup(
             left9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left9_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left9Layout.setVerticalGroup(
             left9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left9_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        left8_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left8.jpg"))); // NOI18N
-
-        left8.setLayer(left8_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left8Layout = new javax.swing.GroupLayout(left8);
         left8.setLayout(left8Layout);
         left8Layout.setHorizontalGroup(
             left8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left8_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left8Layout.setVerticalGroup(
             left8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left8_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        left7_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left7.jpg"))); // NOI18N
-
-        left7.setLayer(left7_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left7Layout = new javax.swing.GroupLayout(left7);
         left7.setLayout(left7Layout);
         left7Layout.setHorizontalGroup(
             left7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left7_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left7Layout.setVerticalGroup(
             left7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left7_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        left6_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left6.jpg"))); // NOI18N
-
-        left6.setLayer(left6_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left6Layout = new javax.swing.GroupLayout(left6);
         left6.setLayout(left6Layout);
         left6Layout.setHorizontalGroup(
             left6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left6_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left6Layout.setVerticalGroup(
             left6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left6_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        left5_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left5.jpg"))); // NOI18N
-
-        left5.setLayer(left5_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left5Layout = new javax.swing.GroupLayout(left5);
         left5.setLayout(left5Layout);
         left5Layout.setHorizontalGroup(
             left5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left5_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left5Layout.setVerticalGroup(
             left5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left5_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        left4_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left4.jpg"))); // NOI18N
-
-        left4.setLayer(left4_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left4Layout = new javax.swing.GroupLayout(left4);
         left4.setLayout(left4Layout);
         left4Layout.setHorizontalGroup(
             left4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left4_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left4Layout.setVerticalGroup(
             left4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left4_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 74, Short.MAX_VALUE)
         );
-
-        left3_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left3.jpg"))); // NOI18N
-
-        left3.setLayer(left3_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left3Layout = new javax.swing.GroupLayout(left3);
         left3.setLayout(left3Layout);
         left3Layout.setHorizontalGroup(
             left3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left3_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left3Layout.setVerticalGroup(
             left3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left3_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
-
-        left2_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left2.jpg"))); // NOI18N
-
-        left2.setLayer(left2_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left2Layout = new javax.swing.GroupLayout(left2);
         left2.setLayout(left2Layout);
         left2Layout.setHorizontalGroup(
             left2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left2_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left2Layout.setVerticalGroup(
             left2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left2_img, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 73, Short.MAX_VALUE)
         );
-
-        left1_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/left1.jpg"))); // NOI18N
-
-        left1.setLayer(left1_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout left1Layout = new javax.swing.GroupLayout(left1);
         left1.setLayout(left1Layout);
         left1Layout.setHorizontalGroup(
             left1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left1_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
         left1Layout.setVerticalGroup(
             left1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(left1_img, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
-
-        bot2_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/bot2.jpg"))); // NOI18N
-
-        bot2.setLayer(bot2_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout bot2Layout = new javax.swing.GroupLayout(bot2);
         bot2.setLayout(bot2Layout);
         bot2Layout.setHorizontalGroup(
             bot2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bot2Layout.createSequentialGroup()
-                .addComponent(bot2_img)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 71, Short.MAX_VALUE)
         );
         bot2Layout.setVerticalGroup(
             bot2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bot2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(bot2_img, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         panel_dice1.setBackground(new java.awt.Color(102, 102, 102));
@@ -888,8 +653,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
             panel_dice2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(dice2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
-
-        botRight_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/botRight.jpg"))); // NOI18N
 
         javax.swing.GroupLayout boardPanelLayout = new javax.swing.GroupLayout(boardPanel);
         boardPanel.setLayout(boardPanelLayout);
@@ -931,9 +694,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                         .addGap(266, 266, 266)
                         .addComponent(panel_dice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botRight_img)
-                            .addComponent(panel_dice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(panel_dice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(6, 6, 6)
                 .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(boardPanelLayout.createSequentialGroup()
@@ -1039,18 +800,13 @@ public class MonopolyFrame extends javax.swing.JFrame {
                                 .addComponent(left5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(panel_dice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(boardPanelLayout.createSequentialGroup()
-                                .addComponent(left4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(left3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(left2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(left1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, boardPanelLayout.createSequentialGroup()
-                                .addComponent(botRight_img, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(64, 64, 64)))))
+                        .addComponent(left4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(left3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(left2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(left1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(botLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1769,27 +1525,16 @@ public class MonopolyFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel boardPanel;
     private javax.swing.JLayeredPane bot1;
-    private javax.swing.JLabel bot1_img;
     private javax.swing.JLayeredPane bot2;
-    private javax.swing.JLabel bot2_img;
     private javax.swing.JLayeredPane bot3;
-    private javax.swing.JLabel bot3_img;
     private javax.swing.JLayeredPane bot4;
-    private javax.swing.JLabel bot4_img;
     private javax.swing.JLayeredPane bot5;
-    private javax.swing.JLabel bot5_img;
     private javax.swing.JLayeredPane bot6;
-    private javax.swing.JLabel bot6_img;
     private javax.swing.JLayeredPane bot7;
-    private javax.swing.JLabel bot7_img;
     private javax.swing.JLayeredPane bot8;
-    private javax.swing.JLabel bot8_img;
     private javax.swing.JLayeredPane bot9;
-    private javax.swing.JLabel bot9_img;
     private javax.swing.JLayeredPane botLeft;
-    private javax.swing.JLabel botLeft_img;
     private javax.swing.JLayeredPane botRight;
-    private javax.swing.JLabel botRight_img;
     private javax.swing.JButton buyButton;
     private javax.swing.JLabel dice1;
     private javax.swing.JLabel dice2;
@@ -1809,23 +1554,14 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JLabel label_prop3;
     private javax.swing.JLabel label_prop4;
     private javax.swing.JLayeredPane left1;
-    private javax.swing.JLabel left1_img;
     private javax.swing.JLayeredPane left2;
-    private javax.swing.JLabel left2_img;
     private javax.swing.JLayeredPane left3;
-    private javax.swing.JLabel left3_img;
     private javax.swing.JLayeredPane left4;
-    private javax.swing.JLabel left4_img;
     private javax.swing.JLayeredPane left5;
-    private javax.swing.JLabel left5_img;
     private javax.swing.JLayeredPane left6;
-    private javax.swing.JLabel left6_img;
     private javax.swing.JLayeredPane left7;
-    private javax.swing.JLabel left7_img;
     private javax.swing.JLayeredPane left8;
-    private javax.swing.JLabel left8_img;
     private javax.swing.JLayeredPane left9;
-    private javax.swing.JLabel left9_img;
     private javax.swing.JLabel money_player1;
     private javax.swing.JLabel money_player2;
     private javax.swing.JLabel money_player3;
@@ -1847,48 +1583,28 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JButton prop3PrintButton;
     private javax.swing.JButton prop4PrintButton;
     private javax.swing.JLayeredPane right1;
-    private javax.swing.JLabel right1_img;
     private javax.swing.JLayeredPane right2;
-    private javax.swing.JLabel right2_img;
     private javax.swing.JLayeredPane right3;
-    private javax.swing.JLabel right3_img;
     private javax.swing.JLayeredPane right4;
-    private javax.swing.JLabel right4_img;
     private javax.swing.JLayeredPane right5;
-    private javax.swing.JLabel right5_img;
     private javax.swing.JLayeredPane right6;
-    private javax.swing.JLabel right6_img;
     private javax.swing.JLayeredPane right7;
-    private javax.swing.JLabel right7_img;
     private javax.swing.JLayeredPane right8;
-    private javax.swing.JLabel right8_img;
     private javax.swing.JLayeredPane right9;
-    private javax.swing.JLabel right9_img;
     private javax.swing.JButton rollButton;
     private javax.swing.JButton sellButton;
     private javax.swing.JProgressBar tickProgressBar;
     private javax.swing.JLayeredPane top1;
-    private javax.swing.JLabel top1_img;
     private javax.swing.JLayeredPane top2;
-    private javax.swing.JLabel top2_img;
     private javax.swing.JLayeredPane top3;
-    private javax.swing.JLabel top3_img;
     private javax.swing.JLayeredPane top4;
-    private javax.swing.JLabel top4_img;
     private javax.swing.JLayeredPane top5;
-    private javax.swing.JLabel top5_img;
     private javax.swing.JLayeredPane top6;
-    private javax.swing.JLabel top6_img;
     private javax.swing.JLayeredPane top7;
-    private javax.swing.JLabel top7_img;
     private javax.swing.JLayeredPane top8;
-    private javax.swing.JLabel top8_img;
     private javax.swing.JLayeredPane top9;
-    private javax.swing.JLabel top9_img;
     private javax.swing.JLayeredPane topLeft;
-    private javax.swing.JLabel topLeft_img;
     private javax.swing.JLayeredPane topRight;
-    private javax.swing.JLabel topRight_img;
     private javax.swing.JButton upgradeButton;
     // End of variables declaration//GEN-END:variables
     private int command;

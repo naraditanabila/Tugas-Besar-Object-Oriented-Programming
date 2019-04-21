@@ -172,10 +172,7 @@
                           <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                           <Component id="panel_dice1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="botRight_img" min="-2" max="-2" attributes="0"/>
-                              <Component id="panel_dice2" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="panel_dice2" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -303,21 +300,13 @@
                               <Component id="panel_dice1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="left4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="left3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="left2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Component id="left1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="botRight_img" min="-2" pref="128" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="left4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="left3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="left2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="left1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -345,61 +334,30 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="topLeft_img" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="topLeft_img" min="-2" pref="128" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="topLeft_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/topLeft.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="topRight">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="topRight_img" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="148" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="topRight_img" min="-2" pref="117" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="117" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="topRight_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/topRight.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="botRight">
 
@@ -412,933 +370,555 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="botLeft_img" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="botLeft_img" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="127" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="botLeft_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/botLeft.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot9">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="bot9_img" min="-2" pref="77" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="77" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="bot9_img" min="-2" pref="128" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot9_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot9.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot8">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="bot8_img" min="-2" pref="77" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="77" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="bot8_img" min="-2" pref="128" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot8_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot8.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot1">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="bot1_img" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="77" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="bot1_img" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot1_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot1.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot3">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot3_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot3_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot3_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot3.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot4">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot4_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot4_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot4_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot4.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot6">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot6_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot6_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot6_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot6.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot7">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot7_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot7_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot7_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot7.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot5">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot5_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="bot5_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot5_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot5.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right1">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="right1_img" max="32767" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right1_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right1_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right1.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right2">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="right2_img" max="32767" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right2_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right2_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right2.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right3">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="right3_img" max="32767" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right3_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right3_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right3.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right4">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right4_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right4_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right4_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right4.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right5">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right5_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right5_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right5_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right5.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right6">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right6_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right6_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right6_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right6.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right7">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="right7_img" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right7_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right7_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right7.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right8">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="right8_img" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right8_img" alignment="0" pref="73" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right8_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right8.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="right9">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right9_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="right9_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="right9_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/right9.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top1">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top1_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="77" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top1_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top1_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top1.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top2">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top2_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top2_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top2_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top2.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top3">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top3_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top3_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top3_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top3.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top4">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top4_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top4_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top4_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top4.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top5">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top5_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top5_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top5_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top5.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top6">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top6_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top6_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top6_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top6.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top7">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top7_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top7_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top7_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top7.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top8">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top8_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top8_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top8_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top8.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="top9">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top9_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="top9_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="top9_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/top9.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left9">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left9_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left9_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left9_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left9.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left8">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left8_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left8_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left8_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left8.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left7">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left7_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left7_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left7_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left7.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left6">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left6_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left6_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left6_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left6.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left5">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left5_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left5_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left5_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left5.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left4">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left4_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left4_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left4_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left4.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left3">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left3_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left3_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left3_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left3.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left2">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left2_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left2_img" alignment="1" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left2_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left2.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="left1">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left1_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="128" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="left1_img" alignment="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="75" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="left1_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/left1.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JLayeredPane" name="bot2">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="bot2_img" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="71" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="bot2_img" min="-2" pref="128" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="bot2_img">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/monopoly/resources/Map/bot2.jpg"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="panel_dice1">
           <Properties>
@@ -1388,13 +968,6 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="botRight_img">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/monopoly/resources/Map/botRight.jpg"/>
-            </Property>
-          </Properties>
-        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="playerPane">
