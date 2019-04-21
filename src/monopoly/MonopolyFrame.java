@@ -10,6 +10,7 @@ package monopoly;
 */
 
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -1674,25 +1675,1427 @@ public class MonopolyFrame extends javax.swing.JFrame {
         gameLog.setText("");
     }
     
-    public void showPlayerPos(int playerNum, int move) {
+    
+    public void showPlayerPos(int playerNum, int moveTo) {
 
         //
         //fungsi : update token per player
         //  Jlabel tokenPlayer1 = new JLabel(ambil file token1.jpg); ==> taro di Consturctor
-        bot1.add(token1);
         
-        /*
-            jadi nanti ada dua method di MonoFrame
-            showPlayerPos()
-            fungsi: add gambar token player
-            param: int PlayerBerapa, int sejauh berapa)
-            removePlayerPos()
-            fungsi: hapus token player yang akan bergerak (ditaro sebelum Player.move())
-            param: int PlayerBerapa, int sejauhberapa)
-            if (idPlayer == 1) {
+        switch (playerNum) {
+            case 1:
+                switch (moveTo) {
+                    case 1:
+                        botRight.add(token1);
+                        break;
+                    case 2:
+                        bot1.add(token1);
+                        break;
+                    case 3:
+                        bot2.add(token1);
+                        break;
+                    case 4:
+                        bot3.add(token1);
+                        break;
+                    case 5:
+                        bot4.add(token1);
+                        break;
+                    case 6:
+                        bot5.add(token1);
+                        break;
+                    case 7:
+                        bot6.add(token1);
+                        break;
+
+                    case 8:
+                        bot7.add(token1);
+                        break;
+                    case 9:
+                        bot8.add(token1);
+                        break;
+                    case 10:
+                        bot9.add(token1);
+                        break;
+                    case 11:
+                        botLeft.add(token1);
+                        break;  
+                    case 12:
+                        left1.add(token1);
+                        break;
+
+                    case 13:
+                        left2.add(token1);
+                        break;
+
+                    case 14:
+                        left3.add(token1);
+                        break;
+
+                    case 15:
+                        left4.add(token1);
+                        break;
+
+                    case 16:
+                        left5.add(token1);
+                        break;
+
+                    case 17:
+                        left6.add(token1);
+                        break;
+
+                    case 18:
+                        left7.add(token1);
+                        break;
+
+                    case 19:
+                        left8.add(token1);
+                        break;
+
+                    case 20:
+                        left9.add(token1);
+                        break;
+
+                    case 21:
+                        topLeft.add(token1);
+                        break;
+
+                    case 22:
+                        top1.add(token1);
+                        break;
+
+                    case 23:
+                        top2.add(token1);
+                        break;
+
+                    case 24:
+                        top3.add(token1);
+                        break;
+
+                    case 25:
+                        top4.add(token1);
+                        break;
+
+                    case 26:
+                        top5.add(token1);
+                        break;
+
+                    case 27:
+                        top6.add(token1);
+                        break;
+
+                    case 28:
+                        top7.add(token1);
+                        break;
+
+                    case 29:
+                        top8.add(token1);
+                        break;
+
+                    case 30:
+                        top9.add(token1);
+                        break;
+
+                    case 31:
+                        topRight.add(token1);
+                        break;
+
+                    case 32:
+                        right1.add(token1);
+                        break;
+
+                    case 33:
+                        right2.add(token1);
+                        break;
+
+                    case 34:
+                        right3.add(token1);
+                        break;
+
+                    case 35:
+                        right4.add(token1);
+                        break;
+
+                    case 36:
+                        right5.add(token1);
+                        break;
+
+                    case 37:
+                        right6.add(token1);
+                        break;
+
+                    case 38:
+                        right7.add(token1);
+                        break;
+
+                    case 39:
+                        right8.add(token1);
+                        break;
+
+                    case 40:
+                        right9.add(token1);
+                        break;
+                    default:
+                        break;
+                }
+                break;
                 
-            }
-        */
+            case 2:
+                switch (moveTo) {
+                    case 1:
+                        botRight.add(token2);
+                        break;
+                    case 2:
+                        bot1.add(token2);
+                        break;
+                    case 3:
+                        bot2.add(token2);
+                        break;
+                    case 4:
+                        bot3.add(token2);
+                        break;
+                    case 5:
+                        bot4.add(token2);
+                        break;
+                    case 6:
+                        bot5.add(token2);
+                        break;
+                    case 7:
+                        bot6.add(token2);
+                        break;
+                    case 8:
+                        bot7.add(token2);
+                        break;
+                    case 9:
+                        bot8.add(token2);
+                        break;
+                    case 10:
+                        bot9.add(token2);
+                        break;
+                    case 11:
+                        botLeft.add(token2);
+                        break;  
+                    case 12:
+                        left1.add(token2);
+                        break;
+
+                    case 13:
+                        left2.add(token2);
+                        break;
+
+                    case 14:
+                        left3.add(token2);
+                        break;
+
+                    case 15:
+                        left4.add(token2);
+                        break;
+
+                    case 16:
+                        left5.add(token2);
+                        break;
+
+                    case 17:
+                        left6.add(token2);
+                        break;
+
+                    case 18:
+                        left7.add(token2);
+                        break;
+
+                    case 19:
+                        left8.add(token2);
+                        break;
+
+                    case 20:
+                        left9.add(token2);
+                        break;
+
+                    case 21:
+                        topLeft.add(token2);
+                        break;
+
+                    case 22:
+                        top1.add(token2);
+                        break;
+
+                    case 23:
+                        top2.add(token2);
+                        break;
+
+                    case 24:
+                        top3.add(token2);
+                        break;
+
+                    case 25:
+                        top4.add(token2);
+                        break;
+
+                    case 26:
+                        top5.add(token2);
+                        break;
+
+                    case 27:
+                        top6.add(token2);
+                        break;
+
+                    case 28:
+                        top7.add(token2);
+                        break;
+
+                    case 29:
+                        top8.add(token2);
+                        break;
+
+                    case 30:
+                        top9.add(token2);
+                        break;
+
+                    case 31:
+                        topRight.add(token2);
+                        break;
+
+                    case 32:
+                        right1.add(token2);
+                        break;
+
+                    case 33:
+                        right2.add(token2);
+                        break;
+
+                    case 34:
+                        right3.add(token2);
+                        break;
+
+                    case 35:
+                        right4.add(token2);
+                        break;
+
+                    case 36:
+                        right5.add(token2);
+                        break;
+
+                    case 37:
+                        right6.add(token2);
+                        break;
+
+                    case 38:
+                        right7.add(token2);
+                        break;
+
+                    case 39:
+                        right8.add(token2);
+                        break;
+
+                    case 40:
+                        right9.add(token2);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 3:
+                switch (moveTo) {
+                    case 1:
+                        botRight.add(token3);
+                        break;
+                    case 2:
+                        bot1.add(token3);
+                        break;
+                    case 3:
+                        bot2.add(token3);
+                        break;
+                    case 4:
+                        bot3.add(token3);
+                        break;
+                    case 5:
+                        bot4.add(token3);
+                        break;
+                    case 6:
+                        bot5.add(token3);
+                        break;
+                    case 7:
+                        bot6.add(token3);
+                        break;
+
+                    case 8:
+                        bot7.add(token3);
+                        break;
+                    case 9:
+                        bot8.add(token3);
+                        break;
+                    case 10:
+                        bot9.add(token3);
+                        break;
+                    case 11:
+                        botLeft.add(token3);
+                        break;  
+                    case 12:
+                        left1.add(token3);
+                        break;
+
+                    case 13:
+                        left2.add(token3);
+                        break;
+
+                    case 14:
+                        left3.add(token3);
+                        break;
+
+                    case 15:
+                        left4.add(token3);
+                        break;
+
+                    case 16:
+                        left5.add(token3);
+                        break;
+
+                    case 17:
+                        left6.add(token3);
+                        break;
+
+                    case 18:
+                        left7.add(token3);
+                        break;
+
+                    case 19:
+                        left8.add(token3);
+                        break;
+
+                    case 20:
+                        left9.add(token3);
+                        break;
+
+                    case 21:
+                        topLeft.add(token3);
+                        break;
+
+                    case 22:
+                        top1.add(token3);
+                        break;
+
+                    case 23:
+                        top2.add(token3);
+                        break;
+
+                    case 24:
+                        top3.add(token3);
+                        break;
+
+                    case 25:
+                        top4.add(token3);
+                        break;
+
+                    case 26:
+                        top5.add(token3);
+                        break;
+
+                    case 27:
+                        top6.add(token3);
+                        break;
+
+                    case 28:
+                        top7.add(token3);
+                        break;
+
+                    case 29:
+                        top8.add(token3);
+                        break;
+
+                    case 30:
+                        top9.add(token3);
+                        break;
+
+                    case 31:
+                        topRight.add(token3);
+                        break;
+
+                    case 32:
+                        right1.add(token3);
+                        break;
+
+                    case 33:
+                        right2.add(token3);
+                        break;
+
+                    case 34:
+                        right3.add(token3);
+                        break;
+
+                    case 35:
+                        right4.add(token3);
+                        break;
+
+                    case 36:
+                        right5.add(token3);
+                        break;
+
+                    case 37:
+                        right6.add(token3);
+                        break;
+
+                    case 38:
+                        right7.add(token3);
+                        break;
+
+                    case 39:
+                        right8.add(token3);
+                        break;
+
+                    case 40:
+                        right9.add(token3);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 4:
+                switch (moveTo) {
+                    case 1:
+                        botRight.add(token4);
+                        break;
+                    case 2:
+                        bot1.add(token4);
+                        break;
+                    case 3:
+                        bot2.add(token4);
+                        break;
+                    case 4:
+                        bot3.add(token4);
+                        break;
+                    case 5:
+                        bot4.add(token4);
+                        break;
+                    case 6:
+                        bot5.add(token4);
+                        break;
+                    case 7:
+                        bot6.add(token4);
+                        break;
+
+                    case 8:
+                        bot7.add(token4);
+                        break;
+                    case 9:
+                        bot8.add(token4);
+                        break;
+                    case 10:
+                        bot9.add(token4);
+                        break;
+                    case 11:
+                        botLeft.add(token4);
+                        break;  
+                    case 12:
+                        left1.add(token4);
+                        break;
+
+                    case 13:
+                        left2.add(token4);
+                        break;
+
+                    case 14:
+                        left3.add(token4);
+                        break;
+
+                    case 15:
+                        left4.add(token4);
+                        break;
+
+                    case 16:
+                        left5.add(token4);
+                        break;
+
+                    case 17:
+                        left6.add(token4);
+                        break;
+
+                    case 18:
+                        left7.add(token4);
+                        break;
+
+                    case 19:
+                        left8.add(token4);
+                        break;
+
+                    case 20:
+                        left9.add(token4);
+                        break;
+
+                    case 21:
+                        topLeft.add(token4);
+                        break;
+
+                    case 22:
+                        top1.add(token4);
+                        break;
+
+                    case 23:
+                        top2.add(token4);
+                        break;
+
+                    case 24:
+                        top3.add(token4);
+                        break;
+
+                    case 25:
+                        top4.add(token4);
+                        break;
+
+                    case 26:
+                        top5.add(token4);
+                        break;
+
+                    case 27:
+                        top6.add(token4);
+                        break;
+
+                    case 28:
+                        top7.add(token4);
+                        break;
+
+                    case 29:
+                        top8.add(token4);
+                        break;
+
+                    case 30:
+                        top9.add(token4);
+                        break;
+
+                    case 31:
+                        topRight.add(token4);
+                        break;
+
+                    case 32:
+                        right1.add(token4);
+                        break;
+
+                    case 33:
+                        right2.add(token4);
+                        break;
+
+                    case 34:
+                        right3.add(token4);
+                        break;
+
+                    case 35:
+                        right4.add(token4);
+                        break;
+
+                    case 36:
+                        right5.add(token4);
+                        break;
+
+                    case 37:
+                        right6.add(token4);
+                        break;
+
+                    case 38:
+                        right7.add(token4);
+                        break;
+
+                    case 39:
+                        right8.add(token4);
+                        break;
+
+                    case 40:
+                        right9.add(token4);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+        }
+    }
+    
+    public void removePlayerPos(int playerNum, int moveFrom) {
+
+        //
+        //fungsi : update token per player
+        //  Jlabel tokenPlayer1 = new JLabel(ambil file token1.jpg); ==> taro di Consturctor
+        Container parent;
+        
+        
+        switch (playerNum) {
+            case 1:
+                switch (moveFrom) {
+                    case 1:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 2:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 3:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 4:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 5:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 6:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 7:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 8:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 9:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 10:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 11:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;  
+                    case 12:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 13:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 14:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 15:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 16:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 17:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 18:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 19:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 20:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 21:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 22:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 23:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 24:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 25:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 26:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 27:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 28:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 29:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 30:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 31:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 32:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 33:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 34:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 35:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 36:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 37:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 38:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 39:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 40:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+                
+            case 2:
+                switch (moveFrom) {
+                    case 1:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 2:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 3:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 4:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 5:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 6:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 7:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 8:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 9:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 10:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 11:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;  
+                    case 12:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 13:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 14:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 15:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 16:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 17:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 18:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 19:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 20:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 21:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 22:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 23:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 24:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 25:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 26:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 27:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 28:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 29:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 30:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 31:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 32:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 33:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 34:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 35:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 36:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 37:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 38:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 39:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 40:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 3:
+                switch (moveFrom) {
+                    case 1:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 2:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 3:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 4:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 5:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 6:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 7:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 8:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 9:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 10:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 11:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;  
+                    case 12:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 13:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 14:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 15:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 16:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 17:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 18:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 19:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 20:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 21:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 22:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 23:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 24:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 25:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 26:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 27:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 28:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 29:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 30:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 31:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 32:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 33:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 34:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 35:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 36:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 37:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 38:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 39:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 40:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 4:
+                switch (moveFrom) {
+                    case 1:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 2:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 3:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 4:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 5:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 6:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 7:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 8:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 9:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 10:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    case 11:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;  
+                    case 12:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 13:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 14:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 15:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 16:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 17:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 18:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 19:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 20:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 21:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 22:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 23:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 24:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 25:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 26:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 27:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 28:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 29:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 30:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 31:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 32:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 33:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 34:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 35:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 36:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 37:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 38:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 39:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+
+                    case 40:
+                        parent = token1.getParent();
+                        parent.remove(token1);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+        }
+        
+        parent.validate();
+        parent.repaint();
     }
 
 

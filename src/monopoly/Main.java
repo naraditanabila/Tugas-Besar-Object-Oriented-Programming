@@ -16,31 +16,7 @@ import java.io.*;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-/*
-	Dalam konsep MVC,
-	File ini adalah Controller dan Model.
-	Sehingga harus ada atribut View.
-	Selain itu, main program ada disini dan harus menginisiasi Viewnya dari sini.
-	Sehingga, perlu ada
-	MonopolyFrame theView = new MonopolyFrame()
 
-
-	Method yg hrus ada di view:
-	
-	// cara bikin Action Listener
-	
-		gameLogButton.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				logFrame.setVisible(true);
-			}
-		});
-
-
-
-
-
-
-*/
 
 public class Main {
 	private String str = "";
@@ -144,8 +120,9 @@ public class Main {
                     for (int i = 1 ; i <= nPlayer ; i++) {
                             pName = newGameFrame.getPlayerName(i);
                             player.add(new Player(pName));
+                            mainFrame.showPlayerPos(nPlayer, 1);
                     }
-
+                    
                     //Instant Dadu
                     Dadu dadu = new Dadu();
 
@@ -367,7 +344,9 @@ public class Main {
                                                             }
                                                             mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                             mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
+                                                            mainFrame.removePlayerPos(index, player.get(index).getPos());                                                            
                                                             player.get(index).move(d1+d2, mainFrame.getGameLog());
+                                                            mainFrame.showPlayerPos(index, player.get(index).getPos());
                                                             mainFrame.setLog("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
                                                             boolean again = true;
                                                             //untuk mengatasi dadu sama, namun masuk penjara
@@ -380,8 +359,8 @@ public class Main {
                                                                             } else //Free Parking
                                                                         switch (place.get(player.get(index).getPos()).getName()) {
                                                                             case "Free Parking":
-                                                                                mainFrame.setLog("Masukkan nama yang ingin dituju : ");
-                                                                                int plot = s.nextInt();
+                                                                                FreeParkFrame frame_FreePark = new FreeParkFrame();
+                                                                                int plot = Integer.parseInt(frame_FreePark.getFreeParkNum().getText());
                                                                                 player.get(index).setPos(plot-1, mainFrame.getGameLog());
                                                                                 break;
                                                                             case "Chance Card":
