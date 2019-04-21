@@ -264,8 +264,8 @@ public class Main {
 
 						if (cmd.equals("Dadu")) {
 							//dadu blm dibikin antara mending gamelog atau bikin baru
-							//d1 = dadu.getN1();
-							//d2 = dadu.getN2();
+							d1 = dadu.getN1();
+							d2 = dadu.getN2();
                                                         mainFrame.showDice(d1, d2);
 							mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 							
@@ -364,7 +364,7 @@ public class Main {
 											cmd = (new Main()).getInput();
 										} catch (Exception e) {
 											//System.out.println(e);
-											mainFrame.setLog(e);
+											mainFrame.setLog(e.getMessage());
 										}
 										if (cmd.equals("Ya")) {
 											place.get(player.get(index).getPos()).lvlup(player.get(index), mainFrame.getGameLog());
@@ -377,7 +377,7 @@ public class Main {
 											cmd = (new Main()).getInput();
 										} catch (Exception e) {
 											//System.out.println(e);
-											mainFrame.setLog(e);
+											mainFrame.setLog(e.getMessage());
 										}
 										if (cmd.equals("Ya")) {
 											((Property)place.get(player.get(index).getPos())).beliProp(player.get(index), mainFrame.getGameLog());
