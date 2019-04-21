@@ -28,7 +28,6 @@ public class Monopoly{
     private JFrame mainFrame;
     private JFrame newGameFrame;
     private JFrame winnerFrame;
-    private JFrame logFrame;
     
     
     
@@ -93,18 +92,6 @@ public class Monopoly{
         //String cuteGirl = " /monopoly/resources/cuteGirl.mp3";
         //Media hit = new Media(new File(cuteGirl).toURI().toString());
         //MediaPlayer mediaPlayer = new MediaPlayer(hit);
-        //mediaPlayer.play();
-        
-        
-        
-        //Nyoba2
-        
-        
-        //testing new game
-        
-        
-        
-        
-        
+        //mediaPlayer.play();   
     }
 }

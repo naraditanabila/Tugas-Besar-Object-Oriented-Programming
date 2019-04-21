@@ -60,6 +60,9 @@ public class Main {
 		boolean nextP = false;
 		//SWING
 		NewGame newGameFrame = new NewGame();
+                newGameFrame.setLocationRelativeTo(null);
+                newGameFrame.setTitle("Monopoly");
+                newGameFrame.setVisible(true);
                 
                 ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
                 
@@ -68,6 +71,8 @@ public class Main {
                 
                 while (newGameFrame.gameReady()) {
                     MonopolyFrame mainFrame = new MonopolyFrame();
+                    mainFrame.setLocationRelativeTo(null);
+                    mainFrame.setVisible(true);
                     mainFrame.setIconImage(img.getImage());
 
 
@@ -444,6 +449,9 @@ public class Main {
                             winnerFrame.setWinnerName(winnerName);
                         }
                     }
+                    winnerFrame.setLocationRelativeTo(null);
+                    winnerFrame.setTitle("Saha nu meunang beu");
+                    winnerFrame.setVisible(false);
                     //
 
                     s.close();
