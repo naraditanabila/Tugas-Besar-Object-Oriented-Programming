@@ -51,9 +51,9 @@ public class Property extends Place{ //inheritance
 	}
 	
 	//Efek saat player berhenti di suatu tempat
-	public void placeAffect(Player p){
+	public void placeAffect(Player p, javax.swing.JTextArea gameLog ){
 		if (!(getOwner()==null) && !(getOwner().equals(p))) {
-			p.pay(getOwner(),getRent());
+			p.pay(getOwner(),getRent(), gameLog);
 		}
 	}
 	
@@ -64,8 +64,8 @@ public class Property extends Place{ //inheritance
 			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
 		} else {
 			setOwner(p);
-			p.pay(getPrice());
-			p.addProp(this);
+			p.pay(getPrice(), gameLog);
+			p.addProp(this, gameLog);
 			int n = (p.upAvail(getSet()) - 1); //membaca jumlah set dikurangi 1
 			this.lvl = n;
 			for (int i = 0 ; i < p.sizeProp() ; i++) {
@@ -80,11 +80,11 @@ public class Property extends Place{ //inheritance
 	}
 	
 	public void jualProp(Player p, javax.swing.JTextArea gameLog) {
-		p.receive(getPrice()/2);
+		p.receive(getPrice()/2, gameLog);
 		for (int i = 0 ; i < p.sizeProp() ; i++) {
 			p.downProp(p.getProp(i), i, this.set);
 		}
-		p.removeProp(this);
+		p.removeProp(this, gameLog);
 		this.owner=null;
 		this.lvl=0;
 		gameLog.append("Kamu berhasi menjual properti.");

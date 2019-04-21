@@ -32,18 +32,16 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 			if (getName().equals("Start")) {
 				p.cekStart();
 			} else if (getName().equals("Free Parking")) {
-				Scanner s = new Scanner(System.in);
-				System.out.println("Masukkan angka 1-40 : ");
-				int plot = s.nextInt();
-				p.setPos(plot-1);
-				s.close();
+                                FreeParkFrame frame_FreePark = new FreeParkFrame();
+				int plot = Integer.parseInt(frame_FreePark.getFreeParkNum().getText());
+				p.setPos(plot-1, gameLog);
 				//this.placeAffect(p);
 			} else if (getName().equals("Penjara")) {
-				System.out.println ("Player "+ p.getID() + " hanya lewat penjara.");
+				gameLog.append("Player "+ p.getID() + " hanya lewat penjara.");
 			} else if (getName().equals("Go To Jail")) {
-				p.inJail();
+				p.inJail(gameLog);
 			} else if (getName().equals("Tax")) {
-				p.pay(getCost());
+				p.pay(getCost(), gameLog);
 			} /*else if (getName().equals("Chance Card")) {
 				int n = cc.getNum();
 				cc.chanceAction(n, p);

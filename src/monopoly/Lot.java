@@ -8,13 +8,13 @@ public class Lot extends Property { //inheritance
 		this.housePrice = price/2;
 	}
 	
-	public void jualProp(Player p) {
+	public void jualProp(Player p, javax.swing.JTextArea gameLog) {
 		if (this.getLvl() <3) {
-			p.receive(getPrice()/2);
+			p.receive(getPrice()/2, gameLog);
 		} else {
-			p.receive((getPrice()+getHP()*(this.getLvl()-2))/2);
+			p.receive((getPrice()+getHP()*(this.getLvl()-2))/2, gameLog);
 		}
-		p.removeProp(this);
+		p.removeProp(this, gameLog);
 		this.setOwner(null);
 		this.setLvl(0);
 	}
@@ -26,8 +26,8 @@ public class Lot extends Property { //inheritance
 			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
 		} else {
 			setOwner(p);
-			p.pay(getPrice());
-			p.addProp(this);
+			p.pay(getPrice(), gameLog);
+			p.addProp(this, gameLog);
 			this.setLvl(1);
 			int x = getSet();
 			if (x == 1 || x == 10) {
@@ -56,14 +56,14 @@ public class Lot extends Property { //inheritance
 			if (p.getMoney() >= getHP()) {
 				if ((x == 1) || (x == 10)) {
 					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
-						p.pay(getHP());
+						p.pay(getHP(), gameLog);
 						upLvl();
 					} else {
 						gameLog.append("Belum punya satu komplek");
 					}
 				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
 					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
-						p.pay(getHP());
+						p.pay(getHP(), gameLog);
 						upLvl();
 					} else {
 						gameLog.append("Belum punya satu komplek");

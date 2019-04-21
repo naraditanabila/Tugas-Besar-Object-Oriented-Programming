@@ -1301,11 +1301,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
 
         payButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         payButton.setText("Pay");
-        payButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                payButtonActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1379,14 +1374,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             gameLog.setVisible(false);
         }
         
-        JLabel player1token = new JLabel();
-        player1token.setIcon(new ImageIcon(getClass().getResource("/monopoly/resources/Map/top1.jpg")));
-        top1.add(player1token);
     }//GEN-LAST:event_gameLogButtonItemStateChanged
-
-    private void payButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_payButtonActionPerformed
 
     /**
      * @param args the command line arguments
