@@ -28,7 +28,7 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 	}
 	
 	//Space Effects
-    public void placeAffect(Player p){
+    public void placeAffect(Player p, javax.swing.JTextArea gameLog){
 			if (getName().equals("Start")) {
 				p.cekStart();
 			} else if (getName().equals("Free Parking")) {
