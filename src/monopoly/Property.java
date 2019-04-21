@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public abstract class Property extends Place{ //inheritance
+public class Property extends Place{ //inheritance
 	private Player owner;
 	private int price;
 	private int tipe; /* 0: Utility, 1: Railroad, 2: Lot */ 
@@ -85,9 +85,6 @@ public abstract class Property extends Place{ //inheritance
 		this.lvl=0;
 		gameLog.append("Kamu berhasi menjual properti.");
 	}
-	
-	//method cuma bisa diakses oleh Player yang memiliki
-	public abstract void lvlup(Player p, javax.swing.JTextArea gameLog);
 	
 	public int getLvl(){
 		return this.lvl;
