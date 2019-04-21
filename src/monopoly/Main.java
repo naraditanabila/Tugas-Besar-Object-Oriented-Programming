@@ -302,28 +302,7 @@ public class Main {
                             if (!(player.get(index).getKalah())) {
                                 //Command nya gmn ya
                                     if (cmd == 1) { 
-
-
-                                            //data player
-                                            for (int i=0; i<player.get(index).sizeProp(); i++) {
-                                                    if (((Property)player.get(index).getProp(i)).getTipe() == 2) {
-                                                            if (((Property)player.get(index).getProp(i)).getLvl() == 3) {
-                                                                    mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 1 rumah");
-                                                            } else if (((Property)player.get(index).getProp(i)).getLvl() == 4) {
-                                                                    mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 2 rumah");
-                                                            } else if (((Property)player.get(index).getProp(i)).getLvl() == 5) {
-                                                                    mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 3 rumah");
-                                                            } else if (((Property)player.get(index).getProp(i)).getLvl() == 6) {
-                                                                    mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 4 rumah");
-                                                            } else {
-                                                                    mainFrame.setLog(player.get(index).getProp(i).getName());
-                                                            }
-                                                    } else {
-                                                        mainFrame.setLog(player.get(index).getProp(i).getName());
-                                                    }
-                                            }
-                                            //data player
-                                            
+                                           
                                             if (player.get(index).getJail()) {
                                                     mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
                                                     try {
