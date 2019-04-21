@@ -106,7 +106,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
         topRight = new javax.swing.JLayeredPane();
         topRight_img = new javax.swing.JLabel();
         botRight = new javax.swing.JLayeredPane();
-        botRight_img = new javax.swing.JLabel();
         botLeft = new javax.swing.JLayeredPane();
         botLeft_img = new javax.swing.JLabel();
         bot9 = new javax.swing.JLayeredPane();
@@ -185,6 +184,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
         dice1 = new javax.swing.JLabel();
         panel_dice2 = new javax.swing.JPanel();
         dice2 = new javax.swing.JLabel();
+        botRight_img = new javax.swing.JLabel();
         playerPane = new javax.swing.JPanel();
         player1Panel = new javax.swing.JPanel();
         label_money_player1 = new javax.swing.JLabel();
@@ -275,10 +275,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 .addComponent(topRight_img, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
-
-        botRight_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/botRight.jpg"))); // NOI18N
-        botRight.add(botRight_img);
-        botRight_img.setBounds(0, 0, 128, 128);
 
         botLeft_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/botLeft.jpg"))); // NOI18N
 
@@ -891,6 +887,8 @@ public class MonopolyFrame extends javax.swing.JFrame {
             .addComponent(dice2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
 
+        botRight_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/Map/botRight.jpg"))); // NOI18N
+
         javax.swing.GroupLayout boardPanelLayout = new javax.swing.GroupLayout(boardPanel);
         boardPanel.setLayout(boardPanelLayout);
         boardPanelLayout.setHorizontalGroup(
@@ -931,7 +929,9 @@ public class MonopolyFrame extends javax.swing.JFrame {
                         .addGap(266, 266, 266)
                         .addComponent(panel_dice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(panel_dice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(botRight_img)
+                            .addComponent(panel_dice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(6, 6, 6)
                 .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(boardPanelLayout.createSequentialGroup()
@@ -1037,13 +1037,18 @@ public class MonopolyFrame extends javax.swing.JFrame {
                                 .addComponent(left5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(panel_dice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(left4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(left3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(left2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(left1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(boardPanelLayout.createSequentialGroup()
+                                .addComponent(left4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(left3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(left2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(left1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, boardPanelLayout.createSequentialGroup()
+                                .addComponent(botRight_img, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(64, 64, 64)))))
                 .addGap(18, 18, 18)
                 .addGroup(boardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(botLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1419,7 +1424,19 @@ public class MonopolyFrame extends javax.swing.JFrame {
         token4.setIcon(token4_img);
         
         //===================setting Tile
+        //setting JLabel
+        
+        JLabel label_botRight = new JLabel();
+        //import Gambar
+        ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
+        ImageIcon image_botleft = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botLeft.jpg"));
+        
+        //JLabel SetIcon
+        label_botRight.setIcon(image_botRight);
+        
+        
         //Bawah
+        
         
         
         
