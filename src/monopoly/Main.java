@@ -195,20 +195,44 @@ public class Main {
 			System.out.println("Pilih roll atau quit");
 			// mainFrame.setLog( + " bermain");
 			// mainFrame.setLog("Pilih roll atau quit");
+                        
+                        //tiap command di cek
+                        
+                        
 
 			//Yang dienable
-			cmd = s.next(); //SWING  / ganti jadi case utk line 159
+			cmd = s.next();
 			int index = turn.getPlayer();
+                        
+                        for (int i = index; index <= nPlayer; i++) {
+                            switch (index) {
+                                case 1:
+                                    mainFrame.getMoney_player1().setText(Integer.toString(player.get(index).getMoney()));
+                                    mainFrame.getPos_player1().setText(place.get((player.get(index).getPos())).getName());
+                                    break;
+                                case 2:
+                                    mainFrame.getMoney_player2().setText(Integer.toString(player.get(index).getMoney()));
+                                    mainFrame.getPos_player2().setText(place.get((player.get(index).getPos())).getName());
+                                    break;
+                                case 3:
+                                    mainFrame.getMoney_player3().setText(Integer.toString(player.get(index).getMoney()));
+                                    mainFrame.getPos_player3().setText(place.get((player.get(index).getPos())).getName());
+                                    break;
+                                case 4:
+                                    mainFrame.getMoney_player4().setText(Integer.toString(player.get(index).getMoney()));
+                                    mainFrame.getPos_player4().setText(place.get((player.get(index).getPos())).getName());
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                        
 			if (!(player.get(index).getKalah())) {
-				if (cmd.equals("roll")) { //SWING / ganti jadi case
-					//
-					//SWING /
-					//mainFrame.setPlayer1Data("--------------------");
-					System.out.println("--------------------");
-					System.out.println("Nama Player: "+player.get(index).getID());
-					System.out.println("Jumlah uang: "+player.get(index).getMoney());
-					System.out.println("Lokasi saat ini: "+place.get((player.get(index).getPos())).getName());
-					System.out.println("Properti yang dimiliki saat ini:");
+				if (cmd.equals("roll")) { 
+                                    
+                                        mainFrame.getMoney_player1().setText(Integer.toString(player.get(index).getMoney()));
+                                        mainFrame.getPos_player1().setText(place.get((player.get(index).getPos())).getName());
+                                        
 					for (int i=0; i<player.get(index).sizeProp(); i++) {
 						if (((Property)player.get(index).getProp(i)).getTipe() == 2) {
 							if (((Property)player.get(index).getProp(i)).getLvl() == 3) {
