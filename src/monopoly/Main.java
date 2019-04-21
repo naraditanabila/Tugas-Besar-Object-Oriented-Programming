@@ -10,6 +10,7 @@ import java.util.TimerTask;
 //import monopoly.NewGame;
 
 import java.io.*;
+import javax.swing.ImageIcon;
 
 /*
 	Dalam konsep MVC,
@@ -79,8 +80,10 @@ public class Main {
 		//SWING
 		NewGame newGameFrame = new NewGame();
                 MonopolyFrame mainFrame = new MonopolyFrame();
+                ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
                 WinnerGame winnerFrame = new WinnerGame();
-                
+                mainFrame.setIconImage(img.getImage());
+                newGameFrame.setIconImage(img.getImage());
                 
                 
                 
@@ -130,17 +133,11 @@ public class Main {
 		place.add(new Lot("ITB", 10, 2500));
 		
 		//Pembacaan jumlah player
-		nPlayer = s.nextInt(); //SWING  / getPlayerNum ke NewGame.java 
-		while (nPlayer <= 1) {
-			System.out.println("Jumlah pemain harus lebih dari 1");
-			nPlayer = s.nextInt();
-		}
+                nPlayer = newGameFrame.getPlayerNumber();
                 
 		//Pembacaan nama tiap player
 		for (int i = 1 ; i <= nPlayer ; i++) {
-			System.out.println("Nama Player Ke-" + i + ":");
-			pName = s.next(); 
-			//pname = mainMenu.getPlayerName(i);
+                        pName = newGameFrame.getPlayerName(i);
 			player.add(new Player(pName));
 		}
                 
