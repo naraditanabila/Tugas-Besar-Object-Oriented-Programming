@@ -90,9 +90,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 gameLog.append("sellButton! \n");
             }
         });
-        
-        
-        
         gameLog.setVisible(false);
     }
 
@@ -1401,6 +1398,38 @@ public class MonopolyFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_gameLogButtonItemStateChanged
 
     private void initBoardGame() {
+        //Ambil token sama img Tilenya
+        //add, setLayer, setBounds sesuai dengan Tilenya
+        
+        
+        //setting token
+        ImageIcon token1_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token1.png"));
+        ImageIcon token2_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token2.png"));
+        ImageIcon token3_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token3.png"));
+        ImageIcon token4_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token4.png"));
+        
+        JLabel token1 = new JLabel();
+        JLabel token2 = new JLabel();
+        JLabel token3 = new JLabel();
+        JLabel token4 = new JLabel();
+        
+        token1.setIcon(token1_img);
+        token2.setIcon(token2_img);
+        token3.setIcon(token3_img);
+        token4.setIcon(token4_img);
+        
+        //===================setting Tile
+        //Bawah
+        
+        
+        
+        //Kiri
+        
+        
+        //Atas
+        
+        //Kanan
+        
         
     }
     
@@ -1596,7 +1625,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
     }
     
     public void setLog(String text) {
-        gameLog.append(text);
+        gameLog.append(text + "\n");
     }
     
     public void clearLog() {

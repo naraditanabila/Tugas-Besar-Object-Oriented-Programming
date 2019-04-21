@@ -179,7 +179,7 @@ public class Main {
 
                     while ((!endGame) && (nPlayer != 1)) {
 
-                        prop1PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                        mainFrame.getProp1Button().addActionListener(new java.awt.event.ActionListener() {
                                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                                         for (int i=0; i<player.get(1).sizeProp(); i++) {
                                                 if (((Property)player.get(1).getProp(i)).getTipe() == 2) {
@@ -201,7 +201,7 @@ public class Main {
                                 }
                         });
 
-                        prop2PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                        mainFrame.getProp2Button().addActionListener(new java.awt.event.ActionListener() {
                                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                                         for (int i=0; i<player.get(2).sizeProp(); i++) {
                                                 if (((Property)player.get(2).getProp(i)).getTipe() == 2) {
@@ -223,7 +223,7 @@ public class Main {
                                 }
                         });
 
-                        prop3PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                        mainFrame.getProp3Button().addActionListener(new java.awt.event.ActionListener() {
                                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                                         for (int i=0; i<player.get(3).sizeProp(); i++) {
                                                 if (((Property)player.get(3).getProp(i)).getTipe() == 2) {
@@ -245,7 +245,7 @@ public class Main {
                                 }
                         });
 
-                        prop4PrintButton.addActionListener(new java.awt.event.ActionListener() {
+                        mainFrame.getProp4Button().addActionListener(new java.awt.event.ActionListener() {
                                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                                         for (int i=0; i<player.get(4).sizeProp(); i++) {
                                                 if (((Property)player.get(4).getProp(i)).getTipe() == 2) {
