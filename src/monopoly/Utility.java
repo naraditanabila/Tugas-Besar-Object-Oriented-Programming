@@ -5,7 +5,6 @@ public class Utility extends Property { //inheritance
 		super(name,0,800,5);
 	}
 	
-	@Override
 	public int getRent(){ //polymorphism, yeayy!
 		if (getLvl()==1) {
 			return getPrice()/8;
