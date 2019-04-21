@@ -76,15 +76,15 @@ public class Main {
 		String pName, cmd;
 		boolean endGame = false;
 		boolean nextP = false;
-		/*SWING
-		MonopolyFrame mainFrame = new MonopolyFrame();
-		NewGame mainMenu = new NewGame();
-		PopUpFrame popFrame = new PopUpFrame();
-		WinnerGame winnerFrame = new winnerFrame();
-
-		popFrame.setVisible(false);
-		winnerFrame.setVisible(false);
-		SWING*/
+		//SWING
+		NewGame newGameFrame = new NewGame();
+                MonopolyFrame mainFrame = new MonopolyFrame();
+                WinnerGame winnerFrame = new WinnerGame();
+                
+                
+                
+                
+		//SWING
 
 
 		//PenambahanMap
@@ -135,7 +135,7 @@ public class Main {
 			System.out.println("Jumlah pemain harus lebih dari 1");
 			nPlayer = s.nextInt();
 		}
-
+                
 		//Pembacaan nama tiap player
 		for (int i = 1 ; i <= nPlayer ; i++) {
 			System.out.println("Nama Player Ke-" + i + ":");
@@ -143,6 +143,7 @@ public class Main {
 			//pname = mainMenu.getPlayerName(i);
 			player.add(new Player(pName));
 		}
+                
 		//Instant Dadu
 		Dadu dadu = new Dadu();
 		
