@@ -98,9 +98,12 @@ public class Monopoly{
 
             MonopolyFrame mainFrame = new MonopolyFrame();
             mainFrame.setLocationRelativeTo(null);
-            mainFrame.setVisible(true);
+            mainFrame.setVisible(false);
             mainFrame.setIconImage(img.getImage());
-
+            
+            if (newGameFrame.gameReady()) {
+                mainFrame.setVisible(true);
+            }
 
             //PenambahanMap
             place.add(new Space("Start",0,200));
