@@ -140,6 +140,10 @@ public class Monopoly{
             place.add(new Space("Tax",0, 100));
             place.add(new Lot("ITB", 10, 2500));
 
+            while(!newGameFrame.gameReady()) {
+                
+            }
+            
             //Pembacaan jumlah player
             nPlayer = newGameFrame.getPlayerNumber();
 
@@ -148,6 +152,7 @@ public class Monopoly{
                     pName = newGameFrame.getPlayerName(i);
                     player.add(new Player(pName));
                     mainFrame.showPlayerPos(i, 1);
+                    mainFrame.setLog(pName + " ditambahkan!");
             }
 
             //Instant Dadu
