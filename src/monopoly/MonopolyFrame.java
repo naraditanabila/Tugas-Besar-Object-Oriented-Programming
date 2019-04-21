@@ -2072,4 +2072,5 @@ public class MonopolyFrame extends javax.swing.JFrame {
                     break;
             }
         }
+        
 }

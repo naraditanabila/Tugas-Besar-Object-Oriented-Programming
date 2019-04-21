@@ -239,15 +239,15 @@ public class Main {
 					for (int i=0; i<player.get(index).sizeProp(); i++) {
 						if (((Property)player.get(index).getProp(i)).getTipe() == 2) {
 							if (((Property)player.get(index).getProp(i)).getLvl() == 3) {
-								System.out.println(player.get(index).getProp(i).getName()+" dengan 1 rumah");
+								mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 1 rumah");
 							} else if (((Property)player.get(index).getProp(i)).getLvl() == 4) {
-								System.out.println(player.get(index).getProp(i).getName()+" dengan 2 rumah");
+								mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 2 rumah");
 							} else if (((Property)player.get(index).getProp(i)).getLvl() == 5) {
-								System.out.println(player.get(index).getProp(i).getName()+" dengan 3 rumah");
+								mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 3 rumah");
 							} else if (((Property)player.get(index).getProp(i)).getLvl() == 6) {
-								System.out.println(player.get(index).getProp(i).getName()+" dengan 4 rumah");
+								mainFrame.setLog(player.get(index).getProp(i).getName()+" dengan 4 rumah");
 							} else {
-								System.out.println(player.get(index).getProp(i).getName());
+								mainFrame.setLog(player.get(index).getProp(i).getName());
 							}
 						} else {
 							System.out.println(player.get(index).getProp(i).getName());
@@ -300,7 +300,6 @@ public class Main {
 							} else {
 								player.get(index).pay(1000);
 								player.get(index).outJail();
-								//System.out.println("Selamat! anda keluar dari sini");
 								mainFrame.setLog("Selamat! anda keluar dari sini");
 							}
 						} else {
