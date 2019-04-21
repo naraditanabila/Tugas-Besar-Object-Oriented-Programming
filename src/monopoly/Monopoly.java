@@ -33,14 +33,14 @@ public class Monopoly{
     
     
     // EO Variables Declaration
-    private String str = "";
+    private int str = 0;
 	boolean nin = false;
 	int detik=30;
 
 	
 	TimerTask task = new TimerTask(){
 		public void run() {
-			if (str.equals("")) {
+			if (str == 0) {
 				if (detik>0) {
 					System.out.print(detik);
 					detik--;
@@ -54,19 +54,17 @@ public class Monopoly{
 		}
 	};
 	
-	public String getInput() throws Exception {
+	public int getInput(MonopolyFrame mainFrame) throws Exception {
 		Timer t = new Timer();
 		t.schedule(task, 30, 1000);
 		
-		System.out.print("Masukkan command: ");
-		BufferedReader in = new BufferedReader (
-		new InputStreamReader(System.in));
-		str = in.readLine();
+		mainFrame.setLog("Masukkan command: ");
+		str = mainFrame.getCommand();
 		t.cancel();
 		if (this.nin == false) {
 			return str;
 		} else {
-			return "nothing";
+			return -1;
 		}
 	}
        
@@ -312,7 +310,7 @@ public class Monopoly{
                                     if (player.get(index).getJail()) {
                                             mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
                                             try {
-                                                    cmd = (new Main()).getInput();
+                                                    cmd = (new Monopoly()).getInput(mainFrame);
                                             } catch (Exception e) {
                                                 mainFrame.setLog(e.getMessage());
                                             }
@@ -361,16 +359,16 @@ public class Monopoly{
                                             boolean db = true;
                                             int dbi = 1;
                                             while (db && (dbi <= 3) && (!player.get(index).getJail())) {
-                                                    mainFrame.setLog("Silahkan pilih Random atau Set");
+                                                    mainFrame.setLog("Silahkan roll");
                                                     cmd = mainFrame.getCommand();
-                                                    if (cmd == 1) {
+                                                    //if (cmd == 1) {
                                                             d1 = dadu.getN1();
                                                             d2 = dadu.getN2();
                                                             mainFrame.showDice(d1, d2);
-                                                    } else { //Ini hanya untuk debug
+                                                    //} else { //Ini hanya untuk debug
                                                             //d1 = s.nextInt();
                                                             //d2 = s.nextInt();
-                                                    }
+                                                    //}
                                                     mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                     mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
                                                     mainFrame.removePlayerPos(index, player.get(index).getPos());                                                            
@@ -410,7 +408,7 @@ public class Monopoly{
                                                                     if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
                                                                             //nunggu inputan Button Upgrade
                                                                             try {
-                                                                                    cmd = (new Main()).getInput();
+                                                                                    cmd = (new Monopoly()).getInput(mainFrame);
                                                                             } catch (Exception e) {
                                                                                     //System.out.println(e);
                                                                                     mainFrame.setLog(e.getMessage());
@@ -423,7 +421,7 @@ public class Monopoly{
                                                                     } else if (place.get(player.get(index).getPos()).getOwner() == null) {
                                                                             mainFrame.setLog("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
                                                                             try {
-                                                                                    cmd = (new Main()).getInput();
+                                                                                    cmd = (new Monopoly()).getInput(mainFrame);
                                                                             } catch (Exception e) {
                                                                                     //System.out.println(e);
                                                                                     mainFrame.setLog(e.getMessage());

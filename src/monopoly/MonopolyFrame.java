@@ -2277,7 +2277,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
         //fungsi : update token per player
         //  Jlabel tokenPlayer1 = new JLabel(ambil file token1.jpg); ==> taro di Consturctor
         Container parent;
-        
+        parent = this.getParent();
         
         switch (playerNum) {
             case 1:
