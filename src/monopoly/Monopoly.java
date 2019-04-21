@@ -50,9 +50,21 @@ public class Monopoly{
         mainFrame.getBot1().add(token1);
         mainFrame.setLog(Integer.toString(mainFrame.getBot1().getLayer(token1)) + "\n");
         
+        JLabel label_botRight = new JLabel();
         
         
+        ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
+        label_botRight.setVisible(true);
+        label_botRight.setIcon(image_botRight);
         
+        mainFrame.getBotRight().add(label_botRight);
+        mainFrame.getBotRight().add(token1);
+        
+        
+        mainFrame.getBotRight().setLayer(label_botRight, -1);
+        mainFrame.getBotRight().setLayer(token1, 0);
+        label_botRight.setBounds(0, 0, 128, 128);
+        token1.setBounds(0, 0, 128, 128);
         mainFrame.setVisible(true);
         
         // New Game
