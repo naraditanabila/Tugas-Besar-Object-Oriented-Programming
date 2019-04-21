@@ -264,41 +264,44 @@ public class Main {
 
 						if (cmd.equals("Dadu")) {
 							//dadu blm dibikin antara mending gamelog atau bikin baru
-							d1 = dadu.getN1();
-							d2 = dadu.getN2();
-                                                        mainFrame.showDice(d1, d2);
+							//d1 = dadu.getN1();
+							//d2 = dadu.getN2();
+                            mainFrame.showDice(d1, d2);
 							mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 							
 							if (d1 == d2) {
 								player.get(index).outJail();
-								System.out.println("Selamat! anda keluar dari sini");
-								//mainFrame.setLog("Selamat! anda keluar dari sini");
+								//System.out.println("Selamat! anda keluar dari sini");
+								mainFrame.setLog("Selamat! anda keluar dari sini");
 							} else {
-								System.out.println("Dadu tidak sama");
-								//mainFrame.setLog("Dadu tidak sama");
+								//System.out.println("Dadu tidak sama");
+								mainFrame.setLog("Dadu tidak sama");
 								turn.nextPlayer();
 							}
 						
 						} else if (cmd.equals("Bayar")) {
 
 							if (player.get(index).getMoney()<1000) {
-								System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
-								//mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
-								d1 = dadu.getN1();
-								d2 = dadu.getN2();
-                                                                mainFrame.showDice(d1, d2);
-                                                                mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+								//System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
+								mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
+								//d1 = dadu.getN1();
+								//d2 = dadu.getN2();
+                                mainFrame.showDice(d1, d2);
+                                mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 								if (d1 == d2) {
 									player.get(index).outJail();
-									System.out.println("Selamat! anda keluar dari sini");
+									//System.out.println("Selamat! anda keluar dari sini");
+									mainFrame.setLog("Selamat! anda keluar dari sini");
 								} else {
-									System.out.println("Dadu tidak sama");
+									//System.out.println("Dadu tidak sama");
+									mainFrame.setLog("Dadu tidak sama");
 									turn.nextPlayer();
 								}
 							} else {
 								player.get(index).pay(1000);
 								player.get(index).outJail();
-								System.out.println("Selamat! anda keluar dari sini");
+								//System.out.println("Selamat! anda keluar dari sini");
+								mainFrame.setLog("Selamat! anda keluar dari sini");
 							}
 						} else {
 							//Kalau command tidak sesuai, skip
@@ -311,16 +314,19 @@ public class Main {
 							System.out.println("Silahkan pilih Random atau Set");
 							cmd = s.next();
 							if (cmd.equals("Random")) {
-								d1 = dadu.getN1();
-								d2 = dadu.getN2();
+								//d1 = dadu.getN1();
+								//d2 = dadu.getN2();
+								mainFrame.showDice(d1, d2);
 							} else { //Ini hanya untuk debug
 								d1 = s.nextInt();
 								d2 = s.nextInt();
 							}
-							System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
-							//mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
+							//System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
+							mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+							mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
 							player.get(index).move(d1+d2);
-							System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
+							//System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
+							mainFrame.setLog("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
 							boolean again = true;
 							//untuk mengatasi dadu sama, namun masuk penjara
 							while (again) { //pengulangan
@@ -352,11 +358,13 @@ public class Main {
 									}
 								} else {
 									if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
-										System.out.println("Properti ini milikmu, mau upgrade? Ya/Tidak");
+										//System.out.println("Properti ini milikmu, mau upgrade? Ya/Tidak");
+										mainFrame.setLog("Properti ini milikmu, mau upgrade? Ya/Tidak");
 										try {
 											cmd = (new Main()).getInput();
 										} catch (Exception e) {
-											System.out.println(e);
+											//System.out.println(e);
+											mainFrame.setLog(e);
 										}
 										if (cmd.equals("Ya")) {
 											place.get(player.get(index).getPos()).lvlup(player.get(index), mainFrame.getGameLog());
@@ -368,7 +376,8 @@ public class Main {
 										try {
 											cmd = (new Main()).getInput();
 										} catch (Exception e) {
-											System.out.println(e);
+											//System.out.println(e);
+											mainFrame.setLog(e);
 										}
 										if (cmd.equals("Ya")) {
 											((Property)place.get(player.get(index).getPos())).beliProp(player.get(index), mainFrame.getGameLog());
