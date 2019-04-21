@@ -362,7 +362,7 @@ public class Main {
 											System.out.println(e);
 										}
 										if (cmd.equals("Ya")) {
-											place.get(player.get(index).getPos()).beliProp(player.get(index));
+											((Property)place.get(player.get(index).getPos())).beliProp(player.get(index));
 										} else {
 											db = false;
 										}

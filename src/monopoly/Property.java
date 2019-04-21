@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Property extends Place{ //inheritance
+public abstract class Property extends Place{ //inheritance
 	private Player owner;
 	private int price;
 	private int tipe; /* 0: Utility, 1: Railroad, 2: Lot */ 
 	private int lvl;
 	private int set; /* 2: Railroad, 5: Utility */
-	private int housePrice;
+	
 	
 	public Property (String name, int tipe, int price, int set){
 		super(name, 1);
@@ -18,7 +18,6 @@ public class Property extends Place{ //inheritance
 		this.price = price;
 		this.lvl = 0;
 		this.set = set;
-		this.housePrice = price/2;
 		this.owner = null;
 	}
 	
@@ -96,28 +95,7 @@ public class Property extends Place{ //inheritance
 	}
 	
 	//method cuma bisa diakses oleh Player yang memiliki
-	public void lvlup(Player p, javax.swing.JTextArea gameLog) {
-		int x = getSet();
-			if (p.getMoney() >= getHP()) {
-				if ((x == 1) || (x == 10)) {
-					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
-						p.pay(getHP());
-						upLvl();
-					} else {
-						gameLog.append("Belum punya satu komplek");
-					}
-				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
-					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
-						p.pay(getHP());
-						upLvl();
-					} else {
-						gameLog.append("Belum punya satu komplek");
-					}
-				} 
-			} else {
-				gameLog.append("Uang anda tidak mencukupi");
-			}
-	}
+	public abstract void lvlup(Player p, javax.swing.JTextArea gameLog);
 	
 	public int getLvl(){
 		return this.lvl;
