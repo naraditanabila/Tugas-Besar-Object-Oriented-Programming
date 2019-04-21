@@ -375,7 +375,7 @@ public class Main {
 											db = false;
 										}
 									} else if (place.get(player.get(index).getPos()).getOwner() == null) {
-										System.out.println("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
+										mainFrame.setLog("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
 										try {
 											cmd = (new Main()).getInput();
 										} catch (Exception e) {
@@ -420,9 +420,16 @@ public class Main {
 				mainFrame.setLog(player.get(index).getID() + " sudah kalah");
 			}
 		}
+                // nyari pemenang
                 WinnerGame winnerFrame = new WinnerGame();
                 winnerFrame.setIconImage(img.getImage());
-                winnerFrame.setWinnerName(pName);
+                for (int i = 1; i <= nPlayer; i++) {
+                    if (!player.get(i).getKalah()) {
+                        String winnerName = player.get(i).getID();
+                        winnerFrame.setWinnerName(winnerName);
+                    }
+                }
+                //
                 
 		s.close();
 	}
