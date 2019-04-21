@@ -93,46 +93,6 @@ public class Main {
                 while (newGameFrame.gameReady()) {
                     MonopolyFrame mainFrame = new MonopolyFrame();
                     mainFrame.setIconImage(img.getImage());
-                    //SWING : Button
-                    mainFrame.getRollButton().addActionListener( new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent evt0) {
-                            cmd = 1;
-                        }
-                    });
-                    
-                    mainFrame.getPayButton().addActionListener( new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent evt0) {
-                            cmd = 2;
-                            mainFrame.setLog("Pay Button kepencet!!!\n");
-                        }
-                    });
-
-                    mainFrame.getUpgradeButton().addActionListener( new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent evt0) {
-                            cmd = 9;
-                            mainFrame.setLog(">> Game has been started.\n");
-                        }
-                    });
-                    
-                    mainFrame.getSellButton().addActionListener( new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent evt0) {
-                            cmd = 9;
-                            mainFrame.setLog(">> Game has been started.\n");
-                        }
-                    });
-                    
-                    // maybe a solution
-
-
-
-
-
-
-                    //SWING
 
 
                     //PenambahanMap

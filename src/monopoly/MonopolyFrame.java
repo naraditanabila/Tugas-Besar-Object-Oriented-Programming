@@ -11,6 +11,8 @@ package monopoly;
 
 import java.awt.Color;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -49,6 +51,47 @@ public class MonopolyFrame extends javax.swing.JFrame {
     
     public MonopolyFrame() {
         initComponents();
+        
+        rollButton.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt0) {
+                rollButton.setActionCommand("roll");
+            }
+        });
+
+        payButton.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt0) {
+                payButton.setActionCommand("pay");
+                gameLog.append("Pay Button kepencet!!!\n");
+            }
+        });
+        
+        buyButton.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt0) {
+                buyButton.setActionCommand("buy");
+                gameLog.append("Pay Button kepencet!!!\n");
+            }
+        });
+
+        upgradeButton.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt0) {
+                upgradeButton.setActionCommand("upgrade");
+                gameLog.append("upgrade Button !!\n");
+            }
+        });
+
+        sellButton.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt0) {
+                sellButton.setActionCommand("sell");
+                gameLog.append("sellButton! \n");
+            }
+        });
+        
+        
         
         gameLog.setVisible(false);
     }
@@ -1522,13 +1565,31 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JLabel topRight_img;
     private javax.swing.JButton upgradeButton;
     // End of variables declaration//GEN-END:variables
-	
+    private int command;
     
     
        /*
         METHOD MANUAL
     */
 
+    public void actionPerformed(ActionEvent evt0) {
+        if ("roll".equals(evt0.getActionCommand())) {
+            command = 1;
+        } else if ("pay".equals(evt0.getActionCommand())) {
+            command = 2;
+        } else if ("buy".equals(evt0.getActionCommand())) {
+            command = 2;
+        } else if ("sell".equals(evt0.getActionCommand())) {
+            command = 2;
+        } else if ("upgrade".equals(evt0.getActionCommand())) {
+            command = 2;
+        } 
+    }
+    
+    public int getCommand() {
+        return command;
+    }
+    
     public void setLog(String text) {
         gameLog.append(text);
     }
