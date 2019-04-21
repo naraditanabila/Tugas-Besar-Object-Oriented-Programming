@@ -51,7 +51,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
     
     public MonopolyFrame() {
         initComponents();
-        
+        initBoardGame();
         rollButton.addActionListener( new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt0) {
@@ -1400,6 +1400,11 @@ public class MonopolyFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_gameLogButtonItemStateChanged
 
+    private void initBoardGame() {
+        
+    }
+    
+    
     /**
      * @param args the command line arguments
      */

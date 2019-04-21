@@ -309,7 +309,7 @@ public class Main {
                                                     while (db && (dbi <= 3) && (!player.get(index).getJail())) {
                                                             mainFrame.setLog("Silahkan pilih Random atau Set");
                                                             cmd = mainFrame.getCommand();
-                                                            if (cmd.equals("Random")) {
+                                                            if (cmd == 1) {
                                                                     d1 = dadu.getN1();
                                                                     d2 = dadu.getN2();
                                                                     mainFrame.showDice(d1, d2);
@@ -317,11 +317,9 @@ public class Main {
                                                                     d1 = s.nextInt();
                                                                     d2 = s.nextInt();
                                                             }
-                                                            //System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
                                                             mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                             mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
                                                             player.get(index).move(d1+d2, mainFrame.getGameLog());
-                                                            //System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
                                                             mainFrame.setLog("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
                                                             boolean again = true;
                                                             //untuk mengatasi dadu sama, namun masuk penjara
@@ -374,7 +372,7 @@ public class Main {
                                                                                             //System.out.println(e);
                                                                                             mainFrame.setLog(e.getMessage());
                                                                                     }
-                                                                                    if (cmd.equals("Ya")) {
+                                                                                    if (cmd == 3) {
                                                                                             ((Property)place.get(player.get(index).getPos())).beliProp(player.get(index), mainFrame.getGameLog());
                                                                                     } else {
                                                                                             db = false;
@@ -384,7 +382,7 @@ public class Main {
                                                                                     if (player.get(index).getMoney() < 0) {
                                                                                             again = false;
                                                                                             db = false;
-                                                                                            player.get(index).setKalah();
+                                                                                            player.get(index).setKalah(mainFrame.getGameLog());
                                                                                             nPlayer = nPlayer - 1;
                                                                                     }
                                                                             }
@@ -398,14 +396,12 @@ public class Main {
                                                             }
                                                     }
                                                     if (dbi > 3) {
-                                                            player.get(index).inJail();
+                                                            player.get(index).inJail(mainFrame.getGameLog());
                                                     } else {
                                                             turn.nextPlayer();
                                                     }
                                             }
-                                    } else if (cmd.equals("quit")) {
-                                            endGame = true;
-                                    }	
+                                    } 
                             } else {
                                     //sudah kalah
                                     // mail: mending di skip aja gk sih?
