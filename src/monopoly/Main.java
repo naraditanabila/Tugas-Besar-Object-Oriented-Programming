@@ -330,7 +330,7 @@ public class Main {
                                                                         } else //Free Parking
                                                                     switch (place.get(player.get(index).getPos()).getName()) {
                                                                         case "Free Parking":
-                                                                            System.out.println("Masukkan nama yang ingin dituju : ");
+                                                                            mainFrame.setLog("Masukkan nama yang ingin dituju : ");
                                                                             int plot = s.nextInt();
                                                                             player.get(index).setPos(plot-1);
                                                                             break;
