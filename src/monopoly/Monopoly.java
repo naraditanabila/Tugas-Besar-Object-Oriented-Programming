@@ -415,7 +415,7 @@ public class Monopoly{
                                                                                     mainFrame.setLog(e.getMessage());
                                                                             }
                                                                             if (cmd == 5) {
-                                                                                    place.get(player.get(index).getPos()).lvlup(player.get(index), mainFrame.getGameLog());
+                                                                                    ((Property)place.get(player.get(index).getPos())).lvlup(player.get(index), mainFrame.getGameLog());
                                                                             } else {
                                                                                     db = false;
                                                                             }

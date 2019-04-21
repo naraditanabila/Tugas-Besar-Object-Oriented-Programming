@@ -75,7 +75,7 @@ public class Property extends Place{ //inheritance
 		}
 	}
 	
-	public void lvlup(Player p) {
+	public void lvlup (Player p, javax.swing.JTextArea gameLog) {
 		System.out.println("Method upgrade hanya untuk Lot!");
 	}
 	
