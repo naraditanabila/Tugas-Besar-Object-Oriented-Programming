@@ -14,4 +14,8 @@ public class Utility extends Property { //inheritance
 		}
 	}
 	
+	public void lvlup (Player p) {
+		gameLog.append("Method upgrade hanya untuk Lot!");
+	}
+	
 }

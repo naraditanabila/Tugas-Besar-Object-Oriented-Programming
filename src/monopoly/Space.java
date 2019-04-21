@@ -55,12 +55,4 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 				//cr.print(c);
 			} */
 		}
-		
-	public void beliProp(Player P) {
-		System.out.println("Tempat ini tidak bisa dibeli.");
-	}
-	
-	public void lvlup(Player P) {
-		System.out.println("Tempat ini tidak bisa diupgrade.");
-	}
 }

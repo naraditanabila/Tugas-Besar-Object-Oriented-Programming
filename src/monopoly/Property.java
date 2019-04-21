@@ -47,6 +47,10 @@ public class Property extends Place{ //inheritance
 		return this.set;
 	}
 	
+	public void setLvl(int n) {
+		this.lvl = n;
+	}
+	
 	public int getHP() {
 		return this.housePrice;
 	}
@@ -63,75 +67,37 @@ public class Property extends Place{ //inheritance
 		} else if (getOwner() == p) {
 			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
 		} else {
+			if (p.getMoney() < getPrice()) {
+			System.out.println("Uang anda tidak cukup untuk dibelikan properti ini");
+		} else if (getOwner() == p) {
+			System.out.println("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
+		} else {
 			setOwner(p);
 			p.pay(getPrice());
-			//System.out.println("Uang dikurangi sebesar " + getPrice() + ".");
-			//System.out.println("Player sukses membeli properti");
 			p.addProp(this);
-			if (getSet() == 2) {
-				int n = (p.upAvail(2) - 1); //membaca jumlah set dikurangi 1
-				this.lvl = n;
-				for (int i = 0 ; i < p.sizeProp() ; i++) {
-					p.upProp(p.getProp(i), i, 2);
-				}
-				gameLog.append("Level Bangunan Sekarang : " + getLvl());
-			} else if (getSet() == 5) {
-				int n = (p.upAvail(5) - 1); //membaca jumlah set dikurangi 1
-				this.lvl = n;
-				for (int i = 0 ; i < p.sizeProp() ; i++) {
-					p.upProp(p.getProp(i), i, 5);
-				}
-				gameLog.append("Level Bangunan Sekarang : " + getLvl());
-			} else {
-				setOwner(p);
-				lvlup(p);
+			int n = (p.upAvail(getSet()) - 1); //membaca jumlah set dikurangi 1
+			this.lvl = n;
+			for (int i = 0 ; i < p.sizeProp() ; i++) {
+				p.upProp(p.getProp(i), i, getSet());
 			}
+			gameLog.append("Level Bangunan Sekarang : " + getLvl());
 		}
 	}
 	
 	public void jualProp(Player p) {
-		if (getTipe()==2) {
-			if (this.lvl <3) {
-				p.receive(getPrice()/2);
-			} else {
-				p.receive((getPrice()+getHP()*(this.lvl-2))/2);
-			}
-		} else {
-			p.receive(getPrice()/2);
-			for (int i = 0 ; i < p.sizeProp() ; i++) {
-				p.downProp(p.getProp(i), i, this.set);
-			}
+		p.receive(getPrice()/2);
+		for (int i = 0 ; i < p.sizeProp() ; i++) {
+			p.downProp(p.getProp(i), i, this.set);
 		}
 		p.removeProp(this);
 		this.owner=null;
 		this.lvl=0;
+		gameLog.append("Kamu berhasi menjual properti.");
 	}
 	
 	//method cuma bisa diakses oleh Player yang memiliki
 	public void lvlup(Player p, javax.swing.JTextArea gameLog) {
-		if (this.lvl == 0) {
-			if ((this.owner == p) && (p.getMoney() >= getHP())) {
-				this.lvl = 1;
-				int x = getSet();
-				if (x == 1 || x == 10) {
-					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
-						for (int i = 0 ; i < p.sizeProp() ; i++) {
-						p.upProp(p.getProp(i), i, x);
-						}
-					}
-				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
-					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
-						for (int i = 0 ; i < p.sizeProp() ; i++) {
-						p.upProp(p.getProp(i), i, x);
-						}
-					}
-				}
-				gameLog.append("Level Bangunan Sekarang : " + getLvl());
-			} else {
-				gameLog.append("Pemilik berbeda");
-			}
-		} else {
-			int x = getSet();
+		int x = getSet();
 			if (p.getMoney() >= getHP()) {
 				if ((x == 1) || (x == 10)) {
 					if ((p.upAvail(x) == 2) && (getLvl() < 6)) {
@@ -147,13 +113,10 @@ public class Property extends Place{ //inheritance
 					} else {
 						gameLog.append("Belum punya satu komplek");
 					}
-				} else {
-					gameLog.append("Method upgrade hanya untuk Lot!");
-				}
+				} 
 			} else {
 				gameLog.append("Uang anda tidak mencukupi");
 			}
-		}
 	}
 	
 	public int getLvl(){
