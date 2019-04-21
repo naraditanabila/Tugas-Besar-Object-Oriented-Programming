@@ -53,6 +53,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
     public MonopolyFrame() {
         initComponents();
         initBoardGame();
+        
         rollButton.addActionListener( new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt0) {
