@@ -319,7 +319,7 @@ public class Monopoly{
                                             try {
                                                     cmd = (new Main()).getInput();
                                             } catch (Exception e) {
-                                                mainFrame.setLog(e);
+                                                mainFrame.setLog(e.getMessage());
                                             }
 
                                             if (cmd == 1) {
@@ -373,8 +373,8 @@ public class Monopoly{
                                                             d2 = dadu.getN2();
                                                             mainFrame.showDice(d1, d2);
                                                     } else { //Ini hanya untuk debug
-                                                            d1 = s.nextInt();
-                                                            d2 = s.nextInt();
+                                                            //d1 = s.nextInt();
+                                                            //d2 = s.nextInt();
                                                     }
                                                     mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                     mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
