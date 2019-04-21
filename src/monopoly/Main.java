@@ -350,7 +350,7 @@ public class Main {
 											System.out.println(e);
 										}
 										if (cmd.equals("Ya")) {
-											place.get(player.get(index).getPos()).lvlup(player.get(index));
+											place.get(player.get(index).getPos()).lvlup(player.get(index), mainFrame.getGameLog());
 										} else {
 											db = false;
 										}

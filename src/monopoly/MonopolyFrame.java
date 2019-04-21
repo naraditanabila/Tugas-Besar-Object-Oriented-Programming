@@ -1735,6 +1735,10 @@ public class MonopolyFrame extends javax.swing.JFrame {
         public javax.swing.JButton getProp1Button() {
             return prop1PrintButton;
         }
+        
+        public javax.swing.JTextArea getGameLog() {
+            return gameLog;
+        }
 	
 	//SETTER
 	public void setBot1(javax.swing.JLayeredPane botl) {

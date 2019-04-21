@@ -84,7 +84,7 @@ public class Property extends Place{ //inheritance
 		}
 	}
 	
-	public void jualProp(Player p) {
+	public void jualProp(Player p, javax.swing.JTextArea gameLog) {
 		p.receive(getPrice()/2);
 		for (int i = 0 ; i < p.sizeProp() ; i++) {
 			p.downProp(p.getProp(i), i, this.set);
