@@ -1669,7 +1669,8 @@ public class MonopolyFrame extends javax.swing.JFrame {
         gameLog.setText("");
     }
     
-    public void adjustPlayerPos(int idPlayer, int move ) {
+    public void showPlayerPos(int pos, int move) {
+        
         
         //
         //fungsi : update token per player
@@ -2160,6 +2161,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
             }
         }
         
-        public void showPlayerPos(int pos, )
+        
         
 }
