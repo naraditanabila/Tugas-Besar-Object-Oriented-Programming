@@ -204,7 +204,7 @@ public class Main {
 
 
                             //Yang dienable
-                            cmd = s.next();
+                            cmd = mainFrame.getCommand();
                             int index = turn.getPlayer();
 
                             for (int i = index; index <= nPlayer; i++) {
@@ -232,7 +232,7 @@ public class Main {
 
                             if (!(player.get(index).getKalah())) {
                                 //Command nya gmn ya
-                                    if (cmd.equals("roll")) { 
+                                    if (cmd == 1) { 
 
 
                                             //data player
@@ -263,7 +263,7 @@ public class Main {
                                                             System.out.println(e);
                                                     }
 
-                                                    if (cmd.equals("Dadu")) {
+                                                    if (cmd == 1) {
                                                             //dadu blm dibikin antara mending gamelog atau bikin baru
                                                             d1 = dadu.getN1();
                                                             d2 = dadu.getN2();
@@ -271,14 +271,14 @@ public class Main {
                                                             mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 
                                                             if (d1 == d2) {
-                                                                    player.get(index).outJail();
+                                                                    player.get(index).outJail(mainFrame.getGameLog());
                                                                     mainFrame.setLog("Selamat! anda keluar dari penjara!");
                                                             } else {
                                                                     mainFrame.setLog("Dadu tidak sama");
                                                                     turn.nextPlayer();
                                                             }
 
-                                                    } else if (cmd.equals("Bayar")) {
+                                                    } else if (cmd == 2) {
                                                             if (player.get(index).getMoney()<1000) {
                                                                     mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
                                                                     d1 = dadu.getN1();
@@ -286,7 +286,7 @@ public class Main {
                                                                     mainFrame.showDice(d1, d2);
                                                                     mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                                     if (d1 == d2) {
-                                                                            player.get(index).outJail();
+                                                                            player.get(index).outJail(mainFrame.getGameLog());
                                                                             //System.out.println("Selamat! anda keluar dari sini");
                                                                             mainFrame.setLog("Selamat! anda keluar dari sini");
                                                                     } else {
@@ -295,8 +295,8 @@ public class Main {
                                                                             turn.nextPlayer();
                                                                     }
                                                             } else {
-                                                                    player.get(index).pay(1000);
-                                                                    player.get(index).outJail();
+                                                                    player.get(index).pay(1000, mainFrame.getGameLog());
+                                                                    player.get(index).outJail(mainFrame.getGameLog());
                                                                     mainFrame.setLog("Selamat! anda keluar dari sini");
                                                             }
                                                     } else {
@@ -308,7 +308,7 @@ public class Main {
                                                     int dbi = 1;
                                                     while (db && (dbi <= 3) && (!player.get(index).getJail())) {
                                                             mainFrame.setLog("Silahkan pilih Random atau Set");
-                                                            cmd = s.next();
+                                                            cmd = mainFrame.getCommand();
                                                             if (cmd.equals("Random")) {
                                                                     d1 = dadu.getN1();
                                                                     d2 = dadu.getN2();
@@ -320,7 +320,7 @@ public class Main {
                                                             //System.out.println("Dadu yang didapatkan: " + d1 + " dan " + d2);
                                                             mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                             mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
-                                                            player.get(index).move(d1+d2);
+                                                            player.get(index).move(d1+d2, mainFrame.getGameLog());
                                                             //System.out.println("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
                                                             mainFrame.setLog("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
                                                             boolean again = true;
@@ -336,7 +336,7 @@ public class Main {
                                                                             case "Free Parking":
                                                                                 mainFrame.setLog("Masukkan nama yang ingin dituju : ");
                                                                                 int plot = s.nextInt();
-                                                                                player.get(index).setPos(plot-1);
+                                                                                player.get(index).setPos(plot-1, mainFrame.getGameLog());
                                                                                 break;
                                                                             case "Chance Card":
                                                                                 place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
@@ -361,7 +361,7 @@ public class Main {
                                                                                             //System.out.println(e);
                                                                                             mainFrame.setLog(e.getMessage());
                                                                                     }
-                                                                                    if (cmd.equals("Ya")) {
+                                                                                    if (cmd == 5) {
                                                                                             place.get(player.get(index).getPos()).lvlup(player.get(index), mainFrame.getGameLog());
                                                                                     } else {
                                                                                             db = false;
