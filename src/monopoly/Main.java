@@ -275,7 +275,7 @@ public class Main {
                                     if (cmd.equals("roll")) { 
 
 
-
+                                            //data player
                                             for (int i=0; i<player.get(index).sizeProp(); i++) {
                                                     if (((Property)player.get(index).getProp(i)).getTipe() == 2) {
                                                             if (((Property)player.get(index).getProp(i)).getLvl() == 3) {
@@ -293,7 +293,8 @@ public class Main {
                                                             System.out.println(player.get(index).getProp(i).getName());
                                                     }
                                             }
-
+                                            //data player
+                                            
                                             if (player.get(index).getJail()) {
                                                     mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
                                                     try {

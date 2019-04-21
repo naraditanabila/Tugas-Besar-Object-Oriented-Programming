@@ -56,15 +56,15 @@ public class Monopoly{
         ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
         label_botRight.setVisible(true);
         label_botRight.setIcon(image_botRight);
-        
+        // SET POSISI
         mainFrame.getBotRight().add(label_botRight);
-        mainFrame.getBotRight().add(token1);
-        
-        
+        mainFrame.getBotRight().add(token1);      
         mainFrame.getBotRight().setLayer(label_botRight, -1);
         mainFrame.getBotRight().setLayer(token1, 0);
         label_botRight.setBounds(0, 0, 128, 128);
         token1.setBounds(0, 0, 128, 128);
+        // SET POSISI TOKEN
+        
         mainFrame.setVisible(true);
         
         // New Game
