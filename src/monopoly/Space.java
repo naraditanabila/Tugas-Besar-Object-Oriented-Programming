@@ -37,7 +37,7 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 				p.setPos(plot-1, gameLog);
 				//this.placeAffect(p);
 			} else if (getName().equals("Penjara")) {
-				gameLog.append("Player "+ p.getID() + " hanya lewat penjara.");
+				gameLog.append("Player "+ p.getID() + " hanya lewat penjara.\n");
 			} else if (getName().equals("Go To Jail")) {
 				p.inJail(gameLog);
 			} else if (getName().equals("Tax")) {

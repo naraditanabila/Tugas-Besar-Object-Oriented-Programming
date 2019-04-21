@@ -21,9 +21,9 @@ public class Lot extends Property { //inheritance
 	
 	public void beliProp(Player p, javax.swing.JTextArea gameLog) {
 		if (p.getMoney() < getPrice()) {
-			gameLog.append("Uang anda tidak cukup untuk dibelikan properti ini");
+			gameLog.append("Uang anda tidak cukup untuk dibelikan properti ini\n");
 		} else if (getOwner() == p) {
-			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
+			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi\n");
 		} else {
 			setOwner(p);
 			p.pay(getPrice(), gameLog);
@@ -43,7 +43,7 @@ public class Lot extends Property { //inheritance
 					}
 				}
 			}
-			gameLog.append("Level Bangunan Sekarang : " + getLvl());
+			gameLog.append("Level Bangunan Sekarang : " + getLvl() + "\n");
 		}
 	}
 	
@@ -59,18 +59,18 @@ public class Lot extends Property { //inheritance
 						p.pay(getHP(), gameLog);
 						upLvl();
 					} else {
-						gameLog.append("Belum punya satu komplek");
+						gameLog.append("Belum punya satu komplek\n");
 					}
 				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
 					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
 						p.pay(getHP(), gameLog);
 						upLvl();
 					} else {
-						gameLog.append("Belum punya satu komplek");
+						gameLog.append("Belum punya satu komplek\n");
 					}
 				} 
 			} else {
-				gameLog.append("Uang anda tidak mencukupi");
+				gameLog.append("Uang anda tidak mencukupi\n");
 			}
 	}
 }

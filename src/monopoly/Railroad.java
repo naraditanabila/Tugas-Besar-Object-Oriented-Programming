@@ -6,6 +6,6 @@ public class Railroad extends Property { //inheritance
 	}
 	
 	public void lvlup (Player p, javax.swing.JTextArea gameLog) {
-		gameLog.append("Method upgrade hanya untuk Lot!");
+		gameLog.append("Method upgrade hanya untuk Lot!\n");
 	}
 }
