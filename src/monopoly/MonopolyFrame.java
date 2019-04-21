@@ -1424,17 +1424,30 @@ public class MonopolyFrame extends javax.swing.JFrame {
         token4.setIcon(token4_img);
         
         //===================setting Tile
+        /*
+        Intinya:
+                Construct JLabel
+                Construct ImageIconnya
+                setIcon, setBounds, setLayer si JLabel
+                add ke Componentnya
+        */
         //setting JLabel
         JLabel label_bot1 = new JLabel();
         JLabel label_botRight = new JLabel();
         //import Gambar
         ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
         ImageIcon image_bot1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot1.jpg"));
-        //JLabel SetIcon
+        //JLabel SetIcon, setBounds
         label_botRight.setIcon(image_botRight);
         
-        //Pojokan (setBound + setLayer)
+        
         label_botRight.setBounds(0,0,128,128);
+        
+        
+        
+        //Pojokan (add, setLayer
+        botRight.add(label_botRight);
+        
         botRight.setLayer(label_botRight, -1);
         
         //Bawah
