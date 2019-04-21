@@ -66,11 +66,6 @@ public abstract class Property extends Place{ //inheritance
 		} else if (getOwner() == p) {
 			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
 		} else {
-			if (p.getMoney() < getPrice()) {
-			System.out.println("Uang anda tidak cukup untuk dibelikan properti ini");
-		} else if (getOwner() == p) {
-			System.out.println("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
-		} else {
 			setOwner(p);
 			p.pay(getPrice());
 			p.addProp(this);
