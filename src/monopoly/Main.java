@@ -79,7 +79,7 @@ public class Main {
 		List<Player> player = new ArrayList<Player>();
 		int d1, d2, nPlayer;
 		String pName; 
-                int cmd = 0;
+                int cmd;
 		boolean endGame = false;
 		boolean nextP = false;
 		//SWING
@@ -95,24 +95,37 @@ public class Main {
                     mainFrame.setIconImage(img.getImage());
                     //SWING : Button
                     mainFrame.getRollButton().addActionListener( new ActionListener() {
+                        @Override
                         public void actionPerformed(ActionEvent evt0) {
-                            cmd = "roll";
+                            cmd = 1;
                         }
                     });
                     
                     mainFrame.getPayButton().addActionListener( new ActionListener() {
+                        @Override
                         public void actionPerformed(ActionEvent evt0) {
+                            cmd = 2;
                             mainFrame.setLog("Pay Button kepencet!!!\n");
                         }
                     });
 
-                    mainFrame.getStartButton().addActionListener( new ActionListener() {
+                    mainFrame.getUpgradeButton().addActionListener( new ActionListener() {
+                        @Override
                         public void actionPerformed(ActionEvent evt0) {
+                            cmd = 9;
                             mainFrame.setLog(">> Game has been started.\n");
                         }
                     });
                     
+                    mainFrame.getSellButton().addActionListener( new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent evt0) {
+                            cmd = 9;
+                            mainFrame.setLog(">> Game has been started.\n");
+                        }
+                    });
                     
+                    // maybe a solution
 
 
 
@@ -283,7 +296,7 @@ public class Main {
                                             }
 
                                             if (player.get(index).getJail()) {
-                                                    //mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
+                                                    mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
                                                     try {
                                                             cmd = (new Main()).getInput();
                                                     } catch (Exception e) {
@@ -299,18 +312,14 @@ public class Main {
 
                                                             if (d1 == d2) {
                                                                     player.get(index).outJail();
-                                                                    //System.out.println("Selamat! anda keluar dari sini");
-                                                                    mainFrame.setLog("Selamat! anda keluar dari sini");
+                                                                    mainFrame.setLog("Selamat! anda keluar dari penjara!");
                                                             } else {
-                                                                    //System.out.println("Dadu tidak sama");
                                                                     mainFrame.setLog("Dadu tidak sama");
                                                                     turn.nextPlayer();
                                                             }
 
                                                     } else if (cmd.equals("Bayar")) {
-
                                                             if (player.get(index).getMoney()<1000) {
-                                                                    //System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
                                                                     mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
                                                                     d1 = dadu.getN1();
                                                                     d2 = dadu.getN2();
@@ -338,7 +347,7 @@ public class Main {
                                                     boolean db = true;
                                                     int dbi = 1;
                                                     while (db && (dbi <= 3) && (!player.get(index).getJail())) {
-                                                            System.out.println("Silahkan pilih Random atau Set");
+                                                            mainFrame.setLog("Silahkan pilih Random atau Set");
                                                             cmd = s.next();
                                                             if (cmd.equals("Random")) {
                                                                     d1 = dadu.getN1();
@@ -385,8 +394,7 @@ public class Main {
                                                                             }
                                                                     } else {
                                                                             if (place.get(player.get(index).getPos()).getOwner() == player.get(index)) {
-                                                                                    //System.out.println("Properti ini milikmu, mau upgrade? Ya/Tidak");
-                                                                                    mainFrame.setLog("Properti ini milikmu, mau upgrade? Ya/Tidak");
+                                                                                    //nunggu inputan Button Upgrade
                                                                                     try {
                                                                                             cmd = (new Main()).getInput();
                                                                                     } catch (Exception e) {

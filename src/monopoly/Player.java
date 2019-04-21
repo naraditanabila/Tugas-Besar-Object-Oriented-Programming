@@ -30,13 +30,13 @@ public class Player {
 		 return this.playerID;
 	 }
 	 
-     public void setPos(int x) {
+     public void setPos(int x, javax.swing.JTextArea gameLog) {
           if (x<this.playerPos && x>0) {
-			  System.out.println("Player "+playerID+" berhasil melewati kotak Start.");
+			  gameLog.append("Player "+playerID+" berhasil melewati kotak Start.");
 			  this.playerMoney+=200;
 		  }
 		  this.playerPos = x;
-          System.out.println("Player "+playerID+" berhasil pindah tempat");
+          gameLog.append("Player "+playerID+" berhasil pindah tempat");
      }
 
      public int getPos() {
@@ -45,36 +45,35 @@ public class Player {
 
      public void setMoney(int x) {
           this.playerMoney = x;
-          System.out.println("Player setMon " + x);
      }
 
      public int getMoney() {
           return this.playerMoney;
      }
      
-     public void setKalah() {
+     public void setKalah(javax.swing.JTextArea gameLog) {
 		 this.kalah = true;
-		 System.out.println("Maaf, Anda kehabisan uang dan properti.");
-		 System.out.println("Player "+playerID+" kalah.");
+		 gameLog.append("Maaf, Anda kehabisan uang dan properti.");
+		 gameLog.append("Player "+playerID+" kalah.");
 	 }
 	 
 	 public boolean getKalah () {
 		 return this.kalah;
 	 }
      //Other methods
-     public void move(int x) {
+     public void move(int x, javax.swing.JTextArea gameLog) {
           this.playerPos += x;
 		  if (this.playerPos>39) {
-			  System.out.println("Player "+playerID+" berhasil melewati kotak Start.");
+			  gameLog.append("Player "+playerID+" berhasil melewati kotak Start.");
 			  this.playerPos = this.playerPos-40;
 			  if (this.playerPos>0) {
 				this.playerMoney += 200;
 			  }
 		  }
 		  if (x>=0){
-			System.out.println("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.");
+			gameLog.append("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.");
 		  } else {
-			  System.out.println("Player "+playerID+" berhasil mundur sebanyak "+(x*-1)+" kotak.");
+			  gameLog.append("Player "+playerID+" berhasil mundur sebanyak "+(x*-1)+" kotak.");
 		  }
      }
 	 
@@ -84,94 +83,93 @@ public class Player {
 		 }
 	 }
 
-     public void pay(int x) {
+     public void pay(int x, javax.swing.JTextArea gameLog) {
 			while (getMoney() < x && sizeProp() > 0) {
-				System.out.println("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.");
-				System.out.println("Berikut ini properti yang Anda miliki:");
+				gameLog.append("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.");
+				gameLog.append("Berikut ini properti yang Anda miliki:");
 				for (int i=0; i<sizeProp(); i++) {
 					if (getProp(i).getTipe() == 2) {
 						if (getProp(i).getLvl() == 3) {
-							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 1 rumah");
+							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 1 rumah");
 						} else if (getProp(i).getLvl() == 4) {
-							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 2 rumah");
+							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 2 rumah");
 						} else if (getProp(i).getLvl() == 5) {
-							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 3 rumah");
+							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 3 rumah");
 						} else if (getProp(i).getLvl() == 6) {
-							System.out.println((i+1)+". "+getProp(i).getName()+" dengan 4 rumah");
+							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 4 rumah");
 						} else {
-							System.out.println((i+1)+". "+getProp(i).getName());
+							gameLog.append((i+1)+". "+getProp(i).getName());
 						}
 					} else {
-						System.out.println((i+1)+". "+getProp(i).getName());
+						gameLog.append((i+1)+". "+getProp(i).getName());
 					}
 				}
 				//metode jual properti
-				Scanner s = new Scanner(System.in);
-				System.out.println("Silahkan masukkan nomor urutan properti yang ingin Anda jual:");
-				int nom = s.nextInt() - 1;
-				getProp(nom).jualProp(this);
+				gameLog.append("Silahkan masukkan nomor urutan properti yang ingin Anda jual:");
+				int nom = 1;
+				getProp(nom).jualProp(this, gameLog);
 			}
 			if (getMoney() < x) {
-				setKalah();
+				setKalah(gameLog);
 			} else {
 				this.playerMoney -= x;
-				System.out.println("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + ".");
+				gameLog.append("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + ".");
 			}
      }
 	 
-	 public void pay(Player p, int x) {
+	 public void pay(Player p, int x, javax.swing.JTextArea gameLog) {
 		while (getMoney() < x && sizeProp() > 0) {
-			System.out.println("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.");
-			System.out.println("Berikut ini properti yang Anda miliki:");
+			gameLog.append("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.");
+			gameLog.append("Berikut ini properti yang Anda miliki:");
 			for (int i=0; i<sizeProp(); i++) {
 				if (getProp(i).getTipe() == 2) {
 					if (getProp(i).getLvl() == 3) {
-						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 1 rumah");
+						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 1 rumah");
 					} else if (getProp(i).getLvl() == 4) {
-						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 2 rumah");
+						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 2 rumah");
 					} else if (getProp(i).getLvl() == 5) {
-						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 3 rumah");
+						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 3 rumah");
 					} else if (getProp(i).getLvl() == 6) {
-						System.out.println((i+1)+". "+getProp(i).getName()+" dengan 4 rumah");
+						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 4 rumah");
 					} else {
-						System.out.println((i+1)+". "+getProp(i).getName());
+						gameLog.append((i+1)+". "+getProp(i).getName());
 					}
 				} else {
-					System.out.println((i+1)+". "+getProp(i).getName());
+					gameLog.append((i+1)+". "+getProp(i).getName());
 				}
 			}
 			//metode jual properti
 			Scanner s = new Scanner(System.in);
-			System.out.println("Silahkan masukkan nomor urutan properti yang ingin Anda jual:");
-			int nom = s.nextInt() - 1;
-			getProp(nom).jualProp(this);
+			gameLog.append("Silahkan masukkan nomor urutan properti yang ingin Anda jual:");
+			int nom = 1;
+			getProp(nom).jualProp(this, gameLog);
 		}
 		if (getMoney() < x) {
-			setKalah();
+			setKalah(gameLog);
 		} else { 
 			this.playerMoney -= x;
 			p.playerMoney += x;
-			System.out.println("Player " + this.playerID + " berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID);
+			gameLog.append("Player " + this.playerID + " berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID);
 		}
 	 }
 	 
-	 public void receive(int x) {
+	 public void receive(int x, javax.swing.JTextArea gameLog) {
           this.playerMoney += x;
-          System.out.println("Player " + playerID + " berhasil mendapatkan uang sebesar " + x + ".");
+          gameLog.append("Player " + playerID + " berhasil mendapatkan uang sebesar " + x + ".");
      }
 
-     public void addProp(Property p) {
+     public void addProp(Property p, javax.swing.JTextArea gameLog) {
           prop.add(p);
-          System.out.println("Player " + playerID + " berhasil membeli sebuah properti.");
+          gameLog.append("Player " + playerID + " berhasil membeli sebuah properti.");
      }
 	 
-	 public void removeProp(Property p) {
+	 public void removeProp(Property p, javax.swing.JTextArea gameLog) {
 		 for (int i=0; i<sizeProp(); i++) {
 			if (getProp(i) == p) {
 				prop.remove(i);
 			}
 		 }
-         System.out.println("Player " + playerID + " berhasil menjual sebuah properti.");
+         gameLog.append("Player " + playerID + " berhasil menjual sebuah properti.");
      }
      
      public Property getProp(int i) {
@@ -186,15 +184,15 @@ public class Player {
           return this.playerJail;
      }
 
-     public void inJail() {
+     public void inJail(javax.swing.JTextArea gameLog) {
           this.playerJail = true;
 		  this.playerPos = 10;
-		  System.out.println("Player " + playerID + " masuk penjara.");
+		  gameLog.append("Player " + playerID + " masuk penjara.");
      }
 
-     public void outJail() {
+     public void outJail(javax.swing.JTextArea gameLog) {
           this.playerJail = false;
-		  System.out.println("Player " + playerID + " keluar penjara.");
+		  gameLog.append("Player " + playerID + " keluar penjara.");
      }
      
      public int upAvail(int x) {
