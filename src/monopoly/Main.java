@@ -245,8 +245,6 @@ public class Main {
 		while ((!endGame) && (nPlayer != 1)) {
 			mainFrame.setLog(player.get(turn.getPlayer()).getID() + " bermain");
 			mainFrame.setLog("Pilih roll atau quit");
-			// mainFrame.setLog( + " bermain");
-			// mainFrame.setLog("Pilih roll atau quit");
                         
                         //tiap command di cek
                         
@@ -305,10 +303,9 @@ public class Main {
 					}
 
 					if (player.get(index).getJail()) {
-						System.out.println("Silahkan pilih Bayar atau Dadu");
 						//mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
 						try {
-							cmd = (new Main()).getInput(); //SWING / ganti jadi if rollButtonPressed else payButtonPressed
+							cmd = (new Main()).getInput();
 						} catch (Exception e) {
 							System.out.println(e);
 						}
@@ -317,8 +314,9 @@ public class Main {
 							//dadu blm dibikin antara mending gamelog atau bikin baru
 							d1 = dadu.getN1();
 							d2 = dadu.getN2();
-							System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
-							//mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+                                                        this.showDice(d1, mainFrame.getDice1());
+                                                      
+							mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 							
 							if (d1 == d2) {
 								player.get(index).outJail();
