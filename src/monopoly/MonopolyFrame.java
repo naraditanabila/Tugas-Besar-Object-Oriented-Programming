@@ -1413,10 +1413,10 @@ public class MonopolyFrame extends javax.swing.JFrame {
         ImageIcon token3_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token3.png"));
         ImageIcon token4_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token4.png"));
         
-        JLabel token1 = new JLabel();
-        JLabel token2 = new JLabel();
-        JLabel token3 = new JLabel();
-        JLabel token4 = new JLabel();
+        token1 = new JLabel();
+        token2 = new JLabel();
+        token3 = new JLabel();
+        token4 = new JLabel();
         
         token1.setIcon(token1_img);
         token2.setIcon(token2_img);
@@ -1425,15 +1425,17 @@ public class MonopolyFrame extends javax.swing.JFrame {
         
         //===================setting Tile
         //setting JLabel
-        
+        JLabel label_bot1 = new JLabel();
         JLabel label_botRight = new JLabel();
         //import Gambar
         ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
-        ImageIcon image_botleft = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botLeft.jpg"));
-        
+        ImageIcon image_bot1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot1.jpg"));
         //JLabel SetIcon
         label_botRight.setIcon(image_botRight);
         
+        //Pojokan (setBound + setLayer)
+        label_botRight.setBounds(0,0,128,128);
+        botRight.setLayer(label_botRight, -1);
         
         //Bawah
         
@@ -1490,7 +1492,12 @@ public class MonopolyFrame extends javax.swing.JFrame {
             }
         });
     }
-
+    private javax.swing.JLabel token1;
+    private javax.swing.JLabel token2;
+    private javax.swing.JLabel token3;
+    private javax.swing.JLabel token4;
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel boardPanel;
     private javax.swing.JLayeredPane bot1;
@@ -1647,11 +1654,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
     
     public void clearLog() {
         gameLog.setText("");
-    }
-    
-    //data Player
-    public void setPlayer1Data(String text) {
-        
     }
     
     public void adjustPlayerPos(int idPlayer, int move ) {
@@ -2144,5 +2146,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                     break;
             }
         }
+        
+        public void showPlayerPos(int pos, )
         
 }
