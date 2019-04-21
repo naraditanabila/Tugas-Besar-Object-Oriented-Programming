@@ -21,21 +21,28 @@ import javax.swing.ImageIcon;
 public class Main {
 	private String str = "";
 	boolean nin = false;
+	int detik=30;
 
-
+	
 	TimerTask task = new TimerTask(){
 		public void run() {
 			if (str.equals("")) {
-				System.out.println("Tidak memasukkan input!");
-				System.out.println("Press [Enter] to continue");
-                                nin = true;
+				if (detik>0) {
+					System.out.print(detik);
+					detik--;
+				}
+				else {
+					System.out.println("Tidak memasukkan input!");
+					System.out.println("Press [Enter] to continue");
+                    nin = true;
+				}
 			}
 		}
 	};
 	
 	public String getInput() throws Exception {
 		Timer t = new Timer();
-		t.schedule(task, 30*1000);
+		t.schedule(task, 30, 1000);
 		
 		System.out.print("Masukkan command: ");
 		BufferedReader in = new BufferedReader (
