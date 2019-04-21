@@ -78,7 +78,8 @@ public class Main {
 		List<Place> place = new ArrayList<Place>();
 		List<Player> player = new ArrayList<Player>();
 		int d1, d2, nPlayer;
-		String pName, cmd;
+		String pName; 
+                int cmd = 0;
 		boolean endGame = false;
 		boolean nextP = false;
 		//SWING
@@ -110,7 +111,8 @@ public class Main {
                             mainFrame.setLog(">> Game has been started.\n");
                         }
                     });
-
+                    
+                    
 
 
 

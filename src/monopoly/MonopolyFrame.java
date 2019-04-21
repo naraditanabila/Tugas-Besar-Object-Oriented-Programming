@@ -179,8 +179,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
         upgradeButton = new javax.swing.JButton();
         sellButton = new javax.swing.JButton();
         tickProgressBar = new javax.swing.JProgressBar();
-        payButton = new javax.swing.JButton();
-        giveUpButton = new javax.swing.JButton();
         startButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         gameLog = new javax.swing.JTextArea();
@@ -1283,14 +1281,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
         tickProgressBar.setString("30");
         tickProgressBar.setStringPainted(true);
 
-        payButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        payButton.setText("Pay");
-        payButton.setMaximumSize(new java.awt.Dimension(85, 25));
-
-        giveUpButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        giveUpButton.setText("Give Up");
-        giveUpButton.setMaximumSize(new java.awt.Dimension(85, 25));
-
         startButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         startButton.setText("Start Game");
 
@@ -1333,17 +1323,13 @@ public class MonopolyFrame extends javax.swing.JFrame {
                                     .addGap(28, 28, 28)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(startButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(buyButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(payButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(buyButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGap(26, 26, 26)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(giveUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addComponent(gameLogButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(sellButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                            .addGap(18, 18, 18)
-                                            .addComponent(upgradeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(gameLogButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(sellButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGap(18, 18, 18)
+                                    .addComponent(upgradeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20))))
@@ -1368,11 +1354,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                             .addComponent(buyButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(sellButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(upgradeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(payButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(giveUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(67, 67, 67)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
@@ -1462,7 +1444,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JLabel dice2;
     private javax.swing.JTextArea gameLog;
     private javax.swing.JToggleButton gameLogButton;
-    private javax.swing.JButton giveUpButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel label_money_player1;
     private javax.swing.JLabel label_money_player2;
@@ -1500,7 +1481,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JLabel money_player4;
     private javax.swing.JPanel panel_dice1;
     private javax.swing.JPanel panel_dice2;
-    private javax.swing.JButton payButton;
     private javax.swing.JPanel player1Panel;
     private javax.swing.JPanel player2Panel;
     private javax.swing.JPanel player3Panel;
