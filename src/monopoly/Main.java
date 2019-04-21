@@ -286,7 +286,8 @@ public class Main {
 								//mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
 								d1 = dadu.getN1();
 								d2 = dadu.getN2();
-								System.out.println("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+                                                                mainFrame.showDice(d1, d2);
+                                                                mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 								if (d1 == d2) {
 									player.get(index).outJail();
 									System.out.println("Selamat! anda keluar dari sini");
