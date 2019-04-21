@@ -58,6 +58,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 rollButton.setActionCommand("roll");
+                gameLog.append("Roll Button kepencet!!!\n");
             }
         });
 
@@ -73,7 +74,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 buyButton.setActionCommand("buy");
-                gameLog.append("Pay Button kepencet!!!\n");
+                gameLog.append("Buy Button kepencet!!!\n");
             }
         });
 
@@ -89,7 +90,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 sellButton.setActionCommand("sell");
-                gameLog.append("sellButton! \n");
+                gameLog.append("Sell Button! \n");
             }
         });
         gameLog.setVisible(false);
