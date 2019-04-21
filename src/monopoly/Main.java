@@ -266,7 +266,7 @@ public class Main {
 							//dadu blm dibikin antara mending gamelog atau bikin baru
 							//d1 = dadu.getN1();
 							//d2 = dadu.getN2();
-                            mainFrame.showDice(d1, d2);
+                                                        mainFrame.showDice(d1, d2);
 							mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 							
 							if (d1 == d2) {
@@ -284,10 +284,10 @@ public class Main {
 							if (player.get(index).getMoney()<1000) {
 								//System.out.println("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
 								mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
-								//d1 = dadu.getN1();
-								//d2 = dadu.getN2();
-                                mainFrame.showDice(d1, d2);
-                                mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
+								d1 = dadu.getN1();
+                                                                d2 = dadu.getN2();
+                                                                mainFrame.showDice(d1, d2);
+                                                                mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 								if (d1 == d2) {
 									player.get(index).outJail();
 									//System.out.println("Selamat! anda keluar dari sini");
@@ -314,8 +314,8 @@ public class Main {
 							System.out.println("Silahkan pilih Random atau Set");
 							cmd = s.next();
 							if (cmd.equals("Random")) {
-								//d1 = dadu.getN1();
-								//d2 = dadu.getN2();
+								d1 = dadu.getN1();
+								d2 = dadu.getN2();
 								mainFrame.showDice(d1, d2);
 							} else { //Ini hanya untuk debug
 								d1 = s.nextInt();
