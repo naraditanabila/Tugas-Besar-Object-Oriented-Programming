@@ -1218,6 +1218,13 @@ public class MonopolyFrame extends javax.swing.JFrame {
         topLeft.add(label_topLeft);
         topLeft.setLayer(label_topLeft, -1);
         
+        JLabel label_topRight = new JLabel();
+        ImageIcon image_topRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/topRight.jpg"));
+        label_topRight.setIcon(image_topRight);
+        label_topRight.setBounds(0,0,128,128);
+        topRight.add(label_topRight);
+        topRight.setLayer(label_topRight, -1);
+        
         JLabel label_bot1 = new JLabel();
         ImageIcon image_bot1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot1.jpg"));
         label_bot1.setIcon(image_bot1);
