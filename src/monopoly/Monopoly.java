@@ -147,7 +147,7 @@ public class Monopoly{
             for (int i = 1 ; i <= nPlayer ; i++) {
                     pName = newGameFrame.getPlayerName(i);
                     player.add(new Player(pName));
-                    mainFrame.showPlayerPos(nPlayer, 1);
+                    mainFrame.showPlayerPos(i, 1);
             }
 
             //Instant Dadu
@@ -182,7 +182,7 @@ public class Monopoly{
             Turn turn  = new Turn(nPlayer);
 
             while ((!endGame) && (nPlayer != 1)) {
-
+                
                 mainFrame.getProp1Button().addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 for (int i=0; i<player.get(1).sizeProp(); i++) {
