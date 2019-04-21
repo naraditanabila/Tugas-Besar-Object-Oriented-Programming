@@ -191,8 +191,8 @@ public class Main {
 
 		
 		while ((!endGame) && (nPlayer != 1)) {
-			System.out.println(player.get(turn.getPlayer()).getID() + " bermain");
-			System.out.println("Pilih roll atau quit");
+			mainFrame.setLog(player.get(turn.getPlayer()).getID() + " bermain");
+			mainFrame.setLog("Pilih roll atau quit");
 			// mainFrame.setLog( + " bermain");
 			// mainFrame.setLog("Pilih roll atau quit");
                         
@@ -207,8 +207,8 @@ public class Main {
                         for (int i = index; index <= nPlayer; i++) {
                             switch (index) {
                                 case 1:
-                                    mainFrame.getMoney_player1().setText(Integer.toString(player.get(index).getMoney()));
-                                    mainFrame.getPos_player1().setText(place.get((player.get(index).getPos())).getName());
+                                    mainFrame.getMoney_player1().setText(Integer.toString(player.get(index).getMoney())); //update data player 1
+                                    mainFrame.getPos_player1().setText(place.get((player.get(index).getPos())).getName()); //update data player 2
                                     break;
                                 case 2:
                                     mainFrame.getMoney_player2().setText(Integer.toString(player.get(index).getMoney()));
@@ -228,6 +228,7 @@ public class Main {
                         }
                         
 			if (!(player.get(index).getKalah())) {
+                            //Command nya gmn ya
 				if (cmd.equals("roll")) { 
                                     
                                         mainFrame.getMoney_player1().setText(Integer.toString(player.get(index).getMoney()));
@@ -250,8 +251,6 @@ public class Main {
 							System.out.println(player.get(index).getProp(i).getName());
 						}
 					}
-					System.out.println("--------------------");
-					//mainFrame.setPlayer1Data("--------------------");
 
 					if (player.get(index).getJail()) {
 						System.out.println("Silahkan pilih Bayar atau Dadu");
