@@ -80,6 +80,12 @@ public class Monopoly{
             boolean endGame = false;
             boolean nextP = false;
             //SWING
+            MonopolyFrame mainFrame = new MonopolyFrame();
+            mainFrame.setLocationRelativeTo(null);
+            mainFrame.setVisible(false);
+            mainFrame.setIconImage(img.getImage());
+            mainFrame.setVisible(true);
+            
             NewGame newGameFrame = new NewGame();
             newGameFrame.setLocationRelativeTo(null);
             newGameFrame.setTitle("Monopoly");
@@ -90,14 +96,7 @@ public class Monopoly{
             newGameFrame.setIconImage(img.getImage());
 
 
-            MonopolyFrame mainFrame = new MonopolyFrame();
-            mainFrame.setLocationRelativeTo(null);
-            mainFrame.setVisible(false);
-            mainFrame.setIconImage(img.getImage());
             
-            if (newGameFrame.gameReady()) {
-                mainFrame.setVisible(true);
-            }
 
             //PenambahanMap
             place.add(new Space("Start",0,200));
