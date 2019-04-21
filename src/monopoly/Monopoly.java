@@ -75,32 +75,7 @@ public class Monopoly{
         
         
         //Nyoba2
-        newGameFrame.getOkButton().addActionListener( new ActionListener() {
-            public void actionPerformed(ActionEvent evt0) {
-                mainFrame.setLog(newGameFrame.getPlayerName(1) + "\n");
-                mainFrame.setLog(newGameFrame.getPlayerName(2) + "\n");
-                mainFrame.setLog(newGameFrame.getPlayerName(3) + "\n");
-                mainFrame.setLog(newGameFrame.getPlayerName(4) + "\n");
-            }    
         
-        });
-        
-        mainFrame.getRollButton().addActionListener( new ActionListener() {
-            public void actionPerformed(ActionEvent evt0) {
-                mainFrame.setLog("Roll kepencet!!!\n");
-            }
-        });
-        mainFrame.getPayButton().addActionListener( new ActionListener() {
-            public void actionPerformed(ActionEvent evt0) {
-                mainFrame.setLog("Pay Button kepencet!!!\n");
-            }
-        });
-        
-        mainFrame.getStartButton().addActionListener( new ActionListener() {
-            public void actionPerformed(ActionEvent evt0) {
-                mainFrame.setLog(">> Game has been started.\n");
-            }
-        });
         
         //testing new game
         

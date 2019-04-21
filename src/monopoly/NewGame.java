@@ -192,8 +192,10 @@ public class NewGame extends javax.swing.JFrame {
             PopUpFrame cantPlay = new PopUpFrame();
             cantPlay.setLocationRelativeTo(null);
             cantPlay.setVisible(true);
+            gameReady = false;
         } else {
             this.setVisible(false);
+            gameReady = true;
         }
     }//GEN-LAST:event_okButtonActionPerformed
     
@@ -229,6 +231,11 @@ public class NewGame extends javax.swing.JFrame {
     public javax.swing.JButton getOkButton() {
         return okButton;
     }
+    
+    public boolean gameReady() {
+        return gameReady;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -266,7 +273,7 @@ public class NewGame extends javax.swing.JFrame {
     
     //needed variable
     private int playerNumber;
-    
+    private boolean gameReady;
     //needed
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
