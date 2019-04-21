@@ -1578,11 +1578,11 @@ public class MonopolyFrame extends javax.swing.JFrame {
         } else if ("pay".equals(evt0.getActionCommand())) {
             command = 2;
         } else if ("buy".equals(evt0.getActionCommand())) {
-            command = 2;
+            command = 3;
         } else if ("sell".equals(evt0.getActionCommand())) {
-            command = 2;
+            command = 4;
         } else if ("upgrade".equals(evt0.getActionCommand())) {
-            command = 2;
+            command = 5;
         } 
     }
     
