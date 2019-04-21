@@ -73,7 +73,6 @@ public class Monopoly{
         
         
         
-        
         //Nyoba2
         
         
