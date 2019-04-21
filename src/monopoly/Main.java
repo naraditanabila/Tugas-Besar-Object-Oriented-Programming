@@ -68,6 +68,26 @@ public class Main {
 			return "nothing";
 		}
 	}
+        
+        public void showDice(int d1, int d2) {
+            //ganti gambar dice di layar
+            switch (d1) {
+                case 1:
+                    
+                case 2:
+                    
+                case 3:
+                    
+                case 4:
+                    
+                case 5:
+                    
+                case 6:
+                    
+                default:
+                    break;
+            }
+        }
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
