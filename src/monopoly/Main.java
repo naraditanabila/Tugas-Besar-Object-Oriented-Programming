@@ -95,9 +95,10 @@ public class Main {
                     //SWING : Button
                     mainFrame.getRollButton().addActionListener( new ActionListener() {
                         public void actionPerformed(ActionEvent evt0) {
-                            mainFrame.setLog("Roll kepencet!!!\n");
+                            cmd = "roll";
                         }
                     });
+                    
                     mainFrame.getPayButton().addActionListener( new ActionListener() {
                         public void actionPerformed(ActionEvent evt0) {
                             mainFrame.setLog("Pay Button kepencet!!!\n");
