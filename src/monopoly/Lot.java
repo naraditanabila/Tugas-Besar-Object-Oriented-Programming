@@ -8,7 +8,6 @@ public class Lot extends Property { //inheritance
 		this.housePrice = price/2;
 	}
 	
-	@Override
 	public void jualProp(Player p) {
 		if (this.getLvl() <3) {
 			p.receive(getPrice()/2);

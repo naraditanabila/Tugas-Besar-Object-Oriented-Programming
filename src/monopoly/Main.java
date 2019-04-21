@@ -1,6 +1,7 @@
 package monopoly;
 
 
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,6 +11,7 @@ import java.util.TimerTask;
 //import monopoly.NewGame;
 
 import java.io.*;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 /*
@@ -69,21 +71,51 @@ public class Main {
 		}
 	}
         
-        public void showDice(int d1, int d2) {
+        public void showDice(int d1, javax.swing.JLabel label) {
             //ganti gambar dice di layar
             switch (d1) {
                 case 1:
-                    
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice1.jpg"));
+			label.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
                 case 2:
-                    
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice2.jpg"));
+			label.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
                 case 3:
-                    
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice3.jpg"));
+			label.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
                 case 4:
-                    
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice4.jpg"));
+			label.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
                 case 5:
-                    
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice5.jpg"));
+			label.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
                 case 6:
-                    
+                    try {
+			Image img = ImageIO.read(getClass().getResource("resources/dice6.jpg"));
+			label.setIcon(new ImageIcon(img));
+                    } catch (IOException ex) {
+                    }
+                    break;
                 default:
                     break;
             }

@@ -142,7 +142,9 @@ public class MonopolyFrame extends javax.swing.JFrame {
         bot2 = new javax.swing.JLayeredPane();
         bot2_img = new javax.swing.JLabel();
         panel_dice1 = new javax.swing.JPanel();
+        dice1 = new javax.swing.JLabel();
         panel_dice2 = new javax.swing.JPanel();
+        dice2 = new javax.swing.JLabel();
         playerPane = new javax.swing.JPanel();
         player1Panel = new javax.swing.JPanel();
         label_money_player1 = new javax.swing.JLabel();
@@ -846,11 +848,11 @@ public class MonopolyFrame extends javax.swing.JFrame {
         panel_dice1.setLayout(panel_dice1Layout);
         panel_dice1Layout.setHorizontalGroup(
             panel_dice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(dice1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panel_dice1Layout.setVerticalGroup(
             panel_dice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(dice1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
 
         panel_dice2.setBackground(new java.awt.Color(102, 102, 102));
@@ -859,11 +861,11 @@ public class MonopolyFrame extends javax.swing.JFrame {
         panel_dice2.setLayout(panel_dice2Layout);
         panel_dice2Layout.setHorizontalGroup(
             panel_dice2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(dice2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panel_dice2Layout.setVerticalGroup(
             panel_dice2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(dice2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout boardPanelLayout = new javax.swing.GroupLayout(boardPanel);
@@ -1456,6 +1458,8 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JLayeredPane botRight;
     private javax.swing.JLabel botRight_img;
     private javax.swing.JButton buyButton;
+    private javax.swing.JLabel dice1;
+    private javax.swing.JLabel dice2;
     private javax.swing.JTextArea gameLog;
     private javax.swing.JToggleButton gameLogButton;
     private javax.swing.JButton giveUpButton;
@@ -1781,11 +1785,11 @@ public class MonopolyFrame extends javax.swing.JFrame {
             return gameLog;
         }
         
-        public javax.swing.JPanel getDicePanel1() {
-            return panel_dice1;
+        public javax.swing.JLabel getDice1() {
+            return dice1;
         }
-        public javax.swing.JPanel getDicePanel2() {
-            return panel_dice2;
+        public javax.swing.JLabel getDice2() {
+            return dice2;
         }
 	
 	//SETTER
