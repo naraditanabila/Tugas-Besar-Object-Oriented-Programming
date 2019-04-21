@@ -71,8 +71,6 @@ public class Main {
 		}
 	}
         
-        
-
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		List<Place> place = new ArrayList<Place>();
@@ -85,9 +83,15 @@ public class Main {
 		NewGame newGameFrame = new NewGame();
                 MonopolyFrame mainFrame = new MonopolyFrame();
                 ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
-                WinnerGame winnerFrame = new WinnerGame();
                 mainFrame.setIconImage(img.getImage());
                 newGameFrame.setIconImage(img.getImage());
+                
+                //SWING : Button
+                
+                
+                
+                
+                
                 
                 
                 
@@ -416,6 +420,10 @@ public class Main {
 				mainFrame.setLog(player.get(index).getID() + " sudah kalah");
 			}
 		}
+                WinnerGame winnerFrame = new WinnerGame();
+                winnerFrame.setIconImage(img.getImage());
+                winnerFrame.setWinnerName(pName);
+                
 		s.close();
 	}
 }
