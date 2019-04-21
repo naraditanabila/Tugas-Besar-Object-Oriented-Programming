@@ -57,11 +57,11 @@ public class Property extends Place{ //inheritance
 		}
 	}
 	
-	public void beliProp(Player p) {
+	public void beliProp(Player p, javax.swing.JTextArea gameLog) {
 		if (p.getMoney() < getPrice()) {
-			System.out.println("Uang anda tidak cukup untuk dibelikan properti ini");
+			gameLog.append("Uang anda tidak cukup untuk dibelikan properti ini");
 		} else if (getOwner() == p) {
-			System.out.println("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
+			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
 		} else {
 			setOwner(p);
 			p.pay(getPrice());
@@ -74,14 +74,14 @@ public class Property extends Place{ //inheritance
 				for (int i = 0 ; i < p.sizeProp() ; i++) {
 					p.upProp(p.getProp(i), i, 2);
 				}
-				System.out.println("Level Bangunan Sekarang : " + getLvl());
+				gameLog.append("Level Bangunan Sekarang : " + getLvl());
 			} else if (getSet() == 5) {
 				int n = (p.upAvail(5) - 1); //membaca jumlah set dikurangi 1
 				this.lvl = n;
 				for (int i = 0 ; i < p.sizeProp() ; i++) {
 					p.upProp(p.getProp(i), i, 5);
 				}
-				System.out.println("Level Bangunan Sekarang : " + getLvl());
+				gameLog.append("Level Bangunan Sekarang : " + getLvl());
 			} else {
 				setOwner(p);
 				lvlup(p);
@@ -108,7 +108,7 @@ public class Property extends Place{ //inheritance
 	}
 	
 	//method cuma bisa diakses oleh Player yang memiliki
-	public void lvlup(Player p) {
+	public void lvlup(Player p, javax.swing.JTextArea gameLog) {
 		if (this.lvl == 0) {
 			if ((this.owner == p) && (p.getMoney() >= getHP())) {
 				this.lvl = 1;
@@ -126,9 +126,9 @@ public class Property extends Place{ //inheritance
 						}
 					}
 				}
-				System.out.println("Level Bangunan Sekarang : " + getLvl());
+				gameLog.append("Level Bangunan Sekarang : " + getLvl());
 			} else {
-				System.out.println("Pemilik berbeda");
+				gameLog.append("Pemilik berbeda");
 			}
 		} else {
 			int x = getSet();
@@ -138,20 +138,20 @@ public class Property extends Place{ //inheritance
 						p.pay(getHP());
 						upLvl();
 					} else {
-						System.out.println("Belum punya satu komplek");
+						gameLog.append("Belum punya satu komplek");
 					}
 				} else if ((x == 3) || (x == 4) || (x == 6) || (x == 7) || (x == 8) || (x == 9)){
 					if ((p.upAvail(x) == 3) && (getLvl() < 6)) {
 						p.pay(getHP());
 						upLvl();
 					} else {
-						System.out.println("Belum punya satu komplek");
+						gameLog.append("Belum punya satu komplek");
 					}
 				} else {
-					System.out.println("Method upgrade hanya untuk Lot!");
+					gameLog.append("Method upgrade hanya untuk Lot!");
 				}
 			} else {
-				System.out.println("Uang anda tidak mencukupi");
+				gameLog.append("Uang anda tidak mencukupi");
 			}
 		}
 	}
