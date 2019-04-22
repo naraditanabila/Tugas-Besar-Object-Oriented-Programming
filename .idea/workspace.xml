@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c5e546-704f-4a2c-9ca9-0aebfa169a35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Monopoly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/NewGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/PopUpFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/PopUpFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+            <state relative-caret-position="292">
+              <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="1471" column="73" selection-start-line="1471" selection-start-column="73" selection-end-line="1471" selection-end-column="73" />
+            <state relative-caret-position="-1972">
+              <caret line="1477" column="8" lean-forward="true" selection-start-line="1477" selection-start-column="8" selection-end-line="1477" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2523#2612#0" expanded="true" />
@@ -404,17 +390,6 @@
     <entry file="file://$PROJECT_DIR$/src/monopoly/resources/newGameFrame.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="1471" column="73" selection-start-line="1471" selection-start-column="73" selection-end-line="1471" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2523#2612#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/monopoly/NewGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -438,10 +413,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="432" column="8" selection-start-line="432" selection-start-column="8" selection-end-line="432" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1972">
+          <caret line="1477" column="8" lean-forward="true" selection-start-line="1477" selection-start-column="8" selection-end-line="1477" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2523#2612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        <state relative-caret-position="292">
+          <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
