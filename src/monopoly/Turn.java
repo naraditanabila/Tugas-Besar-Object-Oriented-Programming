@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 public class Turn{
 	private int totalPlayer;

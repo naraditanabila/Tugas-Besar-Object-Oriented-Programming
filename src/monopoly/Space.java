@@ -1,5 +1,5 @@
 
-package monopoly;
+package src.monopoly;
 
 import java.util.ArrayList;
 import java.util.List;

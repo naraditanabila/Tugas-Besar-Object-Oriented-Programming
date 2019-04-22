@@ -3,17 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package monopoly;
+package src.monopoly;
 
-
-
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-
 
 
 
@@ -76,8 +72,9 @@ public class Monopoly{
             boolean endGame = false;
             boolean nextP = false;
             //SWING
-            ImageIcon img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/icon.jpg"));
-            
+            ImageIcon img;
+            img = new ImageIcon(Monopoly.class.getResource("resources/icon.jpg"));
+
             MonopolyFrame mainFrame = new MonopolyFrame();
             mainFrame.setLocationRelativeTo(null);
             mainFrame.setVisible(false);
@@ -97,7 +94,7 @@ public class Monopoly{
             
 
             //PenambahanMap
-            //place.add(new Space("Start",0,200));
+            place.add(new Space("Start",0,200));
             place.add(new Lot("UDINUS", 1, 400));
             place.add(new CommunityChest());
             place.add(new Lot("UPN Surabaya", 1, 400));

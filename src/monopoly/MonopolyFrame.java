@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package monopoly;
+package src.monopoly;
 
 /*
     MVC : VIEW
@@ -219,7 +219,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
         );
         topRightLayout.setVerticalGroup(
             topRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 117, Short.MAX_VALUE)
+            .addGap(0, 128, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout botLeftLayout = new javax.swing.GroupLayout(botLeft);
@@ -821,7 +821,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                     .addComponent(bot8)
                     .addComponent(bot9)
                     .addComponent(botRight))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         playerPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));

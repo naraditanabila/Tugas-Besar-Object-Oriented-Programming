@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 public class Lot extends Property { //inheritance
 	private int housePrice;

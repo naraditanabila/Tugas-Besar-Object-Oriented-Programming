@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 public class Utility extends Property { //inheritance
 	public Utility (String name){

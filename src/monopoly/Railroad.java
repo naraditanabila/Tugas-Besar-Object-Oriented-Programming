@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 public class Railroad extends Property { //inheritance
 	public Railroad (String name){

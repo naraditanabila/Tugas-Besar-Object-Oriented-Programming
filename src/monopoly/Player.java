@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 import java.util.List;
 import java.util.ArrayList;
