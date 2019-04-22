@@ -46,10 +46,16 @@ public class MonopolyFrame extends javax.swing.JFrame {
      * Creates new form MonopolyFrame
      */
     
-    public MonopolyFrame() {
+    public MonopolyFrame(NewGame newGameFrame) {
+        p1Name = newGameFrame.getPlayerName(1);
+        p2Name = newGameFrame.getPlayerName(2);
+        p3Name = newGameFrame.getPlayerName(3);
+        p4Name = newGameFrame.getPlayerName(4);
         initComponents();
         initBoardGame();
-        
+
+
+
         rollButton.addActionListener( new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt0) {
@@ -827,7 +833,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
 
         playerPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        player1Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 1"));
+        player1Panel.setBorder(javax.swing.BorderFactory.createTitledBorder(p1Name));
 
         label_money_player1.setText("Money :");
 
@@ -874,7 +880,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 .addGap(10, 10, 10))
         );
 
-        player2Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 2"));
+        player2Panel.setBorder(javax.swing.BorderFactory.createTitledBorder(p2Name));
 
         label_money_player2.setText("Money :");
 
@@ -921,7 +927,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        player3Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 3"));
+        player3Panel.setBorder(javax.swing.BorderFactory.createTitledBorder(p3Name));
 
         label_money_player3.setText("Money :");
 
@@ -968,7 +974,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        player4Panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Player 4"));
+        player4Panel.setBorder(javax.swing.BorderFactory.createTitledBorder(p4Name));
 
         label_money_player4.setText("Money :");
 
@@ -1490,41 +1496,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
      * @param args the command line arguments
      */
 
-    public static void main(String args[]) throws IOException {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MonopolyFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                
-            
-            
-                new MonopolyFrame().setVisible(true);
-            }
-        });
-    }
     private javax.swing.JLabel token1;
     private javax.swing.JLabel token2;
     private javax.swing.JLabel token3;
@@ -1617,9 +1588,14 @@ public class MonopolyFrame extends javax.swing.JFrame {
     private javax.swing.JButton upgradeButton;
     // End of variables declaration//GEN-END:variables
     private int command;
+    private String p1Name;
+    private String p2Name;
+    private String p3Name;
+    private String p4Name;
+
     
     
-       /*
+    /*
         METHOD MANUAL
     */
 
@@ -1641,6 +1617,10 @@ public class MonopolyFrame extends javax.swing.JFrame {
     public int getCommand() {
         return command;
     }
+
+    public void clearCommand() {
+        this.command = 0;
+    }
     
     public void setLog(String text) {
         gameLog.append(text + "\n");
@@ -1658,7 +1638,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
         //  Jlabel tokenPlayer1 = new JLabel(ambil file token1.jpg); ==> taro di Consturctor
         
         switch (playerNum) {
-            case 1:
+            case 0:
                 switch (moveTo) {
                     case 1:
                         botRight.add(token1);
@@ -1814,7 +1794,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 }
                 break;
                 
-            case 2:
+            case 1:
                 switch (moveTo) {
                     case 1:
                         botRight.add(token2);
@@ -1968,7 +1948,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                         break;
                 }
                 break;
-            case 3:
+            case 2:
                 switch (moveTo) {
                     case 1:
                         botRight.add(token3);
@@ -2123,7 +2103,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
                         break;
                 }
                 break;
-            case 4:
+            case 3:
                 switch (moveTo) {
                     case 1:
                         botRight.add(token4);
@@ -2281,7 +2261,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
         }
     }
     
-    public void removePlayerPos(int playerNum, int moveFrom) {
+    public void removePlayerPos(int playerNum) {
 
         //
         //fungsi : update token per player
@@ -2290,787 +2270,34 @@ public class MonopolyFrame extends javax.swing.JFrame {
         parent = this.getParent();
         
         switch (playerNum) {
-            case 1:
-                switch (moveFrom) {
-                    case 1:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 2:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 3:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 4:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 5:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 6:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 7:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 8:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 9:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 10:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 11:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;  
-                    case 12:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 13:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 14:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 15:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 16:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 17:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 18:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 19:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 20:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 21:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 22:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 23:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 24:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 25:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 26:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 27:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 28:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 29:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 30:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 31:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 32:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 33:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 34:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 35:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 36:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 37:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 38:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 39:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 40:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    default:
-                        break;
-                }
+            case 0:
+                parent = token1.getParent();
+                parent.remove(token1);
+                parent.validate();
+                parent.repaint();
                 break;
                 
+            case 1:
+                parent = token2.getParent();
+                parent.remove(token2);
+                parent.validate();
+                parent.repaint();
+                break;
             case 2:
-                switch (moveFrom) {
-                    case 1:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 2:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 3:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 4:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 5:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 6:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 7:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 8:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 9:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 10:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 11:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;  
-                    case 12:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 13:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 14:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 15:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 16:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 17:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 18:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 19:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 20:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 21:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 22:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 23:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 24:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 25:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 26:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 27:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 28:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 29:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 30:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 31:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 32:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 33:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 34:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 35:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 36:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 37:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 38:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 39:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 40:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    default:
-                        break;
-                }
+                parent = token3.getParent();
+                parent.remove(token3);
+                parent.validate();
+                parent.repaint();
                 break;
             case 3:
-                switch (moveFrom) {
-                    case 1:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 2:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 3:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 4:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 5:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 6:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 7:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 8:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 9:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 10:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 11:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;  
-                    case 12:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 13:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 14:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 15:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 16:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 17:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 18:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 19:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 20:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 21:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 22:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 23:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 24:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 25:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 26:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 27:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 28:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 29:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 30:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 31:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 32:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 33:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 34:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 35:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 36:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 37:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 38:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 39:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 40:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    default:
-                        break;
-                }
+                parent = token4.getParent();
+                parent.remove(token4);
+                parent.validate();
+                parent.repaint();
                 break;
-            case 4:
-                switch (moveFrom) {
-                    case 1:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 2:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 3:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 4:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 5:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 6:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 7:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 8:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 9:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 10:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    case 11:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;  
-                    case 12:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 13:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 14:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 15:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 16:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 17:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 18:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 19:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 20:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 21:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 22:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 23:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 24:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 25:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 26:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 27:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 28:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 29:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 30:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 31:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 32:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 33:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 34:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 35:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 36:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 37:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 38:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 39:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-
-                    case 40:
-                        parent = token1.getParent();
-                        parent.remove(token1);
-                        break;
-                    default:
-                        break;
-                }
-                break;
+            default:
+                gameLog.append("Unexpected value: " + playerNum + "\n");
         }
-        
-        parent.validate();
-        parent.repaint();
     }
 
 

@@ -4,6 +4,10 @@
     <list default="true" id="69c5e546-704f-4a2c-9ca9-0aebfa169a35" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$2.class" afterDir="false" />
@@ -11,7 +15,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$7.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Monopoly.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" afterDir="false" />
@@ -28,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="274" column="30" selection-start-line="274" selection-start-column="30" selection-end-line="274" selection-end-column="30" />
+            <state relative-caret-position="190">
+              <caret line="393" column="58" selection-start-line="393" selection-start-column="58" selection-end-line="393" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,23 +57,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="180">
+              <caret line="2274" column="33" selection-start-line="2274" selection-start-column="33" selection-end-line="2274" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2523#2612#0" expanded="true" />
-                <element signature="e#2488#67943#0" />
                 <element signature="e#62066#62067#0" expanded="true" />
                 <element signature="e#62132#62133#0" expanded="true" />
+                <element signature="e#67980#68317#0" />
                 <element signature="e#68301#82192#0" />
-                <element signature="e#88978#88979#0" expanded="true" />
-                <element signature="e#89064#89065#0" expanded="true" />
-                <element signature="e#89133#89134#0" expanded="true" />
-                <element signature="e#88852#106316#0" />
-                <element signature="e#106326#133038#0" />
+                <element signature="e#87533#87534#0" expanded="true" />
+                <element signature="e#87571#87572#0" expanded="true" />
+                <element signature="e#87602#87603#0" expanded="true" />
+                <element signature="e#87685#87686#0" expanded="true" />
+                <element signature="e#87754#87755#0" expanded="true" />
                 <element signature="e#133395#133396#0" expanded="true" />
                 <element signature="e#133425#133426#0" expanded="true" />
                 <element signature="e#133469#133470#0" expanded="true" />
@@ -186,24 +190,24 @@
                 <element signature="e#137135#137136#0" expanded="true" />
                 <element signature="e#137183#137184#0" expanded="true" />
                 <element signature="e#137210#137211#0" expanded="true" />
-                <element signature="e#137320#137321#0" expanded="true" />
-                <element signature="e#137421#137422#0" expanded="true" />
-                <element signature="e#137522#137523#0" expanded="true" />
-                <element signature="e#137623#137624#0" expanded="true" />
-                <element signature="e#137722#137723#0" expanded="true" />
-                <element signature="e#137814#137815#0" expanded="true" />
-                <element signature="e#137897#137898#0" expanded="true" />
-                <element signature="e#137986#137987#0" expanded="true" />
-                <element signature="e#138063#138064#0" expanded="true" />
-                <element signature="e#138140#138141#0" expanded="true" />
-                <element signature="e#138217#138218#0" expanded="true" />
-                <element signature="e#138294#138295#0" expanded="true" />
-                <element signature="e#138371#138372#0" expanded="true" />
-                <element signature="e#138448#138449#0" expanded="true" />
-                <element signature="e#138525#138526#0" expanded="true" />
-                <element signature="e#138602#138603#0" expanded="true" />
-                <element signature="e#138691#138692#0" expanded="true" />
-                <element signature="e#138784#138785#0" expanded="true" />
+                <element signature="e#110431#110432#0" expanded="true" />
+                <element signature="e#110532#110533#0" expanded="true" />
+                <element signature="e#110633#110634#0" expanded="true" />
+                <element signature="e#110734#110735#0" expanded="true" />
+                <element signature="e#110833#110834#0" expanded="true" />
+                <element signature="e#110925#110926#0" expanded="true" />
+                <element signature="e#111008#111009#0" expanded="true" />
+                <element signature="e#111097#111098#0" expanded="true" />
+                <element signature="e#111174#111175#0" expanded="true" />
+                <element signature="e#111251#111252#0" expanded="true" />
+                <element signature="e#111328#111329#0" expanded="true" />
+                <element signature="e#111405#111406#0" expanded="true" />
+                <element signature="e#111482#111483#0" expanded="true" />
+                <element signature="e#111559#111560#0" expanded="true" />
+                <element signature="e#111636#111637#0" expanded="true" />
+                <element signature="e#111713#111714#0" expanded="true" />
+                <element signature="e#111802#111803#0" expanded="true" />
+                <element signature="e#111895#111896#0" expanded="true" />
                 <element signature="e#138842#138843#0" expanded="true" />
                 <element signature="e#138875#138876#0" expanded="true" />
                 <element signature="e#138930#138931#0" expanded="true" />
@@ -318,6 +322,7 @@
     <findStrings>
       <find>/monopoly/r</find>
       <find>/re</find>
+      <find>p1Name</find>
     </findStrings>
     <replaceStrings>
       <replace>/r</replace>
@@ -348,8 +353,8 @@
         <option value="$PROJECT_DIR$/src/monopoly/WinnerGame.java" />
         <option value="$PROJECT_DIR$/src/monopoly/NewGame.java" />
         <option value="$PROJECT_DIR$/src/monopoly/PopUpFrame.java" />
-        <option value="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" />
         <option value="$PROJECT_DIR$/src/monopoly/Monopoly.java" />
+        <option value="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" />
       </list>
     </option>
   </component>
@@ -451,15 +456,15 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49840087" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50319827" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49626866" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -643,6 +648,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/monopoly/triggeredAlfian200.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/monopoly/PopUpFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="56" column="110" selection-start-line="56" selection-start-column="110" selection-end-line="56" selection-end-column="110" />
+          <folding>
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/monopoly/NewGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -654,22 +673,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="393" column="58" selection-start-line="393" selection-start-column="58" selection-end-line="393" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="180">
+          <caret line="2274" column="33" selection-start-line="2274" selection-start-column="33" selection-end-line="2274" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2523#2612#0" expanded="true" />
-            <element signature="e#2488#67943#0" />
             <element signature="e#62066#62067#0" expanded="true" />
             <element signature="e#62132#62133#0" expanded="true" />
+            <element signature="e#67980#68317#0" />
             <element signature="e#68301#82192#0" />
-            <element signature="e#88978#88979#0" expanded="true" />
-            <element signature="e#89064#89065#0" expanded="true" />
-            <element signature="e#89133#89134#0" expanded="true" />
-            <element signature="e#88852#106316#0" />
-            <element signature="e#106326#133038#0" />
+            <element signature="e#87533#87534#0" expanded="true" />
+            <element signature="e#87571#87572#0" expanded="true" />
+            <element signature="e#87602#87603#0" expanded="true" />
+            <element signature="e#87685#87686#0" expanded="true" />
+            <element signature="e#87754#87755#0" expanded="true" />
             <element signature="e#133395#133396#0" expanded="true" />
             <element signature="e#133425#133426#0" expanded="true" />
             <element signature="e#133469#133470#0" expanded="true" />
@@ -786,24 +815,24 @@
             <element signature="e#137135#137136#0" expanded="true" />
             <element signature="e#137183#137184#0" expanded="true" />
             <element signature="e#137210#137211#0" expanded="true" />
-            <element signature="e#137320#137321#0" expanded="true" />
-            <element signature="e#137421#137422#0" expanded="true" />
-            <element signature="e#137522#137523#0" expanded="true" />
-            <element signature="e#137623#137624#0" expanded="true" />
-            <element signature="e#137722#137723#0" expanded="true" />
-            <element signature="e#137814#137815#0" expanded="true" />
-            <element signature="e#137897#137898#0" expanded="true" />
-            <element signature="e#137986#137987#0" expanded="true" />
-            <element signature="e#138063#138064#0" expanded="true" />
-            <element signature="e#138140#138141#0" expanded="true" />
-            <element signature="e#138217#138218#0" expanded="true" />
-            <element signature="e#138294#138295#0" expanded="true" />
-            <element signature="e#138371#138372#0" expanded="true" />
-            <element signature="e#138448#138449#0" expanded="true" />
-            <element signature="e#138525#138526#0" expanded="true" />
-            <element signature="e#138602#138603#0" expanded="true" />
-            <element signature="e#138691#138692#0" expanded="true" />
-            <element signature="e#138784#138785#0" expanded="true" />
+            <element signature="e#110431#110432#0" expanded="true" />
+            <element signature="e#110532#110533#0" expanded="true" />
+            <element signature="e#110633#110634#0" expanded="true" />
+            <element signature="e#110734#110735#0" expanded="true" />
+            <element signature="e#110833#110834#0" expanded="true" />
+            <element signature="e#110925#110926#0" expanded="true" />
+            <element signature="e#111008#111009#0" expanded="true" />
+            <element signature="e#111097#111098#0" expanded="true" />
+            <element signature="e#111174#111175#0" expanded="true" />
+            <element signature="e#111251#111252#0" expanded="true" />
+            <element signature="e#111328#111329#0" expanded="true" />
+            <element signature="e#111405#111406#0" expanded="true" />
+            <element signature="e#111482#111483#0" expanded="true" />
+            <element signature="e#111559#111560#0" expanded="true" />
+            <element signature="e#111636#111637#0" expanded="true" />
+            <element signature="e#111713#111714#0" expanded="true" />
+            <element signature="e#111802#111803#0" expanded="true" />
+            <element signature="e#111895#111896#0" expanded="true" />
             <element signature="e#138842#138843#0" expanded="true" />
             <element signature="e#138875#138876#0" expanded="true" />
             <element signature="e#138930#138931#0" expanded="true" />
@@ -898,30 +927,6 @@
             <element signature="e#142830#142831#0" expanded="true" />
             <element signature="e#142896#142897#0" expanded="true" />
             <element signature="e#142937#142938#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/monopoly/triggeredAlfian200.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/monopoly/PopUpFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="56" column="110" selection-start-line="56" selection-start-column="110" selection-end-line="56" selection-end-column="110" />
-          <folding>
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="274" column="30" selection-start-line="274" selection-start-column="30" selection-end-line="274" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

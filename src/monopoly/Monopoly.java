@@ -75,20 +75,18 @@ public class Monopoly{
             ImageIcon img;
             img = new ImageIcon(Monopoly.class.getResource("resources/icon.jpg"));
 
-            MonopolyFrame mainFrame = new MonopolyFrame();
-            mainFrame.setLocationRelativeTo(null);
-            mainFrame.setVisible(false);
-            mainFrame.setIconImage(img.getImage());
-            mainFrame.setVisible(true);
-            
             NewGame newGameFrame = new NewGame();
             newGameFrame.setLocationRelativeTo(null);
             newGameFrame.setTitle("Monopoly");
             newGameFrame.setVisible(true);
-
-
-
             newGameFrame.setIconImage(img.getImage());
+
+
+            
+
+
+
+
 
 
             
@@ -135,7 +133,16 @@ public class Monopoly{
             place.add(new Space("Tax",0, 100));
             place.add(new Lot("ITB", 10, 2500));
 
+
+            Thread.sleep(10000);
+            MonopolyFrame mainFrame = new MonopolyFrame(newGameFrame);
+            mainFrame.setLocationRelativeTo(null);
+            mainFrame.setVisible(false);
+            mainFrame.setIconImage(img.getImage());
+            mainFrame.setVisible(true);
+
             while(!newGameFrame.gameReady()) {
+
                 Thread.sleep(2000);
                 mainFrame.setLog("game belum mulai");
             }
@@ -178,115 +185,115 @@ public class Monopoly{
             ccList.add("Transferan Orang Tua 5000",new CommunityChest()); //9, in
             ccList.add("Bayar Laundry 4000",new CommunityChest()); //10, out
 
+            mainFrame.getProp1Button().addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    for (int i=0; i<player.get(1).sizeProp(); i++) {
+                        if (((Property)player.get(1).getProp(i)).getTipe() == 2) {
+                            if (((Property)player.get(1).getProp(i)).getLvl() == 3) {
+                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 1 rumah");
+                            } else if (((Property)player.get(1).getProp(i)).getLvl() == 4) {
+                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 2 rumah");
+                            } else if (((Property)player.get(1).getProp(i)).getLvl() == 5) {
+                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 3 rumah");
+                            } else if (((Property)player.get(1).getProp(i)).getLvl() == 6) {
+                                mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 4 rumah");
+                            } else {
+                                mainFrame.setLog(player.get(1).getProp(i).getName());
+                            }
+                        } else {
+                            mainFrame.setLog(player.get(1).getProp(i).getName());
+                        }
+                    }
+                }
+            });
+
+            mainFrame.getProp2Button().addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    for (int i=0; i<player.get(2).sizeProp(); i++) {
+                        if (((Property)player.get(2).getProp(i)).getTipe() == 2) {
+                            if (((Property)player.get(2).getProp(i)).getLvl() == 3) {
+                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 1 rumah");
+                            } else if (((Property)player.get(2).getProp(i)).getLvl() == 4) {
+                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 2 rumah");
+                            } else if (((Property)player.get(2).getProp(i)).getLvl() == 5) {
+                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 3 rumah");
+                            } else if (((Property)player.get(2).getProp(i)).getLvl() == 6) {
+                                mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 4 rumah");
+                            } else {
+                                mainFrame.setLog(player.get(2).getProp(i).getName());
+                            }
+                        } else {
+                            mainFrame.setLog(player.get(2).getProp(i).getName());
+                        }
+                    }
+                }
+            });
+
+            mainFrame.getProp3Button().addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    for (int i=0; i<player.get(3).sizeProp(); i++) {
+                        if (((Property)player.get(3).getProp(i)).getTipe() == 2) {
+                            if (((Property)player.get(3).getProp(i)).getLvl() == 3) {
+                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 1 rumah");
+                            } else if (((Property)player.get(3).getProp(i)).getLvl() == 4) {
+                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 2 rumah");
+                            } else if (((Property)player.get(3).getProp(i)).getLvl() == 5) {
+                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 3 rumah");
+                            } else if (((Property)player.get(3).getProp(i)).getLvl() == 6) {
+                                mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 4 rumah");
+                            } else {
+                                mainFrame.setLog(player.get(3).getProp(i).getName());
+                            }
+                        } else {
+                            mainFrame.setLog(player.get(3).getProp(i).getName());
+                        }
+                    }
+                }
+            });
+
+            mainFrame.getProp4Button().addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    for (int i=0; i<player.get(4).sizeProp(); i++) {
+                        if (((Property)player.get(4).getProp(i)).getTipe() == 2) {
+                            if (((Property)player.get(4).getProp(i)).getLvl() == 3) {
+                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 1 rumah");
+                            } else if (((Property)player.get(4).getProp(i)).getLvl() == 4) {
+                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 2 rumah");
+                            } else if (((Property)player.get(4).getProp(i)).getLvl() == 5) {
+                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 3 rumah");
+                            } else if (((Property)player.get(4).getProp(i)).getLvl() == 6) {
+                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 4 rumah");
+                            } else {
+                                mainFrame.setLog(player.get(4).getProp(i).getName());
+                            }
+                        } else {
+                            mainFrame.setLog(player.get(4).getProp(i).getName());
+                        }
+                    }
+                }
+            });
+
             //Iterasi permainan
 
             Turn turn  = new Turn(nPlayer);
 
             while ((!endGame) && (nPlayer != 1)) {
-                
-                mainFrame.getProp1Button().addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                for (int i=0; i<player.get(1).sizeProp(); i++) {
-                                        if (((Property)player.get(1).getProp(i)).getTipe() == 2) {
-                                                if (((Property)player.get(1).getProp(i)).getLvl() == 3) {
-                                                        mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 1 rumah");
-                                                } else if (((Property)player.get(1).getProp(i)).getLvl() == 4) {
-                                                        mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 2 rumah");
-                                                } else if (((Property)player.get(1).getProp(i)).getLvl() == 5) {
-                                                        mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 3 rumah");
-                                                } else if (((Property)player.get(1).getProp(i)).getLvl() == 6) {
-                                                        mainFrame.setLog(player.get(1).getProp(i).getName()+" dengan 4 rumah");
-                                                } else {
-                                                        mainFrame.setLog(player.get(1).getProp(i).getName());
-                                                }
-                                        } else {
-                                                mainFrame.setLog(player.get(1).getProp(i).getName());
-                                        }
-                                }
-                        }
-                });
 
-                mainFrame.getProp2Button().addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                for (int i=0; i<player.get(2).sizeProp(); i++) {
-                                        if (((Property)player.get(2).getProp(i)).getTipe() == 2) {
-                                                if (((Property)player.get(2).getProp(i)).getLvl() == 3) {
-                                                        mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 1 rumah");
-                                                } else if (((Property)player.get(2).getProp(i)).getLvl() == 4) {
-                                                        mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 2 rumah");
-                                                } else if (((Property)player.get(2).getProp(i)).getLvl() == 5) {
-                                                        mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 3 rumah");
-                                                } else if (((Property)player.get(2).getProp(i)).getLvl() == 6) {
-                                                        mainFrame.setLog(player.get(2).getProp(i).getName()+" dengan 4 rumah");
-                                                } else {
-                                                        mainFrame.setLog(player.get(2).getProp(i).getName());
-                                                }
-                                        } else {
-                                                mainFrame.setLog(player.get(2).getProp(i).getName());
-                                        }
-                                }
-                        }
-                });
-
-                mainFrame.getProp3Button().addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                for (int i=0; i<player.get(3).sizeProp(); i++) {
-                                        if (((Property)player.get(3).getProp(i)).getTipe() == 2) {
-                                                if (((Property)player.get(3).getProp(i)).getLvl() == 3) {
-                                                        mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 1 rumah");
-                                                } else if (((Property)player.get(3).getProp(i)).getLvl() == 4) {
-                                                        mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 2 rumah");
-                                                } else if (((Property)player.get(3).getProp(i)).getLvl() == 5) {
-                                                        mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 3 rumah");
-                                                } else if (((Property)player.get(3).getProp(i)).getLvl() == 6) {
-                                                        mainFrame.setLog(player.get(3).getProp(i).getName()+" dengan 4 rumah");
-                                                } else {
-                                                        mainFrame.setLog(player.get(3).getProp(i).getName());
-                                                }
-                                        } else {
-                                                mainFrame.setLog(player.get(3).getProp(i).getName());
-                                        }
-                                }
-                        }
-                });
-
-                mainFrame.getProp4Button().addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                for (int i=0; i<player.get(4).sizeProp(); i++) {
-                                        if (((Property)player.get(4).getProp(i)).getTipe() == 2) {
-                                                if (((Property)player.get(4).getProp(i)).getLvl() == 3) {
-                                                        mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 1 rumah");
-                                                } else if (((Property)player.get(4).getProp(i)).getLvl() == 4) {
-                                                        mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 2 rumah");
-                                                } else if (((Property)player.get(4).getProp(i)).getLvl() == 5) {
-                                                        mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 3 rumah");
-                                                } else if (((Property)player.get(4).getProp(i)).getLvl() == 6) {
-                                                        mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 4 rumah");
-                                                } else {
-                                                        mainFrame.setLog(player.get(4).getProp(i).getName());
-                                                }
-                                        } else {
-                                                mainFrame.setLog(player.get(4).getProp(i).getName());
-                                        }
-                                }
-                        }
-                });
-
-                for (int i = 0; i <= nPlayer; i++) {
+                for (int i = 0; i < nPlayer+1; i++) {
                     switch (i) {
-                        case 1:
+                        case 0:
                             mainFrame.getMoney_player1().setText(Integer.toString(player.get(i).getMoney())); //update data player 1
                             mainFrame.getPos_player1().setText(place.get((player.get(i).getPos())).getName()); //update data player 2
                             break;
-                        case 2:
+                        case 1:
                             mainFrame.getMoney_player2().setText(Integer.toString(player.get(i).getMoney()));
                             mainFrame.getPos_player2().setText(place.get((player.get(i).getPos())).getName());
                             break;
-                        case 3:
+                        case 2:
                             mainFrame.getMoney_player3().setText(Integer.toString(player.get(i).getMoney()));
                             mainFrame.getPos_player3().setText(place.get((player.get(i).getPos())).getName());
                             break;
-                        case 4:
+                        case 3:
                             mainFrame.getMoney_player4().setText(Integer.toString(player.get(i).getMoney()));
                             mainFrame.getPos_player4().setText(place.get((player.get(i).getPos())).getName());
                             break;
@@ -316,7 +323,7 @@ public class Monopoly{
                 if (!(player.get(index).getKalah())) {
                     //Command nya gmn ya
                         if (cmd == 1) {
-
+                                mainFrame.clearCommand();
                                 if (player.get(index).getJail()) {
                                         mainFrame.setLog("Silahkan pilih Bayar atau Dadu");
                                         try {
@@ -327,6 +334,7 @@ public class Monopoly{
 
                                         if (cmd == 1) {
                                                 //dadu blm dibikin antara mending gamelog atau bikin baru
+                                                mainFrame.clearCommand();
                                                 d1 = dadu.getN1();
                                                 d2 = dadu.getN2();
                                                 mainFrame.showDice(d1, d2);
@@ -341,6 +349,7 @@ public class Monopoly{
                                                 }
 
                                         } else if (cmd == 2) {
+                                            mainFrame.clearCommand();
                                                 if (player.get(index).getMoney()<1000) {
                                                         mainFrame.setLog("Uang yang Anda miliki tidak cukup. Silahkan lakukan roll dice.");
                                                         d1 = dadu.getN1();
@@ -366,6 +375,7 @@ public class Monopoly{
                                                 turn.nextPlayer();
                                         }
                                 } else {
+                                    mainFrame.clearCommand();
                                         boolean db = true;
                                         int dbi = 1;
                                         while (db && (dbi <= 3) && (!player.get(index).getJail())) {
@@ -381,7 +391,7 @@ public class Monopoly{
                                                 //}
                                                 mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                 mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
-                                                mainFrame.removePlayerPos(index, player.get(index).getPos());
+                                                mainFrame.removePlayerPos(index);
                                                 player.get(index).move(d1+d2, mainFrame.getGameLog());
                                                 mainFrame.showPlayerPos(index, player.get(index).getPos());
                                                 mainFrame.setLog("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
@@ -428,6 +438,7 @@ public class Monopoly{
                                                                         } else {
                                                                                 db = false;
                                                                         }
+                                                                        mainFrame.clearCommand();
                                                                 } else if (place.get(player.get(index).getPos()).getOwner() == null) {
                                                                         mainFrame.setLog("Properti ini belum dimiliki siapa - siapa. Apakah kamu ingin membeli properti ini? Ya/Tidak");
                                                                         try {
@@ -441,6 +452,7 @@ public class Monopoly{
                                                                         } else {
                                                                                 db = false;
                                                                         }
+                                                                        mainFrame.clearCommand();
                                                                 } else {
                                                                         place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
                                                                         if (player.get(index).getMoney() < 0) {
