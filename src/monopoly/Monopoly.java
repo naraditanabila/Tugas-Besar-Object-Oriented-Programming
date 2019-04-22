@@ -136,7 +136,7 @@ public class Monopoly{
             place.add(new Lot("ITB", 10, 2500));
 
             while(!newGameFrame.gameReady()) {
-                
+                mainFrame.setLog("game belum mulai");
             }
             
             //Pembacaan jumlah player

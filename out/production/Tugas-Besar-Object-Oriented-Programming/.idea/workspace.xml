@@ -2,271 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c5e546-704f-4a2c-9ca9-0aebfa169a35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/ChanceCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/ChanceCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/CommunityChest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/CommunityChest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Dadu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Dadu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/FreeParkFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/FreeParkFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/FreeParkFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/FreeParkFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/FreeParkFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/ListCard$Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/ListCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/ListCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/LogFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/LogFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/LogFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/LogFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Lot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Lot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Main$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Monopoly$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Monopoly$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Monopoly$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Monopoly$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Monopoly$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Monopoly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/MonopolyFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/NewGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/NewGame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/NewGame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/NewGame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/NewGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/NewGame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/NewGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Place.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Place.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/PopUpFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/PopUpFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/PopUpFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/PopUpFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/PopUpFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Property.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Property.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Railroad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Railroad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Space.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Space.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Turn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Turn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Utility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Utility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/Water.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/WinnerGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/WinnerGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/WinnerGame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/WinnerGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/Pens.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/bot9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/botLeft.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/botRight.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/left9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/right9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/top9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/topLeft.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/Map/topRight.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/addplayer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/chance.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/chest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/cuteGirl.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/dice1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/dice2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/dice3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/dice4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/dice5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/dice6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/finishturn.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/hideInstruction.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/hotel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/hotelFlippedLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/hotelFlippedRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/hotelUpsideDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house1FlippedLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house1FlippedRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house1UpsideDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house2FlippedLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house2FlippedRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house2UpsideDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house3FlippedLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house3FlippedRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house3UpsideDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house4FlippedLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house4FlippedRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house4UpsideDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house5FlippedLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house5FlippedRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/house5UpsideDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/instruction.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/instruction.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/newGameFrame.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/rollthedice.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/startthegame.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/surprised.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/token1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/token2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/token3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/token4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/token5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/resources/token6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/token1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/triggeredAlfian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup (Pake Main.java)/triggeredAlfian200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/ChanceCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/ChanceCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/CommunityChest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/CommunityChest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Dadu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Dadu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/ListCard$Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/ListCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/ListCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Lot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Lot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Main$display.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Monopoly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Place.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Place.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Property.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Property.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Railroad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Railroad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Space.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Space.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Timer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Timer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Turn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Turn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Utility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Utility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/ChanceCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/ChanceCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/ChanceCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/CommunityChest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/CommunityChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/CommunityChest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Dadu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Dadu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Dadu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/FreeParkFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/FreeParkFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/FreeParkFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/FreeParkFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/FreeParkFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/ListCard$Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/ListCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/ListCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/ListCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/LogFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/LogFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/LogFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/LogFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Lot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Lot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Lot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Monopoly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/NewGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/NewGame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/NewGame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/NewGame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/NewGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/NewGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/NewGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Place.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Place.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Place.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/PopUpFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/PopUpFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/PopUpFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/PopUpFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/PopUpFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Property.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Railroad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Railroad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Railroad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Space.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Space.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Space.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Turn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Turn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Utility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/WinnerGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/WinnerGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monopoly/WinnerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/WinnerGame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -280,16 +20,24 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="378" column="17" selection-start-line="378" selection-start-column="17" selection-end-line="378" selection-end-column="17" />
+            <state relative-caret-position="102">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="1197" column="89" selection-start-line="1197" selection-start-column="89" selection-end-line="1197" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4925#4945#0" expanded="true" />
-                <element signature="e#5827#5851#0" expanded="true" />
+                <element signature="e#2523#2612#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -306,6 +54,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>/monopoly/r</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/r</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -315,13 +71,11 @@
         <option value="$PROJECT_DIR$/src/monopoly/Dadu.java" />
         <option value="$PROJECT_DIR$/Backup (Pake Main.java)/ChanceCard.java" />
         <option value="$PROJECT_DIR$/src/monopoly/ChanceCard.java" />
-        <option value="$PROJECT_DIR$/src/monopoly/Monopoly.java" />
         <option value="$PROJECT_DIR$/src/monopoly/CommunityChest.java" />
         <option value="$PROJECT_DIR$/src/monopoly/FreeParkFrame.java" />
         <option value="$PROJECT_DIR$/src/monopoly/ListCard.java" />
         <option value="$PROJECT_DIR$/src/monopoly/LogFrame.java" />
         <option value="$PROJECT_DIR$/src/monopoly/Lot.java" />
-        <option value="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" />
         <option value="$PROJECT_DIR$/src/monopoly/NewGame.java" />
         <option value="$PROJECT_DIR$/src/monopoly/Place.java" />
         <option value="$PROJECT_DIR$/src/monopoly/Player.java" />
@@ -332,6 +86,8 @@
         <option value="$PROJECT_DIR$/src/monopoly/Turn.java" />
         <option value="$PROJECT_DIR$/src/monopoly/Utility.java" />
         <option value="$PROJECT_DIR$/src/monopoly/WinnerGame.java" />
+        <option value="$PROJECT_DIR$/src/monopoly/Monopoly.java" />
+        <option value="$PROJECT_DIR$/src/monopoly/MonopolyFrame.java" />
       </list>
     </option>
   </component>
@@ -356,15 +112,23 @@
             <path>
               <item name="Tugas-Besar-Object-Oriented-Programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tugas-Besar-Object-Oriented-Programming" type="462c0819:PsiDirectoryNode" />
-              <item name="monopoly" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -405,32 +169,41 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32936078" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -500,13 +273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/monopoly/Place.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -539,13 +305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/monopoly/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -584,24 +343,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backup (Pake Main.java)/ChanceCard.java">
+    <entry file="file://$PROJECT_DIR$/Backup (Pake Main.java)/ChanceCard.java" />
+    <entry file="file://$PROJECT_DIR$/Tugas-Besar-Object-Oriented-Programming.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="153">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/monopoly/resources/icon.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/monopoly/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="378" column="17" selection-start-line="378" selection-start-column="17" selection-end-line="378" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/javax/swing/ImageIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4925#4945#0" expanded="true" />
-            <element signature="e#5827#5851#0" expanded="true" />
+            <element signature="e#6758#6759#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="1197" column="89" selection-start-line="1197" selection-start-column="89" selection-end-line="1197" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2523#2612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Tugas-Besar-Object-Oriented-Programming</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>MonpolyTubes</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

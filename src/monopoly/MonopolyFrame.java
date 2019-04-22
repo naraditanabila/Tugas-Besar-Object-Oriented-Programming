@@ -14,11 +14,7 @@ import java.awt.Container;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -1167,10 +1163,10 @@ public class MonopolyFrame extends javax.swing.JFrame {
         
         
         //setting token
-        ImageIcon token1_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token1.png"));
-        ImageIcon token2_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token2.png"));
-        ImageIcon token3_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token3.png"));
-        ImageIcon token4_img = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/token4.png"));
+        ImageIcon token1_img = new ImageIcon(Monopoly.class.getResource("resources/token1.png"));
+        ImageIcon token2_img = new ImageIcon(Monopoly.class.getResource("resources/token2.png"));
+        ImageIcon token3_img = new ImageIcon(Monopoly.class.getResource("resources/token3.png"));
+        ImageIcon token4_img = new ImageIcon(Monopoly.class.getResource("resources/token4.png"));
         
         token1 = new JLabel();
         token2 = new JLabel();
@@ -1199,281 +1195,281 @@ public class MonopolyFrame extends javax.swing.JFrame {
         
         
         JLabel label_botRight = new JLabel();
-        ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botRight.jpg"));
+        ImageIcon image_botRight = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/botRight.jpg"));
         label_botRight.setIcon(image_botRight);
         label_botRight.setBounds(0,0,128,128);
         botRight.add(label_botRight);
         botRight.setLayer(label_botRight, -1);
-        
+
         JLabel label_botLeft = new JLabel();
-        ImageIcon image_botLeft = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/botLeft.jpg"));
+        ImageIcon image_botLeft = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/botLeft.jpg"));
         label_botLeft.setIcon(image_botLeft);
         label_botLeft.setBounds(0,0,128,128);
         botLeft.add(label_botLeft);
         botLeft.setLayer(label_botLeft, -1);
-        
+
         JLabel label_topLeft = new JLabel();
-        ImageIcon image_topLeft = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/topLeft.jpg"));
+        ImageIcon image_topLeft = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/topLeft.jpg"));
         label_topLeft.setIcon(image_topLeft);
         label_topLeft.setBounds(0,0,128,128);
         topLeft.add(label_topLeft);
         topLeft.setLayer(label_topLeft, -1);
-        
+
         JLabel label_topRight = new JLabel();
-        ImageIcon image_topRight = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/topRight.jpg"));
+        ImageIcon image_topRight = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/topRight.jpg"));
         label_topRight.setIcon(image_topRight);
         label_topRight.setBounds(0,0,128,128);
         topRight.add(label_topRight);
         topRight.setLayer(label_topRight, -1);
-        
+
         JLabel label_bot1 = new JLabel();
-        ImageIcon image_bot1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot1.jpg"));
+        ImageIcon image_bot1 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot1.jpg"));
         label_bot1.setIcon(image_bot1);
         label_bot1.setBounds(0,0,76,128);
         bot1.add(label_bot1);
         bot1.setLayer(label_bot1, -1);
-        
+
         JLabel label_bot2 = new JLabel();
-        ImageIcon image_bot2 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot2.jpg"));
+        ImageIcon image_bot2 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot2.jpg"));
         label_bot2.setIcon(image_bot2);
         label_bot2.setBounds(0,0,76,128);
         bot2.add(label_bot2);
         bot2.setLayer(label_bot2, -1);
-        
+
         JLabel label_bot3 = new JLabel();
-        ImageIcon image_bot3 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot3.jpg"));
+        ImageIcon image_bot3 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot3.jpg"));
         label_bot3.setIcon(image_bot3);
         label_bot3.setBounds(0,0,76,128);
         bot3.add(label_bot3);
         bot3.setLayer(label_bot3, -1);
-        
+
         JLabel label_bot4 = new JLabel();
-        ImageIcon image_bot4 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot4.jpg"));
+        ImageIcon image_bot4 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot4.jpg"));
         label_bot4.setIcon(image_bot4);
         label_bot4.setBounds(0,0,76,128);
         bot4.add(label_bot4);
         bot4.setLayer(label_bot4, -1);
-        
+
         JLabel label_bot5 = new JLabel();
-        ImageIcon image_bot5 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot5.jpg"));
+        ImageIcon image_bot5 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot5.jpg"));
         label_bot5.setIcon(image_bot5);
         label_bot5.setBounds(0,0,76,128);
         bot5.add(label_bot5);
         bot5.setLayer(label_bot5, -1);
-        
+
         JLabel label_bot6 = new JLabel();
-        ImageIcon image_bot6 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot6.jpg"));
+        ImageIcon image_bot6 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot6.jpg"));
         label_bot6.setIcon(image_bot6);
         label_bot6.setBounds(0,0,76,128);
         bot6.add(label_bot6);
         bot6.setLayer(label_bot6, -1);
-        
+
         JLabel label_bot7 = new JLabel();
-        ImageIcon image_bot7 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot7.jpg"));
+        ImageIcon image_bot7 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot7.jpg"));
         label_bot7.setIcon(image_bot7);
         label_bot7.setBounds(0,0,76,128);
         bot7.add(label_bot7);
         bot7.setLayer(label_bot7, -1);
-        
+
         JLabel label_bot8 = new JLabel();
-        ImageIcon image_bot8 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot8.jpg"));
+        ImageIcon image_bot8 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot8.jpg"));
         label_bot8.setIcon(image_bot8);
         label_bot8.setBounds(0,0,76,128);
         bot8.add(label_bot8);
         bot8.setLayer(label_bot8, -1);
-        
+
         JLabel label_bot9 = new JLabel();
-        ImageIcon image_bot9 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/bot9.jpg"));
+        ImageIcon image_bot9 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/bot9.jpg"));
         label_bot9.setIcon(image_bot9);
         label_bot9.setBounds(0,0,76,128);
         bot9.add(label_bot9);
         bot9.setLayer(label_bot9, -1);
-        
+
         JLabel label_top1 = new JLabel();
-        ImageIcon image_top1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top1.jpg"));
+        ImageIcon image_top1 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top1.jpg"));
         label_top1.setIcon(image_top1);
         label_top1.setBounds(0,0,76,128);
         top1.add(label_top1);
         top1.setLayer(label_top1, -1);
-        
+
         JLabel label_top2 = new JLabel();
-        ImageIcon image_top2 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top2.jpg"));
+        ImageIcon image_top2 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top2.jpg"));
         label_top2.setIcon(image_top2);
         label_top2.setBounds(0,0,76,128);
         top2.add(label_top2);
         top2.setLayer(label_top2, -1);
-        
+
         JLabel label_top3 = new JLabel();
-        ImageIcon image_top3 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top3.jpg"));
+        ImageIcon image_top3 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top3.jpg"));
         label_top3.setIcon(image_top3);
         label_top3.setBounds(0,0,76,128);
         top3.add(label_top3);
         top3.setLayer(label_top3, -1);
-        
+
         JLabel label_top4 = new JLabel();
-        ImageIcon image_top4 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top4.jpg"));
+        ImageIcon image_top4 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top4.jpg"));
         label_top4.setIcon(image_top4);
         label_top4.setBounds(0,0,76,128);
         top4.add(label_top4);
         top4.setLayer(label_top4, -1);
-        
+
         JLabel label_top5 = new JLabel();
-        ImageIcon image_top5 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top5.jpg"));
+        ImageIcon image_top5 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top5.jpg"));
         label_top5.setIcon(image_top5);
         label_top5.setBounds(0,0,76,128);
         top5.add(label_top5);
         top5.setLayer(label_top5, -1);
-        
+
         JLabel label_top6 = new JLabel();
-        ImageIcon image_top6 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top6.jpg"));
+        ImageIcon image_top6 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top6.jpg"));
         label_top6.setIcon(image_top6);
         label_top6.setBounds(0,0,76,128);
         top6.add(label_top6);
         top6.setLayer(label_top6, -1);
-        
+
         JLabel label_top7 = new JLabel();
-        ImageIcon image_top7 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top7.jpg"));
+        ImageIcon image_top7 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top7.jpg"));
         label_top7.setIcon(image_top7);
         label_top7.setBounds(0,0,76,128);
         top7.add(label_top7);
         top7.setLayer(label_top7, -1);
-        
+
         JLabel label_top8 = new JLabel();
-        ImageIcon image_top8 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top8.jpg"));
+        ImageIcon image_top8 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top8.jpg"));
         label_top8.setIcon(image_top8);
         label_top8.setBounds(0,0,76,128);
         top8.add(label_top8);
         top8.setLayer(label_top8, -1);
-        
+
         JLabel label_top9 = new JLabel();
-        ImageIcon image_top9 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/top9.jpg"));
+        ImageIcon image_top9 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/top9.jpg"));
         label_top9.setIcon(image_top9);
         label_top9.setBounds(0,0,76,128);
         top9.add(label_top9);
         top9.setLayer(label_top9, -1);
-        
+
         //Right Left
         JLabel label_left1 = new JLabel();
-        ImageIcon image_left1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left1.jpg"));
+        ImageIcon image_left1 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left1.jpg"));
         label_left1.setIcon(image_left1);
         label_left1.setBounds(0,0,128,76);
         left1.add(label_left1);
         left1.setLayer(label_left1, -1);
-        
+
         JLabel label_left2 = new JLabel();
-        ImageIcon image_left2 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left2.jpg"));
+        ImageIcon image_left2 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left2.jpg"));
         label_left2.setIcon(image_left2);
         label_left2.setBounds(0,0,128,76);
         left2.add(label_left2);
         left2.setLayer(label_left2, -1);
-        
+
         JLabel label_left3 = new JLabel();
-        ImageIcon image_left3 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left3.jpg"));
+        ImageIcon image_left3 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left3.jpg"));
         label_left3.setIcon(image_left3);
         label_left3.setBounds(0,0,128,76);
         left3.add(label_left3);
         left3.setLayer(label_left3, -1);
-        
+
         JLabel label_left4 = new JLabel();
-        ImageIcon image_left4 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left4.jpg"));
+        ImageIcon image_left4 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left4.jpg"));
         label_left4.setIcon(image_left4);
         label_left4.setBounds(0,0,128,76);
         left4.add(label_left4);
         left4.setLayer(label_left4, -1);
-        
+
         JLabel label_left5 = new JLabel();
-        ImageIcon image_left5 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left5.jpg"));
+        ImageIcon image_left5 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left5.jpg"));
         label_left5.setIcon(image_left5);
         label_left5.setBounds(0,0,128,76);
         left5.add(label_left5);
         left5.setLayer(label_left5, -1);
-        
+
         JLabel label_left6 = new JLabel();
-        ImageIcon image_left6 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left6.jpg"));
+        ImageIcon image_left6 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left6.jpg"));
         label_left6.setIcon(image_left6);
         label_left6.setBounds(0,0,128,76);
         left6.add(label_left6);
         left6.setLayer(label_left6, -1);
-        
+
         JLabel label_left7 = new JLabel();
-        ImageIcon image_left7 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left7.jpg"));
+        ImageIcon image_left7 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left7.jpg"));
         label_left7.setIcon(image_left7);
         label_left7.setBounds(0,0,128,76);
         left7.add(label_left7);
         left7.setLayer(label_left7, -1);
-        
+
         JLabel label_left8 = new JLabel();
-        ImageIcon image_left8 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left8.jpg"));
+        ImageIcon image_left8 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left8.jpg"));
         label_left8.setIcon(image_left8);
         label_left8.setBounds(0,0,128,76);
         left8.add(label_left8);
         left8.setLayer(label_left8, -1);
-        
+
         JLabel label_left9 = new JLabel();
-        ImageIcon image_left9 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/left9.jpg"));
+        ImageIcon image_left9 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/left9.jpg"));
         label_left9.setIcon(image_left9);
         label_left9.setBounds(0,0,128,76);
         left9.add(label_left9);
         left9.setLayer(label_left9, -1);
-        
+
         JLabel label_right1 = new JLabel();
-        ImageIcon image_right1 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right1.jpg"));
+        ImageIcon image_right1 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right1.jpg"));
         label_right1.setIcon(image_right1);
         label_right1.setBounds(0,0,128,76);
         right1.add(label_right1);
         right1.setLayer(label_right1, -1);
-        
+
         JLabel label_right2 = new JLabel();
-        ImageIcon image_right2 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right2.jpg"));
+        ImageIcon image_right2 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right2.jpg"));
         label_right2.setIcon(image_right2);
         label_right2.setBounds(0,0,128,76);
         right2.add(label_right2);
         right2.setLayer(label_right2, -1);
-        
+
         JLabel label_right3 = new JLabel();
-        ImageIcon image_right3 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right3.jpg"));
+        ImageIcon image_right3 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right3.jpg"));
         label_right3.setIcon(image_right3);
         label_right3.setBounds(0,0,128,76);
         right3.add(label_right3);
         right3.setLayer(label_right3, -1);
-        
+
         JLabel label_right4 = new JLabel();
-        ImageIcon image_right4 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right4.jpg"));
+        ImageIcon image_right4 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right4.jpg"));
         label_right4.setIcon(image_right4);
         label_right4.setBounds(0,0,128,76);
         right4.add(label_right4);
         right4.setLayer(label_right4, -1);
-        
+
         JLabel label_right5 = new JLabel();
-        ImageIcon image_right5 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right5.jpg"));
+        ImageIcon image_right5 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right5.jpg"));
         label_right5.setIcon(image_right5);
         label_right5.setBounds(0,0,128,76);
         right5.add(label_right5);
         right5.setLayer(label_right5, -1);
-        
+
         JLabel label_right6 = new JLabel();
-        ImageIcon image_right6 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right6.jpg"));
+        ImageIcon image_right6 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right6.jpg"));
         label_right6.setIcon(image_right6);
         label_right6.setBounds(0,0,128,76);
         right6.add(label_right6);
         right6.setLayer(label_right6, -1);
-        
+
         JLabel label_right7 = new JLabel();
-        ImageIcon image_right7 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right7.jpg"));
+        ImageIcon image_right7 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right7.jpg"));
         label_right7.setIcon(image_right7);
         label_right7.setBounds(0,0,128,76);
         right7.add(label_right7);
         right7.setLayer(label_right7, -1);
-        
+
         JLabel label_right8 = new JLabel();
-        ImageIcon image_right8 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right8.jpg"));
+        ImageIcon image_right8 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right8.jpg"));
         label_right8.setIcon(image_right8);
         label_right8.setBounds(0,0,128,76);
         right8.add(label_right8);
         right8.setLayer(label_right8, -1);
-        
+
         JLabel label_right9 = new JLabel();
-        ImageIcon image_right9 = new ImageIcon(Monopoly.class.getResource("/monopoly/resources/Map/right9.jpg"));
+        ImageIcon image_right9 = new ImageIcon(Monopoly.class.getResource("/src/monopoly/resources/Map/right9.jpg"));
         label_right9.setIcon(image_right9);
         label_right9.setBounds(0,0,128,76);
         right9.add(label_right9);

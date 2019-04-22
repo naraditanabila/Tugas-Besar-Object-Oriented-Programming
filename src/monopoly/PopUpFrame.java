@@ -54,7 +54,7 @@ public class PopUpFrame extends javax.swing.JFrame {
             }
         });
 
-        triggeredAlfian.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/triggeredAlfian200.jpg"))); // NOI18N
+        triggeredAlfian.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src/monopoly/triggeredAlfian200.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
