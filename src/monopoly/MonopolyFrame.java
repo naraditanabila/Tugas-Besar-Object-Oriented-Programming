@@ -54,6 +54,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 rollButton.setActionCommand("roll");
+                command = 1;
                 gameLog.append("Roll Button kepencet!!!\n");
             }
         });
@@ -62,6 +63,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 payButton.setActionCommand("pay");
+                command = 2;
                 gameLog.append("Pay Button kepencet!!!\n");
             }
         });
@@ -70,6 +72,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 buyButton.setActionCommand("buy");
+                command = 3;
                 gameLog.append("Buy Button kepencet!!!\n");
             }
         });
@@ -78,6 +81,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 upgradeButton.setActionCommand("upgrade");
+                command = 5;
                 gameLog.append("upgrade Button !!\n");
             }
         });
@@ -86,6 +90,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent evt0) {
                 sellButton.setActionCommand("sell");
+                command = 4;
                 gameLog.append("Sell Button! \n");
             }
         });
@@ -1621,6 +1626,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
     public void actionPerformed(ActionEvent evt0) {
         if ("roll".equals(evt0.getActionCommand())) {
             command = 1;
+            gameLog.append("roll si ActionCommand berhasil bre\n");
         } else if ("pay".equals(evt0.getActionCommand())) {
             command = 2;
         } else if ("buy".equals(evt0.getActionCommand())) {
@@ -1629,7 +1635,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
             command = 4;
         } else if ("upgrade".equals(evt0.getActionCommand())) {
             command = 5;
-        } 
+        }
     }
     
     public int getCommand() {

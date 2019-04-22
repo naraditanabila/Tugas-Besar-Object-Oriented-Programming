@@ -272,6 +272,29 @@ public class Monopoly{
                         }
                 });
 
+                for (int i = 0; i <= nPlayer; i++) {
+                    switch (i) {
+                        case 1:
+                            mainFrame.getMoney_player1().setText(Integer.toString(player.get(i).getMoney())); //update data player 1
+                            mainFrame.getPos_player1().setText(place.get((player.get(i).getPos())).getName()); //update data player 2
+                            break;
+                        case 2:
+                            mainFrame.getMoney_player2().setText(Integer.toString(player.get(i).getMoney()));
+                            mainFrame.getPos_player2().setText(place.get((player.get(i).getPos())).getName());
+                            break;
+                        case 3:
+                            mainFrame.getMoney_player3().setText(Integer.toString(player.get(i).getMoney()));
+                            mainFrame.getPos_player3().setText(place.get((player.get(i).getPos())).getName());
+                            break;
+                        case 4:
+                            mainFrame.getMoney_player4().setText(Integer.toString(player.get(i).getMoney()));
+                            mainFrame.getPos_player4().setText(place.get((player.get(i).getPos())).getName());
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
 
                 mainFrame.setLog(player.get(turn.getPlayer()).getID() + " bermain");
                 mainFrame.setLog("Pilih roll atau quit");
@@ -288,28 +311,7 @@ public class Monopoly{
 
                 int index = turn.getPlayer();
 
-                for (int i = index; index <= nPlayer; i++) {
-                    switch (index) {
-                        case 1:
-                            mainFrame.getMoney_player1().setText(Integer.toString(player.get(index).getMoney())); //update data player 1
-                            mainFrame.getPos_player1().setText(place.get((player.get(index).getPos())).getName()); //update data player 2
-                            break;
-                        case 2:
-                            mainFrame.getMoney_player2().setText(Integer.toString(player.get(index).getMoney()));
-                            mainFrame.getPos_player2().setText(place.get((player.get(index).getPos())).getName());
-                            break;
-                        case 3:
-                            mainFrame.getMoney_player3().setText(Integer.toString(player.get(index).getMoney()));
-                            mainFrame.getPos_player3().setText(place.get((player.get(index).getPos())).getName());
-                            break;
-                        case 4:
-                            mainFrame.getMoney_player4().setText(Integer.toString(player.get(index).getMoney()));
-                            mainFrame.getPos_player4().setText(place.get((player.get(index).getPos())).getName());
-                            break;
-                        default:
-                            break;
-                    }
-                }
+
 
                 if (!(player.get(index).getKalah())) {
                     //Command nya gmn ya
