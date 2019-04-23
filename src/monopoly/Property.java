@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,9 +59,9 @@ public class Property extends Place{ //inheritance
 	
 	public void beliProp(Player p, javax.swing.JTextArea gameLog) {
 		if (p.getMoney() < getPrice()) {
-			gameLog.append("Uang anda tidak cukup untuk dibelikan properti ini");
+			gameLog.append("Uang anda tidak cukup untuk dibelikan properti ini\n");
 		} else if (getOwner() == p) {
-			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi");
+			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi\n");
 		} else {
 			setOwner(p);
 			p.pay(getPrice(), gameLog);
@@ -71,12 +71,12 @@ public class Property extends Place{ //inheritance
 			for (int i = 0 ; i < p.sizeProp() ; i++) {
 				p.upProp(p.getProp(i), i, getSet());
 			}
-			gameLog.append("Level Bangunan Sekarang : " + getLvl());
+			gameLog.append("Level Bangunan Sekarang : " + getLvl() +"\n");
 		}
 	}
 	
-	public void lvlup(Player p) {
-		System.out.println("Method upgrade hanya untuk Lot!");
+	public void lvlup(Player p, javax.swing.JTextArea gameLog) {
+		gameLog.append("Method upgrade hanya untuk Lot!\n");
 	}
 	
 	public void jualProp(Player p, javax.swing.JTextArea gameLog) {
@@ -87,7 +87,7 @@ public class Property extends Place{ //inheritance
 		p.removeProp(this, gameLog);
 		this.owner=null;
 		this.lvl=0;
-		gameLog.append("Kamu berhasi menjual properti.");
+		gameLog.append("Kamu berhasi menjual properti.\n");
 	}
 	
 	public int getLvl(){

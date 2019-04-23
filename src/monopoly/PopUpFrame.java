@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package monopoly;
+package src.monopoly;
 
 import java.awt.Image;
 import java.io.IOException;
@@ -54,7 +54,7 @@ public class PopUpFrame extends javax.swing.JFrame {
             }
         });
 
-        triggeredAlfian.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/triggeredAlfian200.jpg"))); // NOI18N
+        triggeredAlfian.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src/monopoly/triggeredAlfian200.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

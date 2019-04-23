@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 import javax.swing.JTextArea;
 

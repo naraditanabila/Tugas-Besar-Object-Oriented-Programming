@@ -1,4 +1,4 @@
-package monopoly;
+package src.monopoly;
 
 public class Utility extends Property { //inheritance
 	public Utility (String name){
@@ -16,7 +16,7 @@ public class Utility extends Property { //inheritance
 	
     
 	public void lvlup (Player p, javax.swing.JTextArea gameLog) {
-		gameLog.append("Method upgrade hanya untuk Lot!");
+		gameLog.append("Method upgrade hanya untuk Lot!\n");
 	}
 	
 }

@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package monopoly;
+package src.monopoly;
+
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -77,7 +79,7 @@ public class NewGame extends javax.swing.JFrame {
             }
         });
 
-        gunung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/monopoly/resources/newGameFrame.jpg"))); // NOI18N
+        gunung.setIcon(new ImageIcon(getClass().getResource("/src/monopoly/resources/newGameFrame.jpg"))); // NOI18N
 
         playerNameText.setText("Player Name:");
 
