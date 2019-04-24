@@ -134,7 +134,7 @@ public class Monopoly{
             place.add(new Lot("ITB", 10, 2500));
 
 
-            Thread.sleep(10000);
+            Thread.sleep(30000);
             MonopolyFrame mainFrame = new MonopolyFrame(newGameFrame);
             mainFrame.setLocationRelativeTo(null);
             mainFrame.setVisible(false);
@@ -143,7 +143,7 @@ public class Monopoly{
 
             while(!newGameFrame.gameReady()) {
 
-                Thread.sleep(2000);
+                Thread.sleep(5000);
                 mainFrame.setLog("game belum mulai");
             }
             
@@ -279,7 +279,7 @@ public class Monopoly{
 
             while ((!endGame) && (nPlayer != 1)) {
 
-                for (int i = 0; i < nPlayer+1; i++) {
+                for (int i = 0; i < nPlayer; i++) {
                     switch (i) {
                         case 0:
                             mainFrame.getMoney_player1().setText(Integer.toString(player.get(i).getMoney())); //update data player 1
@@ -309,10 +309,10 @@ public class Monopoly{
                 //tiap command di cek
                 //Yang dienable
 
-                while(mainFrame.getCommand() == 0) {
+                /*while(mainFrame.getCommand() == 0) {
                     Thread.sleep(1000);
                     mainFrame.setLog("ea kebaca gak commandnya jancok");
-                }
+                }*/
 
                 cmd = mainFrame.getCommand();
 
@@ -341,7 +341,7 @@ public class Monopoly{
                                                 mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
 
                                                 if (d1 == d2) {
-                                                        player.get(index).outJail(mainFrame.getGameLog());
+                                                        player.get(index).outJail(mainFrame);
                                                         mainFrame.setLog("Selamat! anda keluar dari penjara!");
                                                 } else {
                                                         mainFrame.setLog("Dadu tidak sama");
@@ -357,7 +357,7 @@ public class Monopoly{
                                                         mainFrame.showDice(d1, d2);
                                                         mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                         if (d1 == d2) {
-                                                                player.get(index).outJail(mainFrame.getGameLog());
+                                                                player.get(index).outJail(mainFrame);
                                                                 //System.out.println("Selamat! anda keluar dari sini");
                                                                 mainFrame.setLog("Selamat! anda keluar dari sini");
                                                         } else {
@@ -366,8 +366,8 @@ public class Monopoly{
                                                                 turn.nextPlayer();
                                                         }
                                                 } else {
-                                                        player.get(index).pay(1000, mainFrame.getGameLog());
-                                                        player.get(index).outJail(mainFrame.getGameLog());
+                                                        player.get(index).pay(1000, mainFrame);
+                                                        player.get(index).outJail(mainFrame);
                                                         mainFrame.setLog("Selamat! anda keluar dari sini");
                                                 }
                                         } else {
@@ -391,8 +391,8 @@ public class Monopoly{
                                                 //}
                                                 mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                 mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
-                                                mainFrame.removePlayerPos(index);
-                                                player.get(index).move(d1+d2, mainFrame.getGameLog());
+                                                //mainFrame.removePlayerPos(index);
+                                                player.get(index).move(d1+d2, mainFrame);
                                                 mainFrame.showPlayerPos(index, player.get(index).getPos());
                                                 mainFrame.setLog("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");
                                                 boolean again = true;
@@ -401,20 +401,20 @@ public class Monopoly{
                                                         int type = place.get(player.get(index).getPos()).getType();
                                                         if (type == 0) {
                                                                 if (null == place.get(player.get(index).getPos()).getName()) {
-                                                                    place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
+                                                                    place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame);
                                                                     again = false;
                                                                 } else //Free Parking
                                                             switch (place.get(player.get(index).getPos()).getName()) {
                                                                 case "Free Parking":
                                                                     FreeParkFrame frame_FreePark = new FreeParkFrame();
                                                                     int plot = Integer.parseInt(frame_FreePark.getFreeParkNum().getText());
-                                                                    player.get(index).setPos(plot-1, mainFrame.getGameLog());
+                                                                    player.get(index).setPos(plot-1, mainFrame);
                                                                     break;
                                                                 case "Chance Card":
-                                                                    place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
+                                                                    place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame);
                                                                     break;
                                                                 default:
-                                                                    place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
+                                                                    place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame);
                                                                     again = false;
                                                                     break;
                                                             }
@@ -434,7 +434,7 @@ public class Monopoly{
                                                                                 mainFrame.setLog(e.getMessage());
                                                                         }
                                                                         if (cmd == 5) {
-                                                                                ((Property)place.get(player.get(index).getPos())).lvlup(player.get(index), mainFrame.getGameLog());
+                                                                                ((Property)place.get(player.get(index).getPos())).lvlup(player.get(index), mainFrame);
                                                                         } else {
                                                                                 db = false;
                                                                         }
@@ -448,17 +448,17 @@ public class Monopoly{
                                                                                 mainFrame.setLog(e.getMessage());
                                                                         }
                                                                         if (cmd == 3) {
-                                                                                ((Property)place.get(player.get(index).getPos())).beliProp(player.get(index), mainFrame.getGameLog());
+                                                                                ((Property)place.get(player.get(index).getPos())).beliProp(player.get(index), mainFrame);
                                                                         } else {
                                                                                 db = false;
                                                                         }
                                                                         mainFrame.clearCommand();
                                                                 } else {
-                                                                        place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame.getGameLog());
+                                                                        place.get(player.get(index).getPos()).placeAffect(player.get(index), mainFrame);
                                                                         if (player.get(index).getMoney() < 0) {
                                                                                 again = false;
                                                                                 db = false;
-                                                                                player.get(index).setKalah(mainFrame.getGameLog());
+                                                                                player.get(index).setKalah(mainFrame);
                                                                                 nPlayer = nPlayer - 1;
                                                                         }
                                                                 }
@@ -472,7 +472,7 @@ public class Monopoly{
                                                 }
                                         }
                                         if (dbi > 3) {
-                                                player.get(index).inJail(mainFrame.getGameLog());
+                                                player.get(index).inJail(mainFrame);
                                         } else {
                                                 turn.nextPlayer();
                                         }

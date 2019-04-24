@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="MonpolyTubes">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/dist/MonpolyTubes.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -2125,7 +2125,6 @@ public class MonopolyFrame extends javax.swing.JFrame {
                     case 7:
                         bot6.add(token4);
                         break;
-
                     case 8:
                         bot7.add(token4);
                         break;

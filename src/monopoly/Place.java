@@ -28,7 +28,7 @@ public abstract class Place {  //abstract class
 	}
 	
 	public abstract Player getOwner();
-	public abstract void placeAffect(Player p, javax.swing.JTextArea gameLog);
+	public abstract void placeAffect(Player p, MonopolyFrame mainFrame);
 
 
 }

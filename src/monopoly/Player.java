@@ -30,13 +30,13 @@ public class Player {
 		 return this.playerID;
 	 }
 	 
-     public void setPos(int x, javax.swing.JTextArea gameLog) {
+     public void setPos(int x, MonopolyFrame mainFrame) {
           if (x<this.playerPos && x>0) {
-			  gameLog.append("Player "+playerID+" berhasil melewati kotak Start.\n");
+			  mainFrame.setLog("Player "+playerID+" berhasil melewati kotak Start.\n");
 			  this.playerMoney+=200;
 		  }
 		  this.playerPos = x;
-          gameLog.append("Player "+playerID+" berhasil pindah tempat\n");
+          mainFrame.setLog("Player "+playerID+" berhasil pindah tempat\n");
      }
 
      public int getPos() {
@@ -51,29 +51,29 @@ public class Player {
           return this.playerMoney;
      }
      
-     public void setKalah(javax.swing.JTextArea gameLog) {
+     public void setKalah(MonopolyFrame mainFrame) {
 		 this.kalah = true;
-		 gameLog.append("Maaf, Anda kehabisan uang dan properti.\n");
-		 gameLog.append("Player "+playerID+" kalah.\n");
+		 mainFrame.setLog("Maaf, Anda kehabisan uang dan properti.\n");
+		 mainFrame.setLog("Player "+playerID+" kalah.\n");
 	 }
 	 
 	 public boolean getKalah () {
 		 return this.kalah;
 	 }
      //Other methods
-     public void move(int x, javax.swing.JTextArea gameLog) {
+     public void move(int x, MonopolyFrame mainFrame) {
           this.playerPos += x;
 		  if (this.playerPos>39) {
-			  gameLog.append("Player "+playerID+" berhasil melewati kotak Start.\n");
+			  mainFrame.setLog("Player "+playerID+" berhasil melewati kotak Start.\n");
 			  this.playerPos = this.playerPos-40;
 			  if (this.playerPos>0) {
 				this.playerMoney += 200;
 			  }
 		  }
 		  if (x>=0){
-			gameLog.append("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.\n");
+		  	mainFrame.setLog("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.\n");
 		  } else {
-			  gameLog.append("Player "+playerID+" berhasil mundur sebanyak "+(x*-1)+" kotak.\n");
+		  	mainFrame.setLog("Player "+playerID+" berhasil mundur sebanyak "+(x*-1)+" kotak.\n");
 		  }
      }
 	 
@@ -83,92 +83,92 @@ public class Player {
 		 }
 	 }
 
-     public void pay(int x, javax.swing.JTextArea gameLog) {
+     public void pay(int x, MonopolyFrame mainFrame) {
 			while (getMoney() < x && sizeProp() > 0) {
-				gameLog.append("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.\n");
-				gameLog.append("Berikut ini properti yang Anda miliki:\n");
+				mainFrame.setLog("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.\n");
+                mainFrame.setLog("Berikut ini properti yang Anda miliki:\n");
 				for (int i=0; i<sizeProp(); i++) {
 					if (getProp(i).getTipe() == 2) {
 						if (getProp(i).getLvl() == 3) {
-							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 1 rumah\n");
+                            mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 1 rumah\n");
 						} else if (getProp(i).getLvl() == 4) {
-							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 2 rumah\n");
+                            mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 2 rumah\n");
 						} else if (getProp(i).getLvl() == 5) {
-							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 3 rumah\n");
+                            mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 3 rumah\n");
 						} else if (getProp(i).getLvl() == 6) {
-							gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 4 rumah\n");
+                            mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 4 rumah\n");
 						} else {
-							gameLog.append((i+1)+". "+getProp(i).getName() +"\n");
+                            mainFrame.setLog((i+1)+". "+getProp(i).getName() +"\n");
 						}
 					} else {
-						gameLog.append((i+1)+". "+getProp(i).getName()+ "\n");
+                        mainFrame.setLog((i+1)+". "+getProp(i).getName()+ "\n");
 					}
 				}
 				//metode jual properti
-				gameLog.append("Silahkan masukkan nomor urutan properti yang ingin Anda jual:\n");
+                mainFrame.setLog("Silahkan masukkan nomor urutan properti yang ingin Anda jual:\n");
 				int nom = 1;
-				getProp(nom).jualProp(this, gameLog);
+				getProp(nom).jualProp(this, mainFrame);
 			}
 			if (getMoney() < x) {
-				setKalah(gameLog);
+				setKalah(mainFrame);
 			} else {
 				this.playerMoney -= x;
-				gameLog.append("Player " + playerID + " berhasil mengeluarkan uang sebesar " + x + ".\n");
+				mainFrame.setLog ("Player" + playerID + " berhasil mengeluarkan uang sebesar " + x + ".\n");
 			}
      }
 	 
-	 public void pay(Player p, int x, javax.swing.JTextArea gameLog) {
+	 public void pay(Player p, int x, MonopolyFrame mainFrame) {
 		while (getMoney() < x && sizeProp() > 0) {
-			gameLog.append("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.\n");
-			gameLog.append("Berikut ini properti yang Anda miliki:\n");
+			mainFrame.setLog("Uang Anda tidak cukup. Silahkan lakukan jual properti untuk mendapatkan uang.\n");
+			mainFrame.setLog("Berikut ini properti yang Anda miliki:\n");
 			for (int i=0; i<sizeProp(); i++) {
 				if (getProp(i).getTipe() == 2) {
 					if (getProp(i).getLvl() == 3) {
-						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 1 rumah\n");
+						mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 1 rumah\n");
 					} else if (getProp(i).getLvl() == 4) {
-						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 2 rumah\n");
+						mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 2 rumah\n");
 					} else if (getProp(i).getLvl() == 5) {
-						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 3 rumah\n");
+						mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 3 rumah\n");
 					} else if (getProp(i).getLvl() == 6) {
-						gameLog.append((i+1)+". "+getProp(i).getName()+" dengan 4 rumah\n");
+						mainFrame.setLog((i+1)+". "+getProp(i).getName()+" dengan 4 rumah\n");
 					} else {
-						gameLog.append((i+1)+". "+getProp(i).getName() + "\n");
+						mainFrame.setLog((i+1)+". "+getProp(i).getName() + "\n");
 					}
 				} else {
-					gameLog.append((i+1)+". "+getProp(i).getName() + "\n");
+					mainFrame.setLog((i+1)+". "+getProp(i).getName() + "\n");
 				}
 			}
 			//metode jual properti
-			gameLog.append("Silahkan masukkan nomor urutan properti yang ingin Anda jual:\n");
+			mainFrame.setLog("Silahkan masukkan nomor urutan properti yang ingin Anda jual:\n");
 			int nom = 1;
-			getProp(nom).jualProp(this, gameLog);
+			getProp(nom).jualProp(this, mainFrame);
 		}
 		if (getMoney() < x) {
-			setKalah(gameLog);
+			setKalah(mainFrame);
 		} else { 
 			this.playerMoney -= x;
 			p.playerMoney += x;
-			gameLog.append("Player " + this.playerID + " berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID + "\n");
+			mainFrame.setLog("Player " + this.playerID + " berhasil mengeluarkan uang sebesar " + x + " ke Player " + p.playerID + "\n");
 		}
 	 }
 	 
-	 public void receive(int x, javax.swing.JTextArea gameLog) {
+	 public void receive(int x, MonopolyFrame mainFame) {
           this.playerMoney += x;
-          gameLog.append("Player " + playerID + " berhasil mendapatkan uang sebesar " + x + ".\n");
+          mainFame.setLog("Player " + playerID + " berhasil mendapatkan uang sebesar " + x + ".\n");
      }
 
-     public void addProp(Property p, javax.swing.JTextArea gameLog) {
+     public void addProp(Property p, MonopolyFrame mainFrame) {
           prop.add(p);
-          gameLog.append("Player " + playerID + " berhasil membeli sebuah properti.\n");
+          mainFrame.setLog("Player " + playerID + " berhasil membeli sebuah properti.\n");
      }
 	 
-	 public void removeProp(Property p, javax.swing.JTextArea gameLog) {
+	 public void removeProp(Property p, MonopolyFrame mainFrame) {
 		 for (int i=0; i<sizeProp(); i++) {
 			if (getProp(i) == p) {
 				prop.remove(i);
 			}
 		 }
-         gameLog.append("Player " + playerID + " berhasil menjual sebuah properti.\n");
+         mainFrame.setLog("Player " + playerID + " berhasil menjual sebuah properti.\n");
      }
      
      public Property getProp(int i) {
@@ -183,15 +183,15 @@ public class Player {
           return this.playerJail;
      }
 
-     public void inJail(javax.swing.JTextArea gameLog) {
+     public void inJail(MonopolyFrame mainFrame) {
           this.playerJail = true;
-		  this.playerPos = 10;
-		  gameLog.append("Player " + playerID + " masuk penjara.\n");
+		  setPos(10, mainFrame);
+		  mainFrame.setLog("Player " + playerID + " masuk penjara.\n");
      }
 
-     public void outJail(javax.swing.JTextArea gameLog) {
+     public void outJail(MonopolyFrame mainFrame) {
           this.playerJail = false;
-		  gameLog.append("Player " + playerID + " keluar penjara.\n");
+		  mainFrame.setLog("Player " + playerID + " keluar penjara.\n");
      }
      
      public int upAvail(int x) {
