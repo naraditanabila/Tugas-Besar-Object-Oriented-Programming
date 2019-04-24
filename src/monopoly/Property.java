@@ -51,43 +51,43 @@ public class Property extends Place{ //inheritance
 	}
 	
 	//Efek saat player berhenti di suatu tempat
-	public void placeAffect(Player p, javax.swing.JTextArea gameLog ){
+	public void placeAffect(Player p, MonopolyFrame mainFrame ){
 		if (!(getOwner()==null) && !(getOwner().equals(p))) {
-			p.pay(getOwner(),getRent(), gameLog);
+			p.pay(getOwner(),getRent(), mainFrame);
 		}
 	}
 	
-	public void beliProp(Player p, javax.swing.JTextArea gameLog) {
+	public void beliProp(Player p, MonopolyFrame mainFrame) {
 		if (p.getMoney() < getPrice()) {
-			gameLog.append("Uang anda tidak cukup untuk dibelikan properti ini\n");
+			mainFrame.setLog("Uang anda tidak cukup untuk dibelikan properti ini\n");
 		} else if (getOwner() == p) {
-			gameLog.append("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi\n");
+			mainFrame.setLog("Properti ini milik anda, silahkan lakukan upgrade bila uang mencukupi\n");
 		} else {
 			setOwner(p);
-			p.pay(getPrice(), gameLog);
-			p.addProp(this, gameLog);
+			p.pay(getPrice(), mainFrame);
+			p.addProp(this, mainFrame);
 			int n = (p.upAvail(getSet()) - 1); //membaca jumlah set dikurangi 1
 			this.lvl = n;
 			for (int i = 0 ; i < p.sizeProp() ; i++) {
 				p.upProp(p.getProp(i), i, getSet());
 			}
-			gameLog.append("Level Bangunan Sekarang : " + getLvl() +"\n");
+			mainFrame.setLog("Level Bangunan Sekarang : " + getLvl() +"\n");
 		}
 	}
 	
-	public void lvlup(Player p, javax.swing.JTextArea gameLog) {
-		gameLog.append("Method upgrade hanya untuk Lot!\n");
+	public void lvlup(Player p, MonopolyFrame mainFrame) {
+		mainFrame.setLog("Method upgrade hanya untuk Lot!\n");
 	}
 	
-	public void jualProp(Player p, javax.swing.JTextArea gameLog) {
-		p.receive(getPrice()/2, gameLog);
+	public void jualProp(Player p, MonopolyFrame mainFrame) {
+		p.receive(getPrice()/2, mainFrame);
 		for (int i = 0 ; i < p.sizeProp() ; i++) {
 			p.downProp(p.getProp(i), i, this.set);
 		}
-		p.removeProp(this, gameLog);
+		p.removeProp(this, mainFrame);
 		this.owner=null;
 		this.lvl=0;
-		gameLog.append("Kamu berhasi menjual properti.\n");
+		mainFrame.setLog("Kamu berhasi menjual properti.\n");
 	}
 	
 	public int getLvl(){
