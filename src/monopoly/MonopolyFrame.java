@@ -1639,153 +1639,153 @@ public class MonopolyFrame extends javax.swing.JFrame {
         switch (playerNum) {
             case 0:
                 switch (moveTo) {
-                    case 1:
+                    case 0:
                         botRight.add(token1);
                         break;
-                    case 2:
+                    case 1:
                         bot1.add(token1);
                         break;
-                    case 3:
+                    case 2:
                         bot2.add(token1);
                         break;
-                    case 4:
+                    case 3:
                         bot3.add(token1);
                         break;
-                    case 5:
+                    case 4:
                         bot4.add(token1);
                         break;
-                    case 6:
+                    case 5:
                         bot5.add(token1);
                         break;
-                    case 7:
+                    case 6:
                         bot6.add(token1);
                         break;
 
-                    case 8:
+                    case 7:
                         bot7.add(token1);
                         break;
-                    case 9:
+                    case 8:
                         bot8.add(token1);
                         break;
-                    case 10:
+                    case 9:
                         bot9.add(token1);
                         break;
-                    case 11:
+                    case 10:
                         botLeft.add(token1);
                         break;  
-                    case 12:
+                    case 11:
                         left1.add(token1);
                         break;
 
-                    case 13:
+                    case 12:
                         left2.add(token1);
                         break;
 
-                    case 14:
+                    case 13:
                         left3.add(token1);
                         break;
 
-                    case 15:
+                    case 14:
                         left4.add(token1);
                         break;
 
-                    case 16:
+                    case 15:
                         left5.add(token1);
                         break;
 
-                    case 17:
+                    case 16:
                         left6.add(token1);
                         break;
 
-                    case 18:
+                    case 17:
                         left7.add(token1);
                         break;
 
-                    case 19:
+                    case 18:
                         left8.add(token1);
                         break;
 
-                    case 20:
+                    case 19:
                         left9.add(token1);
                         break;
 
-                    case 21:
+                    case 20:
                         topLeft.add(token1);
                         break;
 
-                    case 22:
+                    case 21:
                         top1.add(token1);
                         break;
 
-                    case 23:
+                    case 22:
                         top2.add(token1);
                         break;
 
-                    case 24:
+                    case 23:
                         top3.add(token1);
                         break;
 
-                    case 25:
+                    case 24:
                         top4.add(token1);
                         break;
 
-                    case 26:
+                    case 25:
                         top5.add(token1);
                         break;
 
-                    case 27:
+                    case 26:
                         top6.add(token1);
                         break;
 
-                    case 28:
+                    case 27:
                         top7.add(token1);
                         break;
 
-                    case 29:
+                    case 28:
                         top8.add(token1);
                         break;
 
-                    case 30:
+                    case 29:
                         top9.add(token1);
                         break;
 
-                    case 31:
+                    case 30:
                         topRight.add(token1);
                         break;
 
-                    case 32:
+                    case 31:
                         right1.add(token1);
                         break;
 
-                    case 33:
+                    case 32:
                         right2.add(token1);
                         break;
 
-                    case 34:
+                    case 33:
                         right3.add(token1);
                         break;
 
-                    case 35:
+                    case 34:
                         right4.add(token1);
                         break;
 
-                    case 36:
+                    case 35:
                         right5.add(token1);
                         break;
 
-                    case 37:
+                    case 36:
                         right6.add(token1);
                         break;
 
-                    case 38:
+                    case 37:
                         right7.add(token1);
                         break;
 
-                    case 39:
+                    case 38:
                         right8.add(token1);
                         break;
 
-                    case 40:
+                    case 39:
                         right9.add(token1);
                         break;
                     default:
@@ -1795,152 +1795,153 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 
             case 1:
                 switch (moveTo) {
-                    case 1:
+                    case 0:
                         botRight.add(token2);
                         break;
-                    case 2:
+                    case 1:
                         bot1.add(token2);
                         break;
-                    case 3:
+                    case 2:
                         bot2.add(token2);
                         break;
-                    case 4:
+                    case 3:
                         bot3.add(token2);
                         break;
-                    case 5:
+                    case 4:
                         bot4.add(token2);
                         break;
-                    case 6:
+                    case 5:
                         bot5.add(token2);
                         break;
-                    case 7:
+                    case 6:
                         bot6.add(token2);
                         break;
-                    case 8:
+
+                    case 7:
                         bot7.add(token2);
                         break;
-                    case 9:
+                    case 8:
                         bot8.add(token2);
                         break;
-                    case 10:
+                    case 9:
                         bot9.add(token2);
                         break;
-                    case 11:
+                    case 10:
                         botLeft.add(token2);
-                        break;  
-                    case 12:
+                        break;
+                    case 11:
                         left1.add(token2);
                         break;
 
-                    case 13:
+                    case 12:
                         left2.add(token2);
                         break;
 
-                    case 14:
+                    case 13:
                         left3.add(token2);
                         break;
 
-                    case 15:
+                    case 14:
                         left4.add(token2);
                         break;
 
-                    case 16:
+                    case 15:
                         left5.add(token2);
                         break;
 
-                    case 17:
+                    case 16:
                         left6.add(token2);
                         break;
 
-                    case 18:
+                    case 17:
                         left7.add(token2);
                         break;
 
-                    case 19:
+                    case 18:
                         left8.add(token2);
                         break;
 
-                    case 20:
+                    case 19:
                         left9.add(token2);
                         break;
 
-                    case 21:
+                    case 20:
                         topLeft.add(token2);
                         break;
 
-                    case 22:
+                    case 21:
                         top1.add(token2);
                         break;
 
-                    case 23:
+                    case 22:
                         top2.add(token2);
                         break;
 
-                    case 24:
+                    case 23:
                         top3.add(token2);
                         break;
 
-                    case 25:
+                    case 24:
                         top4.add(token2);
                         break;
 
-                    case 26:
+                    case 25:
                         top5.add(token2);
                         break;
 
-                    case 27:
+                    case 26:
                         top6.add(token2);
                         break;
 
-                    case 28:
+                    case 27:
                         top7.add(token2);
                         break;
 
-                    case 29:
+                    case 28:
                         top8.add(token2);
                         break;
 
-                    case 30:
+                    case 29:
                         top9.add(token2);
                         break;
 
-                    case 31:
+                    case 30:
                         topRight.add(token2);
                         break;
 
-                    case 32:
+                    case 31:
                         right1.add(token2);
                         break;
 
-                    case 33:
+                    case 32:
                         right2.add(token2);
                         break;
 
-                    case 34:
+                    case 33:
                         right3.add(token2);
                         break;
 
-                    case 35:
+                    case 34:
                         right4.add(token2);
                         break;
 
-                    case 36:
+                    case 35:
                         right5.add(token2);
                         break;
 
-                    case 37:
+                    case 36:
                         right6.add(token2);
                         break;
 
-                    case 38:
+                    case 37:
                         right7.add(token2);
                         break;
 
-                    case 39:
+                    case 38:
                         right8.add(token2);
                         break;
 
-                    case 40:
+                    case 39:
                         right9.add(token2);
                         break;
                     default:
@@ -1949,153 +1950,153 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 break;
             case 2:
                 switch (moveTo) {
-                    case 1:
+                    case 0:
                         botRight.add(token3);
                         break;
-                    case 2:
+                    case 1:
                         bot1.add(token3);
                         break;
-                    case 3:
+                    case 2:
                         bot2.add(token3);
                         break;
-                    case 4:
+                    case 3:
                         bot3.add(token3);
                         break;
-                    case 5:
+                    case 4:
                         bot4.add(token3);
                         break;
-                    case 6:
+                    case 5:
                         bot5.add(token3);
                         break;
-                    case 7:
+                    case 6:
                         bot6.add(token3);
                         break;
 
-                    case 8:
+                    case 7:
                         bot7.add(token3);
                         break;
-                    case 9:
+                    case 8:
                         bot8.add(token3);
                         break;
-                    case 10:
+                    case 9:
                         bot9.add(token3);
                         break;
-                    case 11:
+                    case 10:
                         botLeft.add(token3);
-                        break;  
-                    case 12:
+                        break;
+                    case 11:
                         left1.add(token3);
                         break;
 
-                    case 13:
+                    case 12:
                         left2.add(token3);
                         break;
 
-                    case 14:
+                    case 13:
                         left3.add(token3);
                         break;
 
-                    case 15:
+                    case 14:
                         left4.add(token3);
                         break;
 
-                    case 16:
+                    case 15:
                         left5.add(token3);
                         break;
 
-                    case 17:
+                    case 16:
                         left6.add(token3);
                         break;
 
-                    case 18:
+                    case 17:
                         left7.add(token3);
                         break;
 
-                    case 19:
+                    case 18:
                         left8.add(token3);
                         break;
 
-                    case 20:
+                    case 19:
                         left9.add(token3);
                         break;
 
-                    case 21:
+                    case 20:
                         topLeft.add(token3);
                         break;
 
-                    case 22:
+                    case 21:
                         top1.add(token3);
                         break;
 
-                    case 23:
+                    case 22:
                         top2.add(token3);
                         break;
 
-                    case 24:
+                    case 23:
                         top3.add(token3);
                         break;
 
-                    case 25:
+                    case 24:
                         top4.add(token3);
                         break;
 
-                    case 26:
+                    case 25:
                         top5.add(token3);
                         break;
 
-                    case 27:
+                    case 26:
                         top6.add(token3);
                         break;
 
-                    case 28:
+                    case 27:
                         top7.add(token3);
                         break;
 
-                    case 29:
+                    case 28:
                         top8.add(token3);
                         break;
 
-                    case 30:
+                    case 29:
                         top9.add(token3);
                         break;
 
-                    case 31:
+                    case 30:
                         topRight.add(token3);
                         break;
 
-                    case 32:
+                    case 31:
                         right1.add(token3);
                         break;
 
-                    case 33:
+                    case 32:
                         right2.add(token3);
                         break;
 
-                    case 34:
+                    case 33:
                         right3.add(token3);
                         break;
 
-                    case 35:
+                    case 34:
                         right4.add(token3);
                         break;
 
-                    case 36:
+                    case 35:
                         right5.add(token3);
                         break;
 
-                    case 37:
+                    case 36:
                         right6.add(token3);
                         break;
 
-                    case 38:
+                    case 37:
                         right7.add(token3);
                         break;
 
-                    case 39:
+                    case 38:
                         right8.add(token3);
                         break;
 
-                    case 40:
+                    case 39:
                         right9.add(token3);
                         break;
                     default:
@@ -2104,152 +2105,153 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 break;
             case 3:
                 switch (moveTo) {
-                    case 1:
+                    case 0:
                         botRight.add(token4);
                         break;
-                    case 2:
+                    case 1:
                         bot1.add(token4);
                         break;
-                    case 3:
+                    case 2:
                         bot2.add(token4);
                         break;
-                    case 4:
+                    case 3:
                         bot3.add(token4);
                         break;
-                    case 5:
+                    case 4:
                         bot4.add(token4);
                         break;
-                    case 6:
+                    case 5:
                         bot5.add(token4);
                         break;
-                    case 7:
+                    case 6:
                         bot6.add(token4);
                         break;
-                    case 8:
+
+                    case 7:
                         bot7.add(token4);
                         break;
-                    case 9:
+                    case 8:
                         bot8.add(token4);
                         break;
-                    case 10:
+                    case 9:
                         bot9.add(token4);
                         break;
-                    case 11:
+                    case 10:
                         botLeft.add(token4);
-                        break;  
-                    case 12:
+                        break;
+                    case 11:
                         left1.add(token4);
                         break;
 
-                    case 13:
+                    case 12:
                         left2.add(token4);
                         break;
 
-                    case 14:
+                    case 13:
                         left3.add(token4);
                         break;
 
-                    case 15:
+                    case 14:
                         left4.add(token4);
                         break;
 
-                    case 16:
+                    case 15:
                         left5.add(token4);
                         break;
 
-                    case 17:
+                    case 16:
                         left6.add(token4);
                         break;
 
-                    case 18:
+                    case 17:
                         left7.add(token4);
                         break;
 
-                    case 19:
+                    case 18:
                         left8.add(token4);
                         break;
 
-                    case 20:
+                    case 19:
                         left9.add(token4);
                         break;
 
-                    case 21:
+                    case 20:
                         topLeft.add(token4);
                         break;
 
-                    case 22:
+                    case 21:
                         top1.add(token4);
                         break;
 
-                    case 23:
+                    case 22:
                         top2.add(token4);
                         break;
 
-                    case 24:
+                    case 23:
                         top3.add(token4);
                         break;
 
-                    case 25:
+                    case 24:
                         top4.add(token4);
                         break;
 
-                    case 26:
+                    case 25:
                         top5.add(token4);
                         break;
 
-                    case 27:
+                    case 26:
                         top6.add(token4);
                         break;
 
-                    case 28:
+                    case 27:
                         top7.add(token4);
                         break;
 
-                    case 29:
+                    case 28:
                         top8.add(token4);
                         break;
 
-                    case 30:
+                    case 29:
                         top9.add(token4);
                         break;
 
-                    case 31:
+                    case 30:
                         topRight.add(token4);
                         break;
 
-                    case 32:
+                    case 31:
                         right1.add(token4);
                         break;
 
-                    case 33:
+                    case 32:
                         right2.add(token4);
                         break;
 
-                    case 34:
+                    case 33:
                         right3.add(token4);
                         break;
 
-                    case 35:
+                    case 34:
                         right4.add(token4);
                         break;
 
-                    case 36:
+                    case 35:
                         right5.add(token4);
                         break;
 
-                    case 37:
+                    case 36:
                         right6.add(token4);
                         break;
 
-                    case 38:
+                    case 37:
                         right7.add(token4);
                         break;
 
-                    case 39:
+                    case 38:
                         right8.add(token4);
                         break;
 
-                    case 40:
+                    case 39:
                         right9.add(token4);
                         break;
                     default:
@@ -2773,5 +2775,951 @@ public class MonopolyFrame extends javax.swing.JFrame {
                 default:
                     break;
             }
-        }       
+        }
+
+    public void removePlayerPos(int playerNum, int pos) {
+        switch (playerNum) {
+            case 0:
+                switch (pos) {
+                    case 0:
+                        botRight.remove(token1);
+                        botRight.validate();
+                        botRight.repaint();
+                        break;
+                    case 1:
+                        bot1.remove(token1);
+                        bot1.validate();
+                        bot1.repaint();
+                        break;
+                    case 2:
+                        bot2.remove(token1);
+                        bot2.validate();
+                        bot2.repaint();
+                        break;
+                    case 3:
+                        bot3.remove(token1);
+                        bot3.validate();
+                        bot3.repaint();
+                        break;
+                    case 4:
+                        bot4.remove(token1);
+                        bot4.validate();
+                        bot4.repaint();
+                        break;
+                    case 5:
+                        bot5.remove(token1);
+                        bot5.validate();
+                        bot5.repaint();
+                        break;
+                    case 6:
+                        bot6.remove(token1);
+                        bot6.validate();
+                        bot6.repaint();
+                        break;
+
+                    case 7:
+                        bot7.remove(token1);
+                        bot7.validate();
+                        bot7.repaint();
+                        break;
+                    case 8:
+                        bot8.remove(token1);
+                        bot8.validate();
+                        bot8.repaint();
+                        break;
+                    case 9:
+                        bot9.remove(token1);
+                        bot9.validate();
+                        bot9.repaint();
+                        break;
+                    case 10:
+                        botLeft.remove(token1);
+                        botLeft.validate();
+                        botLeft.repaint();
+                        break;
+                    case 11:
+                        left1.remove(token1);
+                        left1.validate();
+                        left1.repaint();
+                        break;
+
+                    case 12:
+                        left2.remove(token1);
+                        left2.validate();
+                        left2.repaint();
+                        break;
+
+                    case 13:
+                        left3.remove(token1);
+                        left3.validate();
+                        left3.repaint();
+                        break;
+
+                    case 14:
+                        left4.remove(token1);
+                        left4.validate();
+                        left4.repaint();
+                        break;
+
+                    case 15:
+                        left5.remove(token1);
+                        left5.validate();
+                        left5.repaint();
+                        break;
+
+                    case 16:
+                        left6.remove(token1);
+                        left6.validate();
+                        left6.repaint();
+                        break;
+
+                    case 17:
+                        left7.remove(token1);
+                        left7.validate();
+                        left7.repaint();
+                        break;
+
+                    case 18:
+                        left8.remove(token1);
+                        left8.validate();
+                        left8.repaint();
+                        break;
+
+                    case 19:
+                        left9.remove(token1);
+                        left9.validate();
+                        left9.repaint();
+                        break;
+
+                    case 20:
+                        topLeft.remove(token1);
+                        topLeft.validate();
+                        topLeft.repaint();
+                        break;
+
+                    case 21:
+                        top1.remove(token1);
+                        top1.validate();
+                        top1.repaint();
+                        break;
+
+                    case 22:
+                        top2.remove(token1);
+                        top2.validate();
+                        top2.repaint();
+                        break;
+
+                    case 23:
+                        top3.remove(token1);
+                        top3.validate();
+                        top3.repaint();
+                        break;
+
+                    case 24:
+                        top4.remove(token1);
+                        top4.validate();
+                        top4.repaint();
+                        break;
+
+                    case 25:
+                        top5.remove(token1);
+                        top5.validate();
+                        top5.repaint();
+                        break;
+
+                    case 26:
+                        top6.remove(token1);
+                        top6.validate();
+                        top6.repaint();
+                        break;
+
+                    case 27:
+                        top7.remove(token1);
+                        top7.validate();
+                        top7.repaint();
+                        break;
+
+                    case 28:
+                        top8.remove(token1);
+                        top8.validate();
+                        top8.repaint();
+                        break;
+
+                    case 29:
+                        top9.remove(token1);
+                        top9.validate();
+                        top9.repaint();
+                        break;
+
+                    case 30:
+                        topRight.remove(token1);
+                        topRight.validate();
+                        topRight.repaint();
+                        break;
+
+                    case 31:
+                        right1.remove(token1);
+                        right1.validate();
+                        right1.repaint();
+                        break;
+
+                    case 32:
+                        right2.remove(token1);
+                        right2.validate();
+                        right2.repaint();
+                        break;
+
+                    case 33:
+                        right3.remove(token1);
+                        right3.validate();
+                        right3.repaint();
+                        break;
+
+                    case 34:
+                        right4.remove(token1);
+                        right4.validate();
+                        right4.repaint();
+                        break;
+
+                    case 35:
+                        right5.remove(token1);
+                        right5.validate();
+                        right5.repaint();
+                        break;
+
+                    case 36:
+                        right6.remove(token1);
+                        right6.validate();
+                        right6.repaint();
+                        break;
+
+                    case 37:
+                        right7.remove(token1);
+                        right7.validate();
+                        right7.repaint();
+                        break;
+
+                    case 38:
+                        right8.remove(token1);
+                        right8.validate();
+                        right8.repaint();
+                        break;
+
+                    case 39:
+                        right9.remove(token1);
+                        right9.validate();
+                        right9.repaint();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+
+            case 1:
+                switch (pos) {
+                    case 0:
+                        botRight.remove(token2);
+                        botRight.validate();
+                        botRight.repaint();
+                        break;
+                    case 1:
+                        bot1.remove(token2);
+                        bot1.validate();
+                        bot1.repaint();
+                        break;
+                    case 2:
+                        bot2.remove(token2);
+                        bot2.validate();
+                        bot2.repaint();
+                        break;
+                    case 3:
+                        bot3.remove(token2);
+                        bot3.validate();
+                        bot3.repaint();
+                        break;
+                    case 4:
+                        bot4.remove(token2);
+                        bot4.validate();
+                        bot4.repaint();
+                        break;
+                    case 5:
+                        bot5.remove(token2);
+                        bot5.validate();
+                        bot5.repaint();
+                        break;
+                    case 6:
+                        bot6.remove(token2);
+                        bot6.validate();
+                        bot6.repaint();
+                        break;
+
+                    case 7:
+                        bot7.remove(token2);
+                        bot7.validate();
+                        bot7.repaint();
+                        break;
+                    case 8:
+                        bot8.remove(token2);
+                        bot8.validate();
+                        bot8.repaint();
+                        break;
+                    case 9:
+                        bot9.remove(token2);
+                        bot9.validate();
+                        bot9.repaint();
+                        break;
+                    case 10:
+                        botLeft.remove(token2);
+                        botLeft.validate();
+                        botLeft.repaint();
+                        break;
+                    case 11:
+                        left1.remove(token2);
+                        left1.validate();
+                        left1.repaint();
+                        break;
+
+                    case 12:
+                        left2.remove(token2);
+                        left2.validate();
+                        left2.repaint();
+                        break;
+
+                    case 13:
+                        left3.remove(token2);
+                        left3.validate();
+                        left3.repaint();
+                        break;
+
+                    case 14:
+                        left4.remove(token2);
+                        left4.validate();
+                        left4.repaint();
+                        break;
+
+                    case 15:
+                        left5.remove(token2);
+                        left5.validate();
+                        left5.repaint();
+                        break;
+
+                    case 16:
+                        left6.remove(token2);
+                        left6.validate();
+                        left6.repaint();
+                        break;
+
+                    case 17:
+                        left7.remove(token2);
+                        left7.validate();
+                        left7.repaint();
+                        break;
+
+                    case 18:
+                        left8.remove(token2);
+                        left8.validate();
+                        left8.repaint();
+                        break;
+
+                    case 19:
+                        left9.remove(token2);
+                        left9.validate();
+                        left9.repaint();
+                        break;
+
+                    case 20:
+                        topLeft.remove(token2);
+                        topLeft.validate();
+                        topLeft.repaint();
+                        break;
+
+                    case 21:
+                        top1.remove(token2);
+                        top1.validate();
+                        top1.repaint();
+                        break;
+
+                    case 22:
+                        top2.remove(token2);
+                        top2.validate();
+                        top2.repaint();
+                        break;
+
+                    case 23:
+                        top3.remove(token2);
+                        top3.validate();
+                        top3.repaint();
+                        break;
+
+                    case 24:
+                        top4.remove(token2);
+                        top4.validate();
+                        top4.repaint();
+                        break;
+
+                    case 25:
+                        top5.remove(token2);
+                        top5.validate();
+                        top5.repaint();
+                        break;
+
+                    case 26:
+                        top6.remove(token2);
+                        top6.validate();
+                        top6.repaint();
+                        break;
+
+                    case 27:
+                        top7.remove(token2);
+                        top7.validate();
+                        top7.repaint();
+                        break;
+
+                    case 28:
+                        top8.remove(token2);
+                        top8.validate();
+                        top8.repaint();
+                        break;
+
+                    case 29:
+                        top9.remove(token2);
+                        top9.validate();
+                        top9.repaint();
+                        break;
+
+                    case 30:
+                        topRight.remove(token2);
+                        topRight.validate();
+                        topRight.repaint();
+                        break;
+
+                    case 31:
+                        right1.remove(token2);
+                        right1.validate();
+                        right1.repaint();
+                        break;
+
+                    case 32:
+                        right2.remove(token2);
+                        right2.validate();
+                        right2.repaint();
+                        break;
+
+                    case 33:
+                        right3.remove(token2);
+                        right3.validate();
+                        right3.repaint();
+                        break;
+
+                    case 34:
+                        right4.remove(token2);
+                        right4.validate();
+                        right4.repaint();
+                        break;
+
+                    case 35:
+                        right5.remove(token2);
+                        right5.validate();
+                        right5.repaint();
+                        break;
+
+                    case 36:
+                        right6.remove(token2);
+                        right6.validate();
+                        right6.repaint();
+                        break;
+
+                    case 37:
+                        right7.remove(token2);
+                        right7.validate();
+                        right7.repaint();
+                        break;
+
+                    case 38:
+                        right8.remove(token2);
+                        right8.validate();
+                        right8.repaint();
+                        break;
+
+                    case 39:
+                        right9.remove(token2);
+                        right9.validate();
+                        right9.repaint();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 2:
+                switch (pos) {
+                    case 0:
+                        botRight.remove(token3);
+                        botRight.validate();
+                        botRight.repaint();
+                        break;
+                    case 1:
+                        bot1.remove(token3);
+                        bot1.validate();
+                        bot1.repaint();
+                        break;
+                    case 2:
+                        bot2.remove(token3);
+                        bot2.validate();
+                        bot2.repaint();
+                        break;
+                    case 3:
+                        bot3.remove(token3);
+                        bot3.validate();
+                        bot3.repaint();
+                        break;
+                    case 4:
+                        bot4.remove(token3);
+                        bot4.validate();
+                        bot4.repaint();
+                        break;
+                    case 5:
+                        bot5.remove(token3);
+                        bot5.validate();
+                        bot5.repaint();
+                        break;
+                    case 6:
+                        bot6.remove(token3);
+                        bot6.validate();
+                        bot6.repaint();
+                        break;
+
+                    case 7:
+                        bot7.remove(token3);
+                        bot7.validate();
+                        bot7.repaint();
+                        break;
+                    case 8:
+                        bot8.remove(token3);
+                        bot8.validate();
+                        bot8.repaint();
+                        break;
+                    case 9:
+                        bot9.remove(token3);
+                        bot9.validate();
+                        bot9.repaint();
+                        break;
+                    case 10:
+                        botLeft.remove(token3);
+                        botLeft.validate();
+                        botLeft.repaint();
+                        break;
+                    case 11:
+                        left1.remove(token3);
+                        left1.validate();
+                        left1.repaint();
+                        break;
+
+                    case 12:
+                        left2.remove(token3);
+                        left2.validate();
+                        left2.repaint();
+                        break;
+
+                    case 13:
+                        left3.remove(token3);
+                        left3.validate();
+                        left3.repaint();
+                        break;
+
+                    case 14:
+                        left4.remove(token3);
+                        left4.validate();
+                        left4.repaint();
+                        break;
+
+                    case 15:
+                        left5.remove(token3);
+                        left5.validate();
+                        left5.repaint();
+                        break;
+
+                    case 16:
+                        left6.remove(token3);
+                        left6.validate();
+                        left6.repaint();
+                        break;
+
+                    case 17:
+                        left7.remove(token3);
+                        left7.validate();
+                        left7.repaint();
+                        break;
+
+                    case 18:
+                        left8.remove(token3);
+                        left8.validate();
+                        left8.repaint();
+                        break;
+
+                    case 19:
+                        left9.remove(token3);
+                        left9.validate();
+                        left9.repaint();
+                        break;
+
+                    case 20:
+                        topLeft.remove(token3);
+                        topLeft.validate();
+                        topLeft.repaint();
+                        break;
+
+                    case 21:
+                        top1.remove(token3);
+                        top1.validate();
+                        top1.repaint();
+                        break;
+
+                    case 22:
+                        top2.remove(token3);
+                        top2.validate();
+                        top2.repaint();
+                        break;
+
+                    case 23:
+                        top3.remove(token3);
+                        top3.validate();
+                        top3.repaint();
+                        break;
+
+                    case 24:
+                        top4.add(token3);
+                        top4.validate();
+                        top4.repaint();
+                        break;
+
+                    case 25:
+                        top5.add(token3);
+                        top5.validate();
+                        top5.repaint();
+                        break;
+
+                    case 26:
+                        top6.add(token3);
+                        top6.validate();
+                        top6.repaint();
+                        break;
+
+                    case 27:
+                        top7.add(token3);
+                        top7.validate();
+                        top7.repaint();
+                        break;
+
+                    case 28:
+                        top8.add(token3);
+                        top8.validate();
+                        top8.repaint();
+                        break;
+
+                    case 29:
+                        top9.add(token3);
+                        top9.validate();
+                        top9.repaint();
+                        break;
+
+                    case 30:
+                        topRight.add(token3);
+                        topRight.validate();
+                        topRight.repaint();
+                        break;
+
+                    case 31:
+                        right1.add(token3);
+                        right1.validate();
+                        right1.repaint();
+                        break;
+
+                    case 32:
+                        right2.add(token3);
+                        right2.validate();
+                        right2.repaint();
+                        break;
+
+                    case 33:
+                        right3.add(token3);
+                        right3.validate();
+                        right3.repaint();
+                        break;
+
+                    case 34:
+                        right4.add(token3);
+                        right4.validate();
+                        right4.repaint();
+                        break;
+
+                    case 35:
+                        right5.add(token3);
+                        right5.validate();
+                        right5.repaint();
+                        break;
+
+                    case 36:
+                        right6.add(token3);
+                        right6.validate();
+                        right6.repaint();
+                        break;
+
+                    case 37:
+                        right7.add(token3);
+                        right7.validate();
+                        right7.repaint();
+                        break;
+
+                    case 38:
+                        right8.add(token3);
+                        right8.validate();
+                        right8.repaint();
+                        break;
+
+                    case 39:
+                        right9.add(token3);
+                        right9.validate();
+                        right9.repaint();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 3:
+                switch (pos) {
+                    case 0:
+                        botRight.add(token4);
+                        botRight.validate();
+                        botRight.repaint();
+                        break;
+                    case 1:
+                        bot1.add(token4);
+                        bot1.validate();
+                        bot1.repaint();
+                        break;
+                    case 2:
+                        bot2.add(token4);
+                        bot2.validate();
+                        bot2.repaint();
+                        break;
+                    case 3:
+                        bot3.add(token4);
+                        bot3.validate();
+                        bot3.repaint();
+                        break;
+                    case 4:
+                        bot4.add(token4);
+                        bot4.validate();
+                        bot4.repaint();
+                        break;
+                    case 5:
+                        bot5.add(token4);
+                        bot5.validate();
+                        bot5.repaint();
+                        break;
+                    case 6:
+                        bot6.add(token4);
+                        bot6.validate();
+                        bot6.repaint();
+                        break;
+
+                    case 7:
+                        bot7.add(token4);
+                        bot7.validate();
+                        bot7.repaint();
+                        break;
+                    case 8:
+                        bot8.add(token4);
+                        bot8.validate();
+                        bot8.repaint();
+                        break;
+                    case 9:
+                        bot9.add(token4);
+                        bot9.validate();
+                        bot9.repaint();
+                        break;
+                    case 10:
+                        botLeft.add(token4);
+                        botLeft.validate();
+                        botLeft.repaint();
+                        break;
+                    case 11:
+                        left1.add(token4);
+                        left1.validate();
+                        left1.repaint();
+                        break;
+
+                    case 12:
+                        left2.add(token4);
+                        left2.validate();
+                        left2.repaint();
+                        break;
+
+                    case 13:
+                        left3.add(token4);
+                        left3.validate();
+                        left3.repaint();
+                        break;
+
+                    case 14:
+                        left4.add(token4);
+                        left4.validate();
+                        left4.repaint();
+                        break;
+
+                    case 15:
+                        left5.add(token4);
+                        left5.validate();
+                        left5.repaint();
+                        break;
+
+                    case 16:
+                        left6.add(token4);
+                        left6.validate();
+                        left6.repaint();
+                        break;
+
+                    case 17:
+                        left7.add(token4);
+                        left7.validate();
+                        left7.repaint();
+                        break;
+
+                    case 18:
+                        left8.add(token4);
+                        left8.validate();
+                        left8.repaint();
+                        break;
+
+                    case 19:
+                        left9.add(token4);
+                        left9.validate();
+                        left9.repaint();
+                        break;
+
+                    case 20:
+                        topLeft.add(token4);
+                        topLeft.validate();
+                        topLeft.repaint();
+                        break;
+
+                    case 21:
+                        top1.add(token4);
+                        top1.validate();
+                        top1.repaint();
+                        break;
+
+                    case 22:
+                        top2.add(token4);
+                        top2.validate();
+                        top2.repaint();
+                        break;
+
+                    case 23:
+                        top3.add(token4);
+                        top3.validate();
+                        top3.repaint();
+                        break;
+
+                    case 24:
+                        top4.add(token4);
+                        top4.validate();
+                        top4.repaint();
+                        break;
+
+                    case 25:
+                        top5.add(token4);
+                        top5.validate();
+                        top5.repaint();
+                        break;
+
+                    case 26:
+                        top6.add(token4);
+                        top6.validate();
+                        top6.repaint();
+                        break;
+
+                    case 27:
+                        top7.add(token4);
+                        top7.validate();
+                        top7.repaint();
+                        break;
+
+                    case 28:
+                        top8.add(token4);
+                        top8.validate();
+                        top8.repaint();
+                        break;
+
+                    case 29:
+                        top9.add(token4);
+                        top9.validate();
+                        top9.repaint();
+                        break;
+
+                    case 30:
+                        topRight.add(token4);
+                        topRight.validate();
+                        topRight.repaint();
+                        break;
+
+                    case 31:
+                        right1.add(token4);
+                        right1.validate();
+                        right1.repaint();
+                        break;
+
+                    case 32:
+                        right2.add(token4);
+                        right2.validate();
+                        right2.repaint();
+                        break;
+
+                    case 33:
+                        right3.add(token4);
+                        right3.validate();
+                        right3.repaint();
+                        break;
+
+                    case 34:
+                        right4.add(token4);
+                        right4.validate();
+                        right4.repaint();
+                        break;
+
+                    case 35:
+                        right5.add(token4);
+                        right5.validate();
+                        right5.repaint();
+                        break;
+
+                    case 36:
+                        right6.add(token4);
+                        right6.validate();
+                        right6.repaint();
+                        break;
+
+                    case 37:
+                        right7.add(token4);
+                        right7.validate();
+                        right7.repaint();
+                        break;
+
+                    case 38:
+                        right8.add(token4);
+                        right8.validate();
+                        right8.repaint();
+                        break;
+
+                    case 39:
+                        right9.add(token4);
+                        right9.validate();
+                        right9.repaint();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+        }
+    }
 }

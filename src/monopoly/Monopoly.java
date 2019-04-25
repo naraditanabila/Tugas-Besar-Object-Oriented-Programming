@@ -187,6 +187,28 @@ public class Monopoly{
 
             mainFrame.getProp1Button().addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    for (int i=0; i<player.get(0).sizeProp(); i++) {
+                        if (((Property)player.get(0).getProp(i)).getTipe() == 2) {
+                            if (((Property)player.get(0).getProp(i)).getLvl() == 3) {
+                                mainFrame.setLog(player.get(0).getProp(i).getName()+" dengan 1 rumah");
+                            } else if (((Property)player.get(0).getProp(i)).getLvl() == 4) {
+                                mainFrame.setLog(player.get(0).getProp(i).getName()+" dengan 2 rumah");
+                            } else if (((Property)player.get(0).getProp(i)).getLvl() == 5) {
+                                mainFrame.setLog(player.get(0).getProp(i).getName()+" dengan 3 rumah");
+                            } else if (((Property)player.get(0).getProp(i)).getLvl() == 6) {
+                                mainFrame.setLog(player.get(0).getProp(i).getName()+" dengan 4 rumah");
+                            } else {
+                                mainFrame.setLog(player.get(0).getProp(i).getName());
+                            }
+                        } else {
+                            mainFrame.setLog(player.get(0).getProp(i).getName());
+                        }
+                    }
+                }
+            });
+
+            mainFrame.getProp2Button().addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
                     for (int i=0; i<player.get(1).sizeProp(); i++) {
                         if (((Property)player.get(1).getProp(i)).getTipe() == 2) {
                             if (((Property)player.get(1).getProp(i)).getLvl() == 3) {
@@ -207,7 +229,7 @@ public class Monopoly{
                 }
             });
 
-            mainFrame.getProp2Button().addActionListener(new java.awt.event.ActionListener() {
+            mainFrame.getProp3Button().addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     for (int i=0; i<player.get(2).sizeProp(); i++) {
                         if (((Property)player.get(2).getProp(i)).getTipe() == 2) {
@@ -229,7 +251,7 @@ public class Monopoly{
                 }
             });
 
-            mainFrame.getProp3Button().addActionListener(new java.awt.event.ActionListener() {
+            mainFrame.getProp4Button().addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     for (int i=0; i<player.get(3).sizeProp(); i++) {
                         if (((Property)player.get(3).getProp(i)).getTipe() == 2) {
@@ -246,28 +268,6 @@ public class Monopoly{
                             }
                         } else {
                             mainFrame.setLog(player.get(3).getProp(i).getName());
-                        }
-                    }
-                }
-            });
-
-            mainFrame.getProp4Button().addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    for (int i=0; i<player.get(4).sizeProp(); i++) {
-                        if (((Property)player.get(4).getProp(i)).getTipe() == 2) {
-                            if (((Property)player.get(4).getProp(i)).getLvl() == 3) {
-                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 1 rumah");
-                            } else if (((Property)player.get(4).getProp(i)).getLvl() == 4) {
-                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 2 rumah");
-                            } else if (((Property)player.get(4).getProp(i)).getLvl() == 5) {
-                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 3 rumah");
-                            } else if (((Property)player.get(4).getProp(i)).getLvl() == 6) {
-                                mainFrame.setLog(player.get(4).getProp(i).getName()+" dengan 4 rumah");
-                            } else {
-                                mainFrame.setLog(player.get(4).getProp(i).getName());
-                            }
-                        } else {
-                            mainFrame.setLog(player.get(4).getProp(i).getName());
                         }
                     }
                 }
@@ -309,10 +309,10 @@ public class Monopoly{
                 //tiap command di cek
                 //Yang dienable
 
-                /*while(mainFrame.getCommand() == 0) {
+                while(mainFrame.getCommand() == 0) {
                     Thread.sleep(1000);
-                    mainFrame.setLog("ea kebaca gak commandnya jancok");
-                }*/
+                    //mainFrame.setLog("ea kebaca gak commandnya jancok");
+                }
 
                 cmd = mainFrame.getCommand();
 
@@ -385,13 +385,13 @@ public class Monopoly{
                                                         d1 = dadu.getN1();
                                                         d2 = dadu.getN2();
                                                         mainFrame.showDice(d1, d2);
-                                                //} else { //Ini hanya untuk debug
+                                                //} //else { Ini hanya untuk debug
                                                         //d1 = s.nextInt();
                                                         //d2 = s.nextInt();
                                                 //}
                                                 mainFrame.setLog("Dadu yang anda dapatkan adalah " + d1 + " dan " + d2);
                                                 mainFrame.setLog("Player bergerak sebanyak " + (d1+d2) + " kotak");
-                                                //mainFrame.removePlayerPos(index);
+                                                mainFrame.removePlayerPos(index, player.get(index).getPos());
                                                 player.get(index).move(d1+d2, mainFrame);
                                                 mainFrame.showPlayerPos(index, player.get(index).getPos());
                                                 mainFrame.setLog("Player "+player.get(index).getID()+" berada di kotak "+place.get(player.get(index).getPos()).getName()+".");

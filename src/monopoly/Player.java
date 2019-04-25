@@ -69,6 +69,7 @@ public class Player {
 			  if (this.playerPos>0) {
 				this.playerMoney += 200;
 			  }
+
 		  }
 		  if (x>=0){
 		  	mainFrame.setLog("Player "+playerID+" berhasil maju sebanyak "+x+" kotak.\n");
