@@ -287,7 +287,6 @@ public class Monopoly{
 
                 while(mainFrame.getCommand() == 0) {
                     Thread.sleep(1000);
-                    //mainFrame.setLog("ea kebaca gak commandnya jancok");
                 }
 
                 cmd = mainFrame.getCommand();

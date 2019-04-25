@@ -2,55 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ace46fb-c341-495a-9f8d-c659100b0628" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/App$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/App.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/Tugas-Besar-Object-Oriented-Programming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/Tugas-Besar-Object-Oriented-Programming.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/ChanceCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/CommunityChest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Dadu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/FreeParkFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/FreeParkFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/FreeParkFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/ListCard$Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/ListCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/LogFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/LogFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Lot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Monopoly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/MonopolyFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/NewGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/NewGame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/NewGame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/NewGame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/NewGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Place.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/PopUpFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/PopUpFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/PopUpFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Property.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Railroad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Space.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Turn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/Utility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/WinnerGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tugas-Besar-Object-Oriented-Programming/src/monopoly/WinnerGame.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/monopoly/Monopoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/monopoly/Monopoly.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -68,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="230" column="66" selection-start-line="230" selection-start-column="66" selection-end-line="230" selection-end-column="66" />
+            <state relative-caret-position="-38">
+              <caret line="290" lean-forward="true" selection-start-line="290" selection-end-line="290" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4446#4466#0" expanded="true" />
@@ -82,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+            <state relative-caret-position="17">
+              <caret line="1607" column="31" selection-start-line="1607" selection-start-column="31" selection-end-line="1607" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -190,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556164843273</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit dikit">
+      <created>1556165586650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556165586650</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -228,15 +191,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/monopoly/MonopolyFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+        <state relative-caret-position="17">
+          <caret line="1607" column="31" selection-start-line="1607" selection-start-column="31" selection-end-line="1607" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/monopoly/Monopoly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="230" column="66" selection-start-line="230" selection-start-column="66" selection-end-line="230" selection-end-column="66" />
+        <state relative-caret-position="-38">
+          <caret line="290" lean-forward="true" selection-start-line="290" selection-end-line="290" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4446#4466#0" expanded="true" />
