@@ -1598,6 +1598,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
         METHOD MANUAL
     */
 
+    //Diubah jadi public int
     public void actionPerformed(ActionEvent evt0) {
         if ("roll".equals(evt0.getActionCommand())) {
             command = 1;
@@ -1614,6 +1615,7 @@ public class MonopolyFrame extends javax.swing.JFrame {
     }
     
     public int getCommand() {
+        //Memanggil ActionPerformed
         return command;
     }
 
