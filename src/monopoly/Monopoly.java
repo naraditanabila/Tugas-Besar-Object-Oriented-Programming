@@ -159,6 +159,7 @@ public class Monopoly{
 
             mainFrame.getProp1Button().addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    mainFrame.setLog(Integer.toString(player.get(0).sizeProp()));
                     for (int i=0; i<player.get(0).sizeProp(); i++) {
                         if (((Property)player.get(0).getProp(i)).getTipe() == 2) {
                             if (((Property)player.get(0).getProp(i)).getLvl() == 3) {
@@ -181,6 +182,7 @@ public class Monopoly{
 
             mainFrame.getProp2Button().addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    mainFrame.setLog(Integer.toString(player.get(1).sizeProp()));
                     for (int i=0; i<player.get(1).sizeProp(); i++) {
                         if (((Property)player.get(1).getProp(i)).getTipe() == 2) {
                             if (((Property)player.get(1).getProp(i)).getLvl() == 3) {
@@ -203,6 +205,7 @@ public class Monopoly{
 
             mainFrame.getProp3Button().addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    mainFrame.setLog(Integer.toString(player.get(2).sizeProp()));
                     for (int i=0; i<player.get(2).sizeProp(); i++) {
                         if (((Property)player.get(2).getProp(i)).getTipe() == 2) {
                             if (((Property)player.get(2).getProp(i)).getLvl() == 3) {
@@ -225,6 +228,7 @@ public class Monopoly{
 
             mainFrame.getProp4Button().addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    mainFrame.setLog(Integer.toString(player.get(3).sizeProp()));
                     for (int i=0; i<player.get(3).sizeProp(); i++) {
                         if (((Property)player.get(3).getProp(i)).getTipe() == 2) {
                             if (((Property)player.get(3).getProp(i)).getLvl() == 3) {
