@@ -29,20 +29,20 @@ public class Space extends Place {	//Start, Free Parking, Penjara, Go to Jail, T
 	}
 	
 	//Space Effects
-    public void placeAffect(Player p, javax.swing.JTextArea gameLog){
+    public void placeAffect(Player p, MonopolyFrame mainFrame){
 			if (getName().equals("Start")) {
 				p.cekStart();
 			} else if (getName().equals("Free Parking")) {
                                 FreeParkFrame frame_FreePark = new FreeParkFrame();
 				int plot = Integer.parseInt(frame_FreePark.getFreeParkNum().getText());
-				p.setPos(plot-1, gameLog);
+				p.setPos(plot-1, mainFrame);
 				//this.placeAffect(p);
 			} else if (getName().equals("Penjara")) {
-				gameLog.append("Player "+ p.getID() + " hanya lewat penjara.\n");
+				mainFrame.setLog("Player "+ p.getID() + " hanya lewat penjara.\n");
 			} else if (getName().equals("Go To Jail")) {
-				p.inJail(gameLog);
+				p.inJail(mainFrame);
 			} else if (getName().equals("Tax")) {
-				p.pay(getCost(), gameLog);
+				p.pay(getCost(), mainFrame);
 			} /*else if (getName().equals("Chance Card")) {
 				int n = cc.getNum();
 				cc.chanceAction(n, p);
