@@ -32,35 +32,7 @@ public class Monopoly{
 	int detik=30;
 
 	
-	TimerTask task = new TimerTask(){
-		public void run() {
-			if (str == 10) {
-				if (detik>0) {
-					System.out.print(detik);
-					detik--;
-				}
-				else {
-					System.out.println("Tidak memasukkan input!");
-					System.out.println("Press [Enter] to continue");
-                    nin = true;
-				}
-			}
-		}
-	};
-	
-	public int getInput(MonopolyFrame mainFrame) throws Exception {
-		Timer t = new Timer();
-		t.schedule(task, 30, 1000);
-		
-		mainFrame.setLog("Masukkan command: ");
-		str = mainFrame.getCommand();
-		t.cancel();
-		if (this.nin == false) {
-			return str;
-		} else {
-			return -1;
-		}
-	}
+
        
     public static void main(String[] args) throws Exception {
         
@@ -331,6 +303,7 @@ public class Monopoly{
                                     while((mainFrame.getCommand() == 0) || ( time >= 30)) {
                                         Thread.sleep(1000);
                                         time += 1;
+                                        mainFrame.setLog(Integer.toString(time));
                                     }
 
                                     if (cmd == 1) {
@@ -435,6 +408,7 @@ public class Monopoly{
                                                                     while((mainFrame.getCommand() == 0) || (time >= 30)) {
                                                                         Thread.sleep(1000);
                                                                         time += 1;
+                                                                        mainFrame.setLog(Integer.toString(time));
                                                                     }
                                                                     if (cmd == 5) {
                                                                             ((Property)place.get(player.get(index).getPos())).lvlup(player.get(index), mainFrame);
@@ -449,6 +423,7 @@ public class Monopoly{
                                                                         while((mainFrame.getCommand() == 0) || ( time >= 30)) {
                                                                             Thread.sleep(1000);
                                                                             time += 1;
+                                                                            mainFrame.setLog(Integer.toString(time));
                                                                         }
 
                                                                         if (cmd == 3) {
