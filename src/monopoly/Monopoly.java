@@ -292,9 +292,6 @@ public class Monopoly{
                 cmd = mainFrame.getCommand();
                 int time = 0;
                 int index = turn.getPlayer();
-
-
-
                 if (!(player.get(index).getKalah())) {
                     //Command nya gmn ya
                         if (cmd == 1) {
